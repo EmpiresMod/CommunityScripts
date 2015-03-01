@@ -9,7 +9,7 @@ import (
 
 // Some constants
 const (
-	defaultURL = "https://raw.githubusercontent.com/TheCreeper/Empires/master/update"
+	defaultURL = "https://github.com/EmpiresMod/CommunityScripts/tree/master/update"
 )
 
 // Some vars
