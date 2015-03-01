@@ -1,0 +1,284 @@
+vehicle_chassis
+{
+//Northern Faction
+	"NF_Jeep"
+	{
+		"Script"	"scripts/vehicle_nf_jeep.txt"
+		"Preset"	"scripts/presets/vehicle_nf_jeep_preset.txt"
+	}
+
+	"NF_APC"
+	{
+		"Script"	"scripts/vehicle_nf_apc.txt"
+		"Preset"	"scripts/presets/vehicle_nf_apc_preset.txt"	
+	}
+
+	"NF_Light_Tank"
+	{
+		"Script"	"scripts/vehicle_nf_light_tank.txt"
+		"Preset"	"scripts/presets/vehicle_nf_light_tank_preset.txt"
+	}
+
+	"NF_Med_Tank"
+	{
+		"Script"	"scripts/vehicle_nf_med_tank.txt"
+		"Preset"	"scripts/presets/vehicle_nf_med_tank_preset.txt"
+	}
+
+	"NF_Heavy_Tank"
+	{
+		"Script"	"scripts/vehicle_nf_heavy_tank.txt"
+		"Preset"	"scripts/presets/vehicle_nf_heavy_tank_preset.txt"
+	}
+
+	"NF_Arty_Tank"
+	{
+		"Script"	"scripts/vehicle_nf_arty_tank.txt"
+		"Preset"	"scripts/presets/vehicle_nf_arty_tank_preset.txt"
+	}
+
+	"NF_Fighter"
+	{
+		"Script"	"scripts/vehicle_nf_fighter.txt"
+		"Preset"	"scripts/presets/vehicle_nf_fighter_preset.txt"
+	}
+
+	"NF_Falcon"
+	{
+		"Script"	"scripts/vehicle_nf_falcon.txt"
+		"Preset"	"scripts/presets/vehicle_nf_falcon_preset.txt"
+	}
+
+//Brenodi Empire
+	"Imperial_Jeep"
+	{
+		"Script"	"scripts/vehicle_imp_jeep.txt"
+		"Preset"	"scripts/presets/vehicle_imp_jeep_preset.txt"
+	}
+
+	"Imperial_APC"
+	{
+		"Script"	"scripts/vehicle_imp_apc.txt"
+		"Preset"	"scripts/presets/vehicle_imp_apc_preset.txt"
+	}
+
+	"Imperial_AFV"
+	{
+		"Script"	"scripts/vehicle_imp_afv.txt"
+		"Preset"	"scripts/presets/vehicle_imp_afv_preset.txt"
+	}
+	
+	"Imperial_Med_Tank"
+	{
+		"Script"	"scripts/vehicle_imp_med_tank.txt"
+		"Preset"	"scripts/presets/vehicle_imp_med_tank_preset.txt"
+	}
+
+
+	"Imperial_Heavy_Tank"
+	{
+		"Script"	"scripts/vehicle_imp_heavy_tank.txt"
+		"Preset"	"scripts/presets/vehicle_imp_heavy_tank_preset.txt"
+	}
+
+	"Imperial_Arty_Tank"
+	{
+		"Script"	"scripts/vehicle_imp_arty_tank.txt"
+		"Preset"	"scripts/presets/vehicle_imp_arty_tank_preset.txt"
+	}
+
+	"Imperial_Fighter"
+	{
+		"Script"	"scripts/vehicle_imp_fighter.txt"
+		"Preset"	"scripts/presets/vehicle_imp_fighter_preset.txt"
+	}
+
+//Commander vehicles
+	"Imperial_Commander"
+	{
+		"Script"	"scripts/vehicle_imp_comm.txt"
+		"Preset"	"scripts/presets/vehicle_imp_comm_preset.txt"
+	}
+
+	"NF_Commander"
+	{
+		"Script"	"scripts/vehicle_nf_comm.txt"
+		"Preset"	"scripts/presets/vehicle_nf_comm_preset.txt"
+	}
+
+//}	//This bracket ends the chassis index. Remove or comment it to unlock the extra chassis for testing. 
+
+//old vehicle chassis (to stay unchanged for quick reference in life testing)
+
+	"NF_Jeep"
+	{
+		"Script"	"scripts/vehicle/old/vehicle_nf_jeep.txt"
+		"Preset"	"scripts/presets/old/vehicle_nf_jeep_preset.txt"
+	}
+
+	"NF_APC"
+	{
+		"Script"	"scripts/vehicle/old/vehicle_nf_apc.txt"
+		"Preset"	"scripts/presets/old/vehicle_nf_apc_preset.txt"	
+	}
+
+	"NF_Light_Tank"
+	{
+		"Script"	"scripts/vehicle/old/vehicle_nf_light_tank.txt"
+		"Preset"	"scripts/presets/old/vehicle_nf_light_tank_preset.txt"
+	}
+
+	"NF_Med_Tank"
+	{
+		"Script"	"scripts/vehicle/old/vehicle_nf_med_tank.txt"
+		"Preset"	"scripts/presets/old/vehicle_nf_med_tank_preset.txt"
+	}
+
+	"NF_Heavy_Tank"
+	{
+		"Script"	"scripts/vehicle/old/vehicle_nf_heavy_tank.txt"
+		"Preset"	"scripts/presets/old/vehicle_nf_heavy_tank_preset.txt"
+	}
+
+	"NF_Arty_Tank"
+	{
+		"Script"	"scripts/vehicle/old/vehicle_nf_arty_tank.txt"
+		"Preset"	"scripts/presets/old/vehicle_nf_arty_tank_preset.txt"
+	}
+
+	"Imperial_Jeep"
+	{
+		"Script"	"scripts/vehicle/old/vehicle_imp_jeep.txt"
+		"Preset"	"scripts/presets/old/vehicle_imp_jeep_preset.txt"
+	}
+
+	"Imperial_APC"
+	{
+		"Script"	"scripts/vehicle/old/vehicle_imp_apc.txt"
+		"Preset"	"scripts/presets/old/vehicle_imp_apc_preset.txt"
+	}
+
+	"Imperial_AFV"
+	{
+		"Script"	"scripts/vehicle/old/vehicle_imp_afv.txt"
+		"Preset"	"scripts/presets/old/vehicle_imp_afv_preset.txt"
+	}
+	
+	"Imperial_Med_Tank"
+	{
+		"Script"	"scripts/vehicle/old/vehicle_imp_med_tank.txt"
+		"Preset"	"scripts/presets/old/vehicle_imp_med_tank_preset.txt"
+	}
+
+	"Imperial_Heavy_Tank"
+	{
+		"Script"	"scripts/vehicle/old/vehicle_imp_heavy_tank.txt"
+		"Preset"	"scripts/presets/old/vehicle_imp_heavy_tank_preset.txt"
+	}
+
+	"Imperial_Arty_Tank"
+	{
+		"Script"	"scripts/vehicle/old/vehicle_imp_arty_tank.txt"
+		"Preset"	"scripts/presets/old/vehicle_imp_arty_tank_preset.txt"
+	}
+
+//	"Imperial_Commander"	Com vehicles aren't properly configured. 
+//	{
+//		"Script"	"scripts/vehicle/old/vehicle_imp_comm.txt"
+//		"Preset"	"scripts/presets/old/vehicle_imp_comm_preset.txt"
+//	}
+
+//	"NF_Commander"		Com vehicles aren't properly configured.
+//	{
+//		"Script"	"scripts/vehicle/old/vehicle_nf_comm.txt"
+//		"Preset"	"scripts/presets/old/vehicle_nf_comm_preset.txt"
+//	}
+
+//test vehicle chassis (for testing actual changes without fucking with your live chassis)
+
+	"NF_Jeep"
+	{
+		"Script"	"scripts/vehicle/test/vehicle_nf_jeep.txt"
+		"Preset"	"scripts/presets/test/vehicle_nf_jeep_preset.txt"
+	}
+
+	"NF_APC"
+	{
+		"Script"	"scripts/vehicle/test/vehicle_nf_apc.txt"
+		"Preset"	"scripts/presets/test/vehicle_nf_apc_preset.txt"	
+	}
+
+	"NF_Light_Tank"
+	{
+		"Script"	"scripts/vehicle/test/vehicle_nf_light_tank.txt"
+		"Preset"	"scripts/presets/test/vehicle_nf_light_tank_preset.txt"
+	}
+
+	"NF_Med_Tank"
+	{
+		"Script"	"scripts/vehicle/test/vehicle_nf_med_tank.txt"
+		"Preset"	"scripts/presets/test/vehicle_nf_med_tank_preset.txt"
+	}
+
+	"NF_Heavy_Tank"
+	{
+		"Script"	"scripts/vehicle/test/vehicle_nf_heavy_tank.txt"
+		"Preset"	"scripts/presets/test/vehicle_nf_heavy_tank_preset.txt"
+	}
+
+	"NF_Arty_Tank"
+	{
+		"Script"	"scripts/vehicle/test/vehicle_nf_arty_tank.txt"
+		"Preset"	"scripts/presets/test/vehicle_nf_arty_tank_preset.txt"
+	}
+
+	"Imperial_Jeep"
+	{
+		"Script"	"scripts/vehicle/test/vehicle_imp_jeep.txt"
+		"Preset"	"scripts/presets/test/vehicle_imp_jeep_preset.txt"
+	}
+
+	"Imperial_APC"
+	{
+		"Script"	"scripts/vehicle/test/vehicle_imp_apc.txt"
+		"Preset"	"scripts/presets/test/vehicle_imp_apc_preset.txt"
+	}
+
+	"Imperial_AFV"
+	{
+		"Script"	"scripts/vehicle/test/vehicle_imp_afv.txt"
+		"Preset"	"scripts/presets/test/vehicle_imp_afv_preset.txt"
+	}
+	
+	"Imperial_Med_Tank"
+	{
+		"Script"	"scripts/vehicle/test/vehicle_imp_med_tank.txt"
+		"Preset"	"scripts/presets/test/vehicle_imp_med_tank_preset.txt"
+	}
+
+	"Imperial_Heavy_Tank"
+	{
+		"Script"	"scripts/vehicle/test/vehicle_imp_heavy_tank.txt"
+		"Preset"	"scripts/presets/test/vehicle_imp_heavy_tank_preset.txt"
+	}
+
+	"Imperial_Arty_Tank"
+	{
+		"Script"	"scripts/vehicle/test/vehicle_imp_arty_tank.txt"
+		"Preset"	"scripts/presets/test/vehicle_imp_arty_tank_preset.txt"
+	}
+
+
+//	"Imperial_Commander"	Com vehicles aren't properly configured.
+//	{
+//		"Script"	"scripts/vehicle/test/vehicle_imp_comm.txt"
+//		"Preset"	"scripts/presets/test/vehicle_imp_comm_preset.txt"
+//	}
+
+//	"NF_Commander"		Com vehicles aren't properly configured.
+//	{
+//		"Script"	"scripts/vehicle/test/vehicle_nf_comm.txt"
+//		"Preset"	"scripts/presets/test/vehicle_nf_comm_preset.txt"
+//	}
+
+}

@@ -1,0 +1,139 @@
+"EmpiresClassPresets"
+{
+	"Engineer"
+	{
+		"Default"
+		{
+			"weapons"
+			{
+				"weapon_0"		"1"
+				"weapon_1"		"3"
+				"weapon_2"		"14"
+				"weapon_3"		"19"
+			}
+			"Skills"
+			{
+				"skill_0"		"SKILL_VEHICLECOOLING"
+				"skill_1"		"SKILL_UNSELECTED"
+			}
+		}
+		"Testig"
+		{
+			"weapons"
+			{
+				"weapon_0"		"1"
+				"weapon_1"		"4"
+				"weapon_2"		"14"
+				"weapon_3"		"19"
+			}
+			"Skills"
+			{
+				"skill_0"		"SKILL_REVIVE"
+				"skill_1"		"SKILL_UNSELECTED"
+			}
+		}
+		"revive"
+		{
+			"weapons"
+			{
+				"weapon_0"		"1"
+				"weapon_1"		"3"
+				"weapon_2"		"14"
+				"weapon_3"		"19"
+			}
+			"Skills"
+			{
+				"skill_0"		"SKILL_REVIVE"
+				"skill_1"		"SKILL_UNSELECTED"
+			}
+		}
+		"testig2"
+		{
+			"weapons"
+			{
+				"weapon_0"		"1"
+				"weapon_1"		"3"
+				"weapon_2"		"14"
+				"weapon_3"		"19"
+			}
+			"Skills"
+			{
+				"skill_0"		"SKILL_REPAIRUPGRADE"
+				"skill_1"		"SKILL_UNSELECTED"
+			}
+		}
+	}
+	"Grenadier"
+	{
+		"Default"
+		{
+			"weapons"
+			{
+				"weapon_0"		"1"
+				"weapon_1"		"10"
+				"weapon_2"		"18"
+				"weapon_3"		"22"
+			}
+			"Skills"
+			{
+				"skill_0"		"SKILL_UNSELECTED"
+				"skill_1"		"SKILL_UNSELECTED"
+				"skill_2"		"SKILL_UNSELECTED"
+				"skill_3"		"SKILL_UNSELECTED"
+			}
+		}
+	}
+	"Rifleman"
+	{
+		"Default"
+		{
+			"weapons"
+			{
+				"weapon_0"		"1"
+				"weapon_1"		"9"
+				"weapon_2"		"12"
+				"weapon_3"		"21"
+			}
+			"Skills"
+			{
+				"skill_0"		"SKILL_DIGIN"
+				"skill_1"		"SKILL_UNSELECTED"
+			}
+		}
+		"test"
+		{
+			"weapons"
+			{
+				"weapon_0"		"1"
+				"weapon_1"		"6"
+				"weapon_2"		"16"
+				"weapon_3"		"21"
+			}
+			"Skills"
+			{
+				"skill_0"		"SKILL_AMMOINCREASE"
+				"skill_1"		"SKILL_UNSELECTED"
+			}
+		}
+	}
+	"Scout"
+	{
+		"Default"
+		{
+			"weapons"
+			{
+				"weapon_0"		"1"
+				"weapon_1"		"43"
+				"weapon_2"		"15"
+				"weapon_3"		"20"
+			}
+			"Skills"
+			{
+				"skill_0"		"SKILL_UNSELECTED"
+				"skill_1"		"SKILL_UNSELECTED"
+				"skill_2"		"SKILL_UNSELECTED"
+				"skill_3"		"SKILL_UNSELECTED"
+			}
+		}
+	}
+}

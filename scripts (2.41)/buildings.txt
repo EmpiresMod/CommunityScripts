@@ -1,0 +1,2103 @@
+//Building Script													
+													
+BuildingParse													
+{													
+	//1												
+	ImpAirFactory												
+	{												
+	 "name" 		ImpAirFactory							//Name of the Building
+
+	 "spotted name"		"Air Factory"		
+	
+	 "model" 		models/imperial/Buildings/airfactory/imp_airfactory.mdl	//Standard Model									
+	 "model2" 	 	models/imperial/Buildings/airfactory/imp_airfactory_2.mdl	//Scale 2 Model									
+	 "model4" 	 	models/imperial/Buildings/airfactory/imp_airfactory_4.mdl	//Scale 4 Model									
+	 "model8" 	 	models/imperial/Buildings/airfactory/imp_airfactory_8.mdl	//Scale 8 Model									
+	 "model16" 	 	models/imperial/Buildings/airfactory/imp_airfactory_16.mdl	//Scale 16 Model									
+	 "model32" 	 	models/imperial/Buildings/airfactory/imp_airfactory_32.mdl	//Scale 32 Model									
+	 "cost" 		5000								//Cost of the building		
+	 "max health"	 	100								//Max Possible Health		
+	 "starting health"	25								//Starting Health when built (25% of Max)			
+	 "damaged model" 	models/imperial/Buildings/airfactory/imp_airfactory.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)										
+	 "damaged threshold"	50								//Health Value to display the damaged model			
+	 "destroyed model"	models/imperial/Buildings/airfactory/imp_airfactory.mdl	//Model to display when building is destroyed	(Defaults to "model" field)									
+	 "vehicle physbox"	models/imperial/Buildings/airfactory/imp_airfactory.mdl 	//Physbox Model		
+
+	 "recycle time"		30								// Recycle time for the building
+	 "carcass removal time" "30"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "0"
+
+	"hint"			"This is the Brenodi Empire Airfactory. If you can see this message your commander has too much res and time as it has no function for now."
+
+	 //RESISTANCES												
+													
+	 "GeneralPhysicsResist"		0.85					//General Physics Tree Damage 					
+	 "GeneralChemistryResist"  	0.85				//General Chemistry Tree Damage							
+	 "GeneralMechanicalResist" 	0.85					//General Mechanic Tree Damage						
+	 "GeneralElectricResist"  	0.85					//General Electric Tree Damage						
+	 "GeneralBiologicalResist"	0.85					//General Biological Tree Damage						
+													
+	 "KineticResist" 		0.85					//Railguns, Standard Cannons, Anything that is just force					
+	 "ExplosiveResist" 		0.85					//HE, Nukes, anything that explodes					
+	 "BioResist" 			0.85					//Has the bio effect				
+													
+	 "BulletResist" 		1					//Non Armor damaging					
+	 "APBulletResist" 		0.875					// Armor Damaging					
+	 "BulletExplosiveResist" 	0.80				//Bullets that Explode							
+													
+	 "MissileResist" 		0.85					//Generic Missle type of damage					
+	 "MissileExplosiveResist" 	0.85					//Explosive type.						
+	 "MissileBioResist" 		0.85					//Bio Missiles.  Different then Bio?					
+													
+	 "KineticArtResist" 		0.85					//Kinetic Artillery					
+	 "ExplosiveArtResist" 		0.85					// Explosive Artillery					
+	 "BioArtResist" 		0.85				//Bio Artillery						
+													
+	 "AircraftMissileResist" 	0.85					// Aircraft Missiles						
+	 "AircraftGroundMissleResist" 	0.85					// Aircraft Missiles to hit ground targets						
+	 "AircraftBulletResist" 	0.85				//Aircraft to Aircraft bullets							
+	 "AircraftAPBulletResist" 	0.85				//Aircraft Bullets to hit ground targets							
+	 "AircraftBombResist" 		0.85				//Bombs						
+	 "AircraftBombBioResist" 	0.85				//Bio Bombs?							
+													
+	 "InfantryGrenadeResist" 	0.9					//Player Thrown Grenades						
+	 "InfantryMineResist" 		0.95					//Player Tossed Mines					
+	 "InfantryMissileResist" 	0.95					//Gren Missles						
+	 "InfantryMortarResist" 	0.8					//Gren Mortars						
+	 "InfantryStickyResist" 	0.85					//Sticky Grenades						
+	 "InfantrySeismicResist" 	0					//Seismic Grenades						
+	 "InfantryBulletResist" 	1					//Just In Case						
+	 "InfantryUtilityResist"	1					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		1					//Infantry melee
+												
+	 "ExtraType1Resist" 		0.5					//Anti Building weapons					
+	 "ExtraType2Resist" 		0.75					//Again					
+	 "ExtraType3Resist" 		0.75					//and a third						
+												
+	//BOUNDARY VECTORS												
+													
+	 "MinColBoundX" "0"  		//Minimum Collision Bound										
+	 "MinColBoundY" "0"  		//Used to calculate the "footprint" that the										
+	 "MinColBoundZ" "0"  		//Building takes up										
+													
+	 "MaxColBoundX" "0" 		//Maximum Collision Bound										
+	 "MaxColBoundY" "0"												
+	 "MaxColBoundZ" "0"
+											
+	}												
+													
+	//2												
+	NFAirFactory												
+	{												
+	 "name" 		NFAirFactory					//Name of the Building
+
+	 "spotted name"		"Air Factory"	
+					
+	 "model" 		models/imperial/Buildings/airfactory/imp_airfactory.mdl	//Standard Model 									
+	 "model2" 	 	models/imperial/Buildings/airfactory/imp_airfactory_2.mdl	//Scale 2 Model									
+	 "model4" 	 	models/imperial/Buildings/airfactory/imp_airfactory_4.mdl	//Scale 4 Model									
+	 "model8" 	 	models/imperial/Buildings/airfactory/imp_airfactory_8.mdl	//Scale 8 Model									
+	 "model16" 	 	models/imperial/Buildings/airfactory/imp_airfactory_16.mdl	//Scale 16 Model									
+	 "model32" 	 	models/imperial/Buildings/airfactory/imp_airfactory_32.mdl	//Scale 32 Model									
+	 "cost" 		5000						//Cost of the building				
+	 "max health"	 	100						//Max Possible Health				
+	 "starting health"	25						//Starting Health when built (25% of Max)					
+	 "damaged model" 	models/NF/Buildings/airfactory/nf_airfactory.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)										
+	 "damaged threshold"	50						//Health Value to display the damaged model					
+	 "destroyed model"	models/NF/Buildings/airfactory/nf_airfactory.mdl	//Model to display when building is destroyed	(Defaults to "model" field)									
+	 "vehicle physbox"	models/imperial/Buildings/airfactory/imp_airfactory.mdl //Physbox Model		
+
+	 "recycle time"		30								// Recycle time for the building
+	 "carcass removal time" "30"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "1"
+
+	"hint"			"This is the Northern Faction Airfactory. If you can see this message your commander has too much res and time as it has no function for now."
+													
+	 //RESISTANCES												
+													
+	 "GeneralPhysicsResist"		0.85					//General Physics Tree Damage 					
+	 "GeneralChemistryResist"  	0.85				//General Chemistry Tree Damage							
+	 "GeneralMechanicalResist" 	0.85					//General Mechanic Tree Damage						
+	 "GeneralElectricResist"  	0.85					//General Electric Tree Damage						
+	 "GeneralBiologicalResist"	0.85					//General Biological Tree Damage						
+													
+	 "KineticResist" 		0.85					//Railguns, Standard Cannons, Anything that is just force					
+	 "ExplosiveResist" 		0.85					//HE, Nukes, anything that explodes					
+	 "BioResist" 			0.85					//Has the bio effect				
+													
+	 "BulletResist" 		1					//Non Armor damaging					
+	 "APBulletResist" 		0.875					// Armor Damaging					
+	 "BulletExplosiveResist" 	0.80				//Bullets that Explode							
+													
+	 "MissileResist" 		0.85					//Generic Missle type of damage					
+	 "MissileExplosiveResist" 	0.85					//Explosive type.						
+	 "MissileBioResist" 		0.85					//Bio Missiles.  Different then Bio?					
+													
+	 "KineticArtResist" 		0.85					//Kinetic Artillery					
+	 "ExplosiveArtResist" 		0.85					// Explosive Artillery					
+	 "BioArtResist" 		0.85				//Bio Artillery						
+													
+	 "AircraftMissileResist" 	0.85					// Aircraft Missiles						
+	 "AircraftGroundMissleResist" 	0.85					// Aircraft Missiles to hit ground targets						
+	 "AircraftBulletResist" 	0.85				//Aircraft to Aircraft bullets							
+	 "AircraftAPBulletResist" 	0.85				//Aircraft Bullets to hit ground targets							
+	 "AircraftBombResist" 		0.85				//Bombs						
+	 "AircraftBombBioResist" 	0.85				//Bio Bombs?							
+													
+	 "InfantryGrenadeResist" 	0.9					//Player Thrown Grenades						
+	 "InfantryMineResist" 		0.95					//Player Tossed Mines					
+	 "InfantryMissileResist" 	0.95					//Gren Missles						
+	 "InfantryMortarResist" 	0.8					//Gren Mortars						
+	 "InfantryStickyResist" 	0.85					//Sticky Grenades						
+	 "InfantrySeismicResist" 	0					//Seismic Grenades						
+	 "InfantryBulletResist" 	1					//Just In Case						
+	 "InfantryUtilityResist"	1					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		1					//Infantry melee
+													
+	 "ExtraType1Resist" 		0.5					//Anti Building weapons					
+	 "ExtraType2Resist" 		0.75					//Again					
+	 "ExtraType3Resist" 		0.75					//and a third					
+													
+	//BOUNDARY VECTORS												
+													
+	 "MinColBoundX" "0"  //Minimum Collision Bound												
+	 "MinColBoundY" "0"  //Used to calculate the "footprint" that the												
+	 "MinColBoundZ" "0"    //Building takes up												
+													
+	 "MaxColBoundX" "0" //Maximum Collision Bound												
+	 "MaxColBoundY" "0"												
+	 "MaxColBoundZ" "0"												
+	}												
+													
+	//3												
+	ImpArmory												
+	{												
+	 "name" 		ImpArmory					//Name of the Building
+
+	 "spotted name"		"Armory"	
+										
+	 "model" 		models/imperial/Buildings/armory/imp_armory.mdl	//Standard Model									
+	 "model2" 	 	models/imperial/Buildings/armory/imp_armory_2.mdl	//Scale 2 Model									
+	 "model4" 	 	models/imperial/Buildings/armory/imp_armory_4.mdl	//Scale 4 Model									
+	 "model8" 	 	models/imperial/Buildings/armory/imp_armory_8.mdl	//Scale 8 Model									
+	 "model16" 	 	models/imperial/Buildings/armory/imp_armory_16.mdl	//Scale 16 Model									
+	 "model32" 	 	models/imperial/Buildings/armory/imp_armory_32.mdl	//Scale 32 Model									
+	 "cost" 		75						//Cost of the building				
+	 "max health"	 	100						//Max Possible Health				
+	 "starting health"	25						//Starting Health when built (25% of Max)					
+	 "damaged model" 	models/imperial/Buildings/armory/imp_armory.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)										
+	 "damaged threshold"	50						//Health Value to display the damaged model					
+	 "destroyed model"	models/imperial/Buildings/armory/imp_armory.mdl	//Model to display when building is destroyed	(Defaults to "model" field)									
+	 "vehicle physbox"	models/imperial/Buildings/armory/imp_armory_vehiclephysbox.mdl //Physbox Model	
+	 
+	 "recycle time"		30								// Recycle time for the building
+	 "carcass removal time" "30"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "2"
+
+	"hint"			"This is the Brenodi Empires Armory. Press %+use% while aiming at either of the boxes to fill ammo and health. You can also change class in this building by pressing %chooseclass%."
+													
+	 "GeneralPhysicsResist"		0.85					//General Physics Tree Damage 					
+	 "GeneralChemistryResist"  	0.85				//General Chemistry Tree Damage							
+	 "GeneralMechanicalResist" 	0.85					//General Mechanic Tree Damage						
+	 "GeneralElectricResist"  	0.85					//General Electric Tree Damage						
+	 "GeneralBiologicalResist"	0.85					//General Biological Tree Damage						
+													
+	 "KineticResist" 		0.85					//Railguns, Standard Cannons, Anything that is just force					
+	 "ExplosiveResist" 		0.85					//HE, Nukes, anything that explodes					
+	 "BioResist" 			0.85					//Has the bio effect				
+													
+	 "BulletResist" 		1					//Non Armor damaging					
+	 "APBulletResist" 		0.875					// Armor Damaging					
+	 "BulletExplosiveResist" 	0.80				//Bullets that Explode							
+													
+	 "MissileResist" 		0.85					//Generic Missle type of damage					
+	 "MissileExplosiveResist" 	0.85					//Explosive type.						
+	 "MissileBioResist" 		0.85					//Bio Missiles.  Different then Bio?					
+													
+	 "KineticArtResist" 		0.85					//Kinetic Artillery					
+	 "ExplosiveArtResist" 		0.85					// Explosive Artillery					
+	 "BioArtResist" 		0.85				//Bio Artillery						
+													
+	 "AircraftMissileResist" 	0.85					// Aircraft Missiles						
+	 "AircraftGroundMissleResist" 	0.85					// Aircraft Missiles to hit ground targets						
+	 "AircraftBulletResist" 	0.85				//Aircraft to Aircraft bullets							
+	 "AircraftAPBulletResist" 	0.85				//Aircraft Bullets to hit ground targets							
+	 "AircraftBombResist" 		0.85				//Bombs						
+	 "AircraftBombBioResist" 	0.85				//Bio Bombs?							
+													
+	 "InfantryGrenadeResist" 	0.9					//Player Thrown Grenades						
+	 "InfantryMineResist" 		0.9					//Player Tossed Mines					
+	 "InfantryMissileResist" 	0.95					//Gren Missles						
+	 "InfantryMortarResist" 	0.8					//Gren Mortars						
+	 "InfantryStickyResist" 	0.85					//Sticky Grenades						
+	 "InfantrySeismicResist" 	0					//Seismic Grenades						
+	 "InfantryBulletResist" 	1					//Just In Case						
+	 "InfantryUtilityResist"	1					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		1					//Infantry melee
+														
+	 "ExtraType1Resist" 		0.5					//Anti Building weapons					
+	 "ExtraType2Resist" 		0.75					//Again					
+	 "ExtraType3Resist" 		0.75					//and a third				
+													
+	//BOUNDARY VECTORS												
+													
+	 "MinColBoundX" "-270"  //Minimum Collision Bound												
+	 "MinColBoundY" "-170"  //Used to calculate the "footprint" that the												
+	 "MinColBoundZ" "0"    //Building takes up												
+													
+	 "MaxColBoundX" "270" //Maximum Collision Bound												
+	 "MaxColBoundY" "170"												
+	 "MaxColBoundZ" "170"												
+	}												
+													
+	//4												
+	NFArmory												
+	{												
+	 "name" 		NFArmory					//Name of the Building	
+
+	 "spotted name"		"Armory"	
+												
+	 "model" 		models/NF/Buildings/armory/nf_armory.mdl	//Standard Model									
+	 "model2" 	 	models/NF/Buildings/armory/nf_armory_2.mdl	//Scale 2 Model									
+	 "model4" 	 	models/NF/Buildings/armory/nf_armory_4.mdl	//Scale 4 Model									
+	 "model8" 	 	models/NF/Buildings/armory/nf_armory_8.mdl	//Scale 8 Model									
+	 "model16" 	 	models/NF/Buildings/armory/nf_armory_16.mdl	//Scale 16 Model									
+	 "model32" 	 	models/NF/Buildings/armory/nf_armory.mdl	//Scale 32 Model									
+	 "cost" 		75						//Cost of the building				
+	 "max health"	 	100						//Max Possible Health				
+	 "starting health"	25						//Starting Health when built (25% of Max)					
+	 "damaged model" 	models/NF/Buildings/armory/nf_armory.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)										
+	 "damaged threshold"	50						//Health Value to display the damaged model					
+	 "destroyed model"	models/NF/Buildings/armory/nf_armory.mdl	//Model to display when building is destroyed	(Defaults to "model" field)									
+	 "vehicle physbox"	models/NF/Buildings/armory/nf_armory_vehiclephysbox.mdl //Physbox Model		
+
+	 "recycle time"		30								// Recycle time for the building
+	 "carcass removal time" "30"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "3"
+
+	"hint"			"This is the Northern Faction Armory. Press %+use% while aiming at either of the boxes to fill ammo and health. You can also change class in this building by pressing %chooseclass%."
+													
+	 "GeneralPhysicsResist"		0.85					//General Physics Tree Damage 					
+	 "GeneralChemistryResist"  	0.85				//General Chemistry Tree Damage							
+	 "GeneralMechanicalResist" 	0.85					//General Mechanic Tree Damage						
+	 "GeneralElectricResist"  	0.85					//General Electric Tree Damage						
+	 "GeneralBiologicalResist"	0.85					//General Biological Tree Damage						
+													
+	 "KineticResist" 		0.85					//Railguns, Standard Cannons, Anything that is just force					
+	 "ExplosiveResist" 		0.85					//HE, Nukes, anything that explodes					
+	 "BioResist" 			0.85					//Has the bio effect				
+													
+	 "BulletResist" 		1					//Non Armor damaging					
+	 "APBulletResist" 		0.875					// Armor Damaging					
+	 "BulletExplosiveResist" 	0.80				//Bullets that Explode							
+													
+	 "MissileResist" 		0.85					//Generic Missle type of damage					
+	 "MissileExplosiveResist" 	0.85					//Explosive type.						
+	 "MissileBioResist" 		0.85					//Bio Missiles.  Different then Bio?					
+													
+	 "KineticArtResist" 		0.85					//Kinetic Artillery					
+	 "ExplosiveArtResist" 		0.85					// Explosive Artillery					
+	 "BioArtResist" 		0.85				//Bio Artillery						
+													
+	 "AircraftMissileResist" 	0.85					// Aircraft Missiles						
+	 "AircraftGroundMissleResist" 	0.85					// Aircraft Missiles to hit ground targets						
+	 "AircraftBulletResist" 	0.85				//Aircraft to Aircraft bullets							
+	 "AircraftAPBulletResist" 	0.85				//Aircraft Bullets to hit ground targets							
+	 "AircraftBombResist" 		0.85				//Bombs						
+	 "AircraftBombBioResist" 	0.85				//Bio Bombs?							
+													
+	 "InfantryGrenadeResist" 	0.9					//Player Thrown Grenades						
+	 "InfantryMineResist" 		0.9					//Player Tossed Mines					
+	 "InfantryMissileResist" 	0.95					//Gren Missles						
+	 "InfantryMortarResist" 	0.8					//Gren Mortars						
+	 "InfantryStickyResist" 	0.85					//Sticky Grenades						
+	 "InfantrySeismicResist" 	0					//Seismic Grenades						
+	 "InfantryBulletResist" 	1					//Just In Case						
+	 "InfantryUtilityResist"	1					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		1					//Infantry melee
+														
+	 "ExtraType1Resist" 		0.5					//Anti Building weapons					
+	 "ExtraType2Resist" 		0.75					//Again					
+	 "ExtraType3Resist" 		0.75					//and a third						
+													
+	//BOUNDARY VECTORS												
+													
+	 "MinColBoundX" "-250"  //Minimum Collision Bound												
+	 "MinColBoundY" "-250"  //Used to calculate the "footprint" that the												
+	 "MinColBoundZ" "0"    //Building takes up												
+													
+	 "MaxColBoundX" "250" //Maximum Collision Bound												
+	 "MaxColBoundY" "250"												
+	 "MaxColBoundZ" "200"	
+
+	//EXPLOSIONS
+	// You can have 10 different particles on a single model. Goes from 0-9.
+
+	"ExplosionAttachment0"		"explosion1"				// Attachment 0 in the model.
+	"ExplosionParticle0"		"Explosion_std"				// Particle 0 on attachment 0.					
+	}												
+													
+	//5												
+	ImpBarracks												
+	{												
+	 "name" 		ImpBarracks					//Name of the Building	
+
+	 "spotted name"		"Barracks"	
+												
+	 "model" 		models/imperial/Buildings/barracks/imp_barracks.mdl	//Standard Model									
+	 "model2" 	 	models/imperial/Buildings/barracks/imp_barracks_2.mdl	//Scale 2 Model									
+	 "model4" 	 	models/imperial/Buildings/barracks/imp_barracks_4.mdl	//Scale 4 Model									
+	 "model8" 	 	models/imperial/Buildings/barracks/imp_barracks_8.mdl	//Scale 8 Model									
+	 "model16" 	 	models/imperial/Buildings/barracks/imp_barracks_16.mdl	//Scale 16 Model									
+	 "model32" 	 	models/imperial/Buildings/barracks/imp_barracks_32.mdl	//Scale 32 Model									
+	 "cost" 		200						//Cost of the building				
+	 "max health"	 	250						//Max Possible Health				
+	 "starting health"	50						//Starting Health when built (25% of Max)					
+	 "damaged model" 	models/imperial/Buildings/barracks/imp_barracks.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)										
+	 "damaged threshold"	50						//Health Value to display the damaged model					
+	 "destroyed model"	models/imperial/Buildings/barracks/imp_barracks.mdl	//Model to display when building is destroyed	(Defaults to "model" field)									
+	 "vehicle physbox"	models/imperial/Buildings/barracks/imp_barracks_vehiclephysbox.mdl //Physbox Model
+
+	 "recycle time"		30								// Recycle time for the building
+	 "carcass removal time" "30"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "4"
+
+	"hint"			"This is the Brenodi Empire Barracks. This building acts as a spawnpoint. You can choose a different spawnpoint by pressing %emp_map_spawn%. You can change class here by pressing %chooseclass%."
+													
+	 "GeneralPhysicsResist"		0.85					//General Physics Tree Damage 					
+	 "GeneralChemistryResist"  	0.85				//General Chemistry Tree Damage							
+	 "GeneralMechanicalResist" 	0.85					//General Mechanic Tree Damage						
+	 "GeneralElectricResist"  	0.85					//General Electric Tree Damage						
+	 "GeneralBiologicalResist"	0.85					//General Biological Tree Damage						
+													
+	 "KineticResist" 		0.85					//Railguns, Standard Cannons, Anything that is just force					
+	 "ExplosiveResist" 		0.85					//HE, Nukes, anything that explodes					
+	 "BioResist" 			0.85					//Has the bio effect				
+													
+	 "BulletResist" 		1					//Non Armor damaging					
+	 "APBulletResist" 		0.875					// Armor Damaging					
+	 "BulletExplosiveResist" 	0.80				//Bullets that Explode							
+													
+	 "MissileResist" 		0.85					//Generic Missle type of damage					
+	 "MissileExplosiveResist" 	0.85					//Explosive type.						
+	 "MissileBioResist" 		0.85					//Bio Missiles.  Different then Bio?					
+													
+	 "KineticArtResist" 		0.85					//Kinetic Artillery					
+	 "ExplosiveArtResist" 		0.85					// Explosive Artillery					
+	 "BioArtResist" 		0.85				//Bio Artillery						
+													
+	 "AircraftMissileResist" 	0.85					// Aircraft Missiles						
+	 "AircraftGroundMissleResist" 	0.85					// Aircraft Missiles to hit ground targets						
+	 "AircraftBulletResist" 	0.85				//Aircraft to Aircraft bullets							
+	 "AircraftAPBulletResist" 	0.85				//Aircraft Bullets to hit ground targets							
+	 "AircraftBombResist" 		0.85				//Bombs						
+	 "AircraftBombBioResist" 	0.85				//Bio Bombs?							
+													
+	 "InfantryGrenadeResist" 	0.9					//Player Thrown Grenades						
+	 "InfantryMineResist" 		0.9					//Player Tossed Mines					
+	 "InfantryMissileResist" 	0.95					//Gren Missles						
+	 "InfantryMortarResist" 	0.8					//Gren Mortars						
+	 "InfantryStickyResist" 	0.85					//Sticky Grenades						
+	 "InfantrySeismicResist" 	0					//Seismic Grenades						
+	 "InfantryBulletResist" 	1					//Just In Case						
+	 "InfantryUtilityResist"	1					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		1					//Infantry melee
+														
+	 "ExtraType1Resist" 		0.5					//Anti Building weapons					
+	 "ExtraType2Resist" 		0.75					//Again					
+	 "ExtraType3Resist" 		0.75					//and a third						
+													
+	//BOUNDARY VECTORS												
+													
+	 "MinColBoundX" "-500"  //Minimum Collision Bound												
+	 "MinColBoundY" "-350"  //Used to calculate the "footprint" that the												
+	 "MinColBoundZ" "0"    //Building takes up												
+													
+	 "MaxColBoundX" "500" //Maximum Collision Bound												
+	 "MaxColBoundY" "350"												
+	 "MaxColBoundZ" "160"												
+	}												
+													
+	//6												
+	NFBarracks												
+	{												
+	 "name" 		NFBarracks					//Name of the Building
+
+	 "spotted name"		"Barracks"	
+													
+	 "model" 		models/NF/Buildings/barracks/nf_barracks.mdl	//Standard Model									
+	 "model2" 	 	models/NF/Buildings/barracks/nf_barracks_2.mdl	//Scale 2 Model									
+	 "model4" 	 	models/NF/Buildings/barracks/nf_barracks_4.mdl	//Scale 4 Model									
+	 "model8" 	 	models/NF/Buildings/barracks/nf_barracks_8.mdl	//Scale 8 Model									
+	 "model16" 	 	models/NF/Buildings/barracks/nf_barracks_16.mdl	//Scale 16 Model									
+	 "model32" 	 	models/NF/Buildings/barracks/nf_barracks_32.mdl	//Scale 32 Model									
+	 "cost" 		200						//Cost of the building				
+	 "max health"	 	250						//Max Possible Health				
+	 "starting health"	50						//Starting Health when built (25% of Max)					
+	 "damaged model" 	models/NF/Buildings/barracks/nf_barracks.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)										
+	 "damaged threshold"	50						//Health Value to display the damaged model					
+	 "destroyed model"	models/NF/Buildings/barracks/nf_barracks.mdl	//Model to display when building is destroyed	(Defaults to "model" field)									
+	 "vehicle physbox"	models/NF/Buildings/barracks/nf_barracks_vehiclephysbox.mdl //Physbox Model	
+
+	 "recycle time"		30								// Recycle time for the building
+	 "carcass removal time" "30"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "5"
+
+	"hint"			"This is the Northern Faction Barracks. This building acts as a spawnpoint. You can choose a different spawnpoint by pressing %emp_map_spawn%. You can change class here by pressing %chooseclass%."
+													
+	 //RESISTANCES												
+													
+	 "GeneralPhysicsResist"		0.85					//General Physics Tree Damage 					
+	 "GeneralChemistryResist"  	0.85				//General Chemistry Tree Damage							
+	 "GeneralMechanicalResist" 	0.85					//General Mechanic Tree Damage						
+	 "GeneralElectricResist"  	0.85					//General Electric Tree Damage						
+	 "GeneralBiologicalResist"	0.85					//General Biological Tree Damage						
+													
+	 "KineticResist" 		0.85					//Railguns, Standard Cannons, Anything that is just force					
+	 "ExplosiveResist" 		0.85					//HE, Nukes, anything that explodes					
+	 "BioResist" 			0.85					//Has the bio effect				
+													
+	 "BulletResist" 		1					//Non Armor damaging					
+	 "APBulletResist" 		0.875					// Armor Damaging					
+	 "BulletExplosiveResist" 	0.80				//Bullets that Explode							
+													
+	 "MissileResist" 		0.85					//Generic Missle type of damage					
+	 "MissileExplosiveResist" 	0.85					//Explosive type.						
+	 "MissileBioResist" 		0.85					//Bio Missiles.  Different then Bio?					
+													
+	 "KineticArtResist" 		0.85					//Kinetic Artillery					
+	 "ExplosiveArtResist" 		0.85					// Explosive Artillery					
+	 "BioArtResist" 		0.85				//Bio Artillery						
+													
+	 "AircraftMissileResist" 	0.85					// Aircraft Missiles						
+	 "AircraftGroundMissleResist" 	0.85					// Aircraft Missiles to hit ground targets						
+	 "AircraftBulletResist" 	0.85				//Aircraft to Aircraft bullets							
+	 "AircraftAPBulletResist" 	0.85				//Aircraft Bullets to hit ground targets							
+	 "AircraftBombResist" 		0.85				//Bombs						
+	 "AircraftBombBioResist" 	0.85				//Bio Bombs?							
+													
+	 "InfantryGrenadeResist" 	0.9					//Player Thrown Grenades						
+	 "InfantryMineResist" 		0.9					//Player Tossed Mines					
+	 "InfantryMissileResist" 	0.95					//Gren Missles						
+	 "InfantryMortarResist" 	0.8					//Gren Mortars						
+	 "InfantryStickyResist" 	0.85					//Sticky Grenades						
+	 "InfantrySeismicResist" 	0					//Seismic Grenades						
+	 "InfantryBulletResist" 	1					//Just In Case						
+	 "InfantryUtilityResist"	1					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		1					//Infantry melee
+													
+	 "ExtraType1Resist" 		0.5					//Anti Building weapons					
+	 "ExtraType2Resist" 		0.75					//Again					
+	 "ExtraType3Resist" 		0.75					//and a third						
+													
+	//BOUNDARY VECTORS												
+													
+	 "MinColBoundX" "-500"  //Minimum Collision Bound												
+	 "MinColBoundY" "-500"  //Used to calculate the "footprint" that the												
+	 "MinColBoundZ" "0"    //Building takes up												
+													
+	 "MaxColBoundX" "500" //Maximum Collision Bound												
+	 "MaxColBoundY" "500"												
+	 "MaxColBoundZ" "500"												
+	}												
+													
+	//7												
+	ImpRadar												
+	{												
+	 "name" 		ImpRadar					//Name of the Building
+
+	 "spotted name"		"Radar"	
+													
+	 "model" 		models/imperial/Buildings/Radar/imp_radar.mdl	//Standard Model									
+	 "model2" 	 	models/imperial/Buildings/Radar/imp_radar_2.mdl	//Scale 2 Model									
+	 "model4" 	 	models/imperial/Buildings/Radar/imp_radar_4.mdl	//Scale 4 Model									
+	 "model8" 	 	models/imperial/Buildings/Radar/imp_radar_8.mdl	//Scale 8 Model									
+	 "model16" 	 	models/imperial/Buildings/Radar/imp_radar_16.mdl	//Scale 16 Model									
+	 "model32" 	 	models/imperial/Buildings/Radar/imp_radar_32.mdl	//Scale 32 Model									
+	 "cost" 		600						//Cost of the building				
+	 "max health"	 	200						//Max Possible Health				
+	 "starting health"	25						//Starting Health when built (25% of Max)					
+	 "damaged model" 	models/imperial/Buildings/Radar/imp_radar.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)										
+	 "damaged threshold"	50						//Health Value to display the damaged model					
+	 "destroyed model"	models/imperial/Buildings/Radar/imp_radar.mdl	//Model to display when building is destroyed	(Defaults to "model" field)									
+	 "vehicle physbox"	models/imperial/Buildings/radar/imp_radar_vehiclephysbox.mdl //Physbox Model	
+
+	 "recycle time"		30								// Recycle time for the building
+	 "carcass removal time" "30"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "6"
+
+	"hint"			"This is the Brenodi Empire Radar. This building is needed to conduct download new schematics (research). It also shows enemy vehicles within a certain radius on the minimap."
+													
+	 //RESISTANCES												
+													
+	 "GeneralPhysicsResist"		0.85					//General Physics Tree Damage 					
+	 "GeneralChemistryResist"  	0.85				//General Chemistry Tree Damage							
+	 "GeneralMechanicalResist" 	0.85					//General Mechanic Tree Damage						
+	 "GeneralElectricResist"  	0.85					//General Electric Tree Damage						
+	 "GeneralBiologicalResist"	0.85					//General Biological Tree Damage						
+													
+	 "KineticResist" 		0.85					//Railguns, Standard Cannons, Anything that is just force					
+	 "ExplosiveResist" 		0.85					//HE, Nukes, anything that explodes					
+	 "BioResist" 			0.85					//Has the bio effect				
+													
+	 "BulletResist" 		1					//Non Armor damaging					
+	 "APBulletResist" 		0.875					// Armor Damaging					
+	 "BulletExplosiveResist" 	0.80				//Bullets that Explode							
+													
+	 "MissileResist" 		0.85					//Generic Missle type of damage					
+	 "MissileExplosiveResist" 	0.85					//Explosive type.						
+	 "MissileBioResist" 		0.85					//Bio Missiles.  Different then Bio?					
+													
+	 "KineticArtResist" 		0.85					//Kinetic Artillery					
+	 "ExplosiveArtResist" 		0.85					// Explosive Artillery					
+	 "BioArtResist" 		0.85				//Bio Artillery						
+													
+	 "AircraftMissileResist" 	0.85					// Aircraft Missiles						
+	 "AircraftGroundMissleResist" 	0.85					// Aircraft Missiles to hit ground targets						
+	 "AircraftBulletResist" 	0.85				//Aircraft to Aircraft bullets							
+	 "AircraftAPBulletResist" 	0.85				//Aircraft Bullets to hit ground targets							
+	 "AircraftBombResist" 		0.85				//Bombs						
+	 "AircraftBombBioResist" 	0.85				//Bio Bombs?							
+													
+	 "InfantryGrenadeResist" 	0.9					//Player Thrown Grenades						
+	 "InfantryMineResist" 		0.9					//Player Tossed Mines					
+	 "InfantryMissileResist" 	0.95					//Gren Missles						
+	 "InfantryMortarResist" 	0.8					//Gren Mortars						
+	 "InfantryStickyResist" 	0.85					//Sticky Grenades						
+	 "InfantrySeismicResist" 	0					//Seismic Grenades						
+	 "InfantryBulletResist" 	1					//Just In Case						
+	 "InfantryUtilityResist"	1					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		1					//Infantry melee
+													
+	 "ExtraType1Resist" 		0.5					//Anti Building weapons					
+	 "ExtraType2Resist" 		0.75					//Again					
+	 "ExtraType3Resist" 		0.75					//and a third					
+													
+	//BOUNDARY VECTORS												
+													
+	 "MinColBoundX" "-420"  //Minimum Collision Bound												
+	 "MinColBoundY" "-420"  //Used to calculate the "footprint" that the												
+	 "MinColBoundZ" "0"    //Building takes up												
+													
+	 "MaxColBoundX" "420" //Maximum Collision Bound												
+	 "MaxColBoundY" "420"												
+	 "MaxColBoundZ" "450"												
+	}												
+													
+	//8												
+	NFRadar												
+	{												
+	 "name" 		NFRadar					//Name of the Building
+
+	 "spotted name"		"Radar"	
+													
+	 "model" 		models/NF/Buildings/Radar/nf_radar.mdl	//Standard Model									
+	 "model2" 	 	models/NF/Buildings/Radar/nf_radar_2.mdl	//Scale 2 Model									
+	 "model4" 	 	models/NF/Buildings/Radar/nf_radar_4.mdl	//Scale 4 Model									
+	 "model8" 	 	models/NF/Buildings/Radar/nf_radar_8.mdl	//Scale 8 Model									
+	 "model16" 	 	models/NF/Buildings/Radar/nf_radar_16.mdl	//Scale 16 Model									
+	 "model32" 	 	models/NF/Buildings/Radar/nf_radar_32.mdl	//Scale 32 Model									
+	 "cost" 		600						//Cost of the building				
+	 "max health"	 	200						//Max Possible Health				
+	 "starting health"	25						//Starting Health when built (25% of Max)					
+	 "damaged model" 	models/NF/Buildings/Radar/nf_radar.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)										
+	 "damaged threshold"	50						//Health Value to display the damaged model					
+	 "destroyed model"	models/NF/Buildings/Radar/nf_radar.mdl	//Model to display when building is destroyed	(Defaults to "model" field)									
+	 "vehicle physbox"	models/NF/Buildings/radar/nf_radar_vehiclephysbox.mdl //Physbox Model	
+
+	 "recycle time"		30								// Recycle time for the building
+	 "carcass removal time" "30"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "7"
+
+	"hint"			"This is the Northern Faction Radar. This building is needed to conduct download new schematics (research). It also shows enemy vehicles within a certain radius on the minimap."
+													
+	 //RESISTANCES												
+													
+	 "GeneralPhysicsResist"		0.85					//General Physics Tree Damage 					
+	 "GeneralChemistryResist"  	0.85				//General Chemistry Tree Damage							
+	 "GeneralMechanicalResist" 	0.85					//General Mechanic Tree Damage						
+	 "GeneralElectricResist"  	0.85					//General Electric Tree Damage						
+	 "GeneralBiologicalResist"	0.85					//General Biological Tree Damage						
+													
+	 "KineticResist" 		0.85					//Railguns, Standard Cannons, Anything that is just force					
+	 "ExplosiveResist" 		0.85					//HE, Nukes, anything that explodes					
+	 "BioResist" 			0.85					//Has the bio effect				
+													
+	 "BulletResist" 		1					//Non Armor damaging					
+	 "APBulletResist" 		0.875					// Armor Damaging					
+	 "BulletExplosiveResist" 	0.80				//Bullets that Explode							
+													
+	 "MissileResist" 		0.85					//Generic Missle type of damage					
+	 "MissileExplosiveResist" 	0.85					//Explosive type.						
+	 "MissileBioResist" 		0.85					//Bio Missiles.  Different then Bio?					
+													
+	 "KineticArtResist" 		0.85					//Kinetic Artillery					
+	 "ExplosiveArtResist" 		0.85					// Explosive Artillery					
+	 "BioArtResist" 		0.85				//Bio Artillery						
+													
+	 "AircraftMissileResist" 	0.85					// Aircraft Missiles						
+	 "AircraftGroundMissleResist" 	0.85					// Aircraft Missiles to hit ground targets						
+	 "AircraftBulletResist" 	0.85				//Aircraft to Aircraft bullets							
+	 "AircraftAPBulletResist" 	0.85				//Aircraft Bullets to hit ground targets							
+	 "AircraftBombResist" 		0.85				//Bombs						
+	 "AircraftBombBioResist" 	0.85				//Bio Bombs?							
+													
+	 "InfantryGrenadeResist" 	0.9					//Player Thrown Grenades						
+	 "InfantryMineResist" 		0.9					//Player Tossed Mines					
+	 "InfantryMissileResist" 	0.95					//Gren Missles						
+	 "InfantryMortarResist" 	0.8					//Gren Mortars						
+	 "InfantryStickyResist" 	0.85					//Sticky Grenades						
+	 "InfantrySeismicResist" 	0					//Seismic Grenades						
+	 "InfantryBulletResist" 	1					//Just In Case						
+	 "InfantryUtilityResist"	1					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		1					//Infantry melee
+														
+	 "ExtraType1Resist" 		0.5					//Anti Building weapons					
+	 "ExtraType2Resist" 		0.75					//Again					
+	 "ExtraType3Resist" 		0.75					//and a third					
+													
+	//BOUNDARY VECTORS												
+													
+	 "MinColBoundX" "-400"  //Minimum Collision Bound												
+	 "MinColBoundY" "-400"  //Used to calculate the "footprint" that the												
+	 "MinColBoundZ" "0"    //Building takes up												
+													
+	 "MaxColBoundX" "400" //Maximum Collision Bound												
+	 "MaxColBoundY" "400"												
+	 "MaxColBoundZ" "400"												
+	}												
+													
+	//9												
+	ImpRefinery												
+	{												
+	 "name" 		ImpRefinery					//Name of the Building
+
+	 "spotted name"		"Refinery"	
+													
+	 "model" 		models/imperial/Buildings/refinery/imp_refinery.mdl	//Standard Model									
+	 "model2" 	 	models/imperial/Buildings/refinery/imp_refinery_2.mdl	//Scale 2 Model									
+	 "model4" 	 	models/imperial/Buildings/refinery/imp_refinery_4.mdl	//Scale 4 Model									
+	 "model8" 	 	models/imperial/Buildings/refinery/imp_refinery_8.mdl	//Scale 8 Model									
+	 "model16" 	 	models/imperial/Buildings/refinery/imp_refinery_16.mdl	//Scale 16 Model									
+	 "model32" 	 	models/imperial/Buildings/refinery/imp_refinery_32.mdl	//Scale 32 Model									
+	 "cost" 		100						//Cost of the building				
+	 "max health"	 	150						//Max Possible Health				
+	 "starting health"	25						//Starting Health when built (25% of Max)					
+	 "damaged model" 	models/imperial/Buildings/refinery/imp_refinery.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)										
+	 "damaged threshold"	50						//Health Value to display the damaged model					
+	 "destroyed model"	models/imperial/Buildings/refinery/imp_refinery.mdl	//Model to display when building is destroyed	(Defaults to "model" field)									
+	 "vehicle physbox"	models/imperial/Buildings/refinery/imp_refinery_vehiclephysbox.mdl //Physbox Model
+
+	 "recycle time"		30								// Recycle time for the building
+	 "carcass removal time" "15"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "8"
+
+	"hint"			"This is the Brenodi Empire Refinery. It continually generates resources (res or money) for your or the enemy team. These can only be placed on refinery spots (usually indicated by smoke)"
+													
+	 //RESISTANCES												
+													
+	 "GeneralPhysicsResist"		0.85					//General Physics Tree Damage 					
+	 "GeneralChemistryResist"  	0.85				//General Chemistry Tree Damage							
+	 "GeneralMechanicalResist" 	0.85					//General Mechanic Tree Damage						
+	 "GeneralElectricResist"  	0.85					//General Electric Tree Damage						
+	 "GeneralBiologicalResist"	0.85					//General Biological Tree Damage						
+													
+	 "KineticResist" 		0.85					//Railguns, Standard Cannons, Anything that is just force					
+	 "ExplosiveResist" 		0.85					//HE, Nukes, anything that explodes					
+	 "BioResist" 			0.85					//Has the bio effect				
+													
+	 "BulletResist" 		1					//Non Armor damaging					
+	 "APBulletResist" 		0.875					// Armor Damaging					
+	 "BulletExplosiveResist" 	0.80				//Bullets that Explode							
+													
+	 "MissileResist" 		0.85					//Generic Missle type of damage					
+	 "MissileExplosiveResist" 	0.85					//Explosive type.						
+	 "MissileBioResist" 		0.85					//Bio Missiles.  Different then Bio?					
+													
+	 "KineticArtResist" 		0.85					//Kinetic Artillery					
+	 "ExplosiveArtResist" 		0.85					// Explosive Artillery					
+	 "BioArtResist" 		0.85				//Bio Artillery						
+													
+	 "AircraftMissileResist" 	0.85					// Aircraft Missiles						
+	 "AircraftGroundMissleResist" 	0.85					// Aircraft Missiles to hit ground targets						
+	 "AircraftBulletResist" 	0.85				//Aircraft to Aircraft bullets							
+	 "AircraftAPBulletResist" 	0.85				//Aircraft Bullets to hit ground targets							
+	 "AircraftBombResist" 		0.85				//Bombs						
+	 "AircraftBombBioResist" 	0.85				//Bio Bombs?							
+													
+	 "InfantryGrenadeResist" 	0.9					//Player Thrown Grenades						
+	 "InfantryMineResist" 		0.9					//Player Tossed Mines					
+	 "InfantryMissileResist" 	0.95					//Gren Missles						
+	 "InfantryMortarResist" 	0.85					//Gren Mortars						
+	 "InfantryStickyResist" 	0.85					//Sticky Grenades						
+	 "InfantrySeismicResist" 	0.2					//Seismic Grenades						
+	 "InfantryBulletResist" 	1					//Just In Case						
+	 "InfantryUtilityResist"	1					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		1					//Infantry melee
+														
+	 "ExtraType1Resist" 		0.5					//Anti Building weapons					
+	 "ExtraType2Resist" 		0.75					//Again					
+	 "ExtraType3Resist" 		0.75					//and a third							
+													
+	//BOUNDARY VECTORS												
+													
+	 "MinColBoundX" "-240"  //Minimum Collision Bound												
+	 "MinColBoundY" "-240"  //Used to calculate the "footprint" that the												
+	 "MinColBoundZ" "0"    //Building takes up												
+													
+	 "MaxColBoundX" "240" //Maximum Collision Bound												
+	 "MaxColBoundY" "240"												
+	 "MaxColBoundZ" "220"												
+	}												
+													
+	//10												
+	NFRefinery												
+	{												
+	 "name" 		NFRefinery					//Name of the Building
+
+	 "spotted name"		"Refinery"	
+													
+	 "model" 		models/NF/Buildings/refinery/nf_refinery.mdl	//Standard Model									
+	 "model2" 	 	models/NF/Buildings/refinery/nf_refinery_2.mdl	//Scale 2 Model									
+	 "model4" 	 	models/NF/Buildings/refinery/nf_refinery_4.mdl	//Scale 4 Model									
+	 "model8" 	 	models/NF/Buildings/refinery/nf_refinery_8.mdl	//Scale 8 Model									
+	 "model16" 	 	models/NF/Buildings/refinery/nf_refinery_16.mdl	//Scale 16 Model									
+	 "model32" 	 	models/NF/Buildings/refinery/nf_refinery_32.mdl	//Scale 32 Model									
+	 "cost" 		100						//Cost of the building				
+	 "max health"	 	150						//Max Possible Health				
+	 "starting health"	25						//Starting Health when built (25% of Max)					
+	 "damaged model" 	models/NF/Buildings/refinery/nf_refinery.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)										
+	 "damaged threshold"	50						//Health Value to display the damaged model					
+	 "destroyed model"	models/NF/Buildings/refinery/nf_refinery.mdl	//Model to display when building is destroyed	(Defaults to "model" field)									
+	 "vehicle physbox"	models/NF/Buildings/refinery/nf_refinery_vehiclephysbox.mdl //Physbox Model	
+
+	 "recycle time"		30								// Recycle time for the building
+	 "carcass removal time" "15"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "9"
+
+	"hint"			"This is the Northern Faction Refinery. It continually generates resources (res or money) for your or the enemy team. These can only be placed on refinery spots (usually indicated by smoke)"
+													
+	 //RESISTANCES												
+													
+	 "GeneralPhysicsResist"		0.9					//General Physics Tree Damage 					
+	 "GeneralChemistryResist"  	0.9				//General Chemistry Tree Damage							
+	 "GeneralMechanicalResist" 	0.9					//General Mechanic Tree Damage						
+	 "GeneralElectricResist"  	0.9					//General Electric Tree Damage						
+	 "GeneralBiologicalResist"	0.9					//General Biological Tree Damage						
+													
+	 "KineticResist" 		0.9					//Railguns, Standard Cannons, Anything that is just force					
+	 "ExplosiveResist" 		0.9					//HE, Nukes, anything that explodes					
+	 "BioResist" 			0.9					//Has the bio effect				
+													
+	 "BulletResist" 		1					//Non Armor damaging					
+	 "APBulletResist" 		0.875					// Armor Damaging					
+	 "BulletExplosiveResist" 	0.80				//Bullets that Explode							
+													
+	 "MissileResist" 		0.9					//Generic Missle type of damage					
+	 "MissileExplosiveResist" 	0.9					//Explosive type.						
+	 "MissileBioResist" 		0.9					//Bio Missiles.  Different then Bio?					
+													
+	 "KineticArtResist" 		0.85					//Kinetic Artillery					
+	 "ExplosiveArtResist" 		0.85					// Explosive Artillery					
+	 "BioArtResist" 		0.85				//Bio Artillery						
+													
+	 "AircraftMissileResist" 	0.85					// Aircraft Missiles						
+	 "AircraftGroundMissleResist" 	0.85					// Aircraft Missiles to hit ground targets						
+	 "AircraftBulletResist" 	0.85				//Aircraft to Aircraft bullets							
+	 "AircraftAPBulletResist" 	0.85				//Aircraft Bullets to hit ground targets							
+	 "AircraftBombResist" 		0.85				//Bombs						
+	 "AircraftBombBioResist" 	0.85				//Bio Bombs?							
+													
+	 "InfantryGrenadeResist" 	0.9					//Player Thrown Grenades						
+	 "InfantryMineResist" 		0.9					//Player Tossed Mines					
+	 "InfantryMissileResist" 	0.95					//Gren Missles						
+	 "InfantryMortarResist" 	0.85					//Gren Mortars						
+	 "InfantryStickyResist" 	0.85					//Sticky Grenades						
+	 "InfantrySeismicResist" 	0.2					//Seismic Grenades						
+	 "InfantryBulletResist" 	1					//Just In Case						
+	 "InfantryUtilityResist"	1					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		1					//Infantry melee
+														
+	 "ExtraType1Resist" 		0.5					//Anti Building weapons					
+	 "ExtraType2Resist" 		0.75					//Again					
+	 "ExtraType3Resist" 		0.75					//and a third						
+													
+	//BOUNDARY VECTORS												
+													
+	 "MinColBoundX" "-250"  //Minimum Collision Bound												
+	 "MinColBoundY" "-250"  //Used to calculate the "footprint" that the												
+	 "MinColBoundZ" "0"    //Building takes up												
+													
+	 "MaxColBoundX" "250" //Maximum Collision Bound												
+	 "MaxColBoundY" "250"												
+	 "MaxColBoundZ" "250"												
+	}												
+													
+	//11												
+	ImpRepair												
+	{												
+	 "name" 		ImpRepair					//Name of the Building
+
+	 "spotted name"		"Repair Pad"	
+													
+	 "model" 		models/imperial/Buildings/repairpad/imp_repairpad.mdl	//Standard Model									
+	 "model2" 	 	models/imperial/Buildings/repairpad/imp_repairpad_2.mdl	//Scale 2 Model									
+	 "model4" 	 	models/imperial/Buildings/repairpad/imp_repairpad_4.mdl	//Scale 4 Model									
+	 "model8" 	 	models/imperial/Buildings/repairpad/imp_repairpad_8.mdl	//Scale 8 Model									
+	 "model16" 	 	models/imperial/Buildings/repairpad/imp_repairpad_16.mdl	//Scale 16 Model									
+	 "model32" 	 	models/imperial/Buildings/repairpad/imp_repairpad_32.mdl	//Scale 32 Model									
+	 "cost" 		250						//Cost of the building				
+	 "max health"	 	175						//Max Possible Health				
+	 "starting health"	25						//Starting Health when built (25% of Max)					
+	 "damaged model" 	models/imperial/Buildings/repairpad/imp_repairpad.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)										
+	 "damaged threshold"	50						//Health Value to display the damaged model					
+	 "destroyed model"	models/imperial/Buildings/repairpad/imp_repairpad.mdl	//Model to display when building is destroyed	(Defaults to "model" field)									
+	 "vehicle physbox"	models/imperial/Buildings/repairpad/imp_repairpad_vehiclephysbox.mdl //Physbox Model
+
+	 "recycle time"		30								// Recycle time for the building
+	 "carcass removal time" "30"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "10"
+
+	"hint"			"This is the Brenodi Empire Repair Pad. Vehicles parked on top of it are automatically being repaired. You can also press %emp_show_vehicle_customization% to change the loadout of your vehicle without getting a new one."
+													
+	 //RESISTANCES												
+													
+	 "GeneralPhysicsResist"		0.85					//General Physics Tree Damage 					
+	 "GeneralChemistryResist"  	0.85				//General Chemistry Tree Damage							
+	 "GeneralMechanicalResist" 	0.85					//General Mechanic Tree Damage						
+	 "GeneralElectricResist"  	0.85					//General Electric Tree Damage						
+	 "GeneralBiologicalResist"	0.85					//General Biological Tree Damage						
+													
+	 "KineticResist" 		0.85					//Railguns, Standard Cannons, Anything that is just force					
+	 "ExplosiveResist" 		0.85					//HE, Nukes, anything that explodes					
+	 "BioResist" 			0.85					//Has the bio effect				
+													
+	 "BulletResist" 		1					//Non Armor damaging					
+	 "APBulletResist" 		0.875					// Armor Damaging					
+	 "BulletExplosiveResist" 	0.80				//Bullets that Explode							
+													
+	 "MissileResist" 		0.85					//Generic Missle type of damage					
+	 "MissileExplosiveResist" 	0.85					//Explosive type.						
+	 "MissileBioResist" 		0.85					//Bio Missiles.  Different then Bio?					
+													
+	 "KineticArtResist" 		0.85					//Kinetic Artillery					
+	 "ExplosiveArtResist" 		0.85					// Explosive Artillery					
+	 "BioArtResist" 		0.85				//Bio Artillery						
+													
+	 "AircraftMissileResist" 	0.85					// Aircraft Missiles						
+	 "AircraftGroundMissleResist" 	0.85					// Aircraft Missiles to hit ground targets						
+	 "AircraftBulletResist" 	0.85				//Aircraft to Aircraft bullets							
+	 "AircraftAPBulletResist" 	0.85				//Aircraft Bullets to hit ground targets							
+	 "AircraftBombResist" 		0.85				//Bombs						
+	 "AircraftBombBioResist" 	0.85				//Bio Bombs?							
+													
+	 "InfantryGrenadeResist" 	0.9					//Player Thrown Grenades						
+	 "InfantryMineResist" 		0.9					//Player Tossed Mines					
+	 "InfantryMissileResist" 	0.95					//Gren Missles						
+	 "InfantryMortarResist" 	0.8					//Gren Mortars						
+	 "InfantryStickyResist" 	0.85					//Sticky Grenades						
+	 "InfantrySeismicResist" 	0					//Seismic Grenades						
+	 "InfantryBulletResist" 	1					//Just In Case						
+	 "InfantryUtilityResist"	1					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		1					//Infantry melee
+														
+	 "ExtraType1Resist" 		0.5					//Anti Building weapons					
+	 "ExtraType2Resist" 		0.75					//Again					
+	 "ExtraType3Resist" 		0.75					//and a third						
+													
+	//BOUNDARY VECTORS												
+													
+	 "MinColBoundX" "-520"  //Minimum Collision Bound												
+	 "MinColBoundY" "-520"  //Used to calculate the "footprint" that the												
+	 "MinColBoundZ" "0"    //Building takes up												
+													
+	 "MaxColBoundX" "520" //Maximum Collision Bound												
+	 "MaxColBoundY" "520"												
+	 "MaxColBoundZ" "300"												
+	}												
+													
+	//12												
+	NFRepair												
+	{												
+	 "name" 		NFRepair					//Name of the Building
+
+	 "spotted name"		"Repair Pad"	
+													
+	 "model" 		models/NF/Buildings/repairpad/nf_repairpad.mdl	//Standard Model									
+	 "model2" 	 	models/NF/Buildings/repairpad/nf_repairpad_2.mdl	//Scale 2 Model									
+	 "model4" 	 	models/NF/Buildings/repairpad/nf_repairpad_4.mdl	//Scale 4 Model									
+	 "model8" 	 	models/NF/Buildings/repairpad/nf_repairpad_8.mdl	//Scale 8 Model									
+	 "model16" 	 	models/NF/Buildings/repairpad/nf_repairpad_16.mdl	//Scale 16 Model									
+	 "model32" 	 	models/NF/Buildings/repairpad/nf_repairpad_32.mdl	//Scale 32 Model									
+	 "cost" 		250						//Cost of the building				
+	 "max health"	 	175						//Max Possible Health				
+	 "starting health"	25						//Starting Health when built (25% of Max)					
+	 "damaged model" 	models/NF/Buildings/repairpad/nf_repairpad.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)										
+	 "damaged threshold"	50						//Health Value to display the damaged model					
+	 "destroyed model"	models/NF/Buildings/repairpad/nf_repairpad.mdl	//Model to display when building is destroyed	(Defaults to "model" field)									
+	 "vehicle physbox"	models/NF/Buildings/repairpad/nf_repairpad_vehiclephysbox.mdl //Physbox Model	
+
+	 "recycle time"		30								// Recycle time for the building
+	 "carcass removal time" "30"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "11"
+
+	"hint"			"This is the Northern Faction Repair Pad. Vehicles parked on top of it are automatically being repaired. You can also press %emp_show_vehicle_customization% to change the loadout of your vehicle without getting a new one."
+													
+	 //RESISTANCES												
+													
+	 "GeneralPhysicsResist"		0.85					//General Physics Tree Damage 					
+	 "GeneralChemistryResist"  	0.85				//General Chemistry Tree Damage							
+	 "GeneralMechanicalResist" 	0.85					//General Mechanic Tree Damage						
+	 "GeneralElectricResist"  	0.85					//General Electric Tree Damage						
+	 "GeneralBiologicalResist"	0.85					//General Biological Tree Damage						
+													
+	 "KineticResist" 		0.85					//Railguns, Standard Cannons, Anything that is just force					
+	 "ExplosiveResist" 		0.85					//HE, Nukes, anything that explodes					
+	 "BioResist" 			0.85					//Has the bio effect				
+													
+	 "BulletResist" 		1					//Non Armor damaging					
+	 "APBulletResist" 		0.875					// Armor Damaging					
+	 "BulletExplosiveResist" 	0.80				//Bullets that Explode							
+													
+	 "MissileResist" 		0.85					//Generic Missle type of damage					
+	 "MissileExplosiveResist" 	0.85					//Explosive type.						
+	 "MissileBioResist" 		0.85					//Bio Missiles.  Different then Bio?					
+													
+	 "KineticArtResist" 		0.85					//Kinetic Artillery					
+	 "ExplosiveArtResist" 		0.85					// Explosive Artillery					
+	 "BioArtResist" 		0.85				//Bio Artillery						
+													
+	 "AircraftMissileResist" 	0.85					// Aircraft Missiles						
+	 "AircraftGroundMissleResist" 	0.85					// Aircraft Missiles to hit ground targets						
+	 "AircraftBulletResist" 	0.85				//Aircraft to Aircraft bullets							
+	 "AircraftAPBulletResist" 	0.85				//Aircraft Bullets to hit ground targets							
+	 "AircraftBombResist" 		0.85				//Bombs						
+	 "AircraftBombBioResist" 	0.85				//Bio Bombs?							
+													
+	 "InfantryGrenadeResist" 	0.9					//Player Thrown Grenades						
+	 "InfantryMineResist" 		0.9					//Player Tossed Mines					
+	 "InfantryMissileResist" 	0.95					//Gren Missles						
+	 "InfantryMortarResist" 	0.8					//Gren Mortars						
+	 "InfantryStickyResist" 	0.85					//Sticky Grenades						
+	 "InfantrySeismicResist" 	0					//Seismic Grenades						
+	 "InfantryBulletResist" 	1					//Just In Case						
+	 "InfantryUtilityResist"	1					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		1					//Infantry melee
+														
+	 "ExtraType1Resist" 		0.5					//Anti Building weapons					
+	 "ExtraType2Resist" 		0.75					//Again					
+	 "ExtraType3Resist" 		0.75					//and a third							
+													
+	//BOUNDARY VECTORS												
+													
+	 "MinColBoundX" "-550"  //Minimum Collision Bound												
+	 "MinColBoundY" "-550"  //Used to calculate the "footprint" that the												
+	 "MinColBoundZ" "0"    //Building takes up												
+													
+	 "MaxColBoundX" "550" //Maximum Collision Bound												
+	 "MaxColBoundY" "550"												
+	 "MaxColBoundZ" "450"												
+	}
+
+	//13									
+	ImpMGTurret								
+	{								
+	 "name" 		ImpMGTurret					//Name of the Building
+
+	 "spotted name"		"MG Turret"	
+									
+	 "model" 		models/imperial/turrets/mg_lvl1/imp_turret_mg_lvl1.mdl	//Standard Model					
+	 "model2" 	 	models/imperial/turrets/mg_lvl1/imp_turret_mg_lvl1_2.mdl	//Scale 2 Model					
+	 "model4" 	 	models/imperial/turrets/mg_lvl1/imp_turret_mg_lvl1_4.mdl	//Scale 4 Model					
+	 "model8" 	 	models/imperial/turrets/mg_lvl1/imp_turret_mg_lvl1_8.mdl	//Scale 8 Model					
+	 "model16" 	 	models/imperial/turrets/mg_lvl1/imp_turret_mg_lvl1_16.mdl	//Scale 16 Model					
+	 "model32" 	 	models/imperial/turrets/mg_lvl1/imp_turret_mg_lvl1_32.mdl	//Scale 32 Model
+     "gib suffix"    "_gib"
+     "gib count level 1"    "3"      
+     "gib count level 2"    "5"      
+     "gib count level 3"    "5"      
+	 "cost" 		50						//Cost of the building
+	 "max health"	 	100						//Max Possible Health
+	 "starting health"	25						//Starting Health when built (25% of Max)	
+	 "damaged model" 	models/imperial/turrets/mg_lvl1/imp_turret_mg_lvl1.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)						
+	 "damaged threshold"	50						//Health Value to display the damaged model	
+	 "destroyed model"	models/imperial/turrets/mg_lvl1/imp_turret_mg_lvl1.mdl	//Model to display when building is destroyed	(Defaults to "model" field)					
+	 "vehicle physbox"	models/imperial/turrets/mg_lvl1/imp_turret_mg_lvl1.mdl //Physbox Model							
+									
+	 "level 2"		models/imperial/turrets/mg_lvl2/imp_turret_mg_lvl2.mdl //Turret Only: Level 2 model						
+	 "level 3"		models/imperial/turrets/mg_lvl3/imp_turret_mg_lvl3.mdl //Turret Only: Level 3 model
+     "turret range level 1"         "2000"
+     "turret range level 2"         "3000"
+     "turret range level 3"         "4000"
+     "turret rof level 1"           "0.14"
+     "turret rof level 2"           "0.07"
+     "turret rof level 3"           "0.035"
+     "turret turn speed level 1"    "125"
+     "turret turn speed level 2"    "250"
+     "turret turn speed level 3"    "375"
+     "turret starting hp level 1"   "25"
+     "turret starting hp level 2"   "25"
+     "turret starting hp level 3"   "25"
+     "turret max hp level 1"   "100"
+     "turret max hp level 2"   "100"
+     "turret max hp level 3"   "100"
+
+	 "recycle time"		5								// Recycle time for the building
+	 "carcass removal time" "1"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "12"
+
+	"hint"			"This is the Brenodi Empire MG Turret. It automatically shoots at enemy infantry units."
+									
+		 //RESISTANCES							
+									
+	 "GeneralPhysicsResist"		0.70					//General Physics Tree Damage 	
+	 "GeneralChemistryResist"  	0.70					//General Chemistry Tree Damage		
+	 "GeneralMechanicalResist" 	0.70					//General Mechanic Tree Damage		
+	 "GeneralElectricResist"  	0.70					//General Electric Tree Damage		
+	 "GeneralBiologicalResist"	0.70					//General Biological Tree Damage		
+									
+	 "KineticResist" 		0.70					//Railguns, Standard Cannons, Anything that is just force	
+	 "ExplosiveResist" 		0.70					//HE, Nukes, anything that explodes	
+	 "BioResist" 			0.70					//Has the bio effect
+									
+	 "BulletResist" 		1					//Non Armor damaging	
+	 "APBulletResist" 		0.70					// Armor Damaging	
+	 "BulletExplosiveResist" 	0.70				//Bullets that Explode			
+									
+	 "MissileResist" 		0.65					//Generic Missle type of damage	
+	 "MissileExplosiveResist" 	0.65					//Explosive type.		
+	 "MissileBioResist" 		0.65					//Bio Missiles.  Different then Bio?	
+									
+	 "KineticArtResist" 		0.70					//Kinetic Artillery	
+	 "ExplosiveArtResist" 		0.70					// Explosive Artillery	
+	 "BioArtResist" 		0.70				//Bio Artillery		
+									
+	 "AircraftMissileResist" 	0.70					// Aircraft Missiles		
+	 "AircraftGroundMissleResist" 	0.70					// Aircraft Missiles to hit ground targets		
+	 "AircraftBulletResist" 	0.70				//Aircraft to Aircraft bullets			
+	 "AircraftAPBulletResist" 	0.70					//Aircraft Bullets to hit ground targets		
+	 "AircraftBombResist" 		0.70				//Bombs		
+	 "AircraftBombBioResist" 	0.70					//Bio Bombs?		
+									
+	 "InfantryGrenadeResist" 	0.80					//Player Thrown Grenades		
+	 "InfantryMineResist" 		0.9					//Player Tossed Mines	
+	 "InfantryMissileResist" 	0.70					//Gren Missles		
+	 "InfantryMortarResist" 	0.70					//Gren Mortars			
+	 "InfantryStickyResist" 	0.66					//Sticky Grenades		
+	 "InfantrySeismicResist" 	-0.70					//Seismic Grenades		
+	 "InfantryBulletResist" 	1					//Just In Case		
+	 "InfantryUtilityResist"	0.9					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		1					//Infantry melee
+										
+	 "ExtraType1Resist" 		0.65					//Anti Building weapons	
+	 "ExtraType2Resist" 		0.6					//Again	
+	 "ExtraType3Resist" 		0.6					//and a third
+									
+	//BOUNDARY VECTORS								
+									
+	 "MinColBoundX" "-80"  //Minimum Collision Bound								
+	 "MinColBoundY" "-80"  //Used to calculate the "footprint" that the								
+	 "MinColBoundZ" "0"    //Building takes up								
+									
+	 "MaxColBoundX" "80" //Maximum Collision Bound								
+	 "MaxColBoundY" "80"								
+	 "MaxColBoundZ" "80"								
+	}								
+									
+	//14								
+	NFMGTurret								
+	{								
+	 "name" 		NFMGTurret					//Name of the Building
+
+	 "spotted name"		"MG Turret"	
+									
+	 "model" 		models/NF/turrets/mg_lvl1/nf_turret_mg_lvl1.mdl	//Standard Model					
+	 "model2" 	 	models/NF/turrets/mg_lvl1/nf_turret_mg_lvl1_2.mdl	//Scale 2 Model					
+	 "model4" 	 	models/NF/turrets/mg_lvl1/nf_turret_mg_lvl1_4.mdl	//Scale 4 Model					
+	 "model8" 	 	models/NF/turrets/mg_lvl1/nf_turret_mg_lvl1_8.mdl	//Scale 8 Model					
+	 "model16" 	 	models/NF/turrets/mg_lvl1/nf_turret_mg_lvl1_16.mdl	//Scale 16 Model					
+	 "model32" 	 	models/NF/turrets/mg_lvl1/nf_turret_mg_lvl1_32.mdl	//Scale 32 Model
+     "gib suffix"    "_gib"
+     "gib count level 1"    "5"      
+     "gib count level 2"    "4"      
+     "gib count level 3"    "4"  
+	 "cost" 		50						//Cost of the building
+	 "max health"	 	100						//Max Possible Health
+	 "starting health"	25						//Starting Health when built (25% of Max)	
+	 "damaged model" 	models/NF/turrets/mg_lvl1/nf_turret_mg_lvl1.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)						
+	 "damaged threshold"	50						//Health Value to display the damaged model	
+	 "destroyed model"	models/NF/turrets/mg_lvl1/nf_turret_mg_lvl1.mdl	//Model to display when building is destroyed	(Defaults to "model" field)					
+	 "vehicle physbox"	models/NF/turrets/mg_lvl1/nf_turret_mg_lvl1.mdl //Physbox Model							
+									
+	 "level 2"		models/NF/turrets/mg_lvl2/nf_turret_mg_lvl2.mdl //Turret Only: Level 2 model						
+	 "level 3"		models/NF/turrets/mg_lvl3/nf_turret_mg_lvl3.mdl //Turret Only: Level 3 model
+
+     "turret range level 1"         "2000"
+     "turret range level 2"         "3000"
+     "turret range level 3"         "4000"
+     "turret rof level 1"           "0.14"
+     "turret rof level 2"           "0.07"
+     "turret rof level 3"           "0.035"
+     "turret turn speed level 1"    "125"
+     "turret turn speed level 2"    "250"
+     "turret turn speed level 3"    "375"
+     "turret starting hp level 1"   "25"
+     "turret starting hp level 2"   "25"
+     "turret starting hp level 3"   "25"
+     "turret max hp level 1"   "100"
+     "turret max hp level 2"   "100"
+     "turret max hp level 3"   "100"     
+
+	 "recycle time"		5								// Recycle time for the building
+	 "carcass removal time" "1"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "13"
+	"hint"			"This is the Northern Faction MG Turret. It automatically shoots at enemy infantry units."
+									
+		 //RESISTANCES							
+									
+	 "GeneralPhysicsResist"		0.70					//General Physics Tree Damage 	
+	 "GeneralChemistryResist"  	0.70					//General Chemistry Tree Damage		
+	 "GeneralMechanicalResist" 	0.70					//General Mechanic Tree Damage		
+	 "GeneralElectricResist"  	0.70					//General Electric Tree Damage		
+	 "GeneralBiologicalResist"	0.70					//General Biological Tree Damage		
+									
+	 "KineticResist" 		0.70					//Railguns, Standard Cannons, Anything that is just force	
+	 "ExplosiveResist" 		0.70					//HE, Nukes, anything that explodes	
+	 "BioResist" 			0.70					//Has the bio effect
+									
+	 "BulletResist" 		1					//Non Armor damaging	
+	 "APBulletResist" 		0.70					// Armor Damaging	
+	 "BulletExplosiveResist" 	0.70				//Bullets that Explode			
+									
+	 "MissileResist" 		0.65					//Generic Missle type of damage	
+	 "MissileExplosiveResist" 	0.65					//Explosive type.		
+	 "MissileBioResist" 		0.65					//Bio Missiles.  Different then Bio?	
+									
+	 "KineticArtResist" 		0.70					//Kinetic Artillery	
+	 "ExplosiveArtResist" 		0.70					// Explosive Artillery	
+	 "BioArtResist" 		0.70				//Bio Artillery		
+									
+	 "AircraftMissileResist" 	0.70					// Aircraft Missiles		
+	 "AircraftGroundMissleResist" 	0.70					// Aircraft Missiles to hit ground targets		
+	 "AircraftBulletResist" 	0.70				//Aircraft to Aircraft bullets			
+	 "AircraftAPBulletResist" 	0.70					//Aircraft Bullets to hit ground targets		
+	 "AircraftBombResist" 		0.70				//Bombs		
+	 "AircraftBombBioResist" 	0.70					//Bio Bombs?		
+									
+	 "InfantryGrenadeResist" 	0.80					//Player Thrown Grenades		
+	 "InfantryMineResist" 		0.9					//Player Tossed Mines	
+	 "InfantryMissileResist" 	0.70					//Gren Missles		
+	 "InfantryMortarResist" 	0.70					//Gren Mortars			
+	 "InfantryStickyResist" 	0.66					//Sticky Grenades		
+	 "InfantrySeismicResist" 	-0.70					//Seismic Grenades		
+	 "InfantryBulletResist" 	1					//Just In Case		
+	 "InfantryUtilityResist"	0.9					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		1					//Infantry melee
+										
+	 "ExtraType1Resist" 		0.65					//Anti Building weapons	
+	 "ExtraType2Resist" 		0.6					//Again	
+	 "ExtraType3Resist" 		0.6					//and a third	
+									
+	//BOUNDARY VECTORS								
+									
+	 "MinColBoundX" "-80"  //Minimum Collision Bound								
+	 "MinColBoundY" "-80"  //Used to calculate the "footprint" that the								
+	 "MinColBoundZ" "0"    //Building takes up								
+									
+	 "MaxColBoundX" "80" //Maximum Collision Bound								
+	 "MaxColBoundY" "80"								
+	 "MaxColBoundZ" "80"								
+	}								
+									
+	//15								
+	ImpMLTurret								
+	{								
+	 "name" 		ImpMLTurret					//Name of the Building
+
+	 "spotted name"		"ML Turret"	
+									
+	 "model" 		models/imperial/turrets/ml_lvl1/imp_turret_ml_lvl1.mdl	//Standard Model					
+	 "model2" 	 	models/imperial/turrets/ml_lvl1/imp_turret_ml_lvl1_2.mdl	//Scale 2 Model					
+	 "model4" 	 	models/imperial/turrets/ml_lvl1/imp_turret_ml_lvl1_4.mdl	//Scale 4 Model					
+	 "model8" 	 	models/imperial/turrets/ml_lvl1/imp_turret_ml_lvl1_8.mdl	//Scale 8 Model					
+	 "model16" 	 	models/imperial/turrets/ml_lvl1/imp_turret_ml_lvl1_16.mdl	//Scale 16 Model					
+	 "model32" 	 	models/imperial/turrets/ml_lvl1/imp_turret_ml_lvl1_32.mdl	//Scale 32 Model		
+     "gib suffix"    "_gib"
+     "gib count level 1"    "2"      
+     "gib count level 2"    "2"      
+     "gib count level 3"    "4"  
+	 "cost" 		75						//Cost of the building
+	 "max health"	 	100						//Max Possible Health
+	 "starting health"	25						//Starting Health when built (25% of Max)	
+	 "damaged model" 	models/imperial/turrets/ml_lvl1/imp_turret_ml_lvl1.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)						
+	 "damaged threshold"	50						//Health Value to display the damaged model	
+	 "destroyed model"	models/imperial/turrets/ml_lvl1/imp_turret_ml_lvl1.mdl	//Model to display when building is destroyed	(Defaults to "model" field)					
+	 "vehicle physbox"	models/imperial/turrets/ml_lvl1/imp_turret_ml_lvl1.mdl //Physbox Model							
+	 "level 2"		models/imperial/turrets/ml_lvl2/imp_turret_ml_lvl2.mdl //Turret Only: Level 2 model						
+	 "level 3"		models/imperial/turrets/ml_lvl3/imp_turret_ml_lvl3.mdl //Turret Only: Level 3 model
+     
+     "turret range level 1"         "3000"
+     "turret range level 2"         "4000"
+     "turret range level 3"         "5000"
+     "turret rof level 1"           "7"
+     "turret rof level 2"           "5"
+     "turret rof level 3"           "3"
+     "turret turn speed level 1"    "225"
+     "turret turn speed level 2"    "350"
+     "turret turn speed level 3"    "475"
+     "turret turn missile level 1"  "1000"
+     "turret turn missile level 2"  "1400"
+     "turret turn missile level 3"  "1800"
+     "turret starting hp level 1"   "25"
+     "turret starting hp level 2"   "25"
+     "turret starting hp level 3"   "25"
+     "turret max hp level 1"   "100"
+     "turret max hp level 2"   "100"
+     "turret max hp level 3"   "100"
+     
+	 "Explosion Sprite Lvl 1"	0
+	 "Explosion Sprite Lvl 2"	0
+	 "Explosion Sprite Lvl 3"	0
+
+	 "Damage Type" 		"Missile"
+	 "recycle time"		5								// Recycle time for the building
+	 "carcass removal time" "1"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "14"
+
+	"hint"			"This is the Brenodi Empire Missile Launcher Turret. It automatically shoots at enemy vehicles."
+									
+		 //RESISTANCES							
+									
+	 "GeneralPhysicsResist"		0.70					//General Physics Tree Damage 	
+	 "GeneralChemistryResist"  	0.70					//General Chemistry Tree Damage		
+	 "GeneralMechanicalResist" 	0.70					//General Mechanic Tree Damage		
+	 "GeneralElectricResist"  	0.70					//General Electric Tree Damage		
+	 "GeneralBiologicalResist"	0.70					//General Biological Tree Damage		
+									
+	 "KineticResist" 		0.70					//Railguns, Standard Cannons, Anything that is just force	
+	 "ExplosiveResist" 		0.70					//HE, Nukes, anything that explodes	
+	 "BioResist" 			0.70					//Has the bio effect
+									
+	 "BulletResist" 		1					//Non Armor damaging	
+	 "APBulletResist" 		0.70					// Armor Damaging	
+	 "BulletExplosiveResist" 	0.70				//Bullets that Explode			
+									
+	 "MissileResist" 		0.65					//Generic Missle type of damage	
+	 "MissileExplosiveResist" 	0.65					//Explosive type.		
+	 "MissileBioResist" 		0.65					//Bio Missiles.  Different then Bio?	
+									
+	 "KineticArtResist" 		0.70					//Kinetic Artillery	
+	 "ExplosiveArtResist" 		0.70					// Explosive Artillery	
+	 "BioArtResist" 		0.70				//Bio Artillery		
+									
+	 "AircraftMissileResist" 	0.70					// Aircraft Missiles		
+	 "AircraftGroundMissleResist" 	0.70					// Aircraft Missiles to hit ground targets		
+	 "AircraftBulletResist" 	0.70				//Aircraft to Aircraft bullets			
+	 "AircraftAPBulletResist" 	0.70					//Aircraft Bullets to hit ground targets		
+	 "AircraftBombResist" 		0.70				//Bombs		
+	 "AircraftBombBioResist" 	0.70					//Bio Bombs?		
+									
+	 "InfantryGrenadeResist" 	0.80					//Player Thrown Grenades		
+	 "InfantryMineResist" 		0.9					//Player Tossed Mines	
+	 "InfantryMissileResist" 	0.70					//Gren Missles		
+	 "InfantryMortarResist" 	0.70					//Gren Mortars			
+	 "InfantryStickyResist" 	0.66					//Sticky Grenades		
+	 "InfantrySeismicResist" 	-0.70					//Seismic Grenades		
+	 "InfantryBulletResist" 	1					//Just In Case		
+	 "InfantryUtilityResist"	0.9					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		1					//Infantry melee
+										
+	 "ExtraType1Resist" 		0.65					//Anti Building weapons	
+	 "ExtraType2Resist" 		0.6					//Again	
+	 "ExtraType3Resist" 		0.6					//and a third
+	
+	//BOUNDARY VECTORS								
+									
+	 "MinColBoundX" "-80"  //Minimum Collision Bound								
+	 "MinColBoundY" "-80"  //Used to calculate the "footprint" that the								
+	 "MinColBoundZ" "0"    //Building takes up								
+									
+	 "MaxColBoundX" "80" //Maximum Collision Bound								
+	 "MaxColBoundY" "80"								
+	 "MaxColBoundZ" "80"								
+	}								
+									
+	//16								
+	NFMLTurret								
+	{								
+	 "name" 		NFMLTurret					//Name of the Building
+
+	 "spotted name"		"ML Turret"	
+									
+	 "model" 		models/NF/turrets/ml_lvl1/nf_turret_ml_lvl1.mdl	//Standard Model					
+	 "model2" 	 	models/NF/turrets/ml_lvl1/nf_turret_ml_lvl1_2.mdl	//Scale 2 Model					
+	 "model4" 	 	models/NF/turrets/ml_lvl1/nf_turret_ml_lvl1_4.mdl	//Scale 4 Model					
+	 "model8" 	 	models/NF/turrets/ml_lvl1/nf_turret_ml_lvl1_8.mdl	//Scale 8 Model					
+	 "model16" 	 	models/NF/turrets/ml_lvl1/nf_turret_ml_lvl1_16.mdl	//Scale 16 Model					
+	 "model32" 	 	models/NF/turrets/ml_lvl1/nf_turret_ml_lvl1_32.mdl	//Scale 32 Model
+     "gib suffix"    "_gib"
+     "gib count level 1"    "4"      
+     "gib count level 2"    "5"      
+     "gib count level 3"    "4"       
+	 "cost" 		75						//Cost of the building
+	 "max health"	 	100						//Max Possible Health
+	 "starting health"	25						//Starting Health when built (25% of Max)	
+	 "damaged model" 	models/NF/turrets/ml_lvl1/nf_turret_ml_lvl1.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)						
+	 "damaged threshold"	50						//Health Value to display the damaged model	
+	 "destroyed model"	models/NF/turrets/ml_lvl1/nf_turret_ml_lvl1.mdl	//Model to display when building is destroyed	(Defaults to "model" field)					
+	 "vehicle physbox"	models/NF/turrets/ml_lvl1/nf_turret_ml_lvl1.mdl //Physbox Model							
+	 "level 2"		models/NF/turrets/ml_lvl2/nf_turret_ml_lvl2.mdl //Turret Only: Level 2 model						
+	 "level 3"		models/NF/turrets/ml_lvl3/nf_turret_ml_lvl3.mdl //Turret Only: Level 3 model
+     
+     "turret range level 1"         "3000"
+     "turret range level 2"         "4000"
+     "turret range level 3"         "5000"
+     "turret rof level 1"           "7"
+     "turret rof level 2"           "5"
+     "turret rof level 3"           "3"
+     "turret turn speed level 1"    "225"
+     "turret turn speed level 2"    "350"
+     "turret turn speed level 3"    "475"
+     "turret turn missile level 1"  "1000"
+     "turret turn missile level 2"  "1400"
+     "turret turn missile level 3"  "1800"
+     "turret starting hp level 1"   "25"
+     "turret starting hp level 2"   "25"
+     "turret starting hp level 3"   "25"
+     "turret max hp level 1"   "100"
+     "turret max hp level 2"   "100"
+     "turret max hp level 3"   "100"
+     
+	 "Explosion Sprite Lvl 1"	0
+	 "Explosion Sprite Lvl 2"	0
+	 "Explosion Sprite Lvl 3"	0
+
+	 "Damage Type" 		"Missile"
+	 "recycle time"		5								// Recycle time for the building
+	 "carcass removal time" "1"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "15"
+
+	"hint"				"This is the Northern Faction Missile Launcher Turret. It automatically shoots at enemy vehicles."
+									
+		 //RESISTANCES							
+									
+	 "GeneralPhysicsResist"		0.70					//General Physics Tree Damage 	
+	 "GeneralChemistryResist"  	0.70					//General Chemistry Tree Damage		
+	 "GeneralMechanicalResist" 	0.70					//General Mechanic Tree Damage		
+	 "GeneralElectricResist"  	0.70					//General Electric Tree Damage		
+	 "GeneralBiologicalResist"	0.70					//General Biological Tree Damage		
+									
+	 "KineticResist" 		0.70					//Railguns, Standard Cannons, Anything that is just force	
+	 "ExplosiveResist" 		0.70					//HE, Nukes, anything that explodes	
+	 "BioResist" 			0.70					//Has the bio effect
+									
+	 "BulletResist" 		1					//Non Armor damaging	
+	 "APBulletResist" 		0.70					// Armor Damaging	
+	 "BulletExplosiveResist" 	0.70				//Bullets that Explode			
+									
+	 "MissileResist" 		0.65					//Generic Missle type of damage	
+	 "MissileExplosiveResist" 	0.65					//Explosive type.		
+	 "MissileBioResist" 		0.65					//Bio Missiles.  Different then Bio?	
+									
+	 "KineticArtResist" 		0.70					//Kinetic Artillery	
+	 "ExplosiveArtResist" 		0.70					// Explosive Artillery	
+	 "BioArtResist" 		0.70				//Bio Artillery		
+									
+	 "AircraftMissileResist" 	0.70					// Aircraft Missiles		
+	 "AircraftGroundMissleResist" 	0.70					// Aircraft Missiles to hit ground targets		
+	 "AircraftBulletResist" 	0.70				//Aircraft to Aircraft bullets			
+	 "AircraftAPBulletResist" 	0.70					//Aircraft Bullets to hit ground targets		
+	 "AircraftBombResist" 		0.70				//Bombs		
+	 "AircraftBombBioResist" 	0.70					//Bio Bombs?		
+									
+	 "InfantryGrenadeResist" 	0.80					//Player Thrown Grenades		
+	 "InfantryMineResist" 		0.9					//Player Tossed Mines	
+	 "InfantryMissileResist" 	0.70					//Gren Missles		
+	 "InfantryMortarResist" 	0.70					//Gren Mortars			
+	 "InfantryStickyResist" 	0.66					//Sticky Grenades		
+	 "InfantrySeismicResist" 	-0.70					//Seismic Grenades		
+	 "InfantryBulletResist" 	1					//Just In Case		
+	 "InfantryUtilityResist"	0.9					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		1					//Infantry melee
+										
+	 "ExtraType1Resist" 		0.65					//Anti Building weapons	
+	 "ExtraType2Resist" 		0.6					//Again	
+	 "ExtraType3Resist" 		0.6					//and a third
+									
+	//BOUNDARY VECTORS								
+									
+	 "MinColBoundX" "-80"  //Minimum Collision Bound								
+	 "MinColBoundY" "-80"  //Used to calculate the "footprint" that the								
+	 "MinColBoundZ" "0"    //Building takes up								
+									
+	 "MaxColBoundX" "80" //Maximum Collision Bound								
+	 "MaxColBoundY" "80"								
+	 "MaxColBoundZ" "80"								
+	}								
+											
+													
+	//17												
+	ImpEngyCamera												
+	{												
+	 "name" 		ImpEngyCamera					//Name of the Building
+
+	 "spotted name"		"Engineer Camera"	
+													
+	 "model" 		models/imperial/turrets/camera/imp_camera.mdl	//Standard Model									
+	 "model2" 	 	models/imperial/turrets/camera/imp_camera_2.mdl	//Scale 2 Model									
+	 "model4" 	 	models/imperial/turrets/camera/imp_camera_4.mdl	//Scale 4 Model									
+	 "model8" 	 	models/imperial/turrets/camera/imp_camera_8.mdl	//Scale 8 Model									
+	 "model16" 	 	models/imperial/turrets/camera/imp_camera_16.mdl	//Scale 16 Model									
+	 "model32" 	 	models/imperial/turrets/camera/imp_camera_32.mdl	//Scale 32 Model									
+	 "cost" 		0						//Cost of the building				
+	 "max health"	 	80						//Max Possible Health				
+	 "starting health"	20						//Starting Health when built (25% of Max)					
+	 "damaged model" 	models/imperial/turrets/camera/imp_camera.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)										
+	 "damaged threshold"	40						//Health Value to display the damaged model					
+	 "destroyed model"	models/imperial/turrets/camera/imp_camera.mdl	//Model to display when building is destroyed	(Defaults to "model" field)									
+	 "vehicle physbox"	models/imperial/turrets/camera/imp_camera.mdl //Physbox Model	
+
+	 "recycle time"		5								// Recycle time for the building
+	 "carcass removal time" "0.5"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "16"
+
+	"hint"			"This is a Brenodi Empires engineer-placed camera. It detects uncloaked enemy infantry within a small radius and marks them for all friendly players. They also show up on the minimap as arrows."
+													
+		 //RESISTANCES											
+													
+	 "GeneralPhysicsResist"		0.25					//General Physics Tree Damage 					
+	 "GeneralChemistryResist"  	0.25					//General Chemistry Tree Damage						
+	 "GeneralMechanicalResist" 	0.25					//General Mechanic Tree Damage						
+	 "GeneralElectricResist"  	0.25					//General Electric Tree Damage						
+	 "GeneralBiologicalResist"	0.25					//General Biological Tree Damage						
+													
+	 "KineticResist" 		0.25					//Railguns, Standard Cannons, Anything that is just force					
+	 "ExplosiveResist" 		0.25					//HE, Nukes, anything that explodes					
+	 "BioResist" 			0.25					//Has the bio effect				
+													
+	 "BulletResist" 		0.75					//Non Armor damaging					
+	 "APBulletResist" 		0.25					// Armor Damaging					
+	 "BulletExplosiveResist" 	0.25				//Bullets that Explode							
+													
+	 "MissileResist" 		0.25					//Generic Missle type of damage					
+	 "MissileExplosiveResist" 	0.25					//Explosive type.						
+	 "MissileBioResist" 		0.25					//Bio Missiles.  Different then Bio?					
+													
+	 "KineticArtResist" 		0.25					//Kinetic Artillery					
+	 "ExplosiveArtResist" 		0.25					// Explosive Artillery					
+	 "BioArtResist" 		0.25				//Bio Artillery						
+													
+	 "AircraftMissileResist" 	0.25					// Aircraft Missiles						
+	 "AircraftGroundMissleResist" 	0.25					// Aircraft Missiles to hit ground targets						
+	 "AircraftBulletResist" 	0.25				//Aircraft to Aircraft bullets							
+	 "AircraftAPBulletResist" 	0.25					//Aircraft Bullets to hit ground targets						
+	 "AircraftBombResist" 		0.25				//Bombs						
+	 "AircraftBombBioResist" 	0.25					//Bio Bombs?						
+													
+	 "InfantryGrenadeResist" 	0.25					//Player Thrown Grenades						
+	 "InfantryMineResist" 		0.25					//Player Tossed Mines					
+	 "InfantryMissileResist" 	0.25					//Gren Missles						
+	 "InfantryMortarResist" 	0.25					//Gren Mortars						
+	 "InfantryStickyResist" 	0.25					//Sticky Grenades						
+	 "InfantrySeismicResist" 	-0.70					//Seismic Grenades						
+	 "InfantryBulletResist" 	0.75					//Just In Case						
+	 "InfantryUtilityResist"	0.9					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		0.75					//Infantry melee
+														
+	 "ExtraType1Resist" 		0.25					//Anti Building weapons					
+	 "ExtraType2Resist" 		0.25					//Again					
+	 "ExtraType3Resist" 		0.25					//and a third					
+													
+	//BOUNDARY VECTORS												
+													
+	 "MinColBoundX" "0"  //Minimum Collision Bound												
+	 "MinColBoundY" "0"  //Used to calculate the "footprint" that the												
+	 "MinColBoundZ" "0"    //Building takes up												
+													
+	 "MaxColBoundX" "0" //Maximum Collision Bound												
+	 "MaxColBoundY" "0"												
+	 "MaxColBoundZ" "0"												
+	}												
+													
+	//18												
+	NFEngyCamera												
+	{												
+	 "name" 		NFEngyCamera					//Name of the Building
+
+	 "spotted name"		"Engineer Camera"	
+													
+	 "model" 		models/NF/turrets/camera/nf_camera.mdl	//Standard Model									
+	 "model2" 	 	models/NF/turrets/camera/nf_camera_2.mdl	//Scale 2 Model									
+	 "model4" 	 	models/NF/turrets/camera/nf_camera_4.mdl	//Scale 4 Model									
+	 "model8" 	 	models/NF/turrets/camera/nf_camera_8.mdl	//Scale 8 Model									
+	 "model16" 	 	models/NF/turrets/camera/nf_camera_16.mdl	//Scale 16 Model									
+	 "model32" 	 	models/NF/turrets/camera/nf_camera_32.mdl	//Scale 32 Model									
+	 "cost" 		0						//Cost of the building				
+	 "max health"	 	80						//Max Possible Health				
+	 "starting health"	20						//Starting Health when built (25% of Max)					
+	 "damaged model" 	models/NF/turrets/camera/nf_camera.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)										
+	 "damaged threshold"	40						//Health Value to display the damaged model					
+	 "destroyed model"	models/NF/turrets/camera/nf_camera.mdl	//Model to display when building is destroyed	(Defaults to "model" field)									
+	 "vehicle physbox"	models/NF/turrets/camera/nf_camera.mdl //Physbox Model	
+
+	 "recycle time"		5								// Recycle time for the building
+	 "carcass removal time" "0.5"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "17"
+
+	"hint"			"This is a Northern Faction engineer-placed camera. It detects uncloaked enemy infantry within a small radius and marks them for all friendly players. They also show up on the minimap as arrows."
+													
+	//RESISTANCES												
+													
+	 "GeneralPhysicsResist"		0.25					//General Physics Tree Damage 					
+	 "GeneralChemistryResist"  	0.25					//General Chemistry Tree Damage						
+	 "GeneralMechanicalResist" 	0.25					//General Mechanic Tree Damage						
+	 "GeneralElectricResist"  	0.25					//General Electric Tree Damage						
+	 "GeneralBiologicalResist"	0.25					//General Biological Tree Damage						
+													
+	 "KineticResist" 		0.25					//Railguns, Standard Cannons, Anything that is just force					
+	 "ExplosiveResist" 		0.25					//HE, Nukes, anything that explodes					
+	 "BioResist" 			0.25					//Has the bio effect				
+													
+	 "BulletResist" 		0.75					//Non Armor damaging					
+	 "APBulletResist" 		0.25					// Armor Damaging					
+	 "BulletExplosiveResist" 	0.25				//Bullets that Explode							
+													
+	 "MissileResist" 		0.25					//Generic Missle type of damage					
+	 "MissileExplosiveResist" 	0.25					//Explosive type.						
+	 "MissileBioResist" 		0.25					//Bio Missiles.  Different then Bio?					
+													
+	 "KineticArtResist" 		0.25					//Kinetic Artillery					
+	 "ExplosiveArtResist" 		0.25					// Explosive Artillery					
+	 "BioArtResist" 		0.25				//Bio Artillery						
+													
+	 "AircraftMissileResist" 	0.25					// Aircraft Missiles						
+	 "AircraftGroundMissleResist" 	0.25					// Aircraft Missiles to hit ground targets						
+	 "AircraftBulletResist" 	0.25				//Aircraft to Aircraft bullets							
+	 "AircraftAPBulletResist" 	0.25					//Aircraft Bullets to hit ground targets						
+	 "AircraftBombResist" 		0.25				//Bombs						
+	 "AircraftBombBioResist" 	0.25					//Bio Bombs?						
+													
+	 "InfantryGrenadeResist" 	0.25					//Player Thrown Grenades						
+	 "InfantryMineResist" 		0.25					//Player Tossed Mines					
+	 "InfantryMissileResist" 	0.25					//Gren Missles						
+	 "InfantryMortarResist" 	0.25					//Gren Mortars						
+	 "InfantryStickyResist" 	0.25					//Sticky Grenades						
+	 "InfantrySeismicResist" 	-0.70					//Seismic Grenades						
+	 "InfantryBulletResist" 	0.75					//Just In Case						
+	 "InfantryUtilityResist"	0.9					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		0.75					//Infantry melee
+														
+	 "ExtraType1Resist" 		0.25					//Anti Building weapons					
+	 "ExtraType2Resist" 		0.25					//Again					
+	 "ExtraType3Resist" 		0.25					//and a third					
+													
+	//BOUNDARY VECTORS												
+													
+	 "MinColBoundX" "0"  //Minimum Collision Bound												
+	 "MinColBoundY" "0"  //Used to calculate the "footprint" that the												
+	 "MinColBoundZ" "0"    //Building takes up												
+													
+	 "MaxColBoundX" "0" //Maximum Collision Bound												
+	 "MaxColBoundY" "0"												
+	 "MaxColBoundZ" "0"												
+	}												
+													
+	//19												
+	ImpEngyRadar												
+	{												
+	 "name" 		ImpEngyRadar					//Name of the Building
+
+	 "spotted name"		"Engineer Radar"	
+													
+	 "model" 		models/imperial/turrets/radar/imp_radar.mdl	//Standard Model									
+	 "model2" 	 	models/imperial/turrets/radar/imp_radar_2.mdl	//Scale 2 Model									
+	 "model4" 	 	models/imperial/turrets/radar/imp_radar_4.mdl	//Scale 4 Model									
+	 "model8" 	 	models/imperial/turrets/radar/imp_radar_8.mdl	//Scale 8 Model									
+	 "model16" 	 	models/imperial/turrets/radar/imp_radar_16.mdl	//Scale 16 Model									
+	 "model32" 	 	models/imperial/turrets/radar/imp_radar_32.mdl	//Scale 32 Model									
+	 "cost" 		0						//Cost of the building				
+	 "max health"	 	80						//Max Possible Health				
+	 "starting health"	20						//Starting Health when built (25% of Max)					
+	 "damaged model" 	models/imperial/turrets/radar/imp_radar.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)										
+	 "damaged threshold"	40						//Health Value to display the damaged model					
+	 "destroyed model"	models/imperial/turrets/radar/imp_radar.mdl	//Model to display when building is destroyed	(Defaults to "model" field)									
+	 "vehicle physbox"	models/imperial/turrets/radar/imp_radar.mdl //Physbox Model
+
+	 "recycle time"		5								// Recycle time for the building
+	 "carcass removal time" "0.5"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "18"
+
+	"hint"			"This is a Brenodi Empire engineer-placed radar. It spots enemy vehicles within a small radius and marks them for friendly players."
+													
+	 	//RESISTANCES											
+													
+	 "GeneralPhysicsResist"		0.25					//General Physics Tree Damage 					
+	 "GeneralChemistryResist"  	0.25					//General Chemistry Tree Damage						
+	 "GeneralMechanicalResist" 	0.25					//General Mechanic Tree Damage						
+	 "GeneralElectricResist"  	0.25					//General Electric Tree Damage						
+	 "GeneralBiologicalResist"	0.25					//General Biological Tree Damage						
+													
+	 "KineticResist" 		0.25					//Railguns, Standard Cannons, Anything that is just force					
+	 "ExplosiveResist" 		0.25					//HE, Nukes, anything that explodes					
+	 "BioResist" 			0.25					//Has the bio effect				
+													
+	 "BulletResist" 		0.75					//Non Armor damaging					
+	 "APBulletResist" 		0.25					// Armor Damaging					
+	 "BulletExplosiveResist" 	0.25				//Bullets that Explode							
+													
+	 "MissileResist" 		0.25					//Generic Missle type of damage					
+	 "MissileExplosiveResist" 	0.25					//Explosive type.						
+	 "MissileBioResist" 		0.25					//Bio Missiles.  Different then Bio?					
+													
+	 "KineticArtResist" 		0.25					//Kinetic Artillery					
+	 "ExplosiveArtResist" 		0.25					// Explosive Artillery					
+	 "BioArtResist" 		0.25				//Bio Artillery						
+													
+	 "AircraftMissileResist" 	0.25					// Aircraft Missiles						
+	 "AircraftGroundMissleResist" 	0.25					// Aircraft Missiles to hit ground targets						
+	 "AircraftBulletResist" 	0.25				//Aircraft to Aircraft bullets							
+	 "AircraftAPBulletResist" 	0.25					//Aircraft Bullets to hit ground targets						
+	 "AircraftBombResist" 		0.25				//Bombs						
+	 "AircraftBombBioResist" 	0.25					//Bio Bombs?						
+													
+	 "InfantryGrenadeResist" 	0.25					//Player Thrown Grenades						
+	 "InfantryMineResist" 		0.25					//Player Tossed Mines					
+	 "InfantryMissileResist" 	0.25					//Gren Missles						
+	 "InfantryMortarResist" 	0.25					//Gren Mortars						
+	 "InfantryStickyResist" 	0.25					//Sticky Grenades						
+	 "InfantrySeismicResist" 	-0.70					//Seismic Grenades						
+	 "InfantryBulletResist" 	0.75					//Just In Case						
+	 "InfantryUtilityResist"	0.9					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		0.75					//Infantry melee
+														
+	 "ExtraType1Resist" 		0.25					//Anti Building weapons					
+	 "ExtraType2Resist" 		0.25					//Again					
+	 "ExtraType3Resist" 		0.25					//and a third					
+													
+	//BOUNDARY VECTORS												
+													
+	 "MinColBoundX" "0"  //Minimum Collision Bound												
+	 "MinColBoundY" "0"  //Used to calculate the "footprint" that the												
+	 "MinColBoundZ" "0"    //Building takes up												
+													
+	 "MaxColBoundX" "0" //Maximum Collision Bound												
+	 "MaxColBoundY" "0"												
+	 "MaxColBoundZ" "0"				//and a third								
+	}												
+													
+	//20												
+	NFEngyRadar												
+	{												
+	 "name" 		NFEngyRadar					//Name of the Building
+
+	 "spotted name"		"Engineer Radar"	
+													
+	 "model" 		models/NF/turrets/radar/nf_radar.mdl	//Standard Model									
+	 "model2" 	 	models/NF/turrets/radar/nf_radar_2.mdl	//Scale 2 Model									
+	 "model4" 	 	models/NF/turrets/radar/nf_radar_4.mdl	//Scale 4 Model									
+	 "model8" 	 	models/NF/turrets/radar/nf_radar_8.mdl	//Scale 8 Model									
+	 "model16" 	 	models/NF/turrets/radar/nf_radar_16.mdl	//Scale 16 Model									
+	 "model32" 	 	models/NF/turrets/radar/nf_radar_32.mdl	//Scale 32 Model									
+	 "cost" 		0						//Cost of the building				
+	 "max health"	 	80						//Max Possible Health				
+	 "starting health"	20						//Starting Health when built (25% of Max)					
+	 "damaged model" 	models/NF/turrets/radar/nf_radar.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)										
+	 "damaged threshold"	40						//Health Value to display the damaged model					
+	 "destroyed model"	models/NF/turrets/radar/nf_radar.mdl	//Model to display when building is destroyed	(Defaults to "model" field)									
+	 "vehicle physbox"	models/NF/turrets/radar/nf_radar.mdl //Physbox Model
+
+	 "recycle time"		5								// Recycle time for the building
+	 "carcass removal time" "0.5"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "19"
+
+	"hint"			"This is a Northern Faction engineer-placed radar. It spots enemy vehicles within a small radius and marks them for friendly players."
+													
+	 	//RESISTANCES											
+													
+	 "GeneralPhysicsResist"		0.25					//General Physics Tree Damage 					
+	 "GeneralChemistryResist"  	0.25					//General Chemistry Tree Damage						
+	 "GeneralMechanicalResist" 	0.25					//General Mechanic Tree Damage						
+	 "GeneralElectricResist"  	0.25					//General Electric Tree Damage						
+	 "GeneralBiologicalResist"	0.25					//General Biological Tree Damage						
+													
+	 "KineticResist" 		0.25					//Railguns, Standard Cannons, Anything that is just force					
+	 "ExplosiveResist" 		0.25					//HE, Nukes, anything that explodes					
+	 "BioResist" 			0.25					//Has the bio effect				
+													
+	 "BulletResist" 		0.75					//Non Armor damaging					
+	 "APBulletResist" 		0.25					// Armor Damaging					
+	 "BulletExplosiveResist" 	0.25				//Bullets that Explode							
+													
+	 "MissileResist" 		0.25					//Generic Missle type of damage					
+	 "MissileExplosiveResist" 	0.25					//Explosive type.						
+	 "MissileBioResist" 		0.25					//Bio Missiles.  Different then Bio?					
+													
+	 "KineticArtResist" 		0.25					//Kinetic Artillery					
+	 "ExplosiveArtResist" 		0.25					// Explosive Artillery					
+	 "BioArtResist" 		0.25				//Bio Artillery						
+													
+	 "AircraftMissileResist" 	0.25					// Aircraft Missiles						
+	 "AircraftGroundMissleResist" 	0.25					// Aircraft Missiles to hit ground targets						
+	 "AircraftBulletResist" 	0.25				//Aircraft to Aircraft bullets							
+	 "AircraftAPBulletResist" 	0.25					//Aircraft Bullets to hit ground targets						
+	 "AircraftBombResist" 		0.25				//Bombs						
+	 "AircraftBombBioResist" 	0.25					//Bio Bombs?						
+													
+	 "InfantryGrenadeResist" 	0.25					//Player Thrown Grenades						
+	 "InfantryMineResist" 		0.25					//Player Tossed Mines					
+	 "InfantryMissileResist" 	0.25					//Gren Missles						
+	 "InfantryMortarResist" 	0.25					//Gren Mortars						
+	 "InfantryStickyResist" 	0.25					//Sticky Grenades						
+	 "InfantrySeismicResist" 	-0.70					//Seismic Grenades						
+	 "InfantryBulletResist" 	0.75					//Just In Case						
+	 "InfantryUtilityResist"	0.9					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		0.75					//Infantry melee
+														
+	 "ExtraType1Resist" 		0.25					//Anti Building weapons					
+	 "ExtraType2Resist" 		0.25					//Again					
+	 "ExtraType3Resist" 		0.25					//and a third					
+													
+	//BOUNDARY VECTORS												
+													
+	 "MinColBoundX" "0"  //Minimum Collision Bound												
+	 "MinColBoundY" "0"  //Used to calculate the "footprint" that the												
+	 "MinColBoundZ" "0"    //Building takes up												
+													
+	 "MaxColBoundX" "0" //Maximum Collision Bound												
+	 "MaxColBoundY" "0"												
+	 "MaxColBoundZ" "0"	//and a third											
+	}												
+													
+	//21												
+	ImpWall												
+	{												
+	 "name" 		ImpWall					//Name of the Building
+
+	 "spotted name"		"Wall"	
+													
+	 "model" 		models/imperial/buildings/walls/imp_wall1.mdl	//Standard Model									
+	 "model2" 	 	models/imperial/buildings/walls/imp_wall1_2.mdl	//Scale 2 Model									
+	 "model4" 	 	models/imperial/buildings/walls/imp_wall1_4.mdl	//Scale 4 Model									
+	 "model8" 	 	models/imperial/buildings/walls/imp_wall1_8.mdl	//Scale 8 Model									
+	 "model16" 	 	models/imperial/buildings/walls/imp_wall1_16.mdl	//Scale 16 Model									
+	 "model32" 	 	models/imperial/buildings/walls/imp_wall1_32.mdl	//Scale 32 Model
+     "gib suffix"    "_piece_"
+     "gib count"    "5"
+	 "cost" 		75						//Cost of the building				
+	 "max health"	 	100						//Max Possible Health				
+	 "starting health"	25						//Starting Health when built (25% of Max)					
+	 "damaged model" 	models/imperial/buildings/walls/imp_wall1.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)										
+	 "damaged threshold"	0						//Health Value to display the damaged model					
+	 "destroyed model"	models/imperial/buildings/walls/imp_wall1.mdl	//Model to display when building is destroyed	(Defaults to "model" field)									
+	 "vehicle physbox"	models/imperial/buildings/walls/imp_wall1.mdl //Physbox Model											
+	 "recycle time"		5								// Recycle time for the building
+	 
+	 "touchmessageid" "20"
+
+	"hint"			"This is a Brenodi Empire Wall. Keep in mind that most walls are better left unbuilt because they can also provide cover for enemy players."
+													
+	 	//RESISTANCES											
+													
+	 "GeneralPhysicsResist"		0.97					//General Physics Tree Damage 					
+	 "GeneralChemistryResist"  	0.97					//General Chemistry Tree Damage						
+	 "GeneralMechanicalResist" 	0.97					//General Mechanic Tree Damage						
+	 "GeneralElectricResist"  	0.97					//General Electric Tree Damage						
+	 "GeneralBiologicalResist"	0.97					//General Biological Tree Damage						
+													
+	 "KineticResist" 		0.95					//Railguns, Standard Cannons, Anything that is just force					
+	 "ExplosiveResist" 		0.97					//HE, Nukes, anything that explodes					
+	 "BioResist" 			0.97					//Has the bio effect				
+													
+	 "BulletResist" 		1					//Non Armor damaging					
+	 "APBulletResist" 		0.97					// Armor Damaging					
+	 "BulletExplosiveResist" 	0.97				//Bullets that Explode							
+													
+	 "MissileResist" 		0.95					//Generic Missle type of damage					
+	 "MissileExplosiveResist" 	0.97					//Explosive type.						
+	 "MissileBioResist" 		0.97					//Bio Missiles.  Different then Bio?					
+													
+	 "KineticArtResist" 		0.97					//Kinetic Artillery					
+	 "ExplosiveArtResist" 		0.97					// Explosive Artillery					
+	 "BioArtResist" 		0.97				//Bio Artillery						
+													
+	 "AircraftMissileResist" 	0.97					// Aircraft Missiles						
+	 "AircraftGroundMissleResist" 	0.97					// Aircraft Missiles to hit ground targets						
+	 "AircraftBulletResist" 	0.97				//Aircraft to Aircraft bullets							
+	 "AircraftAPBulletResist" 	0.97					//Aircraft Bullets to hit ground targets						
+	 "AircraftBombResist" 		0.97				//Bombs						
+	 "AircraftBombBioResist" 	0.97					//Bio Bombs?						
+													
+	 "InfantryGrenadeResist" 	0.97					//Player Thrown Grenades						
+	 "InfantryMineResist" 		0.97					//Player Tossed Mines					
+	 "InfantryMissileResist" 	0.97					//Gren Missles						
+	 "InfantryMortarResist" 	0.90					//Gren Mortars						
+	 "InfantryStickyResist" 	0.97					//Sticky Grenades						
+	 "InfantrySeismicResist" 	0.70					//Seismic Grenades						
+	 "InfantryBulletResist" 	1					//Just In Case						
+	 "InfantryUtilityResist"	1					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		1					//Infantry melee
+														
+	 "ExtraType1Resist" 		0.4					//Anti Building weapons					
+	 "ExtraType2Resist" 		0.94					//Again					
+	 "ExtraType3Resist" 		0.94					//and a third				
+																							
+	//BOUNDARY VECTORS												
+													
+	 "MinColBoundX" "-53"  //Minimum Collision Bound												
+	 "MinColBoundY" "0"  //Used to calculate the "footprint" that the												
+	 "MinColBoundZ" "-64"    //Building takes up												
+													
+	 "MaxColBoundX" "32" //Maximum Collision Bound												
+	 "MaxColBoundY" "160"												
+	 "MaxColBoundZ" "160"					//and a third							
+	}												
+													
+	//22												
+	NFWall												
+	{												
+	 "name" 		NFWall					//Name of the Building
+
+	 "spotted name"		"Wall"	
+													
+	 "model" 		models/NF/Buildings/walls/nf_wall.mdl	//Standard Model									
+	 "model2" 	 	models/NF/Buildings/walls/nf_wall_2.mdl	//Scale 2 Model									
+	 "model4" 	 	models/NF/Buildings/walls/nf_wall_4.mdl	//Scale 4 Model									
+	 "model8" 	 	models/NF/Buildings/walls/nf_wall_8.mdl	//Scale 8 Model									
+	 "model16" 	 	models/NF/Buildings/walls/nf_wall_16.mdl	//Scale 16 Model									
+	 "model32" 	 	models/NF/Buildings/walls/nf_wall_32.mdl	//Scale 32 Model
+     "gib suffix"    "_piece_"
+     "gib count"    "5"
+	 "cost" 		75						//Cost of the building				
+	 "max health"	 	100						//Max Possible Health				
+	 "starting health"	25						//Starting Health when built (25% of Max)					
+	 "damaged model" 	models/NF/Buildings/walls/nf_wall.mdl		//Model to show when damage is lower then the threshold (Defaults to "model" field)										
+	 "damaged threshold"	0						//Health Value to display the damaged model					
+	 "destroyed model"	models/NF/Buildings/walls/nf_wall.mdl	//Model to display when building is destroyed	(Defaults to "model" field)									
+	 "vehicle physbox"	models/NF/Buildings/walls/nf_wall.mdl //Physbox Model	
+
+	 "recycle time"		5								// Recycle time for the building
+	 "carcass removal time" "30"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "21"
+
+	"hint"			"This is a Northern Faction Wall. Keep in mind that most walls are better left unbuilt because they can also provide cover for enemy players."
+													
+	 	//RESISTANCES											
+													
+	 "GeneralPhysicsResist"		0.97					//General Physics Tree Damage 					
+	 "GeneralChemistryResist"  	0.97					//General Chemistry Tree Damage						
+	 "GeneralMechanicalResist" 	0.97					//General Mechanic Tree Damage						
+	 "GeneralElectricResist"  	0.97					//General Electric Tree Damage						
+	 "GeneralBiologicalResist"	0.97					//General Biological Tree Damage						
+													
+	 "KineticResist" 		0.95					//Railguns, Standard Cannons, Anything that is just force					
+	 "ExplosiveResist" 		0.97					//HE, Nukes, anything that explodes					
+	 "BioResist" 			0.97					//Has the bio effect				
+													
+	 "BulletResist" 		1					//Non Armor damaging					
+	 "APBulletResist" 		0.97					// Armor Damaging					
+	 "BulletExplosiveResist" 	0.97				//Bullets that Explode							
+													
+	 "MissileResist" 		0.95					//Generic Missle type of damage					
+	 "MissileExplosiveResist" 	0.97					//Explosive type.						
+	 "MissileBioResist" 		0.97					//Bio Missiles.  Different then Bio?					
+													
+	 "KineticArtResist" 		0.97					//Kinetic Artillery					
+	 "ExplosiveArtResist" 		0.97					// Explosive Artillery					
+	 "BioArtResist" 		0.97				//Bio Artillery						
+													
+	 "AircraftMissileResist" 	0.97					// Aircraft Missiles						
+	 "AircraftGroundMissleResist" 	0.97					// Aircraft Missiles to hit ground targets						
+	 "AircraftBulletResist" 	0.97				//Aircraft to Aircraft bullets							
+	 "AircraftAPBulletResist" 	0.97					//Aircraft Bullets to hit ground targets						
+	 "AircraftBombResist" 		0.97				//Bombs						
+	 "AircraftBombBioResist" 	0.97					//Bio Bombs?						
+													
+	 "InfantryGrenadeResist" 	0.97					//Player Thrown Grenades						
+	 "InfantryMineResist" 		0.97					//Player Tossed Mines					
+	 "InfantryMissileResist" 	0.97					//Gren Missles						
+	 "InfantryMortarResist" 	0.90					//Gren Mortars						
+	 "InfantryStickyResist" 	0.97					//Sticky Grenades						
+	 "InfantrySeismicResist" 	0.70					//Seismic Grenades						
+	 "InfantryBulletResist" 	1					//Just In Case						
+	 "InfantryUtilityResist"	1					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		1					//Infantry melee
+														
+	 "ExtraType1Resist" 		0.4					//Anti Building weapons					
+	 "ExtraType2Resist" 		0.94					//Again					
+	 "ExtraType3Resist" 		0.94					//and a third					
+													
+	//BOUNDARY VECTORS												
+													
+	 "MinColBoundX" "-38"  //Minimum Collision Bound												
+	 "MinColBoundY" "0"  //Used to calculate the "footprint" that the												
+	 "MinColBoundZ" "-64"    //Building takes up												
+													
+	 "MaxColBoundX" "40" //Maximum Collision Bound												
+	 "MaxColBoundY" "257"												
+	 "MaxColBoundZ" "207" 					//and a third							
+	}												
+													
+	//23												
+	ImpVehicleFactory												
+	{												
+	 "name" 		ImpVehicleFactory					//Name of the Building
+
+	 "spotted name"		"Vehicle Factory"	
+													
+	 "model" 		models/imperial/Buildings/vehiclefactory/imp_vehiclefactory.mdl	//Standard Model									
+	 "model2" 	 	models/imperial/Buildings/vehiclefactory/imp_vehiclefactory_2.mdl	//Scale 2 Model									
+	 "model4" 	 	models/imperial/Buildings/vehiclefactory/imp_vehiclefactory_4.mdl	//Scale 4 Model									
+	 "model8" 	 	models/imperial/Buildings/vehiclefactory/imp_vehiclefactory_8.mdl	//Scale 8 Model									
+	 "model16" 	 	models/imperial/Buildings/vehiclefactory/imp_vehiclefactory_16.mdl	//Scale 16 Model									
+	 "model32" 	 	models/imperial/Buildings/vehiclefactory/imp_vehiclefactory_32.mdl	//Scale 32 Model									
+	 "cost" 		400						//Cost of the building				
+	 "max health"	 	250						//Max Possible Health				
+	 "starting health"	50						//Starting Health when built (25% of Max)					
+	 "damaged model" 	models/imperial/Buildings/vehiclefactory/imp_vehiclefactory.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)										
+	 "damaged threshold"	125						//Health Value to display the damaged model					
+	 "destroyed model"	models/imperial/Buildings/vehiclefactory/imp_vehiclefactory.mdl	//Model to display when building is destroyed	(Defaults to "model" field)									
+	 "vehicle physbox"	models/imperial/Buildings/VehicleFactory/imp_vf_vehiclephysbox.mdl //Physbox Model											
+	 
+	 "touchmessageid" "22"
+
+	"hint"			"This is the Brenodi Empire Vehicle Factory. Press %emp_show_vehicle_customization% while inside to start building and customizing your vehicle. Alternatively you can press %+use% on the control panel within the vehicle factory."
+													
+	 	//RESISTANCES											
+													
+	 "GeneralPhysicsResist"		0.85					//General Physics Tree Damage 					
+	 "GeneralChemistryResist"  	0.85				//General Chemistry Tree Damage							
+	 "GeneralMechanicalResist" 	0.85					//General Mechanic Tree Damage						
+	 "GeneralElectricResist"  	0.85					//General Electric Tree Damage						
+	 "GeneralBiologicalResist"	0.85					//General Biological Tree Damage						
+													
+	 "KineticResist" 		0.85					//Railguns, Standard Cannons, Anything that is just force					
+	 "ExplosiveResist" 		0.85					//HE, Nukes, anything that explodes					
+	 "BioResist" 			0.85					//Has the bio effect				
+													
+	 "BulletResist" 		1					//Non Armor damaging					
+	 "APBulletResist" 		0.875					// Armor Damaging					
+	 "BulletExplosiveResist" 	0.80				//Bullets that Explode							
+													
+	 "MissileResist" 		0.85					//Generic Missle type of damage					
+	 "MissileExplosiveResist" 	0.85					//Explosive type.						
+	 "MissileBioResist" 		0.85					//Bio Missiles.  Different then Bio?					
+													
+	 "KineticArtResist" 		0.85					//Kinetic Artillery					
+	 "ExplosiveArtResist" 		0.85					// Explosive Artillery					
+	 "BioArtResist" 		0.85				//Bio Artillery						
+													
+	 "AircraftMissileResist" 	0.85					// Aircraft Missiles						
+	 "AircraftGroundMissleResist" 	0.85					// Aircraft Missiles to hit ground targets						
+	 "AircraftBulletResist" 	0.85				//Aircraft to Aircraft bullets							
+	 "AircraftAPBulletResist" 	0.85				//Aircraft Bullets to hit ground targets							
+	 "AircraftBombResist" 		0.85				//Bombs						
+	 "AircraftBombBioResist" 	0.85				//Bio Bombs?							
+													
+	 "InfantryGrenadeResist" 	0.9					//Player Thrown Grenades						
+	 "InfantryMineResist" 		0.9					//Player Tossed Mines					
+	 "InfantryMissileResist" 	0.95					//Gren Missles						
+	 "InfantryMortarResist" 	0.8					//Gren Mortars						
+	 "InfantryStickyResist" 	0.85					//Sticky Grenades						
+	 "InfantrySeismicResist" 	0					//Seismic Grenades						
+	 "InfantryBulletResist" 	1					//Just In Case						
+	 "InfantryUtilityResist"	1					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		1					//Infantry melee
+														
+	 "ExtraType1Resist" 		0.5					//Anti Building weapons					
+	 "ExtraType2Resist" 		0.75					//Again					
+	 "ExtraType3Resist" 		0.75					//and a third	
+													
+	//BOUNDARY VECTORS												
+													
+	 "MinColBoundX" "-650"  //Minimum Collision Bound												
+	 "MinColBoundY" "-650"  //Used to calculate the "footprint" that the												
+	 "MinColBoundZ" "0"    //Building takes up												
+													
+	 "MaxColBoundX" "650" //Maximum Collision Bound												
+	 "MaxColBoundY" "650"												
+	 "MaxColBoundZ" "300"			//and a third									
+	}												
+													
+	//24												
+	NFVehicleFactory												
+	{												
+	 "name" 		NFVehicleFactory					//Name of the Building
+
+	 "spotted name"		"Vehicle Factory"	
+													
+	 "model" 		models/NF/Buildings/vehiclefactory/nf_vehiclefactory.mdl	//Standard Model									
+	 "model2" 	 	models/NF/Buildings/vehiclefactory/nf_vehiclefactory_2.mdl	//Scale 2 Model									
+	 "model4" 	 	models/NF/Buildings/vehiclefactory/nf_vehiclefactory_4.mdl	//Scale 4 Model									
+	 "model8" 	 	models/NF/Buildings/vehiclefactory/nf_vehiclefactory_8.mdl	//Scale 8 Model									
+	 "model16" 	 	models/NF/Buildings/vehiclefactory/nf_vehiclefactory_16.mdl	//Scale 16 Model									
+	 "model32" 	 	models/NF/Buildings/vehiclefactory/nf_vehiclefactory_32.mdl	//Scale 32 Model									
+	 "cost" 		400						//Cost of the building				
+	 "max health"	 	250						//Max Possible Health				
+	 "starting health"	50						//Starting Health when built (25% of Max)					
+	 "damaged model" 	models/NF/Buildings/vehiclefactory/nf_vehiclefactory.mdl	//Model to show when damage is lower then the threshold (Defaults to "model" field)										
+	 "damaged threshold"	125						//Health Value to display the damaged model					
+	 "destroyed model"	models/NF/Buildings/vehiclefactory/nf_vehiclefactory.mdl	//Model to display when building is destroyed	(Defaults to "model" field)									
+	 "vehicle physbox"	models/NF/Buildings/VehicleFactory/nf_vehiclefactory_vehiclephysbox.mdl //Physbox Model	
+
+	 "recycle time"		5								// Recycle time for the building
+	 "carcass removal time" "30"								// Time it takes for a destroyed building carcass to be removed				
+	 "touchmessageid" "23"
+
+	"hint"			"This is the Northern Faction Vehicle Factory. Press %emp_show_vehicle_customization% while inside to start building and customizing your vehicle. Alternatively you can press %+use% on the control panel within the vehicle factory."
+													
+	 	//RESISTANCES											
+													
+	 "GeneralPhysicsResist"		0.85					//General Physics Tree Damage 					
+	 "GeneralChemistryResist"  	0.85				//General Chemistry Tree Damage							
+	 "GeneralMechanicalResist" 	0.85					//General Mechanic Tree Damage						
+	 "GeneralElectricResist"  	0.85					//General Electric Tree Damage						
+	 "GeneralBiologicalResist"	0.85					//General Biological Tree Damage						
+													
+	 "KineticResist" 		0.85					//Railguns, Standard Cannons, Anything that is just force					
+	 "ExplosiveResist" 		0.85					//HE, Nukes, anything that explodes					
+	 "BioResist" 			0.85					//Has the bio effect				
+													
+	 "BulletResist" 		1					//Non Armor damaging					
+	 "APBulletResist" 		0.875					// Armor Damaging					
+	 "BulletExplosiveResist" 	0.80				//Bullets that Explode							
+													
+	 "MissileResist" 		0.85					//Generic Missle type of damage					
+	 "MissileExplosiveResist" 	0.85					//Explosive type.						
+	 "MissileBioResist" 		0.85					//Bio Missiles.  Different then Bio?					
+													
+	 "KineticArtResist" 		0.85					//Kinetic Artillery					
+	 "ExplosiveArtResist" 		0.85					// Explosive Artillery					
+	 "BioArtResist" 		0.85				//Bio Artillery						
+													
+	 "AircraftMissileResist" 	0.85					// Aircraft Missiles						
+	 "AircraftGroundMissleResist" 	0.85					// Aircraft Missiles to hit ground targets						
+	 "AircraftBulletResist" 	0.85				//Aircraft to Aircraft bullets							
+	 "AircraftAPBulletResist" 	0.85				//Aircraft Bullets to hit ground targets							
+	 "AircraftBombResist" 		0.85				//Bombs						
+	 "AircraftBombBioResist" 	0.85				//Bio Bombs?							
+													
+	 "InfantryGrenadeResist" 	0.9					//Player Thrown Grenades						
+	 "InfantryMineResist" 		0.9					//Player Tossed Mines					
+	 "InfantryMissileResist" 	0.95					//Gren Missles						
+	 "InfantryMortarResist" 	0.8					//Gren Mortars						
+	 "InfantryStickyResist" 	0.85					//Sticky Grenades						
+	 "InfantrySeismicResist" 	0					//Seismic Grenades						
+	 "InfantryBulletResist" 	1					//Just In Case						
+	 "InfantryUtilityResist"	1					//Concussion nades, various infantry stuff that does special things but no damage
+	 "InfantryMeleeResist"		1					//Infantry melee
+														
+	 "ExtraType1Resist" 		0.5					//Anti Building weapons					
+	 "ExtraType2Resist" 		0.75					//Again					
+	 "ExtraType3Resist" 		0.75					//and a third		
+													
+	//BOUNDARY VECTORS												
+													
+	 "MinColBoundX" "-700"  //Minimum Collision Bound												
+	 "MinColBoundY" "-700"  //Used to calculate the "footprint" that the												
+	 "MinColBoundZ" "0"  //Building takes up												
+													
+	 "MaxColBoundX" "700" //Maximum Collision Bound												
+	 "MaxColBoundY" "700"												
+	 "MaxColBoundZ" "500" //and a third												
+	}
+}

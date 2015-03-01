@@ -1,0 +1,54 @@
+Started at Revision 546
+
+
+vehicle armor.txt--> absorbant armor description-> "This allows the armor reduce damage received as a projectile's speed increases" --->> "This allows the armor to reduce damage received as a projectile's speed increases"
+
+research_items.txt--> 
+
+reactor based vehicle engine ---> a reactor based vehicle engine
+
+ER canon:			"Access manufacturing process for longer bore cannons with farther range." farther changed to further
+
+plasma canon projectile:  Utilize the knowledge gained from superheated matter physics--> Utilize the knowledge gained from superheated material physics
+
+chemistry: ,powerful missile warhead --> a powerful missile warhead
+
+upgraded grenades: Improve the explosive power of vehicle grenades --> Improves the explosive power of vehicle grenades and extends their range
+
+
+advanced chassis: gain newer vehicle chassis types-->Research the required chassis improvements for the Heavy Tank
+
+advanced machining:  Gain access to improve armor material and a more powerful engine design.powerful engine design.-->Gain access to an improved armor material and a more powerful engine design.
+
+tracking systems: Gain access tracking systems used in missiles. --> Gain access to the tracking systems used in missiles.
+regenerative armor: Gain access armor that is able to manufacture replacement material and restore areas that have been damaged or destroyed.-->Gain access to armor that is able to manufacture replacement material and restore areas that have been damaged or destroyed.
+
+superheated material physics: Study the properties of matter as they are heated to plasma like levels-->Study the properties of matter as it is heated to plasma like levels
+
+improved flagration compounds: Increases power of bullets by increasing the stored energy of a bullet's propellant chemical compound. --> increases the power of bullets by increasing the stored energy of a bullet's propellant chemical compund
+
+
+
+Revision 549 changes:
+
+
+vehicle armor.txt-->
+
+Absorbant armor: Absorbant armor is engineered with strong materials able to undergo excessive plastic deformation. ---> Absorbant armor is engineered with strong materials which are able to undergo excessive plastic deformation.
+
+vehicle weapons.txt-->
+
+Bio mg: A small machine gun that fires bullets infectious material to do continual damage to a target---> A small machine gun that fires bullets containing infectious material to do continual damage to a target
+
+upgraded grenade launcher: It is upgraded for more damage and farther range. --> farther changed to longer
+
+ranged cannon: A small caliber cannon that fires tank shells.  Its barrel is enhanced for farther distances -->A small caliber cannon that fires tank  shells. Its barrel is enhanced for longer ranges
+
+salvo ml launcher: A missile launcher with no homing capabilities but can fire its payload of four missiles in one shot before reloading.--> ...capabliities but it can fire its payload...
+
+homing missile launcher (and upgraded homing missile): A missile launcher which fires a single missile that home in on the locked on target.--> ... that homes in on the...
+
+medium artillery cannon: An artillery cannon with high damage but low reload times. Has a greater range than the small cannon and two extra ammo magazines. ----> It has a greater range...
+
+ranged artillery cannon: An artillery cannon with high damage but low reload times.  Has farthest range of all artillery cannons. ---> It has the furthest range...
+

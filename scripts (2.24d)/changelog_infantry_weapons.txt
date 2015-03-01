@@ -1,0 +1,1225 @@
+2.24 TRYOUT 4:
+--------------
+
+BRENODI EMPIRE SMG 2
+
+"StandingSpreadMax"		FROM	"0.2"	TO	"0.16"
+"DuckingSpreadMax"		FROM	"0.2"	TO	"0.16"
+"ProneSpreadMax"		FROM	"0.2"	TO	"0.16"
+
+NORTHERN FACTION SMG 2
+
+"StandingSpreadMax"		FROM	"0.2"	TO	"0.16"
+"DuckingSpreadMax"		FROM	"0.2"	TO	"0.16"
+"ProneSpreadMax"		FROM	"0.2"	TO	"0.16"
+
+2.24 TRYOUT 3:
+--------------
+
+BRENODI EMPIRE ASSAULT CARBINE
+
+"BurstCycleTime"  		FROM	"0.25"	TO	"0.32"
+"StandingSpreadModifier"	FROM	"0.02"	TO	"0.1"
+
+2.24 TRYOUT 2:
+--------------
+
+MAX_AMMO.TXT:
+
+*Engineer can now carry 80 rounds for his SMG 2.
+
+BRENODI EMPIRE MACHINE PISTOL
+
+"Damage"			FROM	"17"	TO	"12"
+
+BRENODI EMPIRE HMG
+
+*Same as NF HMG
+
+BRENODI EMPIRE SMG 1
+
+"Falloff"			FROM	"740"	TO	"1000"
+
+BRENODI EMPIRE SMG 2
+
+"Falloff"			FROM	"2000"	TO	"800"
+"Falloff Base"			FROM	"0.5"	TO	"0.7"
+"clip_size"			FROM	"30"	TO	"40"
+
+NORTHERN FACTION SMG 1
+
+"CycleTime"			FROM	"0.0825" TO	"0.086"
+"Falloff"			FROM	"675"	TO	"1000"
+
+NORTHERN FACTION SMG 2
+
+*Same as BE sMG 2
+
+2.24 TRYOUT 1:
+--------------
+
+NORTHERN FACTION 50 CAL
+
+"IronsightJumpingKick"		FROM	"1"	TO	"0.7"
+"IronsightStandingKick"		FROM	"1"	TO	"0.7"
+"IronsightDuckingKick"		FROM	"1"	TO	"0.7"
+"IronsightProneKick"		FROM	"1"	TO	"0.7"
+
+2.23 TRYOUT 3:
+--------------
+
+NORTHERN FACTION 50 CAL
+
+"IronsightJumpingSpread"	FROM	"0.5"	TO	"0.75"
+"IronsightStandingSpread"	FROM	"0.5	TO	"0.75"
+"IronsightDuckingSpread"	FROM	"0.5"	TO	"0.75"
+
+"IronsightJumpingKick"		FROM	"0.75"	TO	"1.0"
+"IronsightStandingKick"		FROM	"0.75"	TO	"1.0"
+"IronsightDuckingKick"		FROM	"0.75"	TO	"1.0"
+
+"StandingKick_X_NoSpread_Max"	FROM	"1"	TO	"1.5"
+"StandingKick_X_NoSpread_Min"	FROM	"0.5"	TO	"1"
+
+"StandingKick_Y_FullSpread_Min"	FROM	"0.5"	TO	"1"
+"StandingKick_Y_NoSpread_Max"	FROM	"1"	TO	"1"
+"StandingKick_Y_NoSpread_Min"	FROM	"0.3"	TO	"0.8"
+
+"DuckingKick_X_FullSpread_Max"	FROM	"1.5"	TO	"3"
+"DuckingKick_X_FullSpread_Min"	FROM	"0"	TO	"2"
+"DuckingKick_X_NoSpread_Max"	FROM	"0.75"	TO	"1.5"
+"DuckingKick_X_NoSpread_Min"	FROM	"0"	TO	"1"
+
+"DuckingKick_Y_FullSpread_Max"	FROM	"0.1"	TO	"0.5"
+"DuckingKick_Y_FullSpread_Min"	FROM	"0"	TO	"0.3"
+"DuckingKick_Y_NoSpread_Max"	FROM	"0.05"	TO	"0.5"
+"DuckingKick_Y_NoSpread_Min"	FROM	"0"	TO	"0"
+
+"ProneKick_X_FullSpread_Max"	FROM	"1"	TO	"2"
+"ProneKick_X_FullSpread_Min"	FROM	"0"	TO	"1.5"
+"ProneKick_X_NoSpread_Max"	FROM	"0.5"	TO	"1.5"
+"ProneKick_X_NoSpread_Min"	FROM	"0.5"	TO	"1"
+
+"ProneKick_Y_FullSpread_Max"	FROM	"0.1"	TO	"0.3"
+"ProneKick_Y_FullSpread_Min"	FROM	"0"	TO	"0.1"
+"ProneKick_Y_NoSpread_Max"	FROM	"0.05"	TO	"0.3"
+"ProneKick_Y_NoSpread_Min"	FROM	"0.05"	TO	"0"
+
+NORTHERN FACTION SHOT PISTOL
+
+"Bullets"			FROM	"12"	TO	"14"
+
+
+2.23 TRYOUT 2:
+--------------
+
+NORTHERN FACTION SMG 1
+
+"MinimalDamage"			FROM	"3"	TO	"4"
+
+BRENODI EMPIRE SMG 1
+
+"MinimalDamage"			FROM	"3"	TO	"4"
+
+2.23 TRYOUT 1:
+--------------
+
+MAX_AMMO:
+Increased SMG_AMMO for Grenadier to 125 and Rifleman to 75.
+
+NORTHERN FACTION HMG
+
+"StaminaPenalty_Prone"		FROM	"0.1"	TO	"1.65"
+
+NORTHERN FACTION SMG 1
+
+ADDITION
+"AccuracyUpgradeModifier"	TO	"0.88"
+
+"MinimalDamage"			FROM	"5"	TO	"3"
+
+"StandingSpreadIncrement"	FROM	"0.0042"TO	"0.0032"
+"DuckingSpreadIncrement"	FROM	"0.0032"TO	"0.002"
+"ProneSpreadIncrement"		FROM	"0.0032"TO	"0.002"
+
+NORTHERN FACTION SHOT PISTOL
+
+ADDITION
+"AccuracyUpgradeModifier"	TO	"1"
+
+"Damage"			FROM	"15"	TO	"10"
+"Bullets"			FROM	"10"	TO	"12"
+
+NORTHERN FACTION ASSAULT RIFLE
+
+ADDITION
+"AccuracyUpgradeModifier"	TO	"0.85"
+
+"StandingSpreadModifier"	FROM	"0.062"	TO	"0.042"
+
+"StandingSpreadIncrement"	FROM	"0.0062"TO	"0.0038"
+"DuckingSpreadIncrement"	FROM	"0.0042"TO	"0.003"
+"ProneSpreadIncrement"		FROM	"0.0037"TO	"0.003"
+
+BRENODI EMPIRE HMG
+
+"StaminaPenalty_Prone"		FROM	"0.1"	TO	"1.65"
+
+BRENODI EMPIRE MACHINE PISTOL
+
+"clip_size"			FROM	"20"	TO	"25"
+
++ Machine pistol weapon spread
+
+BRENODI EMPIRE SMG 1
+
+ADDITION
+"AccuracyUpgradeModifier"	TO	"0.88"
+
+"MinimalDamage"			FROM	"5"	TO	"3"
+
+"StandingSpreadIncrement"	FROM	"0.004"	TO	"0.003"
+"DuckingSpreadIncrement"	FROM	"0.003"	TO	"0.002"
+"ProneSpreadIncrement"		FROM	"0.003"	TO	"0.002"
+
+BRENODI EMPIRE ASSAULT RIFLE
+
+ADDITION
+"AccuracyUpgradeModifier"	TO	"0.85"
+
+"StandingSpreadModifier"	FROM	"0.06"	TO	"0.04"
+
+"StandingSpreadIncrement"	FROM	"0.006"	TO	"0.0035"
+"DuckingSpreadIncrement"	FROM	"0.004"	TO	"0.0027"
+"ProneSpreadIncrement"		FROM	"0.0035"TO	"0.0027"
+
+BRENODI EMPIRE ASSAULT CARBINE
+
+ADDITION
+"AccuracyUpgradeModifier"	TO	"0.75"
+
+"BurstCycleTime"		FROm	"0.35"	TO	"0.25"
+
+"StandingSpreadIncrement"	FROM	"0.004"	To	"0.0035"
+
+"StandingKick_Y_FullSpread_Max"	FROM	"2"	TO	"0.5"
+"StandingKick_Y_FullSpread_Min"	FROM	"0.5"	TO	"0"
+"StandingKick_Y_NoSpread_Max"	FROM	"1"	TO	"0.3"
+"StandingKick_Y_NoSpread_Min"	FROM	"0.3"	TO	"0"
+
+
+2.22 TRYOUT 1:
+--------------
+
+MAX_AMMO:
+Increased SMG_AMMO for Grenadier and Rifleman to 125.
+
+Northern Faction Shot Pistol:
+
+"Bullets"			FROM	"14"	TO	"11"
+"DuckingSpreadMax"		FROM	"0.1"	TO	"0.2"
+"ProneSpreadMax"		FROM	"0.051"	TO	"0.1"
+
+"JumpingSpreadIncrement"	FROM	"0.01"	TO	"0.2"
+"StandingSpreadIncrement"	FROM	"0.0022"TO	"0.1"
+"DuckingSpreadIncrement"	FROM	"0.001"	TO	"0.1"
+"ProneSpreadIncrement"		FROM	"0.001"	TO	"0.075"
+
+"JumpingSpreadDecrement"	FROM	"0.005"	TO	"0.04"
+"StandingSpreadDecrement"	FROM	"0.025"	TO	"0.04"
+"DuckingSpreadDecrement"	FROM	"0.05"	TO	"0.04"
+"ProneSpreadDecrement"		FROM	"0.1"	TO	"0.04"
+
+2.21 TRYOUT 1:
+--------------
+
+MAX_AMMO:
+Scout can now carry up to 60 bullets for his DMR.
+
+BRENODI EMPIRE DMR
+CycleTime			FROM	"1.0"	TO	"0.5"
+Damage				FROM	"60"	TO	"30"
+Falloff				FROM	"1000"	TO	"1300"
+"clip_size"			FROM	"5"	TO	"10"
+"JumpingSpreadModifier"		FROM	"0.5"	TO	"0.1"
+"StandingSpreadModifier"	FROM	"0.25"	TO	"0.03"
+"DuckingSpreadModifier"		FROm	"0.05"	TO	"0.015"
+"ProneSpreadModifier"		FROM	"0.05"	TO	"0.007"
+
+NORTHERN FACTION DMR
+CycleTime			FROM	"1.0"	TO	"0.5"
+Damage				FROM	"60"	TO	"30"
+Falloff				FROM	"1000"	TO	"1300"
+"clip_size"			FROM	"5"	TO	"10"
+"JumpingSpreadModifier"		FROM	"0.5"	TO	"0.1"
+"StandingSpreadModifier"	FROM	"0.25"	TO	"0.03"
+"DuckingSpreadModifier"		FROm	"0.05"	TO	"0.015"
+"ProneSpreadModifier"		FROM	"0.05"	TO	"0.007"
+
+BRENODI EMPIRE SMG 1
+CycleTime			FROM	"0.135"	TO	"0.12"
+"ProneSpreadMax"		FROM	"0.015"	TO	"0.042"
+"StandingSpreadIncrement"	FROM	"0.0024"TO	"0.0034"
+"DuckingSpreadIncrement"	FROM	"0.0022"TO	"0.0032"
+"ProneSpreadIncrement"		FROM	"0.001"	TO	"0.0032"
+"ProneSpreadDecrement"		FROM	"0.075"	TO	"0.03"
+
+NORTHERN FACTION SMG 1
+CycleTime			FROM	"0.13"	TO	"0.117"
+"ProneSpreadMax"		FROM	"0.01"	TO	"0.04"
+"StandingSpreadIncrement"	FROM	"0.0024"TO	"0.0034"
+"DuckingSpreadIncrement"	FROM	"0.0022"TO	"0.0032"
+"ProneSpreadIncrement"		FROM	"0.001"	TO	"0.0030"
+"ProneSpreadDecrement"		FROM	"0.075"	TO	"0.03"
+
+BRENODI EMPIRE SMG 2
+Damage				FROM	"26"	TO	"22"
+CycleTime			FROM	"0.105"	TO	"0.095"
+ADDED: Falloff Base				TO	"0.55"
+"StandingSpreadIncrement"	FROM	"0.0032"TO	"0.0037"
+"DuckingSpreadIncrement"	FROM	"0.0026"TO	"0.0031"
+"ProneSpreadIncrement"		FROM	"0.0024"TO	"0.0029"
+
+NORTHERN FACTION SMG 2
+Damage				FROM	"26"	TO	"22"
+CycleTime			FROM	"0.105"	TO	"0.095"
+ADDED: Falloff Base				TO	"0.55"
+"StandingSpreadIncrement"	FROM	"0.0032"TO	"0.0037"
+"DuckingSpreadIncrement"	FROM	"0.0026"TO	"0.0031"
+"ProneSpreadIncrement"		FROM	"0.0024"TO	"0.0029"
+
+BRENODI EMPIRE HMG
+Porthos' Spread
+
+NORTHERN FACTION HMG
+Porthos' Spread
+
+NORTHERN FACTION RIFLE
+ADDED: Falloff Base				TO	"0.88"
+Falloff				FROM	"1200"	TO	"1450"
+
+BRENODI EMPIRE RIFLE 2
+ADDED: Falloff Base				TO	"0.88"
+Falloff				FROM	"1200"	TO	"1450"
+
+
+TRYOUT 19:
+----------
+
+max_ammo.txt: The Scout now has 60 bullets for his Designated Marksman rifle.
+
+TRYOUT 18:
+----------
+
+BRENODI EMPIRE RIFLE 1
+"Falloff"			FROM	"2500"	TO	"2000"
+
+NORTHERN FACTION 50 CAL
+"Falloff"			FROM	"2500"	TO	"2000"
+
+NORTHERN FACTION HMG
+"Falloff"			FROM	"2500"	TO	"2300"
+
+BRENODI EMPIRE HMG
+"Falloff"			FROM	"2500"	TO	"2300"
+
+TRYOUT 17:
+----------
+
+BRENODI EMPIRE RIFLE 1
+"StandingSpread"		FROM	"0.02"	TO	"0.005"
+"CycleTime"			FROM	"0.08"	TO	"0.05"
+"BurstCycleTime"  		FROM	"0.4"	TO	"0.35"
+
+NORTHERN FACTION HMG
+"MinimalDamage"			FROM	"10"	TO	"5"
+"DuckingSpreadIncrement"	FROM	"0.0015"TO	"0.005"
+
+"DuckingSpreadDecrement"	FROM	"0.025"	TO	"0.018"
+"ProneSpreadDecrement"		FROM	"0.01"	TO	"0.009"
+
+BRENODI EMPIRE HMG
+"MinimalDamage"			FROM	"10"	TO	"5"
+"DuckingSpreadIncrement"	FROM	"0.0015"TO	"0.005"
+
+"DuckingSpreadDecrement"	FROM	"0.025"	TO	"0.018"
+"ProneSpreadDecrement"		FROM	"0.01"	TO	"0.009"
+
+NORTHERN FACTION SHOT PISTOL
+"MinimalDamage"			FROM	"5"	TO	"3"
+"Falloff"			FROM	"500"	TO	"400"
+
+"StandingSpreadModifier"	FROM	"0.07"	TO	"0.12"
+"DuckingSpreadModifier"		FROM	"0.07"	TO	"0.15"
+"ProneSpreadModifier"		FROM	"0.07"	TO	"0.18"
+
+TRYOUT 16:
+----------
+
+NORTHERN FACTION SHOT PISTOL
+"MinimalDamage"			FROM	"7"	TO	"5"
+
+"StandingSpread"		FROM	"0.04"	TO	"0.05"
+"DuckingSpread"			FROM	"0.035"	TO	"0.05"
+"ProneSpread"			FROM	"0.03"	TO	"0.05"
+
+"StandingSpreadModifier"	FROM	"0.09"	TO	"0.07"
+"DuckingSpreadModifier"		FROM	"0.06"	TO	"0.07"
+"ProneSpreadModifier"		FROM	"0.03"	TO	"0.07"
+
+"ProneSpreadMax"		FROM	"0.050"	TO	"0.051"
+
+
+TRYOUT 15:
+----------
+
+NORTHERN FACTION SHOT PISTOL
+"MinimalDamage"			FROM	"3"	TO	"7"
+"Bullets"			FROM	"10"	TO	"14"
+
+"StandingSpread"		FROM	"0.07"	TO	"0.04"
+"DuckingSpread"			FROM	"0.04"	TO	"0.035"
+"ProneSpread"			FROM	"0.04"	TO	"0.03"
+
+BRENODI EMPIRE PISTOL 2
+	Changed to Burst-Fire.
+"CycleTime"			FROM	"0.2"	TO	"0.1"
+"Falloff"			FROM	"1000"	TO	"600"
+
+"StandingSpreadIncrement"	FROM	"0.005"	TO	"0.008"
+"DuckingSpreadIncrement"	FROM	"0.005"	TO	"0.008"
+"ProneSpreadIncrement"		FROM	"0.001"	TO	"0.005"
+
+BRENODI EMPIRE MACHINE PISTOL
+"CycleTime"			FROM	"0.08"	TO	"0.1"
+"Falloff"			FROM	"1000"	TO	"400"
+
+BRENODI EMPIRE SCOUT RIFLE
+"Damage"			FROM	"80"	TO	"60"
+"Falloff"			FROM	"1200"	TO	"1000"
+"CycleTime"			FROM	"1.275"	TO	"1"	
+"MinimalDamage"			FROM	"10"	TO	"15"
+Removed Stamina Penalties
+
+NORTHERN FACTION SCOUT RIFLE
+"Damage"			FROM	"80"	TO	"60"
+"Falloff"			FROM	"1200"	TO	"1000"
+"CycleTime"			FROM	"1.275"	TO	"1"
+"MinimalDamage"			FROM	"10"	TO	"15"
+Removed Stamina Penalties
+
+NORTHERN FACTION .50 CAL
+"Damage"			FROM	"42"	TO	"37"
+"MinimalDamage"			FROM	"25"	TO	"15"
+
+BRENODI EMPIRE RIFLE 1
+"DuckingSpreadModifier"		FROM	"0.05"	TO	"0.1"
+"ProneSpreadModifier"		FROM	"0.005"	TO	"0.1"
+"DuckingSpreadIncrement"	FROM	"0.0025"TO	"0.0017"
+"StandingSpreadDecrement"	FROM	"0.05	TO	"0.06"
+
+"DuckingKick_X_NoSpread_Max"	FROM	"1.0"	TO	"0.7"
+"DuckingKick_X_NoSpread_Min"	FROM	"0.5"	TO	"0"
+"ProneKick_Y_NoSpread_Max"	FROM	"0.5"	TO	"0.3"
+"ProneKick_Y_NoSpread_Min"	FROM	"0.3"	TO	"0"
+
+
+
+TRYOUT 14:
+----------
+
+MAX_AMMO:
+
+Grenadier now receives 75 bullets for his machine pistol.
+Rifleman now receives 90 bullets for the 50 cal.
+Rifleman now receives 75 bullets for his SMGs. (temporary)
+
+BRENODI EMPIRE PISTOL 2
+	Changed to Full Auto.
+"clip_size"			FROM	"20"	TO	"25"
+"JumpingSpreadMax"		FROM	"0.7"	TO	"0.3"
+"StandingSpreadMax"		FROM	"0.3"	TO	"0.05"
+"DuckingSpreadMax"		FROM	"0.2"	TO	"0.05"
+"ProneSpreadMax"		FROM	"0.03"	TO	"0.05"
+
+"ProneSpreadIncrement"		FROM	"0.001"	TO	"0.005"
+
+"DuckingSpreadDecrement"	FROM	"0.025"	TO	"0.04"
+"ProneSpreadDecrement"		FROM	"0.1"	TO	"0.05"
+
+BRENODI EMPIRE SCOUT RIFLE
+"Damage"			FROM	"60"	TO	"80"
+"Falloff"			FROM	"8000"	TO	"1200"
+
+ADDITION
+	"MinimalDamage"		TO	"10"
+
+"StaminaPenalty_Standing"	FROM	"40.0"	TO	"30.0"
+"StaminaPenalty_Crouching"	FROM	"40.0"	TO	"30.0"
+"StaminaPenalty_Prone"		FROM	"40.0"	TO	"30.0"
+
+NORTHERN FACTION SCOUT RIFLE
+"Damage"			FROM	"60"	TO	"80"
+"Falloff"			FROM	"8000"	TO	"1200"
+
+ADDITION
+	"MinimalDamage"		TO	"10"
+
+"StaminaPenalty_Standing"	FROM	"40.0"	TO	"30.0"
+"StaminaPenalty_Crouching"	FROM	"40.0"	TO	"30.0"
+"StaminaPenalty_Prone"		FROM	"40.0"	TO	"30.0"
+
+NORTHERN FACTION 50 CAL
+
+"Damage"			FROM	"37"	TO	"42"
+"clip_size"			FROM	"10"	TO	"15"
+"StandingSpreadModifier"	FROM	"0.15"	TO	"0.05"
+"DuckingSpreadModifier"		FROM	"0.15"	TO	"0.1"
+"ProneSpreadModifier"		FROM	"0.15"	TO	"0.1"
+
+
+NORTHERN FACTION SMG 2
+"Damage"			FROM	"22"	TO	"26"
+"CycleTime"			FROM	"0.11"	TO	"0.105"
+
+BRENODI EMPIRE SMG 2
+"Damage"			FROM	"22"	TO	"26"
+"CycleTime"			FROM	"0.11"	TO	"0.105"
+
+BRENODI EMPIRE RIFLE 2
+"CycleTime"			FROM	"0.12"	TO	"0.115"		
+"StandingSpreadModifier"	FROM	"0.07"	TO	"0.06"
+"DuckingSpreadModifier"		FROM	"0.15"	TO	"0.1"
+"StandingSpreadMax"		FROM	"0.42"	TO	"0.35"
+"DuckingSpreadMax"		FROM	"0.28"	TO	"0.16"
+"ProneSpreadMax"		FROM	"0.20"	TO	"0.08"
+"StandingSpreadIncrement"	FROM	"0.005"	TO	"0.004"
+"DuckingSpreadIncrement"	FROM	"0.0054"TO	"0.003"
+
+
+NORTHERN FACTION RIFLE
+"StandingSpreadModifier"	FROM	"0.07"	TO	"0.06"
+"DuckingSpreadModifier"		FROM	"0.15"	TO	"0.1"
+"StandingSpreadMax"		FROM	"0.35"	TO	"0.30"
+"DuckingSpreadMax"		FROM	"0.20"	TO	"0.15"
+"StandingSpreadIncrement"	FROM	"0.005"	TO	"0.004"
+"DuckingSpreadIncrement"	FROM	"0.005"	TO	"0.003"
+
+
+NORTHERN FACTION HMG
+"DuckingSpreadMax"		FROM	"0.1"	TO	"0.2"
+"ProneSpreadMax"		FROM	"0.1"	TO	"0.25"
+"DuckingSpreadModifier"		FROM	"0.1"	TO	"0.25"
+"ProneSpreadModifier"		FROm	"0.1"	TO	"0.25"
+"ProneSpreadDecrement"		FROM	"0.03"	TO	"0.01"
+
+BRENODI EMPIRE HMG
+"DuckingSpreadMax"		FROM	"0.1"	TO	"0.2"
+"ProneSpreadMax"		FROM	"0.1"	TO	"0.25"
+"DuckingSpreadModifier"		FROM	"0.1"	TO	"0.25"
+"ProneSpreadModifier"		FROm	"0.1"	TO	"0.25"
+"ProneSpreadDecrement"		FROM	"0.03"	TO	"0.01"
+
+
+TRYOUT 13:
+----------
+
+NORTHERN FACTION HMG
+	"ProneSpreadIncrement"	FROM	"0.0012"TO	"0.0009"
+	"CycleTime"		FROM	"0.1"	TO	"0.065"
+
+BRENODI EMPIRE HMG
+	"ProneSpreadIncrement"	FROM	"0.0012"TO	"0.0009"
+	"CycleTime"		FROM	"0.1"	TO	"0.065"
+
+BRENODI EMPIRE RIFLE 1
+"Falloff"			FROM	"2000"	TO	"2500"
+"DuckingSpreadIncrement"	FROm	"0.065"	TO	"0.0025"
+
+NORTHERN FACTION RIFLE	
+"Falloff"			FROM	"2000"	TO	"1200"
+
+"DuckingSpread"			FROM	"0.006"	TO	"0.01"
+"StandingSpreadModifier"	FROM	"0.055"	TO	"0.07"
+"DuckingSpreadModifier"		FROM	"0.055"	TO	"0.15"
+"DuckingSpreadMax"		FROM	"0.15"	TO	"0.20"
+
+NORTHERN FACTION SMG 2
+"Damage"			FROM	"26"	TO	"22"
+
+BRENODI EMPIRE SMG 2
+"Damage"			FROM	"26"	TO	"22"
+
+TRYOUT 12:
+----------
+
+BRENODI EMPIRE RIFLE 1
+ADDITION
+"BurstShots"   			TO	"3"
+"BurstCycleTime"  		TO	"0.4"
+
+"CycleTime"			FROM	"0.11"	TO	"0.08"
+
+"DuckingSpreadIncrement"	FROm	"0.005"	TO	"0.0065"
+
+NORTHERN FACTION 50 CAL
+"CycleTime"			FROM	"0.23"	TO	"0.18"	
+
+"StandingKick_X_NoSpread_Max"	
+				FROM	"2"	TO	"1"
+"StandingKick_X_NoSpread_Min"
+				FROM	"1"	TO	"0.5"
+
+NORTHERN FACTION SHOT PISTOL
+"Falloff"			FROm	"800"	TO	"500"
+
+NORTHERN FACTION SMG 2
+"CycleTime"			FROM	"0.12"	TO	"0.11"
+
+BRENODI EMPIRE SMG 2
+"CycleTime"			FROM	"0.12"	TO	"0.11"
+
+TRYOUT 11:
+----------
+
+MAX_AMMO.txt
+All classes now have 28 max pistol bullets, grenadier has max 42 pistol bullets. Grenadier has max 24 buckshot shells.
+
+NORTHERN FACTION SMG 2
+"CycleTime"			FROM	"0.14"	TO	"0.12"
+
+BRENODI EMPIRE SMG 2
+"CycleTime"			FROM	"0.14"	TO	"0.12"
+
+NORTHERN FACTION SMG 1
+"CycleTime"			FROM	"0.135"	TO	"0.13"
+"StandingSpreadIncrement"	FROM	"0.0026"TO	"0.0024"
+"DuckingSpreadIncrement"	FROM	"0.0026"TO	"0.0022"
+
+BRENODI EMPIRE SMG 1
+"CycleTime"			FROM	"0.14"	TO	"0.135"
+"StandingSpreadIncrement"	FROM	"0.0026"TO	"0.0024"
+"DuckingSpreadIncrement"	FROM	"0.0026"TO	"0.0022"
+
+NORTHERN FACTION PISTOL
+"Falloff"			FROM	"800"	TO	"500"
+
+BRENODI EMPIRE PISTOL 1
+"Falloff"			FROM	"800"	TO	"500"
+
+BRENODI EMPIRE PISTOL 2
+"Falloff"			FROM	"1600"	TO	"1000"
+
+BRENODI EMPIRE RIFLE 1
+"CycleTime"			FROM	"0.13"	TO	"0.11"
+
+BRENODI EMPIRE RIFLE 2
+"CycleTime"			FROM	"0.145"	TO	"0.12"
+"Damage"			FROM	"35"	TO	"32"
+"Falloff"			FROM	"900"	TO	"1200"	
+
+NORTHERN FACTION RIFLE 1
+"CycleTime"			FROM	"0.13"	TO	"0.11"	
+
+NORTHERN FACTION 50 CAL
+"Falloff"			FROM	"1800"	TO	"2500"		
+
+TRYOUT 10:
+----------
+
+NORTHERN FACTION HMG
+	"ProneSpreadMax"	FROM	"0.02"	TO	"0.1"
+	"ProneSpreadDecrement"	FROM	"0.04"	TO	"0.03"
+	"ProneSpreadIncrement"	FROM	"0.0005"TO	"0.0012"
+
+BRENODI EMPIRE HMG
+	"ProneSpreadMax"	FROM	"0.02"	TO	"0.1"
+	"ProneSpreadDecrement"	FROM	"0.04"	TO	"0.03"
+	"ProneSpreadIncrement"	FROM	"0.0005"TO	"0.0012"
+
+BRENODI EMPIRE RIFLE 2
+	"CycleTime"		FROM	"0.16"	TO	"0.145"
+	"Falloff"		FROM	"1800"	TO	"900"	
+
+				FROM	"0.2"	TO	"0.1"
+
+NORTHERN FACTION 50 CAL
+	"CycleTime"		FROM	"0.3"	TO	"0.23"
+
+NORTHERN FACTION RIFLE
+	"DuckingSpread"		FROM	"0.01"	TO	"0.006"
+	"StandingSpreadModifier"FROM	"0.07"	TO	"0.055"
+	"DuckingSpreadModifier"	FROM	"0.1"	TO	"0.055"
+	"StandingSpreadMax"	FROM	"0.36"	TO	"0.35"
+	"DuckingSpreadMax"	FROM	"0.23"	TO	"0.15"
+	"ProneSpreadMax"	FROM	"0.18"	TO	"0.06"
+
+BRENODI EMPIRE RIFLE 1
+	"DuckingSpread"		FROM	"0.005"	TO	"0.006"
+	"ProneSpread"		FROM	"0.003"	TO	"0.005"
+
+NORTHERN FACTION PISTOL
+	"DuckingSpreadModifier"	FROM	"0.02"	TO	"0.04"
+	"DuckingSpreadDecrement"FROM	"0.05"	TO	"0.025"
+	"DuckingSpreadMax"	FROM	"0.1"	TO	"0.2"
+	"DuckingSpreadIncrement"FROM	"0.001"	TO	"0.005"
+
+BRENODI EMPIRE PISTOL 1
+	"DuckingSpreadModifier"	FROM	"0.02"	TO	"0.04"
+	"DuckingSpreadDecrement"FROM	"0.05"	TO	"0.025"
+	"DuckingSpreadMax"	FROM	"0.1"	TO	"0.2"
+	"DuckingSpreadIncrement"FROM	"0.001"	TO	"0.005"
+
+BRENODI EMPIRE PISTOL 2
+	"DuckingSpreadModifier"	FROM	"0.03"	TO	"0.05"
+	"DuckingSpreadDecrement"FROM	"0.05"	TO	"0.025"
+	"DuckingSpreadMax"	FROM	"0.1"	TO	"0.2"
+	"DuckingSpreadIncrement"FROM	"0.001"	TO	"0.005"
+
+
+TRYOUT 9:
+---------
+
+NORTHERN FACTION HMG
+	"JumpingSpreadDecrement"
+				FROM	"0.01"	TO	"0.005"
+	"StandingSpreadDecrement"
+				FROM	"0.02"	TO	"0.01"
+	"DuckingSpreadDecrement"
+				FROM	"0.05"	TO	"0.025"
+	"ProneSpreadDecrement"	
+				FROM	"0.08"	TO	"0.04"
+
+NORTHERN FACTION PISTOL
+	"JumpingSpreadDecrement"
+				FROM	"0.01"	TO	"0.005"
+	"StandingSpreadDecrement"
+				FROM	"0.05"	TO	"0.025"
+	"DuckingSpreadDecrement"
+				FROM	"0.1"	TO	"0.05"
+	"ProneSpreadDecrement"	
+				FROM	"0.2"	TO	"0.1"
+
+NORTHERN FACTION SHOT PISTOL
+	"JumpingSpreadDecrement"
+				FROM	"0.01"	TO	"0.005"
+	"StandingSpreadDecrement"
+				FROM	"0.05"	TO	"0.025"
+	"DuckingSpreadDecrement"
+				FROM	"0.1"	TO	"0.05"
+	"ProneSpreadDecrement"	
+				FROM	"0.2"	TO	"0.1"
+
+NORTHERN FACTION 50 CAL
+	"JumpingSpreadDecrement"
+				FROM	"0.01"	TO	"0.005"
+	"StandingSpreadDecrement"
+				FROM	"0.03"	TO	"0.015"
+	"DuckingSpreadDecrement"
+				FROM	"0.05"	TO	"0.025"
+	"ProneSpreadDecrement"	
+				FROM	"0.05"	TO	"0.025"
+
+NORTHERN FACTION RIFLE
+	"JumpingSpreadDecrement"
+				FROM	"0.01"	TO	"0.005"
+	"StandingSpreadDecrement"
+				FROM	"0.1"	TO	"0.05"
+	"DuckingSpreadDecrement"
+				FROM	"0.13"	TO	"0.065"
+	"ProneSpreadDecrement"	
+				FROM	"0.14"	TO	"0.07"
+
+NORTHERN FACTION SCOUT RIFLE
+	"JumpingSpreadDecrement"
+				FROM	"0.01"	TO	"0.005"
+	"StandingSpreadDecrement"
+				FROM	"0.05"	TO	"0.025"
+	"DuckingSpreadDecrement"
+				FROM	"0.1"	TO	"0.05"
+	"ProneSpreadDecrement"	
+				FROM	"0.1"	TO	"0.05"
+
+NORTHERN FACTION SMG 1
+	"JumpingSpreadDecrement"
+				FROM	"0.02"	TO	"0.01"
+	"StandingSpreadDecrement"	
+				FROM	"0.06"	TO	"0.03"
+	"DuckingSpreadDecrement"
+				FROM	"0.06"	TO	"0.03"
+	"ProneSpreadDecrement"	
+				FROM	"0.15"	TO	"0.075"
+
+NORTHERN FACTION SMG 2
+	"JumpingSpreadDecrement"
+				FROM	"0.03"	TO	"0.015"
+	"StandingSpreadDecrement"
+				FROM	"0.07"	TO	"0.035"
+	"DuckingSpreadDecrement"
+				FROM	"0.06"	TO	"0.03"
+	"ProneSpreadDecrement"	
+				FROM	"0.08"	TO	"0.04"
+
+BRENODI EMPIRE HMG
+	"JumpingSpreadDecrement"
+				FROM	"0.01"	TO	"0.005"
+	"StandingSpreadDecrement"
+				FROM	"0.02"	TO	"0.01"
+	"DuckingSpreadDecrement"
+				FROM	"0.05"	TO	"0.025"
+	"ProneSpreadDecrement"	
+				FROM	"0.08"	TO	"0.04"
+
+BRENODI EMPIRE PISTOL 1
+	"JumpingSpreadDecrement"
+				FROM	"0.01"	TO	"0.005"
+	"StandingSpreadDecrement"
+				FROM	"0.05"	TO	"0.025"
+	"DuckingSpreadDecrement"
+				FROM	"0.1"	TO	"0.05"
+	"ProneSpreadDecrement"	
+				FROM	"0.2"	TO	"0.1"
+
+BRENODI EMPIRE PISTOL 2
+	"JumpingSpreadDecrement"
+				FROM	"0.01"	TO	"0.005"
+	"StandingSpreadDecrement"
+				FROM	"0.05"	TO	"0.025"
+	"DuckingSpreadDecrement"
+				FROM	"0.1"	TO	"0.05"
+	"ProneSpreadDecrement"	
+				FROM	"0.2"	TO	"0.1"
+
+BRENODI EMPIRE RIFLE 1
+	"JumpingSpreadDecrement"
+				FROM	"0.01"	TO	"0.005"
+	"StandingSpreadDecrement"
+				FROM	"0.1"	TO	"0.05"
+	"DuckingSpreadDecrement"
+				FROM	"0.13"	TO	"0.065"
+	"ProneSpreadDecrement"	
+				FROM	"0.15"	TO	"0.075"
+
+BRENODI EMPIRE RIFLE 2
+	"JumpingSpreadDecrement"
+				FROM	"0.01"	TO	"0.005"
+	"StandingSpreadDecrement"
+				FROM	"0.1"	TO	"0.05"
+	"DuckingSpreadDecrement"
+				FROM	"0.13"	TO	"0.065"
+	"ProneSpreadDecrement"	
+				FROM	"0.13"	TO	"0.065"
+
+BRENODI EMPIRE SCOUT RIFLE
+	"JumpingSpreadDecrement"
+				FROM	"0.01"	TO	"0.005"
+	"StandingSpreadDecrement"
+				FROM	"0.05"	TO	"0.025"
+	"DuckingSpreadDecrement"
+				FROM	"0.1"	TO	"0.05"
+	"ProneSpreadDecrement"	
+				FROM	"0.1"	TO	"0.05"
+
+BRENODI EMPIRE SMG 1
+	"JumpingSpreadDecrement"
+				FROM	"0.02"	TO	"0.01"
+	"StandingSpreadDecrement"
+				FROM	"0.06"	TO	"0.03"
+	"DuckingSpreadDecrement"
+				FROM	"0.06"	TO	"0.03"
+	"ProneSpreadDecrement"	
+				FROM	"0.15"	TO	"0.075"
+BRENODI EMPIRE SMG 2
+	"JumpingSpreadDecrement"
+				FROM	"0.03"	TO	"0.015"
+	"StandingSpreadDecrement"
+				FROM	"0.07"	TO	"0.035"
+	"DuckingSpreadDecrement"
+				FROM	"0.06"	TO	"0.03"
+	"ProneSpreadDecrement"	
+				FROM	"0.08"	TO	"0.04"
+
+
+TRYOUT 8:
+---------
+
+NORTHERN FACTION RIFLE 
+"Damage"			FROM	"40"	TO	"28"
+
+NORTHERN FACTION 50 CAL
+"Damage"			FROM	"60"	TO	"37"
+"CycleTime"			FROM	"0.18"	TO	"0.3"
+
+NORTHERN FACTION HMG
+"Damage"			FROM	"25"	TO	"20"
+
+NORTHERN FACTION SMG1
+"CycleTime"			FROM	"0.155"	TO	"0.135"	
+
+BRENODI EMPIRE RIFLE 1
+"Damage"			FROM	"35"	TO	"25"
+
+BRENODI EMPIRE RIFLE 2
+"Damage"			FROM	"50"	TO	"35"
+
+BRENODI EMPIRE HMG
+"Damage"			FROM	"25"	TO	"20"
+
+BRENODI EMPIRE SMG1
+"CycleTime"			FROM	"0.16"	TO	"0.14"
+
+TRYOUT 7:
+---------
+
+NORTHERN FACTION RIFLE 
+	ADDITION
+	"IronsightStandSpread"	TO	"0.3"
+
+NORTHERN FACTION SMG1
+	"StandingSpreadIncrement"
+				FROM	"0.0030"TO	"0.0026"
+
+BRENODI EMPIRE RIFLE 1
+	ADDITION
+	"IronsightStandSpread"	TO	"0.3"
+
+	"DuckingSpreadModifier"	FROM	"0.01"	TO	"0.05"
+
+	"DuckingSpreadMax"	FROM	"0.1"	TO	"0.15"
+
+
+	"DuckingSpreadIncrement"
+				FROM	"0.0023"TO	"0.005"
+	"StandingSpreadDecrement"
+				FROM	"0.05"	TO	"0.1"
+	"DuckingSpreadDecrement"
+				FROM	"0.1"	TO	"0.13"
+
+BRENODI EMPIRE RIFLE 2
+		ADDITION
+	"IronsightStandSpread"	TO	"0.3"
+
+	"DuckingSpread"		FROM	"0.005"	TO	"0.01"
+	"ProneSpread"		FROM	"0.002"	TO	"0.006
+
+	"StandingSpreadModifier"FROM	"0.05"	TO	"0.07"
+	"DuckingSpreadModifier"	FROM	"0.015"	TO	"0.15"
+
+	"StandingSpreadMax"	FROM	"0.38"	TO	"0.42"
+	"DuckingSpreadMax"	FROM	"0.2"	TO	"0.28"
+	"ProneSpreadMax"	FROM	"0.05"	TO	"0.20"
+
+	"DuckingSpreadIncrement"
+				FROM	"0.0027"TO	"0.0054"
+	"StandingSpreadDecrement"
+				FROM	"0.05"	TO	"0.1"
+	"DuckingSpreadDecrement"
+				FROM	"0.1"	TO	"0.13"
+
+BRENODI EMPIRE SMG1
+	"StandingSpreadIncrement"
+				FROM	"0.0030"TO	"0.0026"
+
+TRYOUT 6:
+---------
+
+NORTHERN FACTION HMG
+	"Falloff"		FROM	"4000"	TO	"2500"
+
+NORTHERN FACTION 50 CAL
+	"Falloff"		FROM	"5000"	TO	"1800"
+
+	"DuckingSpread"		FROM	"0.001"	TO	"0.008"
+	"ProneSpread"		FROM	"0.0003"TO	"0.008"
+	"StandingSpreadModifier"FROM	"0.03"	TO	"0.15"
+	"DuckingSpreadModifier"	FROM	"0.01"	TO	"0.15"
+	"ProneSpreadModifier"	FROM	"0.005"	TO	"0.15"
+
+	"StandingSpread"	FROM	"0.005"	TO	"0.015"
+	"DuckingSpread"		FROM	"0.003"	TO	"0.01"
+	"ProneSpread"		FROM	"0.0005"TO	"0.01"
+
+	"ProneSpreadIncrement"	FROM	"0.0005"TO	"0.001"
+	"ProneSpreadDecrement"	FROM	"0.07"	TO	"0.05"
+
+	ADDITION
+	"IronsightDuckSpread"	TO	"5.0"
+	"IronsightDuckKick"	TO	"2.0"
+
+	"ProneKick_X_NoSpread_Min" FROM	"0"	TO	"0.5"
+	"ProneKick_Y_NoSpread_Min" FROM	"0"	TO	"0.05"
+
+NORTHERN FACTION RIFLE 
+	"Falloff"		FROM	"4000"	TO	"2000"
+
+	"DuckingSpread"		FROM	"0.003"	TO	"0.01"
+	"ProneSpread"		FROM	"0.002"	TO	"0.005"
+
+	"StandingSpreadModifier"FROM	"0.04"	TO	"0.07"
+	"DuckingSpreadModifier"	FROM	"0.01"	TO	"0.1"
+
+	"DuckingSpreadIncrement"FROM	"0.0025"TO	"0.005"
+
+	"StandingSpreadDecrement"
+				FROM	"0.05"	TO	"0.1"
+	"DuckingSpreadDecrement"FROM	"0.1"	TO	"0.13"
+
+BRENODI EMPIRE HMG
+	"Falloff"		FROM	"4000"	TO	"2500"
+
+BRENODI EMPIRE RIFLE 1
+	"Falloff"		FROM	"4000"	TO	"2000"
+
+BRENODI EMPIRE RIFLE 2
+	"Falloff"		FROM	"2500"	TO	"1800"
+
+
+TRYOUT 5:
+---------
+
+BRENODI EMPIRE SMG 1
+	"CycleTime"		FROM	"0.2"	 TO	"0.16"
+
+	"JumpingSpreadIncrement"
+				FROM	"0.01"	 TO	"0.018"
+
+	"StandingSpreadIncrement"	
+				FROM	"0.0018" TO	"0.0030"
+
+	"DuckingSpreadIncrement"
+				FROM	"0.001"	 TO	"0.0026"
+
+	"ProneSpreadIncrement"	FROM	"0.005"	 TO	"0.001"
+
+	"DuckingSpreadDecrement"
+				FROM	"0.1"	TO	"0.06"
+	"DuckingSpreadMax"	FROM	"0.03"	TO"	"0.04"
+
+BRENODI EMPIRE SMG 2
+	"CycleTime"		FROM	"0.15"	 TO	"0.14"
+	"Damage"		FROM	"30"	 TO	"26"
+
+	"JumpingSpreadIncrement"
+				FROM	"0.01"	 TO	"0.021"
+
+	"StandingSpreadIncrement"
+				FROM	"0.0015" TO	"0.032"
+
+	"DuckingSpreadIncrement"	
+				FROM	"0.0012" TO	"0.026"
+
+	"ProneSpreadIncrement"	FROM	"0.0011" TO	"0.024"
+
+NORTHERN FACTION SMG 1
+	"CycleTime"		FROM	"0.18"	 TO	"0.155"
+
+	"JumpingSpreadIncrement"
+				FROM	"0.01"	 TO	"0.02"
+
+	"StandingSpreadIncrement"	
+				FROM	"0.0018" TO	"0.030"
+
+	"DuckingSpreadIncrement"
+				FROM	"0.001"	 TO	"0.026"
+
+	"ProneSpreadIncrement"	FROM	"0.001"	 TO	"0.0012"
+
+	"DuckingSpreadDecrement"
+				FROM	"0.1"	TO	"0.06"
+	"DuckingSpreadMax"	FROM	"0.03"	TO"	"0.04"
+
+NORTHERN FACTION SMG 2
+	"CycleTime"		FROM	"0.15"	 TO	"0.14"
+	"Damage"		FROM	"30"	 TO	"26"
+	"JumpingSpreadIncrement"
+				FROM	"0.01"	 TO	"0.021"
+
+	"StandingSpreadIncrement"
+				FROM	"0.0015" TO	"0.032"
+
+	"DuckingSpreadIncrement"	
+				FROM	"0.0012" TO	"0.026"
+
+	"ProneSpreadIncrement"	FROM	"0.0011" TO	"0.024"
+
+
+TRYOUT 4:
+---------
+
+NORTHERN FACTION RIFLE
+	"CycleTime"		FROM	"0.09"	TO	"0.13"
+	"StandingSpread"	FROM	"0.08"	TO	"0.02"
+	"StandingSpreadMax"	FROM	"0.30"	TO	"0.36"
+
+BRENODI EMPIRE RIFLE 1
+	"CycleTime"		FROM	"0.09"	TO	"0.13"
+	"StandingSpread"	FROM	"0.01"	TO	"0.02"
+	"StandingSpreadMax"	FROM	"0.30"	TO	"0.35"
+
+BRENODI EMPIRE RIFLE 2
+	"CycleTime"		FROM	"0.1"	TO	"0.16"
+	"StandingSpread"	FROM	"0.01"	TO	"0.02"
+	"StandingSpreadMax"	FROM	"0.30"	TO	"0.38"
+
+BRENODI EMPIRE SMG 1
+	"CycleTime"		FROM	"0.1"	TO	"0.2"
+
+BRENODI EMPIRE SMG 2
+	"CycleTime"		FROM	"0.085"	TO	"0.15"
+
+NORTHERN FACTION SMG 1
+	"CycleTime"		FROM	"0.09"	TO	"0.18"
+
+NORTHERN FACTION SMG 2
+	"CycleTime"		FROM	"0.085"	TO	"0.15"
+
+TRYOUT 3:
+---------
+
+NORTHERN FACTION RIFLE
+	"CycleTime"	FROM	"0.070"	TO	"0.09"
+
+BRENODI EMPIRE RIFLE 1
+	"CycleTime"	FROM	"0.075"	TO	"0.09"
+
+BRENODI EMPIRE RIFLE 2
+	"CycleTime"	FROM	"0.08"	TO	"0.1"
+
+NORTHERN FACTION HMG
+	"Damage"	FROM	"37"	TO	"25"
+	"CycleTime"	FROM	"0.09"	TO	"0.1"
+
+BRENODI EMPIRE HMG
+	"Damage"	FROM	"37"	TO	"25"
+	"CycleTime"	FROM	"0.09"	TO	"0.1"
+
+TRYOUT 2:
+---------
+
+NORTHERN FACTION 50 CAL
+	ADDITION
+	"MinimalDamage"	TO	"25"
+
+NORTHERN FACTION HMG
+	ADDITION
+	"MinimalDamage"	TO	"10"
+
+NORTHERN FACTION PISTOL
+	ADDITION
+	"MinimalDamage"	TO	"5"
+
+NORTHERN FACTION SHOT PISTOL
+	ADDITION
+	"MinimalDamage"	TO	"3"
+
+NORTHERN FACTION RIFLE 
+	ADDITION
+	"MinimalDamage"	TO	"12"
+
+NORTHERN FACTION SMG 1
+	ADDITION
+	"MinimalDamage"	TO	"5"
+
+NORTHERN FACTION SMG 2
+	ADDITION
+	"MinimalDamage"	TO	"8"
+
+NORTHERN FACTION SMG 3 (lolwat)
+	ADDITION
+	"MinimalDamage"	TO	"0"
+
+
+BRENODI EMPIRE PISTOL 1
+	ADDITION
+	"MinimalDamage"	TO	"5"
+
+BRENODI EMPIRE PISTOL 2
+	ADDITION
+	"MinimalDamage"	TO	"8"
+
+BRENODI EMPIRE RIFLE 1
+	ADDITION
+	"MinimalDamage"	TO	"10"
+
+BRENODI EMPIRE RIFLE 2
+	ADDITION
+	"MinimalDamage"	TO	"15"
+
+BRENODI EMPIRE SMG 1
+	ADDITION
+	"MinimalDamage"	TO	"6"
+
+BRENODI EMPIRE SMG 2
+	ADDITION
+	"MinimalDamage"	TO	"8"
+
+BRENODI EMPIRE HMG
+	ADDITION
+	"MinimalDamage"	TO	"10"
+
+
+TRYOUT 1:
+---------
+
+NORTHERN FACTION 50 CAL
+	ADDITION
+	"Falloff"	TO	"5000"
+
+NORTHERN FACTION HMG
+	ADDITION
+	"Falloff"	TO	"4000"
+
+NORTHERN FACTION PISTOL
+	ADDITION
+	"Falloff"	TO	"800"
+
+NORTHERN FACTION SHOT PISTOL
+	ADDITION
+	"Falloff"	TO	"800"
+
+NORTHERN FACTION RIFLE 
+	ADDITION
+	"Falloff"	TO	"4000"
+
+NORTHERN FACTION SMG 1
+	ADDITION
+	"Falloff"	TO	"1400"
+
+NORTHERN FACTION SMG 2
+	ADDITION
+	"Falloff"	TO	"1000"
+
+NORTHERN FACTION SMG 3 (lolwat)
+	ADDITION
+	"Falloff"	TO	"0"
+
+
+
+BRENODI EMPIRE PISTOL 1
+	ADDITION
+	"Falloff"	TO	"800"
+
+BRENODI EMPIRE PISTOL 2
+	ADDITION
+	"Falloff"	TO	"1600"
+
+BRENODI EMPIRE RIFLE 1
+	ADDITION
+	"Falloff"	TO	"4000"
+
+BRENODI EMPIRE RIFLE 2
+	ADDITION
+	"Falloff"	TO	"2500"
+
+BRENODI EMPIRE SMG 1
+	ADDITION
+	"Falloff"	TO	"1400"
+
+BRENODI EMPIRE SMG 2
+	ADDITION
+	"Falloff"	TO	"1000"
+
+BRENODI EMPIRE HMG
+	ADDITION
+	"Falloff"	TO	"4000"
+

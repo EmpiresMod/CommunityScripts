@@ -1,0 +1,122 @@
+vehicle_chassis
+{
+//Northern Faction
+	"NF_Jeep"
+	{
+		"Script"	"scripts/vehicle_nf_jeep.txt"
+		"Preset"	"scripts/vehicle_nf_jeep_preset.txt"
+	}
+
+	"NF_APC"
+	{
+		"Script"	"scripts/vehicle_nf_apc.txt"
+		"Preset"	"scripts/vehicle_nf_apc_preset.txt"	
+	}
+
+//	"NF_APC_PLASMA"
+//	{
+//		"Script"	"scripts/vehicle_nf_apc_plasma.txt"
+//		"Preset"	"scripts/vehicle_nf_apc_plasma_preset.txt"
+//	}
+
+	"NF_Light_Tank"
+	{
+		"Script"	"scripts/vehicle_nf_light_tank.txt"
+		"Preset"	"scripts/vehicle_nf_light_tank_preset.txt"
+	}
+
+	"NF_Light_Tank_MKII"
+	{
+		"Script"	"scripts/vehicle_nf_light_tank_mkii.txt"
+		"Preset"	"scripts/vehicle_nf_light_tank_mkii_preset.txt"
+	}
+
+	"NF_Med_Tank"
+	{
+		"Script"	"scripts/vehicle_nf_med_tank.txt"
+		"Preset"	"scripts/vehicle_nf_med_tank_preset.txt"
+	}
+
+
+	"NF_Heavy_Tank"
+	{
+		"Script"	"scripts/vehicle_nf_heavy_tank.txt"
+		"Preset"	"scripts/vehicle_nf_heavy_tank_preset.txt"
+	}
+
+	"NF_Arty_Tank"
+	{
+		"Script"	"scripts/vehicle_nf_arty_tank.txt"
+		"Preset"	"scripts/vehicle_nf_arty_tank_preset.txt"
+	}
+
+
+
+//Brenodi Empire
+	"Imperial_Jeep"
+	{
+		"Script"	"scripts/vehicle_imp_jeep.txt"
+		"Preset"	"scripts/vehicle_imp_jeep_preset.txt"
+	}
+
+	"Imperial_APC"
+	{
+		"Script"	"scripts/vehicle_imp_apc.txt"
+		"Preset"	"scripts/vehicle_imp_apc_preset.txt"
+	}
+//	"Imperial_APC_PLASMA"
+//	{
+//		"Script"	"scripts/vehicle_imp_apc_plasma.txt"
+//		"Preset"	"scripts/vehicle_imp_apc_plasma_preset.txt"
+//	}
+
+	"Imperial_AFV"
+	{
+		"Script"	"scripts/vehicle_imp_afv.txt"
+		"Preset"	"scripts/vehicle_imp_afv_preset.txt"
+	}
+	
+//	"Imperial_AFV_TEST"
+//	{
+//	"Script"	"scripts/vehicle_imp_afv_test1.txt"
+//	"Preset"	"scripts/vehicle_imp_afv_test1_preset.txt"
+//	}
+
+	"Imperial_AFV_MKII"
+	{
+		"Script"	"scripts/vehicle_imp_afv_mkii.txt"
+		"Preset"	"scripts/vehicle_imp_afv_mkii_preset.txt"
+	}
+
+	"Imperial_Med_Tank"
+	{
+		"Script"	"scripts/vehicle_imp_med_tank.txt"
+		"Preset"	"scripts/vehicle_imp_med_tank_preset.txt"
+	}
+
+
+	"Imperial_Heavy_Tank"
+	{
+		"Script"	"scripts/vehicle_imp_heavy_tank.txt"
+		"Preset"	"scripts/vehicle_imp_heavy_tank_preset.txt"
+	}
+
+	"Imperial_Arty_Tank"
+	{
+		"Script"	"scripts/vehicle_imp_arty_tank.txt"
+		"Preset"	"scripts/vehicle_imp_arty_tank_preset.txt"
+	}
+
+//Commander vehicles
+	"Imperial_Commander"
+	{
+		"Script"	"scripts/vehicle_imp_comm.txt"
+		"Preset"	"scripts/vehicle_imp_comm_preset.txt"
+	}
+
+	"NF_Commander"
+	{
+		"Script"	"scripts/vehicle_nf_comm.txt"
+		"Preset"	"scripts/vehicle_nf_comm_preset.txt"
+	}
+}

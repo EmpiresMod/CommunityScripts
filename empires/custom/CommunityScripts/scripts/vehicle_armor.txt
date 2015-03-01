@@ -1,0 +1,219 @@
+"Vehicle_armor"
+{
+	"Plain Armor"
+	{
+		"Name"			"Plain Armor"						// name given when selecting weapons
+		"Description"		"Plain armor offers mild protection from damage."	// description given when selecting weapons
+		"Icon"			"vehicles/gui/armor/armor_small"			// icon drawn in the GUI
+		"HUD Icon"		""
+		"Size"			"1"							// number of slots required when selecting weapons
+
+		// which vehicle can use this armor
+		// 0=all, 1=ground, 2=aircraft, 3=ship, 4=jeep, 5=light tank/afv, 6=med tank, 7=heavy tank,
+		// 8=artillery tank, 9=apc, 10=all tanks:light, medium, heavy and artillery
+		"Type"				"0"
+		"Weight"			"15"	// ** weight was 5
+		"Cost"				"5"	// cost of an inch of armor in resources, added onto the final vehicle cost
+		"Research"			""
+
+		"Health"			"40"	// amount of health per every inch of armor
+		"Regeneration"			"0"	// amount of health this armor regenerates per second
+		"Angle Modifier"		"0.0"	// was 0
+		"Speed To Damage Modifier"	"0"
+		"Damage Modifier"		"1"	// modifier to damage (0.9 reduces damage by 10%; damage*0.9=damage taken)
+		"Damage To Heat Absorbed"	"0.025"	// percentage of damage received which is added as heat (0.2: damage*0.2=heat added
+		"Heat Dissipation"		"4"
+		"Bioweapon Damage Modifier"	"1.5"	// was 1 scale damage from biological weapons by this amount (bioweapon damage per interval * modifier = damage taken per interval)
+
+		"Sound Impact"			""
+		"Sound Repair"			""
+
+		"BulletResist" 			"1"	// Non Armor damaging
+		"InfantrySeismicResist"		"0.95"	// Siesmic Grenades
+		"InfantryBulletResist"		"1"	// Just In Case
+		"ExtraType1Resist"		"0.95"	// Building Damage
+		"InfantryMeleeResist"		"1.0"	// Infantry melee
+	}
+
+	"Composite"
+	{
+		"Name"			"Composite"
+		"Description"		"A composite of all other armours, offering reflective, regenerative and coolling capabilities of the other armours, whilst being light and strong. It is the most expensive of all armours."
+		"Icon"			"vehicles/gui/armor/composite_sml"
+		"HUD Icon"		""
+		"Size"			"1"
+		"Type"			"0"
+		"Weight"		"10"
+		"Cost"			"25"
+		"Research"		"Composite Armor"
+
+		"Health"			"80"
+		"Regeneration"			"0.03"
+		"Angle Modifier"		"0.5"
+		"Speed To Damage Modifier"	"0"
+		"Damage Modifier"		"1"
+		"Damage To Heat Absorbed"	"-0.025"
+		"Bioweapon Damage Modifier"	"1"
+
+		"Sound Impact"			""
+		"Sound Repair"			""
+
+		"BulletResist" 			"1"
+		"InfantrySeismicResist"		"0.95"
+		"InfantryBulletResist"		"1"
+		"ExtraType1Resist"		"0.95"
+		"InfantryMeleeResist"		"1.0"
+	}
+
+	"Reactive"
+	{
+		"Name"			"Reactive"
+		"Description"		"Electrically charged armor is internally aligned with charged capacitors. It is the heaviest armour, but the strongest in terms of the raw damage it can take."
+		"Icon"			"vehicles/gui/armor/reactive_sml"
+		"HUD Icon"		""
+		"Size"			"1"
+		"Type"			"0"
+		"Weight"		"20"
+		"Cost"			"20"
+		"Research"		"Reactive Armor"
+
+		"Health"			"120"
+		"Regeneration"			"0"
+		"Angle Modifier"		"0.0"
+		"Speed To Damage Modifier"	"0"
+		"Damage Modifier"		"1"
+		"Damage To Heat Absorbed"	"0.040"
+		"Bioweapon Damage Modifier"	"1.25"
+
+		"Sound Impact"			""
+		"Sound Repair"			""
+
+		"BulletResist"			"1"
+		"InfantrySeismicResist"		"0.95"
+		"InfantryBulletResist"		"1"
+		"ExtraType1Resist"		"0.95"
+		"InfantryMeleeResist"		"1.0"
+		"InfantryMissileResist"		"-0.2"
+	}
+
+	"Reflective"
+	{
+		"Name"			"Reflective"
+		"Description"		"Reflective armor is able to deflect almost all of a projectile's kinetic energy away from the vehicle so long as the projectile does not hit perfectly perpendicular to the armor plating."
+		"Icon"			"vehicles/gui/armor/reflective_sml"
+		"HUD Icon"		""
+		"Size"			"1"
+		"Type"			"0"
+		"Weight"		"15"
+		"Cost"			"15"
+		"Research"		"Reflective Armor"
+
+		"Health"			"65"
+		"Regeneration"			"0"
+		"Angle Modifier"		"1.0"
+		"Speed To Damage Modifier"	"0"
+		"Damage Modifier"		"1"
+		"Damage To Heat Absorbed"	"0.025"
+		"Bioweapon Damage Modifier"	"1"
+
+		"Sound Impact"			""
+		"Sound Repair"			""
+
+		"BulletResist" 			"1"
+		"InfantrySeismicResist"		"0.95"
+		"InfantryBulletResist" 		"1"
+		"ExtraType1Resist" 		"0.95"
+		"InfantryMeleeResist"		"1.0"
+	}
+
+	"Regenerative"
+	{
+		"Name"			"Regenerative"
+		"Description"		"Regenerative armor is engineered with living tissue designed to grow calcium carbonate as the protective medium.  As it is newly formed, it is malleable enough to find its way into damaged areas where it solidifies and reinforces/replaces material that had been damaged/destroyed."
+		"Icon"			"vehicles/gui/armor/regen_sml"
+		"HUD Icon"		""
+		"Size"			"1"
+		"Type"			"0"
+		"Weight"		"15"
+		"Cost"			"15"
+		"Research"		"Regenerative Armor"
+
+		"Health"			"55"
+		"Regeneration"			"0.1"
+		"Angle Modifier"		"0.0"
+		"Speed To Damage Modifier"	"0"
+		"Damage Modifier"		"1"
+		"Damage To Heat Absorbed"	"0.025"
+		"Bioweapon Damage Modifier"	"0.75"
+
+		"Sound Impact"			""
+		"Sound Repair"			""
+
+		"BulletResist" 			"1"
+		"InfantrySeismicResist"		"0.95"
+		"InfantryBulletResist" 		"1"
+		"ExtraType1Resist" 		"0.95"
+		"InfantryMeleeResist"		"1.0"
+	}
+
+	"Absorbant"
+	{
+		"Name"			"Absorbant"
+		"Description"		"Asborbant armour transfers the energy from taking damage into cooling the engine. It reduces the amount of damage it takes the faster the projectile that impacts it is going."
+		"Icon"			"vehicles/gui/armor/absorbant_sml"
+		"HUD Icon"		""
+		"Size"			"1"
+		"Type"			"0"
+		"Weight"		"12"
+		"Cost"			"10"
+		"Research"		"Absorbant Armor"
+
+		"Health"			"60"
+		"Regeneration"			"0"
+		"Angle Modifier"		"0.0"
+		"Speed To Damage Modifier"	"-0.0075"
+		"Damage Modifier"		"1"
+		"Damage To Heat Absorbed"	"-0.1"
+		"Bioweapon Damage Modifier"	"1"
+
+		"Sound Impact"			""
+		"Sound Repair"			""
+
+		"BulletResist" 			"1"
+		"InfantrySeismicResist"		"0.95"
+		"InfantryBulletResist" 		"1"
+		"ExtraType1Resist" 		"0.95"
+		"InfantryMeleeResist"		"1.0"
+	}
+
+	"Command Vehicle"
+	{
+		"Name"			"Titanium 6AL-4V"
+		"Description"		"Military Grade Alloy, designed specifically for Command Vehicles"
+		"Icon"			"vehicles/gui/armor/armor_small"
+		"HUD Icon"		""
+		"Size"			"1"
+		"Type"			"11"
+		"Weight"		"10"
+		"Cost"			"40"
+		"Research"		""
+
+		"Commander"			"1"
+		"Health"			"250"
+		"Regeneration"			"0"
+		"Angle Modifier"		"0.0"
+		"Speed To Damage Modifier"	"0"
+		"Damage Modifier"		"1"
+		"Damage To Heat Absorbed"	"0.025"
+		"Bioweapon Damage Modifier"	"1"
+
+		"Sound Impact"			""
+		"Sound Repair"			""
+
+		"BulletResist" 			"1"
+		"InfantrySeismicResist"		"0.95"
+		"InfantryBulletResist" 		"1"
+		"ExtraType1Resist" 		"0.95"
+		"InfantryMeleeResist"		"1.0"
+	}
+}

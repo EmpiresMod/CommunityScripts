@@ -1,0 +1,51 @@
+
+
+"silk_crumbly_cliff"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"wave"		"ambient/levels/canals/tunnel_wind_loop1.wav"
+		"pitch"		"60,90"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_tunnel_windgusts"
+		"volume"	"0.5"
+	}
+	"playrandom"
+	{
+		"volume"	"0.4,0.8"
+		"pitch"		"80"
+		"time"		"5.0, 12.0"
+		"pitch"		"90,130"
+		"soundlevel"	"SNDLVL_140dB"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave" "ambient/wind/wind_med1.wav"
+			"wave" "ambient/wind/wind_hit1.wav"
+			"wave" "ambient/wind/wind_hit2.wav"
+			"wave" "ambient/wind/wind_snippet3.wav"
+			"wave" "ambient/wind/wind_snippet4.wav"
+			"wave" "ambient/wind/wind_snippet5.wav"
+		}
+	}
+	"playrandom"
+	{
+		"time"		"5,15"
+		"volume"	"1"
+		"pitch"		"90,130"
+		"soundlevel"	"SNDLVL_150dB"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"	"ambient/materials/rock2.wav"
+			"wave"	"ambient/materials/rock3.wav"
+			"wave"	"ambient/materials/rock5.wav"
+		}
+	}
+}

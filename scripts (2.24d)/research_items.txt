@@ -1,0 +1,664 @@
+research_items
+{
+	"main"
+	{
+		"Name"			"Research Index"		//name given to research item
+		"Parent"		""				//name of parent that this branches from
+		"Description"		"Research tree begins here."	//description given when hovering over research item
+		"Icon"			"comm/hex_tree"			//icon drawn on research tree
+		"Unresearched Icon"	"comm/hex_dark"		//icon drawn in the GUI
+		"Type"			"0"		//nothing
+		"Cost"			"0"		//cost of this research item
+		"Time"			"0"		//time to research this item in seconds
+		"Team"			""		//which team can research this
+	}
+
+	"Physics"
+	{
+		"Name"			"Physics"		//name given to research item
+		"Parent"		"Research Index"				//name of parent that this branches from
+		"Description"		"Physics allows access to plasma weaponry, a fission reactor based vehicle engine, and nuclear weaponry."	//description given when hovering over research item
+		"Icon"			"comm/hex_cat"			//icon drawn on research tree
+		"Unresearched Icon"	"comm/hex_dark"		//icon drawn in the GUI
+		"Type"			"0"		//nothing
+		"Cost"			"250"		//cost of this research item
+		"Time"			"60"		//time to research this item in seconds
+		"Team"			""		//which team can research this
+	}
+
+		"Superheated Material Physics"
+		{
+			"Name"			"Superheated Material Physics"		//name given to research item
+			"Parent"		"Physics"				//name of parent that this branches from
+			"Description"		"(Items In Category: Plasma Cannon, Plasma MG) Study the properties of matter as it is heated to plasma like levels."	//description given when hovering over research item
+			"Icon"			"comm/hex_multi"			//icon drawn on research tree
+			"Unresearched Icon"	"comm/hex_multi_empty"		//icon drawn in the GUI
+			"Type"			"0"		//nothing
+			"Cost"			"400"		//cost of this research item
+			"Time"			"60"		//time to research this item in seconds
+			"Team"			""		//which team can research this
+		}
+			"Plasma Cannon Projectile"
+			{
+				"Name"			"Plasma Cannon Projectile"		//name given to research item
+				"Parent"		"Superheated Material Physics"				//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Cannon) Utilize the knowledge gained from superheated material physics to develop a projectile that is superheated before leaving the barrel.  This projectile is designed to impact a vehicle's armor and transfer a large amount of heat into the vehicle as well as breaking down the armor's structure and weakening it."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"400"		//cost of this research item
+				"Time"			"60"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+			"Plasma Bullet Projectile"
+			{
+				"Name"			"Plasma Bullet Projectile"		//name given to research item
+				"Parent"		"Superheated Material Physics"				//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Machine Gun) Utilize the same design of the Plasma Cannon Projectile but in the smaller confines of a bullet projectile which will allow heat to be transferred into a target at a much higher rate."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"325"		//cost of this research item
+				"Time"			"60"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+		"Projectile Physics"
+		{
+			"Name"			"Projectile Physics"		//name given to research item
+			"Parent"		"Physics"				//name of parent that this branches from
+			"Description"		"(Items In Category: Reflective Armor, Extended Range Cannon, Heavy Caliber MG) Study the properties of projectile interaction with materials and their subsequent detonation."	//description given when hovering over research item
+			"Icon"			"comm/hex_multi"			//icon drawn on research tree
+			"Unresearched Icon"	"comm/hex_multi_empty"		//icon drawn in the GUI
+			"Type"			"0"		//nothing
+			"Cost"			"325"		//cost of this research item
+			"Time"			"60"		//time to research this item in seconds
+			"Team"			""		//which team can research this
+		}
+			"Reflective Armor"
+			{
+				"Name"			"Reflective Armor"		//name given to research item
+				"Parent"		"Projectile Physics"				//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Armor) Utilize the knowledge gained from projectile physics to create armor that can deflect projectiles and their kinetic energy away from a vehicle, severly reducing its power."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"400"		//cost of this research item
+				"Time"			"90"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+			"Extended Range Cannon"
+			{
+				"Name"			"Extended Range Cannon"		//name given to research item
+				"Parent"		"Projectile Physics"	//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Cannon) Access manufacturing process for longer bore cannons with further range."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"300"		//cost of this research item
+				"Time"			"60"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+			"Heavy Caliber Machine Gun"
+			{
+				"Name"			"Heavy Caliber Machine Gun"		//name given to research item
+				"Parent"		"Projectile Physics"	//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Machine Gun) Access manufacturing process for larger barrels and ammunition for conventional machine guns."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"325"		//cost of this research item
+				"Time"			"60"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+		"Nuclear Fission"
+		{
+			"Name"			"Nuclear Fission"		//name given to research item
+			"Parent"		"Physics"				//name of parent that this branches from
+			"Description"		"(Items In Category: Vehicle Fission Reactor, HIT Warhead) Gain access to the most basic methods of harnessing the power of the atom."	//description given when hovering over research item
+			"Icon"			"comm/hex_multi"			//icon drawn on research tree
+			"Unresearched Icon"	"comm/hex_multi_empty"		//icon drawn in the GUI
+			"Type"			"0"		//nothing
+			"Cost"			"325"		//cost of this research item
+			"Time"			"60"		//time to research this item in seconds
+			"Team"			""		//which team can research this
+		}
+			"Fission Reactor"
+			{
+				"Name"			"Fission Reactor"		//name given to research item
+				"Parent"		"Nuclear Fission"				//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Engine) Gain access to a small experimental reactor coupled with a steam based drive system for use as a vehicle engine with excellent horsepower but excessive waste heat."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"200"		//cost of this research item
+				"Time"			"90"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+			"HIT Warhead"
+			{
+				"Name"			"HIT Warhead"		//name given to research item
+				"Parent"		"Nuclear Fission"				//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Missile Launcher) Gain access to the High-Impulse Thermobaric warhead. This weapon utilizes a High-Impulse Thermobaric warhead to deliver an intense pressure wave to its target, resulting in a more powerful explosion than is possible via conventional means. It is highly effective against both mobile and stationary targets."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"2000"		//cost of this research item
+				"Time"			"180"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+
+
+
+	"Chemistry"
+	{
+		"Name"			"Chemistry"		//name given to research item
+		"Parent"		"Research Index"				//name of parent that this branches from
+		"Description"		"Chemistry allows access to improved cannon shells, explosive bullets, a powerful missile warhead, absorbant armor, and a vehicle engine with advanced cooling properties."	//description given when hovering over research item
+		"Icon"			"comm/hex_cat"			//icon drawn on research tree
+		"Unresearched Icon"	"comm/hex_dark"		//icon drawn in the GUI
+		"Type"			"0"		//nothing
+		"Cost"			"250"		//cost of this research item
+		"Time"			"90"		//time to research this item in seconds
+		"Team"			""		//which team can research this
+	}
+		"Improved Flagration Compounds"
+		{
+			"Name"			"Improved Flagration Compounds"		//name given to research item
+			"Parent"		"Chemistry"				//name of parent that this branches from
+			"Description"		"(Items In Category: Explosive Tipped Bullets) Increases the power of bullets by increasing the stored energy of a bullet's propellant chemical compound."	//description given when hovering over research item
+			"Icon"			"comm/hex_multi"			//icon drawn on research tree
+			"Unresearched Icon"	"comm/hex_multi_empty"		//icon drawn in the GUI
+			"Type"			"0"		//nothing
+			"Cost"			"400"		//cost of this research item
+			"Time"			"60"		//time to research this item in seconds
+			"Team"			""		//which team can research this
+		}
+			"Explosive Tipped Bullets"
+			{
+				"Name"			"Explosive Tipped Bullets"		//name given to research item
+				"Parent"		"Improved Flagration Compounds"	//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Machine Gun) Engineer a machine gun with explosive bullets able to damage armor and infantry with a small blast area."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"325"		//cost of this research item
+				"Time"			"30"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+		"Improved Detonation Compounds"
+		{
+			"Name"			"Improved Detonation Compounds"		//name given to research item
+			"Parent"		"Chemistry"				//name of parent that this branches from
+			"Description"		"(Items In Category: Upgraded Grenades, High Explosive Cannon Shells) Increases power of small explosives such as grenades and cannon shells."	//description given when hovering over research item
+			"Icon"			"comm/hex_multi"			//icon drawn on research tree
+			"Unresearched Icon"	"comm/hex_multi_empty"		//icon drawn in the GUI
+			"Type"			"0"		//nothing
+			"Cost"			"325"		//cost of this research item
+			"Time"			"90"		//time to research this item in seconds
+			"Team"			""		//which team can research this
+		}
+			"Upgraded Grenades"
+			{
+				"Name"			"Upgraded Grenades"		//name given to research item
+				"Parent"		"Improved Detonation Compounds"	//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Grenade Launcher) Improves the explosive power of vehicle grenades and extends their range."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"250"		//cost of this research item
+				"Time"			"20"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+			"Explosive Shells"
+			{
+				"Name"			"Explosive Shells"		//name given to research item
+				"Parent"		"Improved Detonation Compounds"	//name of parent that this branches from
+				"Description"		"(Technology: Vehicle HE Cannon) Engineer a cannon shell that uses its kinetic energy to penetrate a target and then exploding to inflict even more damage over a large radius."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"450"		//cost of this research item
+				"Time"			"60"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+
+		"Improved Warhead Compounds"
+		{
+			"Name"			"Improved Warhead Compounds"		//name given to research item
+			"Parent"		"Chemistry"				//name of parent that this branches from
+			"Description"		"(Items In Category: Upgraded Missile Warhead) Increases power of large explosives found in warheads."	//description given when hovering over research item
+			"Icon"			"comm/hex_multi"			//icon drawn on research tree
+			"Unresearched Icon"	"comm/hex_multi_empty"		//icon drawn in the GUI
+			"Type"			"0"		//nothing
+			"Cost"			"325"		//cost of this research item
+			"Time"			"90"		//time to research this item in seconds
+			"Team"			""		//which team can research this
+		}
+			"Upgraded Missile Warhead"
+			{
+				"Name"			"Upgraded Missile Warhead"		//name given to research item
+				"Parent"		"Improved Warhead Compounds"	//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Missile Launcher) Upgrade the standard warhead found on missiles for more damage."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"200"		//cost of this research item
+				"Time"			"30"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+			"Upgraded Grenadier RPG"
+			{
+				"Name"			"Upgraded Grenadier RPG"		//name given to research item
+				"Parent"		"Improved Warhead Compounds"	//name of parent that this branches from
+				"Description"		"(Items In Category: Advanced Grenadier RPG) (Technology: Grenadier RPG Improvement) Upgrade the standard RPG warhead used by the Grenadier for more damage."	//description given when hovering over research item
+				"Icon"			"comm/hex_multi"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_multi_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"300"		//cost of this research item
+				"Time"			"30"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+				"Ammo_Type"		"AMMO_ROCKETS"	//which ammo type receives the upgrade
+				"Damage_Modifier"	"20"		//adjustment to the damage dealt by this ammo (this is cumulative with other adjustments)
+			}
+				"Advanced Grenadier RPG"
+				{
+					"Name"			"Advanced Grenadier RPG"		//name given to research item
+					"Parent"		"Upgraded Grenadier RPG"	//name of parent that this branches from
+					"Description"		"(Technology: Grenadier RPG Improvement) Further upgrade the upgraded RPG warhead used by the Grenadier for more damage."	//description given when hovering over research item
+					"Icon"			"comm/hex_cube"			//icon drawn on research tree
+					"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+					"Type"			"0"		//nothing
+					"Cost"			"600"		//cost of this research item
+					"Time"			"45"		//time to research this item in seconds
+					"Team"			""		//which team can research this
+					"Ammo_Type"		"AMMO_ROCKETS"	//which ammo type receives the upgrade
+					"Damage_Modifier"	"30"		//adjustment to the damage dealt by this ammo (this is cumulative with other adjustments)
+				}
+
+		"Improved Heat Transfer Fluids"
+		{
+			"Name"			"Improved Heat Transfer Fluids"		//name given to research item
+			"Parent"		"Chemistry"				//name of parent that this branches from
+			"Description"		"(Items In Category: Advanced Coolant Engine) Develop fluids with excellent heat transfer properties to be integrated into a standard engine."	//description given when hovering over research item
+			"Icon"			"comm/hex_multi"			//icon drawn on research tree
+			"Unresearched Icon"	"comm/hex_multi_empty"		//icon drawn in the GUI
+			"Type"			"0"		//nothing
+			"Cost"			"325"		//cost of this research item
+			"Time"			"90"		//time to research this item in seconds
+			"Team"			""		//which team can research this
+		}
+			"Advanced Coolant Engine"
+			{
+				"Name"			"Advanced Coolant Engine"		//name given to research item
+				"Parent"		"Improved Heat Transfer Fluids"	//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Engine) Engineer an engine with standard horsepower but with the ability to cool components better than any other proposed engine design."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"400"		//cost of this research item
+				"Time"			"120"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+
+//		"Absorbant Materials"
+//		{
+//			"Name"			"Absorbant Materials"		//name given to research item
+//			"Parent"		"Chemistry"				//name of parent that this branches from
+//			"Description"		"(Items In Category: Absorbant Armor) Gain access to materials designed to absorb excessive force and undergo extensive plastic deformation vice fracturing."	//description given when hovering over research item
+//			"Icon"			"comm/hex_multi"			//icon drawn on research tree
+//			"Unresearched Icon"	"comm/hex_multi_empty"		//icon drawn in the GUI
+//			"Type"			"0"		//nothing
+//			"Cost"			"325"		//cost of this research item
+//			"Time"			"90"		//time to research this item in seconds
+//			"Team"			""		//which team can research this
+//		}
+			"Absorbant Materials" //used to be Absorbant Armor
+			{
+				"Name"			"Absorbant Armor"		//name given to research item
+				"Parent"		"Chemistry"	//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Armor) Engineer armor that is able to absorb a projectile's kinetic energy and reduce damage better as a projectile increases in speed."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"725"		//cost of this research item
+				"Time"			"90"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+
+
+	"Mechanical Engineering"
+	{
+		"Name"			"Mechanical Engineering"		//name given to research item
+		"Parent"		"Research Index"				//name of parent that this branches from
+		"Description"		"Mechanical Engineering gives access to upgraded chassis types (medium tank, heavy tank, artillery tank), composite armor, and gas turbine engine."	//description given when hovering over research item
+		"Icon"			"comm/hex_cat"			//icon drawn on research tree
+		"Unresearched Icon"	"comm/hex_dark"		//icon drawn in the GUI
+		"Type"			"0"		//nothing
+		"Cost"			"250"		//cost of this research item
+		"Time"			"90"		//time to research this item in seconds
+		"Team"			""		//which team can research this
+	}
+		"Advanced Personnel Deployment"
+		{
+			"Name"			"Advanced Personnel Deployment"		//name given to research item
+			"Parent"		"Mechanical Engineering"	//name of parent that this branches from
+			"Description"		" Develops a chassis improvement that allows for mobile deployment of reinforcements. Grants APC the ability to spawn in."	//description given when hovering over research item
+			"Icon"			"comm/hex_cube"			//icon drawn on research tree
+			"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+			"Type"			"0"		//nothing
+			"Cost"			"400"		//cost of this research item
+			"Time"			"60"		//time to research this item in seconds
+			"Team"			""		//which team can research this
+		}
+		"Upgraded Chassis"
+		{
+			"Name"			"Upgraded Chassis"		//name given to research item
+			"Parent"		"Mechanical Engineering"				//name of parent that this branches from
+			"Description"		"(Items In Category: Artillery Tank Chassis, Medium Tank Chassis, Heavy Tank Chassis) Gain newer vehicle chassis types."	//description given when hovering over research item
+			"Icon"			"comm/hex_multi"			//icon drawn on research tree
+			"Unresearched Icon"	"comm/hex_multi_empty"		//icon drawn in the GUI
+			"Type"			"0"		//nothing
+			"Cost"			"500"		//cost of this research item
+			"Time"			"90"		//time to research this item in seconds
+			"Team"			""		//which team can research this
+		}
+			"Medium Tank Chassis"
+			{
+				"Name"			"Medium Tank Chassis"		//name given to research item
+				"Parent"		"Upgraded Chassis"	//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Chassis) Gain access to the medium tank chassis."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"500"		//cost of this research item
+				"Time"			"120"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+			"Artillery Tank Chassis"
+			{
+				"Name"			"Artillery Tank Chassis"		//name given to research item
+				"Parent"		"Upgraded Chassis"	//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Chassis) Gain access to the artillery tank chassis."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"600"		//cost of this research item
+				"Time"			"120"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+
+			"Advanced Chassis"
+			{
+				"Name"			"Advanced Chassis"		//name given to research item
+				"Parent"		"Upgraded Chassis"				//name of parent that this branches from
+				"Description"		"(Items In Category: Heavy Tank Chassis) Research the required chassis improvements for the Heavy Tank."	//description given when hovering over research item
+				"Icon"			"comm/hex_multi"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_multi_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"300"		//cost of this research item
+				"Time"			"120"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+				"Heavy Tank Chassis"
+				{
+					"Name"			"Heavy Tank Chassis"		//name given to research item
+					"Parent"		"Advanced Chassis"	//name of parent that this branches from
+					"Description"		"(Technology: Vehicle Chassis) Gain access to the heavy tank chassis."	//description given when hovering over research item
+					"Icon"			"comm/hex_cube"			//icon drawn on research tree
+					"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+					"Type"			"0"		//nothing
+					"Cost"			"1500"		//cost of this research item
+					"Time"			"120"		//time to research this item in seconds
+					"Team"			""		//which team can research this
+				}
+
+
+
+		"Advanced Machining"
+		{
+			"Name"			"Advanced Machining"		//name given to research item
+			"Parent"		"Mechanical Engineering"				//name of parent that this branches from
+			"Description"		"(Items In Category: Composite Armor, Gas Turbine Engine) Gain access to an improved armor material and a more powerful engine design."	//description given when hovering over research item
+			"Icon"			"comm/hex_multi"			//icon drawn on research tree
+			"Unresearched Icon"	"comm/hex_multi_empty"		//icon drawn in the GUI
+			"Type"			"0"		//nothing
+			"Cost"			"325"		//cost of this research item
+			"Time"			"60"		//time to research this item in seconds
+			"Team"			""		//which team can research this
+		}
+
+			"Composite Armor"
+			{
+				"Name"			"Composite Armor"		//name given to research item
+				"Parent"		"Advanced Machining"	//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Armor) Access manufacturing process for armor developed of multiple layers of differing materials designed to break up a projectile and absorb its kinetic energy before penetrating all the way through the armor."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"400"		//cost of this research item
+				"Time"			"90"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+		"Gas Turbine Engine"
+		{
+			"Name"			"Gas Turbine Engine"		//name given to research item
+			"Parent"		"Mechanical Engineering"	//name of parent that this branches from
+			"Description"		"(Technology: Vehicle Engine) Access manufacturing process for the gas turbine engine which is able to create a large amount of horsepower without suffering from any significant flaws."	//description given when hovering over research item
+			"Icon"			"comm/hex_cube"			//icon drawn on research tree
+			"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+			"Type"			"0"		//nothing
+			"Cost"			"450"		//cost of this research item
+			"Time"			"150"		//time to research this item in seconds
+			"Team"			""		//which team can research this
+		}
+
+	"Electrical Engineering"
+	{
+		"Name"			"Electrical Engineering"		//name given to research item
+		"Parent"		"Research Index"				//name of parent that this branches from
+		"Description"		"Electrical Engineering leads to improvements in electrical and computer systems leading to new technology such as the rail gun, electric motor, reactive armor, improved homing/guided missiles, and turret upgrades."	//description given when hovering over research item
+		"Icon"			"comm/hex_cat"			//icon drawn on research tree
+		"Unresearched Icon"	"comm/hex_dark"		//icon drawn in the GUI
+		"Type"			"0"		//nothing
+		"Cost"			"250"		//cost of this research item
+		"Time"			"90"		//time to research this item in seconds
+		"Team"			""		//which team can research this
+	}
+		"Advanced Magnet Research"
+		{
+			"Name"			"Advanced Magnet Research"		//name given to research item
+			"Parent"		"Electrical Engineering"				//name of parent that this branches from
+			"Description"		"(Items In Category: Rail Gun, 3 Phase Electric Motor) Study the properties of permanent and electro magnets for developments in engine and weapon design."	//description given when hovering over research item
+			"Icon"			"comm/hex_multi"			//icon drawn on research tree
+			"Unresearched Icon"	"comm/hex_multi_empty"		//icon drawn in the GUI
+			"Type"			"0"		//nothing
+			"Cost"			"500"		//cost of this research item
+			"Time"			"90"		//time to research this item in seconds
+			"Team"			""		//which team can research this
+		}
+			"Rail Gun"
+			{
+				"Name"			"Rail Gun"		//name given to research item
+				"Parent"		"Advanced Magnet Research"				//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Cannon) Gain access to a cannon able to propel a projectile using a series of electromagnets at incredible speeds."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"600"		//cost of this research item
+				"Time"			"60"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+			"3 Phase Electric Motor"
+			{
+				"Name"			"3 Phase Electric Motor"		//name given to research item
+				"Parent"		"Advanced Magnet Research"				//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Engine) Gain access to an electric motor with advanced acceleration but an inability to function with excessive damage and heat."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"500"		//cost of this research item
+				"Time"			"60"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+		"Reactive Armor"
+		{
+			"Name"			"Reactive Armor"		//name given to research item
+			"Parent"		"Electrical Engineering"				//name of parent that this branches from
+			"Description"		"(Technology: Vehicle Armor) Gain access to reactive armor that uses electrically charged capacitors to vaporize a projectile upon contact."	//description given when hovering over research item
+			"Icon"			"comm/hex_cube"			//icon drawn on research tree
+			"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+			"Type"			"0"		//nothing
+			"Cost"			"425"		//cost of this research item
+			"Time"			"150"		//time to research this item in seconds
+			"Team"			""		//which team can research this
+		}
+		"Tracking Systems"
+		{
+			"Name"			"Tracking Systems"		//name given to research item
+			"Parent"		"Electrical Engineering"				//name of parent that this branches from
+			"Description"		"(Items In Category: Homing Missiles, Guided Missiles) Gain access to the tracking systems used in missiles."	//description given when hovering over research item
+			"Icon"			"comm/hex_multi"			//icon drawn on research tree
+			"Unresearched Icon"	"comm/hex_multi_empty"		//icon drawn in the GUI
+			"Type"			"0"		//nothing
+			"Cost"			"80"		//cost of this research item
+			"Time"			"60"		//time to research this item in seconds
+			"Team"			""		//which team can research this
+		}
+			"Homing Missiles"
+			{
+				"Name"			"Homing Missiles"		//name given to research item
+				"Parent"		"Tracking Systems"				//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Missile Launcher) Gain access to advanced target tracking for missile applications.  Provides access to homing missiles."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"150"		//cost of this research item
+				"Time"			"60"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+			"Guided Missiles"
+			{
+				"Name"			"Guided Missiles"		//name given to research item
+				"Parent"		"Tracking Systems"				//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Missile Launcher) Gain access to electronic transmission components which allows for the remote guidance of a missile."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"150"		//cost of this research item
+				"Time"			"60"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+		"Upgraded Turrets Lvl 2"
+		{
+			"Name"			"Upgraded Turrets Lvl 2"		//name given to research item
+			"Parent"		"Electrical Engineering"		//name of parent that this branches from
+			"Description"		"(Items In Category: Upgraded Turrets Level 3) (Technology: Commander Turret Upgrade) Develop improved tracking systems for commander built turrets (turrets are built as level 2)."	//description given when hovering over research item
+			"Icon"			"comm/hex_multi"			//icon drawn on research tree
+			"Unresearched Icon"	"comm/hex_multi_empty"		//icon drawn in the GUI
+			"Type"			"0"		//nothing
+			"Cost"			"300"		//cost of this research item
+			"Time"			"90"		//time to research this item in seconds
+			"Team"			""		//which team can research this
+		}
+			"Upgraded Turrets Lvl 3"
+			{
+				"Name"			"Upgraded Turrets Lvl 3"		//name given to research item
+				"Parent"		"Upgraded Turrets Lvl 2"				//name of parent that this branches from
+				"Description"		"(Technology: Commander Turret Upgrade) Develop improved tracking systems for commander built turrets (turrets are built as level 3)."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"450"		//cost of this research item
+				"Time"			"120"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+
+
+//		"Improved Detonators"
+//		{
+//			"Name"			"Improved Detonators"		//name given to research item
+//			"Parent"		"Electrical Engineering"				//name of parent that this branches from
+//			"Description"		"(Technology: Vehicle Grenade Launcher) Gain access to improved detonators which are used in vehicle grenade launchers."	//description given when hovering over research item
+//			"Icon"			"comm/hex_cube"			//icon drawn on research tree
+//			"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+//			"Type"			"0"		//nothing
+//			"Cost"			"300"		//cost of this research item
+//			"Time"			"60"		//time to research this item in seconds
+//			"Team"			""		//which team can research this
+//		}
+
+	"Biology"
+	{
+		"Name"			"Biology"		//name given to research item
+		"Parent"		"Research Index"				//name of parent that this branches from
+		"Description"		"Biology research leads to improvements such as regenerative armor, bio diesel engine, and biological weapons."	//description given when hovering over research item
+		"Icon"			"comm/hex_cat"			//icon drawn on research tree
+		"Unresearched Icon"	"comm/hex_dark"		//icon drawn in the GUI
+		"Type"			"0"		//nothing
+		"Cost"			"250"		//cost of this research item
+		"Time"			"90"		//time to research this item in seconds
+		"Team"			""		//which team can research this
+	}
+		"Regenerative Armor"
+		{
+			"Name"			"Regenerative Armor"		//name given to research item
+			"Parent"		"Biology"				//name of parent that this branches from
+			"Description"		"(Technology: Vehicle Armor) Gain access to armor that is able to manufacture replacement material and restore areas that have been damaged or destroyed."	//description given when hovering over research item
+			"Icon"			"comm/hex_cube"			//icon drawn on research tree
+			"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+			"Type"			"0"		//nothing
+			"Cost"			"450"		//cost of this research item
+			"Time"			"180"		//time to research this item in seconds
+			"Team"			""		//which team can research this
+		}
+		"Bio Diesel Engine"
+		{
+			"Name"			"Bio Diesel Engine"		//name given to research item
+			"Parent"		"Biology"				//name of parent that this branches from
+			"Description"		"(Technology: Vehicle Engine) Gain access to an engine design which is the most reliable, able to continue operating and avoiding a temporary shut down due to excessive heat or sudden damage."	//description given when hovering over research item
+			"Icon"			"comm/hex_cube"			//icon drawn on research tree
+			"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+			"Type"			"0"		//nothing
+			"Cost"			"325"		//cost of this research item
+			"Time"			"60"		//time to research this item in seconds
+			"Team"			""		//which team can research this
+		}
+		"Biological Weaponry"
+		{
+			"Name"			"Biological Weaponry"		//name given to research item
+			"Parent"		"Biology"				//name of parent that this branches from
+			"Description"		"(Items In Category: Biological Warhead, Biological Projectiles) Engineer a harmful organism that is able to destroy human tissue as well as corrosively erode materials such as vehicle armor."	//description given when hovering over research item
+			"Icon"			"comm/hex_multi"			//icon drawn on research tree
+			"Unresearched Icon"	"comm/hex_multi_empty"		//icon drawn in the GUI
+			"Type"			"0"		//nothing
+			"Cost"			"400"		//cost of this research item
+			"Time"			"60"		//time to research this item in seconds
+			"Team"			""		//which team can research this
+		}
+			"Biological Warhead"
+			{
+				"Name"			"Biological Warhead"		//name given to research item
+				"Parent"		"Biological Weaponry"				//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Missile Launcher) Utilize the engineered organism in a missile warhead which is able to deliver a large quanity of the organism to the target."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"500"		//cost of this research item
+				"Time"			"90"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+
+			"Biological Projectile"
+			{
+				"Name"			"Biological Projectile"		//name given to research item
+				"Parent"		"Biological Weaponry"				//name of parent that this branches from
+				"Description"		"(Technology: Vehicle Cannon) Utilize the engineered organism in a smaller bullet projectile which is able to deliver a small quanity of the organism to the target."	//description given when hovering over research item
+				"Icon"			"comm/hex_cube"			//icon drawn on research tree
+				"Unresearched Icon"	"comm/hex_cube_empty"		//icon drawn in the GUI
+				"Type"			"0"		//nothing
+				"Cost"			"400"		//cost of this research item
+				"Time"			"90"		//time to research this item in seconds
+				"Team"			""		//which team can research this
+			}
+
+}

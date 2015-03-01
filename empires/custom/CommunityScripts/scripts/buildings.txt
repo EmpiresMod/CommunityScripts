@@ -1,0 +1,893 @@
+"BuildingParse"
+{
+	"ImpArmory"
+	{
+		"name" 				"ImpArmory" // Name of the Building
+		"spotted name"			"Armory"
+
+		"model"				"models/imperial/Buildings/armory/imp_armory.mdl"			// Standard Model
+		"model2"			"models/imperial/Buildings/armory/imp_armory_2.mdl"			// Scale 2 Model
+		"model4"			"models/imperial/Buildings/armory/imp_armory_4.mdl"			// Scale 4 Model
+		"model8"			"models/imperial/Buildings/armory/imp_armory_8.mdl"			// Scale 8 Model
+		"model16"			"models/imperial/Buildings/armory/imp_armory_16.mdl"			// Scale 16 Model
+		"model32"			"models/imperial/Buildings/armory/imp_armory_32.mdl"			// Scale 32 Model
+		"cost"				"75"									// Cost of the building
+		"max health"			"100"									// Max Possible Health
+		"starting health"		"25"									// Starting Health when built (25% of Max)
+		"damaged model"			"models/imperial/Buildings/armory/imp_armory.mdl"			// Model to show when damage is lower then the threshold (Defaults to "model" field)
+		"damaged threshold"		"50"									// Health Value to display the damaged model
+		"destroyed model"		"models/imperial/Buildings/armory/imp_armory.mdl"			// Model to display when building is destroyed (Defaults to "model" field)
+		"vehicle physbox"		"models/imperial/Buildings/armory/imp_armory_vehiclephysbox.mdl" 	// Physbox Model
+
+		"recycle time"			"30"									// Recycle time for the building
+		"carcass removal time"		"30"									// Time it takes for a destroyed building carcass to be removed
+		"touchmessageid"		"2"
+
+		"hint"				"This is the Brenodi Empires Armory. Press %+use% while aiming at either of the boxes to fill ammo and health. You can also change class in this building by pressing %chooseclass%."
+
+		"GeneralPhysicsResist"		"0.85"	// General Physics Tree Damage
+		"GeneralChemistryResist"	"0.85"	// General Chemistry Tree Damage
+		"GeneralMechanicalResist"	"0.85"	// General Mechanic Tree Damage
+		"GeneralElectricResist"		"0.85"	// General Electric Tree Damage
+		"GeneralBiologicalResist"	"0.85"	// General Biological Tree Damage
+
+		"KineticResist"			"0.85"	// Railguns, Standard Cannons, Anything that is just force
+		"ExplosiveResist"		"0.85"	// HE, Nukes, anything that explodes
+		"BioResist"			"0.85"	// Has the bio effect
+
+		"BulletResist"			"1"	// Non Armor damaging
+		"APBulletResist"		"0.85"	// Armor Damaging
+		"BulletExplosiveResist"		"0.80"	// Bullets that Explode
+
+		"MissileResist"			"0.85"	// Generic Missle type of damage
+		"MissileExplosiveResist"		"0.85"	// Explosive type.
+		"MissileBioResist"		"0.85"	// Bio Missiles.  Different then Bio?
+
+		"KineticArtResist"		"0.85"	// Kinetic Artillery
+		"ExplosiveArtResist"		"0.85"	// Explosive Artillery
+		"BioArtResist"			"0.85"	// Bio Artillery
+
+		"InfantryGrenadeResist"		"0.9"	// Player Thrown Grenades
+		"InfantryMineResist"		"0.95"	// Player Tossed Mines
+		"InfantryMissileResist"		"0.95"	// Gren Missles
+		"InfantryMortarResist"		"0.8"	// Gren Mortars
+		"InfantryStickyResist"		"0.85"	// Sticky Grenades
+		"InfantrySeismicResist"		"0"	// Seismic Grenades
+		"InfantryBulletResist"		"1"	// Just In "Case
+		"InfantryUtilityResist"		"1"	// Concussion nades, various infantry stuff that does special things but no damage
+		"InfantryMeleeResist"		"1"	// Infantry melee
+
+		"ExtraType1Resist"		"0.5"	// Anti Building weapons
+		"ExtraType2Resist"		"0.75"	// Again
+		"ExtraType3Resist"		"0.75"	// and a third
+
+		// BOUNDARY VECTORS
+
+		"MinColBoundX"			"-270"	// Minimum Collision Bound
+		"MinColBoundY"			"-170"	// Used to calculate the "footprint" that the
+		"MinColBoundZ"			"0"	// Building takes up
+
+		"MaxColBoundX"			"270"	// Maximum Collision Bound
+		"MaxColBoundY"			"170"
+		"MaxColBoundZ"			"170"
+	}
+
+	"NFArmory"
+	{
+		"name"				"NFArmory"
+		"spotted name"			"Armory"
+
+		"model"				"models/NF/Buildings/armory/nf_armory.mdl"
+		"model2"			"models/NF/Buildings/armory/nf_armory_2.mdl"
+		"model4"			"models/NF/Buildings/armory/nf_armory_4.mdl"
+		"model8"			"models/NF/Buildings/armory/nf_armory_8.mdl"
+		"model16"			"models/NF/Buildings/armory/nf_armory_16.mdl"
+		"model32"			"models/NF/Buildings/armory/nf_armory.mdl"
+		"cost"				"75"
+		"max health"			"100"
+		"starting health"		"25"
+		"damaged model"			"models/NF/Buildings/armory/nf_armory.mdl"
+		"damaged threshold"		"50"
+		"destroyed model"		"models/NF/Buildings/armory/nf_armory.mdl"
+		"vehicle physbox"		"models/NF/Buildings/armory/nf_armory_vehiclephysbox.mdl"
+
+		"recycle time"			"20"
+		"carcass removal time"		"30"
+		"touchmessageid"		"3"
+
+		"hint"				"This is the Northern Faction Armory. Press %+use% while aiming at either of the boxes to fill ammo and health. You can also change class in this building by pressing %chooseclass%."
+
+		"GeneralPhysicsResist"		"0.85"
+		"GeneralChemistryResist"	"0.85"
+		"GeneralMechanicalResist"	"0.85"
+		"GeneralElectricResist"		"0.85"
+		"GeneralBiologicalResist"	"0.85"
+
+		"KineticResist"			"0.85"
+		"ExplosiveResist"		"0.85"
+		"BioResist"			"0.85"
+
+		"BulletResist"			"1"
+		"APBulletResist"		"0.85"
+		"BulletExplosiveResist"		"0.80"
+
+		"MissileResist"			"0.85"
+		"MissileExplosiveResist"	"0.85"
+		"MissileBioResist"		"0.85"
+
+		"KineticArtResist"		"0.85"
+		"ExplosiveArtResist"		"0.85"
+		"BioArtResist"			"0.85"
+
+		"InfantryGrenadeResist"		"0.9"
+		"InfantryMineResist"		"0.9"
+		"InfantryMissileResist"		"0.95"
+		"InfantryMortarResist"		"0.8"
+		"InfantryStickyResist"		"0.85"
+		"InfantrySeismicResist"		"0"
+		"InfantryBulletResist"		"1"
+		"InfantryUtilityResist"		"1"
+		"InfantryMeleeResist"		"1"
+
+		"ExtraType1Resist"		"0.5"
+		"ExtraType2Resist"		"0.75"
+		"ExtraType3Resist"		"0.75"
+
+		"MinColBoundX"			"-250"
+		"MinColBoundY"			"-250"
+		"MinColBoundZ"			"0"
+
+		"MaxColBoundX"			"250"
+		"MaxColBoundY"			"250"
+		"MaxColBoundZ"			"200"
+
+		"ExplosionAttachment0"		"explosion1"
+		"ExplosionParticle0"		"Explosion_std"
+	}
+
+	"ImpBarracks"
+	{
+		"name"				"ImpBarracks"
+		"spotted name"			"Barracks"
+
+		"model"				"models/imperial/Buildings/barracks/imp_barracks.mdl"
+		"model2"			"models/imperial/Buildings/barracks/imp_barracks_2.mdl"
+		"model4"			"models/imperial/Buildings/barracks/imp_barracks_4.mdl"
+		"model8"			"models/imperial/Buildings/barracks/imp_barracks_8.mdl"
+		"model16"			"models/imperial/Buildings/barracks/imp_barracks_16.mdl"
+		"model32"			"models/imperial/Buildings/barracks/imp_barracks_32.mdl"
+		"cost"				"400"
+		"max health"			"250"
+		"starting health"		"50"
+		"damaged model"			"models/imperial/Buildings/barracks/imp_barracks.mdl"
+		"damaged threshold"		"50"
+		"destroyed model"		"models/imperial/Buildings/barracks/imp_barracks.mdl"
+		"vehicle physbox"		"models/imperial/Buildings/barracks/imp_barracks_vehiclephysbox.mdl"
+
+		"recycle time"			"30"
+		"carcass removal time"		"30"
+		"touchmessageid"		"4"
+
+		"hint"				"This is the Brenodi Empire Barracks. This building acts as a spawnpoint. You can choose a different spawnpoint by pressing %emp_map_spawn%. You can change class here by pressing %chooseclass%."
+
+		"GeneralPhysicsResist"		"0.85"
+		"GeneralChemistryResist"  	"0.85"
+		"GeneralMechanicalResist" 	"0.85"
+		"GeneralElectricResist"  	"0.85"
+		"GeneralBiologicalResist"	"0.85"
+
+		"KineticResist"			"0.85"
+		"ExplosiveResist" 		"0.85"
+		"BioResist" 			"0.85"
+
+		"BulletResist"			"1"
+		"APBulletResist" 		"0.85"
+		"BulletExplosiveResist"		"0.80"
+
+		"MissileResist"			"0.85"
+		"MissileExplosiveResist" 	"0.85"
+		"MissileBioResist" 		"0.85"
+
+		"KineticArtResist" 		"0.85"
+		"ExplosiveArtResist" 		"0.85"
+		"BioArtResist"			"0.85"
+
+		"InfantryGrenadeResist" 	"0.9"
+		"InfantryMineResist" 		"0.9"
+		"InfantryMissileResist"		"0.95"
+		"InfantryMortarResist"		"0.8"
+		"InfantryStickyResist"		"0.85"
+		"InfantrySeismicResist"		"0"
+		"InfantryBulletResist"		"1"
+		"InfantryUtilityResist"		"1"
+		"InfantryMeleeResist"		"1"
+
+		"ExtraType1Resist"		"0.5"
+		"ExtraType2Resist"		"0.75"
+		"ExtraType3Resist"		"0.75"
+
+		"MinColBoundX"			"-500"
+		"MinColBoundY"			"-350"
+		"MinColBoundZ"			"0"
+
+		"MaxColBoundX"			"500"
+		"MaxColBoundY"			"350"
+		"MaxColBoundZ"			"160"
+	}
+
+	"NFBarracks"
+	{
+		"name"				"NFBarracks"
+		"spotted name"			"Barracks"
+
+		"model"				"models/NF/Buildings/barracks/nf_barracks.mdl"
+		"model2"			"models/NF/Buildings/barracks/nf_barracks_2.mdl"
+		"model4"			"models/NF/Buildings/barracks/nf_barracks_4.mdl"
+		"model8"			"models/NF/Buildings/barracks/nf_barracks_8.mdl"
+		"model16"			"models/NF/Buildings/barracks/nf_barracks_16.mdl"
+		"model32"			"models/NF/Buildings/barracks/nf_barracks_32.mdl"
+		"cost"				"400"
+		"max health"			"250"
+		"starting health"		"50"
+		"damaged model"			"models/NF/Buildings/barracks/nf_barracks.mdl"
+		"damaged threshold"		"50"
+		"destroyed model"		"models/NF/Buildings/barracks/nf_barracks.mdl"
+		"vehicle physbox"		"models/NF/Buildings/barracks/nf_barracks_vehiclephysbox.mdl"
+
+		"recycle time"			"30"
+		"carcass removal time"		"30"
+		"touchmessageid"		"5"
+
+		"hint"				"This is the Northern Faction Barracks. This building acts as a spawnpoint. You can choose a different spawnpoint by pressing %emp_map_spawn%. You can change class here by pressing %chooseclass%."
+
+		"GeneralPhysicsResist"		"0.85"
+		"GeneralChemistryResist"	"0.85"
+		"GeneralMechanicalResist"	"0.85"
+		"GeneralElectricResist"		"0.85"
+		"GeneralBiologicalResist"	"0.85"
+
+		"KineticResist"			"0.85"
+		"ExplosiveResist"		"0.90"
+		"BioResist"			"0.85"
+
+		"BulletResist"			"1"
+		"APBulletResist"		"0.85"
+		"BulletExplosiveResist"		"0.80"
+
+		"MissileResist"			"0.85"
+		"MissileExplosiveResist"	"0.85"
+		"MissileBioResist"		"0.85"
+
+		"KineticArtResist"		"0.85"
+		"ExplosiveArtResist"		"0.85"
+		"BioArtResist"			"0.85"
+
+		"InfantryGrenadeResist"		"0.9"
+		"InfantryMineResist"		"0.9"
+		"InfantryMissileResist"		"0.95"
+		"InfantryMortarResist"		"0.8"
+		"InfantryStickyResist"		"0.85"
+		"InfantrySeismicResist"		"0"
+		"InfantryBulletResist"		"1"
+		"InfantryUtilityResist"		"1"
+		"InfantryMeleeResist"		"1"
+
+		"ExtraType1Resist"		"0.5"
+		"ExtraType2Resist"		"0.75"
+		"ExtraType3Resist"		"0.75"
+
+		"MinColBoundX"			"-500"
+		"MinColBoundY"			"-500"
+		"MinColBoundZ"			"0"
+
+		"MaxColBoundX"			"500"
+		"MaxColBoundY"			"500"
+		"MaxColBoundZ"			"500"
+	}
+
+	"ImpRadar"
+	{
+		"name"				"ImpRadar"
+		"spotted name"			"Radar"
+
+		"model"				"models/imperial/Buildings/Radar/imp_radar.mdl"
+		"model2"			"models/imperial/Buildings/Radar/imp_radar_2.mdl"
+		"model4"			"models/imperial/Buildings/Radar/imp_radar_4.mdl"
+		"model8"			"models/imperial/Buildings/Radar/imp_radar_8.mdl"
+		"model16"			"models/imperial/Buildings/Radar/imp_radar_16.mdl"
+		"model32"			"models/imperial/Buildings/Radar/imp_radar_32.mdl"
+		"cost"				"600"
+		"max health"			"200"
+		"starting health"		"25"
+		"damaged model"			"models/imperial/Buildings/Radar/imp_radar.mdl"
+		"damaged threshold"		"50"
+		"destroyed model"		"models/imperial/Buildings/Radar/imp_radar.mdl"
+		"vehicle physbox"		"models/imperial/Buildings/radar/imp_radar_vehiclephysbox.mdl"
+
+		"recycle time"			"30"
+		"carcass removal time"		"30"
+		"touchmessageid"		"6"
+
+		"hint"				"This is the Brenodi Empire Radar. This building is needed to conduct download new schematics (research). It also shows enemy vehicles within a certain radius on the minimap."
+
+		"GeneralPhysicsResist"		"0.85"
+		"GeneralChemistryResist"	"0.85"
+		"GeneralMechanicalResist"	"0.85"
+		"GeneralElectricResist"		"0.85"
+		"GeneralBiologicalResist"	"0.85"
+
+		"KineticResist"			"0.85"
+		"ExplosiveResist"		"0.80"
+		"BioResist"			"0.85"
+
+		"BulletResist"			"1"
+		"APBulletResist"		"0.85"
+		"BulletExplosiveResist"		"0.80"
+
+		"MissileResist"			"0.85"
+		"MissileExplosiveResist"	"0.85"
+		"MissileBioResist"		"0.85"
+
+		"KineticArtResist"		"0.85"
+		"ExplosiveArtResist"		"0.85"
+		"BioArtResist"			"0.85"
+
+		"InfantryGrenadeResist"		"0.9"
+		"InfantryMineResist"		"0.9"
+		"InfantryMissileResist"		"0.95"
+		"InfantryMortarResist"		"0.8"
+		"InfantryStickyResist"		"0.85"
+		"InfantrySeismicResist"		"0"
+		"InfantryBulletResist"		"1"
+		"InfantryUtilityResist"		"1"
+		"InfantryMeleeResist"		"1"
+
+		"ExtraType1Resist"		"0.5"
+		"ExtraType2Resist"		"0.75"
+		"ExtraType3Resist"		"0.75"
+
+		"MinColBoundX"			"-420"
+		"MinColBoundY"			"-420"
+		"MinColBoundZ"			"0"
+
+		"MaxColBoundX"			"420"
+		"MaxColBoundY"			"420"
+		"MaxColBoundZ"			"450"
+	}
+
+	"NFRadar"
+	{
+		"name"				"NFRadar"
+		"spotted name"			"Radar"
+
+		"model"				"models/NF/Buildings/Radar/nf_radar.mdl"
+		"model2"			"models/NF/Buildings/Radar/nf_radar_2.mdl"
+		"model4"			"models/NF/Buildings/Radar/nf_radar_4.mdl"
+		"model8"			"models/NF/Buildings/Radar/nf_radar_8.mdl"
+		"model16"			"models/NF/Buildings/Radar/nf_radar_16.mdl"
+		"model32"			"models/NF/Buildings/Radar/nf_radar_32.mdl"
+		"cost"				"600"
+		"max health"			"200"
+		"starting health"		"25"
+		"damaged model"			"models/NF/Buildings/Radar/nf_radar.mdl"
+		"damaged threshold"		"50"
+		"destroyed model"		"models/NF/Buildings/Radar/nf_radar.mdl"
+		"vehicle physbox"		"models/NF/Buildings/radar/nf_radar_vehiclephysbox.mdl"
+
+		"recycle time"			"30"
+		"carcass removal time"		"30"
+		"touchmessageid"		"7"
+
+		"hint"				"This is the Northern Faction Radar. This building is needed to conduct download new schematics (research). It also shows enemy vehicles within a certain radius on the minimap."
+
+		"GeneralPhysicsResist"		"0.85"
+		"GeneralChemistryResist"	"0.85"
+		"GeneralMechanicalResist"	"0.85"
+		"GeneralElectricResist"		"0.85"
+		"GeneralBiologicalResist"	"0.85"
+
+		"KineticResist"			"0.85"
+		"ExplosiveResist"		"0.90"
+		"BioResist"			"0.85"
+
+		"BulletResist"			"1"
+		"APBulletResist"		"0.85"
+		"BulletExplosiveResist"		"0.80"
+
+		"MissileResist"			"0.85"
+		"MissileExplosiveResist"	"0.85"
+		"MissileBioResist"		"0.85"
+
+		"KineticArtResist"		"0.85"
+		"ExplosiveArtResist"		"0.85"
+		"BioArtResist"			"0.85"
+
+		"InfantryGrenadeResist"		"0.9"
+		"InfantryMineResist"		"0.9"
+		"InfantryMissileResist"		"0.95"
+		"InfantryMortarResist"		"0.8"
+		"InfantryStickyResist"		"0.85"
+		"InfantrySeismicResist"		"0"
+		"InfantryBulletResist"		"1"
+		"InfantryUtilityResist"		"1"
+		"InfantryMeleeResist"		"1"
+
+		"ExtraType1Resist"		"0.5"
+		"ExtraType2Resist"		"0.75"
+		"ExtraType3Resist"		"0.75"
+
+		"MinColBoundX"			"-400"
+		"MinColBoundY"			"-400"
+		"MinColBoundZ"			"0"
+
+		"MaxColBoundX"			"400"
+		"MaxColBoundY"			"400"
+		"MaxColBoundZ"			"400"
+	}
+
+	"ImpRefinery"
+	{
+		"name" 				"ImpRefinery"
+		"spotted name"			"Refinery"
+
+		"model"				"models/imperial/Buildings/refinery/imp_refinery.mdl"
+		"model2"			"models/imperial/Buildings/refinery/imp_refinery_2.mdl"
+		"model4"			"models/imperial/Buildings/refinery/imp_refinery_4.mdl"
+		"model8"			"models/imperial/Buildings/refinery/imp_refinery_8.mdl"
+		"model16"			"models/imperial/Buildings/refinery/imp_refinery_16.mdl"
+		"model32"			"models/imperial/Buildings/refinery/imp_refinery_32.mdl"
+		"cost"				"100"
+		"max health"			"150"
+		"starting health"		"25"
+		"damaged model"			"models/imperial/Buildings/refinery/imp_refinery.mdl"
+		"damaged threshold"		"50"
+		"destroyed model"		"models/imperial/Buildings/refinery/imp_refinery.mdl"
+		"vehicle physbox"		"models/imperial/Buildings/refinery/imp_refinery_vehiclephysbox.mdl"
+
+		"recycle time"			"30"
+		"carcass removal time"		"10"
+		"touchmessageid"		"8"
+
+		"hint"				"This is the Brenodi Empire Refinery. It continually generates resources (res or money) for your or the enemy team. These can only be placed on refinery spots (usually indicated by smoke)"
+
+		"GeneralPhysicsResist"		"0.85"
+		"GeneralChemistryResist"	"0.85"
+		"GeneralMechanicalResist"	"0.85"
+		"GeneralElectricResist"		"0.85"
+		"GeneralBiologicalResist"	"0.85"
+
+		"KineticResist"			"0.85"
+		"ExplosiveResist"		"0.85"
+		"BioResist"			"0.85"
+
+		"BulletResist"			"1"
+		"APBulletResist"		"0.85"
+		"BulletExplosiveResist"		"0.80"
+
+		"MissileResist"			"0.85"
+		"MissileExplosiveResist"	"0.85"
+		"MissileBioResist"		"0.85"
+
+		"KineticArtResist"		"0.85"
+		"ExplosiveArtResist"		"0.85"
+		"BioArtResist"			"0.85"
+
+		"InfantryGrenadeResist"		"0.9"
+		"InfantryMineResist"		"0.9"
+		"InfantryMissileResist"		"0.95"
+		"InfantryMortarResist"		"0.85"
+		"InfantryStickyResist"		"0.85"
+		"InfantrySeismicResist"		"0.2"
+		"InfantryBulletResist"		"1"
+		"InfantryUtilityResist"		"1"
+		"InfantryMeleeResist"		"1"
+
+		"ExtraType1Resist"		"0.5"
+		"ExtraType2Resist"		"0.75"
+		"ExtraType3Resist"		"0.75"
+
+		"MinColBoundX"			"-240"
+		"MinColBoundY"			"-240"
+		"MinColBoundZ"			"0"
+
+		"MaxColBoundX"			"240"
+		"MaxColBoundY"			"240"
+		"MaxColBoundZ"			"220"
+	}
+
+	"NFRefinery"
+	{
+		"name"				"NFRefinery"
+		"spotted name"			"Refinery"
+
+		"model"				"models/NF/Buildings/refinery/nf_refinery.mdl"
+		"model2"			"models/NF/Buildings/refinery/nf_refinery_2.mdl"
+		"model4"			"models/NF/Buildings/refinery/nf_refinery_4.mdl"
+		"model8"			"models/NF/Buildings/refinery/nf_refinery_8.mdl"
+		"model16"			"models/NF/Buildings/refinery/nf_refinery_16.mdl"
+		"model32"			"models/NF/Buildings/refinery/nf_refinery_32.mdl"
+		"cost"				"100"
+		"max health"			"150"
+		"starting health"		"25"
+		"damaged model"			"models/NF/Buildings/refinery/nf_refinery.mdl"
+		"damaged threshold"		"50"
+		"destroyed model"		"models/NF/Buildings/refinery/nf_refinery.mdl"
+		"vehicle physbox"		"models/NF/Buildings/refinery/nf_refinery_vehiclephysbox.mdl"
+
+		"recycle time"			"30"
+		"carcass removal time"		"10"
+		"touchmessageid"		"9"
+
+		"hint"				"This is the Northern Faction Refinery. It continually generates resources (res or money) for your or the enemy team. These can only be placed on refinery spots (usually indicated by smoke)"
+
+		"GeneralPhysicsResist"		"0.9"
+		"GeneralChemistryResist"	"0.9"
+		"GeneralMechanicalResist"	"0.9"
+		"GeneralElectricResist"		"0.9"
+		"GeneralBiologicalResist"	"0.9"
+
+		"KineticResist"			"0.9"
+		"ExplosiveResist"		"0.9"
+		"BioResist"			"0.9"
+
+		"BulletResist"			"1"
+		"APBulletResist"		"0.85"
+		"BulletExplosiveResist"		"0.80"
+
+		"MissileResist"			"0.9"
+		"MissileExplosiveResist"	"0.9"
+		"MissileBioResist"		"0.9"
+
+		"KineticArtResist"		"0.85"
+		"ExplosiveArtResist"		"0.85"
+		"BioArtResist"			"0.85"
+
+		"InfantryGrenadeResist"		"0.9"
+		"InfantryMineResist"		"0.9"
+		"InfantryMissileResist"		"0.95"
+		"InfantryMortarResist"		"0.85"
+		"InfantryStickyResist"		"0.85"
+		"InfantrySeismicResist"		"0.2"
+		"InfantryBulletResist"		"1"
+		"InfantryUtilityResist"		"1"
+		"InfantryMeleeResist"		"1"
+
+		"ExtraType1Resist"		"0.5"
+		"ExtraType2Resist"		"0.75"
+		"ExtraType3Resist"		"0.75"
+
+		"MinColBoundX"			"-250"
+		"MinColBoundY"			"-250"
+		"MinColBoundZ"			"0"
+
+		"MaxColBoundX"			"250"
+		"MaxColBoundY"			"250"
+		"MaxColBoundZ"			"250"
+	}
+
+	"ImpRepair"
+	{
+		"name"				"ImpRepair"
+		"spotted name"			"Repair Pad"
+
+		"model"				"models/imperial/Buildings/repairpad/imp_repairpad.mdl"
+		"model2"			"models/imperial/Buildings/repairpad/imp_repairpad_2.mdl"
+		"model4"			"models/imperial/Buildings/repairpad/imp_repairpad_4.mdl"
+		"model8"			"models/imperial/Buildings/repairpad/imp_repairpad_8.mdl"
+		"model16"			"models/imperial/Buildings/repairpad/imp_repairpad_16.mdl"
+		"model32"			"models/imperial/Buildings/repairpad/imp_repairpad_32.mdl"
+		"cost"				"250"
+		"max health"			"200"
+		"starting health"		"50"
+		"damaged model"			"models/imperial/Buildings/repairpad/imp_repairpad.mdl"
+		"damaged threshold"		"50"
+		"destroyed model"		"models/imperial/Buildings/repairpad/imp_repairpad.mdl"
+		"vehicle physbox"		"models/imperial/Buildings/repairpad/imp_repairpad_vehiclephysbox.mdl"
+
+		"recycle time"			"30"
+		"carcass removal time"		"30"
+		"touchmessageid"		"10"
+
+		"hint"				"This is the Brenodi Empire Repair Pad. Vehicles parked on top of it are automatically being repaired. You can also press %emp_show_vehicle_customization% to change the loadout of your vehicle without getting a new one."
+
+		"GeneralPhysicsResist"		"0.85"
+		"GeneralChemistryResist"	"0.85"
+		"GeneralMechanicalResist"	"0.85"
+		"GeneralElectricResist"		"0.85"
+		"GeneralBiologicalResist"	"0.85"
+
+		"KineticResist"			"0.85"
+		"ExplosiveResist"		"0.90"
+		"BioResist"			"0.85"
+
+		"BulletResist"			"1"
+		"APBulletResist"		"0.85"
+		"BulletExplosiveResist"		"0.80"
+
+		"MissileResist"			"0.85"
+		"MissileExplosiveResist"	"0.85"
+		"MissileBioResist"		"0.85"
+
+		"KineticArtResist"		"0.85"
+		"ExplosiveArtResist"		"0.85"
+		"BioArtResist"			"0.85"
+
+		"InfantryGrenadeResist"		"0.9"
+		"InfantryMineResist"		"0.9"
+		"InfantryMissileResist"		"0.95"
+		"InfantryMortarResist"		"0.8"
+		"InfantryStickyResist"		"0.85"
+		"InfantrySeismicResist"		"0"
+		"InfantryBulletResist"		"1"
+		"InfantryUtilityResist"		"1"
+		"InfantryMeleeResist"		"1"
+
+		"ExtraType1Resist"		"0.5"
+		"ExtraType2Resist"		"0.75"
+		"ExtraType3Resist"		"0.75"
+
+		"MinColBoundX"			"-520"
+		"MinColBoundY"			"-520"
+		"MinColBoundZW"			"0"
+
+		"MaxColBoundX"			"520"
+		"MaxColBoundY"			"520"
+		"MaxColBoundZ"			"300"
+	}
+
+	"NFRepair"
+	{
+		"name"				"NFRepair"
+		"spotted name"			"Repair Pad"
+
+		"model"				"models/NF/Buildings/repairpad/nf_repairpad.mdl"
+		"model2"			"models/NF/Buildings/repairpad/nf_repairpad_2.mdl"
+		"model4"			"models/NF/Buildings/repairpad/nf_repairpad_4.mdl"
+		"model8"			"models/NF/Buildings/repairpad/nf_repairpad_8.mdl"
+		"model16"			"models/NF/Buildings/repairpad/nf_repairpad_16.mdl"
+		"model32"			"models/NF/Buildings/repairpad/nf_repairpad_32.mdl"
+		"cost"				"250"
+		"max health"			"200"
+		"starting health"		"50"
+		"damaged model"			"models/NF/Buildings/repairpad/nf_repairpad.mdl"
+		"damaged threshold"		"50"
+		"destroyed model"		"models/NF/Buildings/repairpad/nf_repairpad.mdl"
+		"vehicle physbox"		"models/NF/Buildings/repairpad/nf_repairpad_vehiclephysbox.mdl"
+
+		"recycle time"			"30"
+		"carcass removal time"		"30"
+		"touchmessageid"		"11"
+
+		"hint"				"This is the Northern Faction Repair Pad. Vehicles parked on top of it are automatically being repaired. You can also press %emp_show_vehicle_customization% to change the loadout of your vehicle without getting a new one."
+
+		"GeneralPhysicsResist"		"0.85"
+		"GeneralChemistryResist"	"0.85"
+		"GeneralMechanicalResist"	"0.85"
+		"GeneralElectricResist"		"0.85"
+		"GeneralBiologicalResist"	"0.85"
+
+		"KineticResist"			"0.85"
+		"ExplosiveResist"		"0.90"
+		"BioResist"			"0.85"
+
+		"BulletResist"			"1"
+		"APBulletResist"		"0.85"
+		"BulletExplosiveResist"		"0.80"
+
+		"MissileResist"			"0.85"
+		"MissileExplosiveResist"	"0.85"
+		"MissileBioResist"		"0.85"
+
+		"KineticArtResist"		"0.85"
+		"ExplosiveArtResist"		"0.85"
+		"BioArtResist"			"0.85"
+
+		"InfantryGrenadeResist"		"0.9"
+		"InfantryMineResist"		"0.9"
+		"InfantryMissileResist"		"0.95"
+		"InfantryMortarResist"		"0.8"
+		"InfantryStickyResist"		"0.85"
+		"InfantrySeismicResist"		"0"
+		"InfantryBulletResist"		"1"
+		"InfantryUtilityResist"		"1"
+		"InfantryMeleeResist"		"1"
+
+		"ExtraType1Resist"		"0.5"
+		"ExtraType2Resist"		"0.75"
+		"ExtraType3Resist"		"0.75"
+
+		"MinColBoundX"			"-550"
+		"MinColBoundY"			"-550"
+		"MinColBoundZ"			"0"
+
+		"MaxColBoundX"			"550"
+		"MaxColBoundY"			"550"
+		"MaxColBoundZ"			"450"
+	}
+
+	"ImpMGTurret"
+	{
+		"name"				"ImpMGTurret"
+		"spotted name"			"MG Turret"
+
+		"model"				"models/imperial/turrets/mg_lvl1/imp_turret_mg_lvl1.mdl"
+		"model2"			"models/imperial/turrets/mg_lvl1/imp_turret_mg_lvl1_2.mdl"
+		"model4"			"models/imperial/turrets/mg_lvl1/imp_turret_mg_lvl1_4.mdl"
+		"model8"			"models/imperial/turrets/mg_lvl1/imp_turret_mg_lvl1_8.mdl"
+		"model16"			"models/imperial/turrets/mg_lvl1/imp_turret_mg_lvl1_16.mdl"
+		"model32"			"models/imperial/turrets/mg_lvl1/imp_turret_mg_lvl1_32.mdl"
+		"gib suffix"			"_gib"
+		"gib count level 1"		"3"
+		"gib count level 2"		"5"
+		"gib count level 3"		"5"
+		"cost"				"50"
+		"max health"	 		"100"
+		"starting health"		"25"
+		"damaged model" 		"models/imperial/turrets/mg_lvl1/imp_turret_mg_lvl1.mdl"
+		"damaged threshold"		"50"
+		"destroyed model"		"models/imperial/turrets/mg_lvl1/imp_turret_mg_lvl1.mdl"
+		"vehicle physbox"		"models/imperial/turrets/mg_lvl1/imp_turret_mg_lvl1.mdl"
+
+		"level 2"			"models/imperial/turrets/mg_lvl2/imp_turret_mg_lvl2.mdl"
+		"level 3"			"models/imperial/turrets/mg_lvl3/imp_turret_mg_lvl3.mdl"
+		"turret range level 1"		"2000"
+		"turret range level 2"		"3000"
+		"turret range level 3"		"4000"
+		"turret rof level 1"		"0.14"
+		"turret rof level 2"		"0.08"
+		"turret rof level 3"		"0.04"
+		"turret turn speed level 1"	"200"
+		"turret turn speed level 2"	"200"
+		"turret turn speed level 3"	"200"
+		"turret starting hp level 1"	"25"
+		"turret starting hp level 2"	"25"
+		"turret starting hp level 3"	"25"
+		"turret max hp level 1"		"100"
+		"turret max hp level 2"		"100"
+		"turret max hp level 3"		"100"
+
+		"damage"			"3"
+		"recycle time"			"5"
+		"carcass removal time"		"1"
+		"touchmessageid"		"12"
+
+		"hint"				"This is the Brenodi Empire MG Turret. It automatically shoots at enemy infantry units."
+
+		"GeneralPhysicsResist"		"0.70"
+		"GeneralChemistryResist"	"0.70"
+		"GeneralMechanicalResist" 	"0.70"
+		"GeneralElectricResist"  	"0.70"
+		"GeneralBiologicalResist"	"0.70"
+
+		"KineticResist" 		"0.70"
+		"ExplosiveResist" 		"0.70"
+		"BioResist" 			"0.70"
+
+		"BulletResist" 			"1"
+		"APBulletResist" 		"0.70"
+		"BulletExplosiveResist" 	"0.70"
+
+		"MissileResist" 		"0.65"
+		"MissileExplosiveResist" 	"0.65"
+		"MissileBioResist" 		"0.65"
+
+		"KineticArtResist" 		"0.70"
+		"ExplosiveArtResist" 		"0.70"
+		"BioArtResist" 			"0.70"
+
+		"InfantryGrenadeResist" 	"0.80"
+		"InfantryMineResist" 		"0.9"
+		"InfantryMissileResist" 	"0.70"
+		"InfantryMortarResist" 		"0.70"
+		"InfantryStickyResist" 		"0.66"
+		"InfantrySeismicResist" 	"-0.70"
+		"InfantryBulletResist" 		"1"
+		"InfantryUtilityResist"		"0.9"
+		"InfantryMeleeResist"		"1"
+
+		"ExtraType1Resist" 		"0.65"
+		"ExtraType2Resist" 		"0.6"
+		"ExtraType3Resist" 		"0.6"
+
+		"MinColBoundX"			-80"
+		"MinColBoundY"			"-80"
+		"MinColBoundZ"			"0"
+
+		"MaxColBoundX"			"80"
+		"MaxColBoundY"			"80"
+		"MaxColBoundZ"			"80"
+	}
+
+	"NFMGTurret"
+	{
+		"name" 				"NFMGTurret"
+		"spotted name"			"MG Turret"
+
+		"model" 			"models/NF/turrets/mg_lvl1/nf_turret_mg_lvl1.mdl"
+		"model2" 	 		"models/NF/turrets/mg_lvl1/nf_turret_mg_lvl1_2.mdl"
+		"model4" 	 		"models/NF/turrets/mg_lvl1/nf_turret_mg_lvl1_4.mdl"
+		"model8" 	 		"models/NF/turrets/mg_lvl1/nf_turret_mg_lvl1_8.mdl"
+		"model16" 	 		"models/NF/turrets/mg_lvl1/nf_turret_mg_lvl1_16.mdl"
+		"model32" 	 		"models/NF/turrets/mg_lvl1/nf_turret_mg_lvl1_32.mdl"
+		"gib suffix"    		"_gib"
+		"gib count level 1"		"5"
+		"gib count level 2"		"4"
+		"gib count level 3"		"4"
+		"cost" 				"50"
+		"max health"	 		"100"
+		"starting health"		"25"
+		"damaged model" 		"models/NF/turrets/mg_lvl1/nf_turret_mg_lvl1.mdl"
+		"damaged threshold"		"50"
+		"destroyed model"		"models/NF/turrets/mg_lvl1/nf_turret_mg_lvl1.mdl"
+		"vehicle physbox"		"models/NF/turrets/mg_lvl1/nf_turret_mg_lvl1.mdl"
+
+		"level 2"			"models/NF/turrets/mg_lvl2/nf_turret_mg_lvl2.mdl"
+		"level 3"			"models/NF/turrets/mg_lvl3/nf_turret_mg_lvl3.mdl"
+
+		"turret range level 1"		"2000"
+		"turret range level 2"		"3000"
+		"turret range level 3"		"4000"
+		"turret rof level 1"		"0.14"
+		"turret rof level 2"		"0.08"
+		"turret rof level 3"		"0.04"
+		"turret turn speed level 1"	"200"
+		"turret turn speed level 2"	"200"
+		"turret turn speed level 3"	"200"
+		"turret starting hp level 1"	"25"
+		"turret starting hp level 2"	"25"
+		"turret starting hp level 3"	"25"
+		"turret max hp level 1"		"100"
+		"turret max hp level 2"		"100"
+		"turret max hp level 3"		"100"
+
+		"damage"			"3"
+		"recycle time"			5
+		"carcass removal time"		"1"
+		"touchmessageid"		"13"
+		"hint"				"This is the Northern Faction MG Turret. It automatically shoots at enemy infantry units."
+
+		"GeneralPhysicsResist"		"0.70"
+		"GeneralChemistryResist"	"0.70"
+		"GeneralMechanicalResist"	"0.70"
+		"GeneralElectricResist"		"0.70"
+		"GeneralBiologicalResist"	"0.70"
+
+		"KineticResist"			"0.70"
+		"ExplosiveResist"		"0.70"
+		"BioResist"			"0.70"
+
+		"BulletResist"			"1"
+		"APBulletResist" 		"0.70"
+		"BulletExplosiveResist"		"0.70"
+
+		"MissileResist" 		"0.65"
+		"MissileExplosiveResist"	"0.65"
+		"MissileBioResist" 		"0.65"
+
+		"KineticArtResist" 		"0.70"
+		"ExplosiveArtResist" 		"0.70"
+		"BioArtResist"			"0.70"
+
+		"InfantryGrenadeResist" 	"0.80"
+		"InfantryMineResist" 		"0.9"
+		"InfantryMissileResist" 	"0.70"
+		"InfantryMortarResist"		"0.70"
+		"InfantryStickyResist"		"0.66"
+		"InfantrySeismicResist" 	"-0.70"
+		"InfantryBulletResist"		"1"
+		"InfantryUtilityResist"		"0.9"
+		"InfantryMeleeResist"		"1"
+
+		"ExtraType1Resist" 		"0.65
+		"ExtraType2Resist" 		"0.6
+		"ExtraType3Resist" 		"0.6
+
+		"MinColBoundX"			"-80"
+		"MinColBoundY"			"-80"
+		"MinColBoundZ"			"0"
+
+		"MaxColBoundX"			"80"
+		"MaxColBoundY"			"80"
+		"MaxColBoundZ"			"80"
+	}
+}

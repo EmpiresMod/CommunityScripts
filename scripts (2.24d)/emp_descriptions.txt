@@ -1,0 +1,720 @@
+WeaponDescriptionData 
+{
+
+// IMPORTANT: To avoid code changes, some weapons may have unorthodox attributes.
+// An example would be the NF SMG 1 (third down the list), which has
+// as its background "guns/nf/smg2". Please do not attempt to correct these.
+// You can, of course, always change the VTF file itself.
+
+	"Skill Unselected"
+	{
+		"WeaponText"		"*Choose Skill"
+		//Short name for the weapon.
+		"WeaponDescription"	"Select a skill."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/unlock"
+		//Weapon image.
+	}
+
+	"NF Pistol 1"
+	{
+		"WeaponText"		"9mm"
+		//Short name for the weapon.
+		"WeaponDescription"	"The 9MM Pistol is less powerful than the Buckshot pistol, but it makes up for it with a quicker firing rate and reload time."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/pistol"
+		//Weapon image.
+	}
+	
+	"NF Pistol 2"
+	{
+		"WeaponText"		"Shot Pistol"
+		//Short name for the weapon.
+		"WeaponDescription"	"The Shot Pistol has two barrels and fires buckshot rounds creating a wider firing cone and high damage up close."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/bpistol"
+		//Weapon image.
+	}
+
+
+	"NF SMG 1"
+	{
+		"WeaponText"		"SMG 1"
+		//Short name for the weapon.
+		"WeaponDescription"	"The first submachine has the least power but is accurate even when on the move."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/smg2"
+		//Weapon image.
+	}
+
+	"NF SMG 2"
+	{
+		"WeaponText"		"SMG 2"
+		//Short name for the weapon.
+		"WeaponDescription"	"This improved submachine gun has more power but less accuracy."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/smg1"
+		//Weapon image.
+	}
+
+	"NF SMG 3"
+	{
+		"WeaponText"		"SMG 3"
+		//Short name for the weapon.
+		"WeaponDescription"	"This new production model is geared towards power and firing cycle with the ideal operating area to be in close ranges."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/smg3"
+		//Weapon image.
+	}
+
+	"NF Assault Rifle"
+	{
+		"WeaponText"		"Assault Rifle"
+		//Short name for the weapon.
+		"WeaponDescription"	"The assault rifle is the close-quarter combat rifle. It is machine stamped at the Northern Faction war factories which allows for reliability and abundance of replacement parts."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/ar"
+		//Weapon image.
+	}
+
+	"NF Ranged Rifle"
+	{
+		"WeaponText"		"Ranged Rifle"
+		//Short name for the weapon.
+		"WeaponDescription"	"This Designated Marksman rifle has high damage and accuracy. Its disadvantages are that its rate of fire is low, and that its damage decreases rapidly over longer distances."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/aar"
+		//Weapon image.
+	}
+
+	"NF Heavy Rifle"
+	{
+		"WeaponText"		"Heavy Rifle"
+		//Short name for the weapon.
+		"WeaponDescription"	"The heavy rifle is perfect for long ranges where accuracy is crucial. However, it is too unwieldy and inaccurate for close combat."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/50cal"
+		//Weapon image.
+	}
+
+	"NF Heavy Machine Gun"
+	{
+		"WeaponText"		"Heavy MG"
+		//Short name for the weapon.
+		"WeaponDescription"	"The Heavy Machine Gun is the perfect weapon for suppressive fire.  It can blanket an area with gunfire and provide effective cover fire.  Its accuracy is severly diminished when firing while not prone."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/hmg"
+		//Weapon image.
+	}
+
+	"NF RPG"
+	{
+		"WeaponText"		"RPG Launcher"
+		//Short name for the weapon.
+		"WeaponDescription"	"The RPG launcher has three operating modes, grenade launcher, anti-air missile launcher, and mortar launcher.  This gives great versatility to the grenadier unit in taking on numerous threats on the battlefield."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/rpg"
+		//Weapon image.
+	}
+
+	"NF Mortar"
+	{
+		"WeaponText"		"Unused"
+		//Short name for the weapon.
+		"WeaponDescription"	"Unused"
+		//Long description for the weapon.
+		"WeaponBackground"	"Unused"
+		//Weapon image.
+	}
+
+	"NF Explosive Grenade"
+	{
+		"WeaponText"		"Explosive Grenade"
+		//Short name for the weapon.
+		"WeaponDescription"	"Standard grenade for dealing damage to infantry in an area as well as vehicles and buildings."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/grenade"
+		//Weapon image.
+	}
+
+	"NF Concussion Grenade"
+	{
+		"WeaponText"		"Concussion Grenade"
+		//Short name for the weapon.
+		"WeaponDescription"	"Designed to blind enemy infantry and briefly disable turrets."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/grenade"
+		//Weapon image.
+	}
+
+	"NF Seismic Grenade"
+	{
+		"WeaponText"		"Seismic Grenade"
+		//Short name for the weapon.
+		"WeaponDescription"	"Creates a shockwave which disorientates infantry units and damages buildings."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/grenade"
+		//Weapon image.
+	}
+
+	"NF Smoke Grenade"
+	{
+		"WeaponText"		"Smoke Grenade"
+		//Short name for the weapon.
+		"WeaponDescription"	"Covers a small area with smoke for moving under cover."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/grenade"
+		//Weapon image.
+	}
+
+	"NF Mine"
+	{
+		"WeaponText"		"Mine"
+		//Short name for the weapon.
+		"WeaponDescription"	"Designed to be placed on the ground and left alone for its detonator to be activated by an enemy soldier or vehicle."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/mine"
+		//Weapon image.
+	}
+
+	"NF Repair Kit"
+	{
+		"WeaponText"		"Repair Kit"
+		//Short name for the weapon.
+		"WeaponDescription"	"Repair Vehicles\nHeal Infantry"
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/engkit"
+		//Weapon image.
+	}
+
+	"NF Binoculars"
+	{
+		"WeaponText"		"Binoculars"
+		//Short name for the weapon.
+		"WeaponDescription"	"Set Artillery Markers"
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/binocs"
+		//Weapon image.
+	}
+
+	"BE Pistol 1"
+	{
+		"WeaponText"		"Pistol 1"
+		//Short name for the weapon.
+		"WeaponDescription"	"Standard issue Brenodi pistol."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/imp/pistol1"
+		//Weapon image.
+	}
+
+	"BE Pistol 2"
+	{
+		"WeaponText"		"Machine Pistol"
+		//Short name for the weapon.
+		"WeaponDescription"	"This pistol fires fully automatic and uses a larger caliber, making it very deadly up close."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/imp/pistol2"
+		//Weapon image.
+	}
+
+	"BE SMG 1"
+	{
+		"WeaponText"		"SMG 1"
+		//Short name for the weapon.
+		"WeaponDescription"	"This submachine gun is accurate even when on the move, but does low damage."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/imp/smg1"
+		//Weapon image.
+	}
+
+	"BE SMG 2"
+	{
+		"WeaponText"		"SMG 2"
+		//Short name for the weapon.
+		"WeaponDescription"	"Improved damage at the cost of accuracy."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/imp/smg2"
+		//Weapon image.
+	}
+
+	"BE Rifle 1"
+	{
+		"WeaponText"		"Assault Carbine"
+		//Short name for the weapon.
+		"WeaponDescription"	"The assault carbine can fire very rapidly in 3-shot bursts. It has an inherent pausing mechanism to let the barrel cool off. It can also fire single rounds with great accuracy, but at a slow rate of fire."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/imp/rifle1"
+		//Weapon image.
+	}
+
+	"BE Rifle 2"
+	{
+		"WeaponText"		"Assault Rifle"
+		//Short name for the weapon.
+		"WeaponDescription"	"The assault rifle has been modified to fire fully automatic and uses a drum magazine to hold more rounds. It is very useful for close quarter combat."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/imp/rifle2"
+		//Weapon image.
+	}
+
+	"BE Ranged Rifle"
+	{
+		"WeaponText"		"Scoped Rifle"
+		//Short name for the weapon.
+		"WeaponDescription"	"The Designated Marksman rifle has a scope attached to allow for great accuracy. It uses a more powerful round, but needs to be chambered manually. Its damage decreases rapidly over longer distances."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/imp/rifle3"
+		//Weapon image.
+	}
+
+	"BE Heavy Machine Gun"
+	{
+		"WeaponText"		"Heavy MG"
+		//Short name for the weapon.
+		"WeaponDescription"	"The Heavy Machine Gun is the perfect weapon for suppressive fire.  It can blanket an area with gunfire and provide effective cover fire.  Its accuracy is severly diminished when firing while not prone."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/imp/hmg"
+		//Weapon image.
+	}
+
+	"BE Explosive Grenade"
+	{
+		"WeaponText"		"Explosive Grenade"
+		//Short name for the weapon.
+		"WeaponDescription"	"Standard grenade for dealing damage to infantry in an area as well as vehicles and buildings."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/imp/grenade"
+		//Weapon image.
+	}
+
+	"BE Concussion Grenade"
+	{
+		"WeaponText"		"Concussion Grenade"
+		//Short name for the weapon.
+		"WeaponDescription"	"Designed to blind enemy infantry and briefly disable turrets."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/imp/grenade"
+		//Weapon image.
+	}
+
+	"BE Seismic Grenade"
+	{
+		"WeaponText"		"Seismic Grenade"
+		//Short name for the weapon.
+		"WeaponDescription"	"Creates a shockwave which disorientates infantry units and damages buildings."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/imp/grenade"
+		//Weapon image.
+	}
+
+	"BE Smoke Grenade"
+	{
+		"WeaponText"		"Smoke Grenade"
+		//Short name for the weapon.
+		"WeaponDescription"	"Covers a small area with smoke for moving under cover."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/imp/grenade"
+		//Weapon image.
+	}
+
+	"BE Mine"
+	{
+		"WeaponText"		"Mine"
+		//Short name for the weapon.
+		"WeaponDescription"	"Designed to be placed on the ground and left alone for its detonator to be activated by an enemy soldier or vehicle."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/imp/mine"
+		//Weapon image.
+	}
+
+	"NF Armor"
+	{
+		"WeaponText"		"Armor"
+		//Short name for the weapon.
+		"WeaponDescription"	"Ballistics Protection"
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/armor"
+		//Weapon image.
+	}
+
+	"Mine Detector"
+	{
+		"WeaponText"		"Mine Detector"
+		//Short name for the weapon.
+		"WeaponDescription"	"Mine Detection"
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/detector"
+		//Weapon image.
+	}
+
+	"Skill 1"
+	{
+		"WeaponText"		"Skill 1"
+		//Short name for the weapon.
+		"WeaponDescription"	"Skill 1 Enhancement"
+		//Long description for the weapon.
+		"WeaponBackground"	"locke1"
+		//Weapon image.
+	}
+
+	"Skill 2"
+	{
+		"WeaponText"		"Skill 2"
+		//Short name for the weapon.
+		"WeaponDescription"	"Skill 2 Enhancement"
+		//Long description for the weapon.
+		"WeaponBackground"	"locke2"
+		//Weapon image.
+	}
+
+	"Skill 3"
+	{
+		"WeaponText"		"Skill 3"
+		//Short name for the weapon.
+		"WeaponDescription"	"Skill 3 Enhancement"
+		//Long description for the weapon.
+		"WeaponBackground"	"locke3"
+		//Weapon image.
+	}
+
+	"Skill 4"
+	{
+		"WeaponText"		"Skill 4"
+		//Short name for the weapon.
+		"WeaponDescription"	"Skill 4 Enhancement"
+		//Long description for the weapon.
+		"WeaponBackground"	"locke4"
+		//Weapon image.
+	}
+
+	"Scout Hide"
+	{
+		"WeaponText"		"Hide"
+		//Short name for the weapon.
+		"WeaponDescription"	"Allows you to be hidden from enemy view when crouching for at least five seconds and touching an object."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/hide"
+		//Weapon image.
+	}
+
+	"Scout Enhanced Senses"
+	{
+		"WeaponText"		"Enhanced Senses"
+		//Short name for the weapon.
+		"WeaponDescription"	"Nearby enemies are detected and displayed on the minimap."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/senses"
+		//Weapon image.
+	}
+
+	"Scout Radar"
+	{
+		"WeaponText"		"Radar Stealth"
+		//Short name for the weapon.
+		"WeaponDescription"	"As a vehicle driver, radars will have great difficulty in detecting your vehicle."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/radar"
+		//Weapon image.
+	}
+
+	"Scout Weapon Silencer"
+	{
+		"WeaponText"		"Weapon Silencer"
+		//Short name for the weapon.
+		"WeaponDescription"	"Reduce the noise from your weapon by 50% and hide all of your kill/death messages from the enemy."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/silencer"
+		//Weapon image.
+	}
+
+	"Scout Vehicle Speed"
+	{
+		"WeaponText"		"Vehicle Speed"
+		//Short name for the weapon.
+		"WeaponDescription"	"Increase vehicle speed by 20% when you are the driver."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/vehicle_speed"
+		//Weapon image.
+	}
+
+	"Rifleman Dig In"
+	{
+		"WeaponText"		"Dig In"
+		//Short name for the weapon.
+		"WeaponDescription"	"Crouching causes half of all damage to be absorbed by the stamina bar rather than from player health as long as there is stamina available."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/dig_in"
+		//Weapon image.
+	}
+
+	"Rifleman Damage Increase"
+	{
+		"WeaponText"		"Damage Increase"
+		//Short name for the weapon.
+		"WeaponDescription"	"Gives a 10% improvement in pistol and rifle weapon damage."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/damage"
+		//Weapon image.
+	}
+
+	"Rifleman Vehicle Damage"
+	{
+		"WeaponText"		"Vehicle Damage"
+		//Short name for the weapon.
+		"WeaponDescription"	"Gives a 10% improvement in vehicle weapon damage."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/vehicle_damage"
+		//Weapon image.
+	}
+
+	"Grenadier Defusal"
+	{
+		"WeaponText"		"Defusal"
+		//Short name for the weapon.
+		"WeaponDescription"	"Mines cannot detect you for detonation, and you can disable mines by crouching on top of one, looking at it, and holding the 'use' key."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/defuse"
+		//Weapon image.
+	}
+
+	"Grenadier Armor Detection"
+	{
+		"WeaponText"		"Armor Detection"
+		//Short name for the weapon.
+		"WeaponDescription"	"Provides an indicator of the amount of armor a targeted vehicle has."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/armor_detect"
+		//Weapon image.
+	}
+
+	"Grenadier Artillery Feedback"
+	{
+		"WeaponText"		"Artillery Feedback"
+		//Short name for the weapon.
+		"WeaponDescription"	"Gives a visual indication on the minimap of impact from all shells fired by the RPG, mortar, or a vehicle weapon.  No selected artillery target is required."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/artillery_detect"
+		//Weapon image.
+	}
+
+	"Grenadier Increased Armor"
+	{
+		"WeaponText"		"Increased Armor"
+		//Short name for the weapon.
+		"WeaponDescription"	"Reduces damage done to your vehicle by 10% when you're the driver."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/vehicle_armor"
+		//Weapon image.
+	}
+
+	"Engineer Healing Upgrade"
+	{
+		"WeaponText"		"Healing Upgrade"
+		//Short name for the weapon.
+		"WeaponDescription"	"Improves the amount of health given per energy round from the repair kit."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/heal"
+		//Weapon image.
+	}
+
+	"Engineer Repair Upgrade"
+	{
+		"WeaponText"		"Repair Upgrade"
+		//Short name for the weapon.
+		"WeaponDescription"	"Improves the amount repaired per energy round from the repair kit."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/repair"
+		//Weapon image.
+	}
+
+	"Engineer Revive"
+	{
+		"WeaponText"		"Revive"
+		//Short name for the weapon.
+		"WeaponDescription"	"Upgrades your repair kit with the ability to bring fallen teammates back to life."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/revive"
+		//Weapon image.
+	}
+
+	"Engineer Turret Upgrade"
+	{
+		"WeaponText"		"Turret Upgrade"
+		//Short name for the weapon.
+		"WeaponDescription"	"Allows you to upgrade your turret to level 2 and 3."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/turret"
+		//Weapon image.
+	}
+
+	"Engineeer Vehicle Cooling"
+	{
+		"WeaponText"		"Vehicle Cooling"
+		//Short name for the weapon.
+		"WeaponDescription"	"Heat dissipation when driving a vehicle increases by 10%."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/vehicle_cooling"
+		//Weapon image.
+	}
+
+	"General Health Upgrade"
+	{
+		"WeaponText"		"Health Upgrade"
+		//Short name for the weapon.
+		"WeaponDescription"	"Increases your maximum amount of health by 30%."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/health"
+		//Weapon image.
+	}
+
+	"General Health Regeneration"
+	{
+		"WeaponText"		"Health Regeneration"
+		//Short name for the weapon.
+		"WeaponDescription"	"Slowly regenerates health."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/health_regen"
+		//Weapon image.
+	}
+
+	"General Ammo Increase"
+	{
+		"WeaponText"		"Ammo Increase"
+		//Short name for the weapon.
+		"WeaponDescription"	"Doubles the total amount of ammo you can carry."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/ammo"
+		//Weapon image.
+	}
+
+	"General Stamina Increase"
+	{
+		"WeaponText"		"Stamina Increase"
+		//Short name for the weapon.
+		"WeaponDescription"	"Increases stamina recharge rate to be twice as fast."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/stamina"
+		//Weapon image.
+	}
+
+	"General Speed Upgrade"
+	{
+		"WeaponText"		"Speed Upgrade"
+		//Short name for the weapon.
+		"WeaponDescription"	"Increases your normal movement speed by 15%."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/speed"
+		//Weapon image.
+	}
+
+	"General Accuracy Upgrade"
+	{
+		"WeaponText"		"Accuracy Upgrade"
+		//Short name for the weapon.
+		"WeaponDescription"	"Increases your weapon accuracy and decreases the negative effects on weapon accuracy from movement and firing."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/accuracy"
+		//Weapon image.
+	}
+
+	"General Melee Upgrade"
+	{
+		"WeaponText"		"Melee Upgrade"
+		//Short name for the weapon.
+		"WeaponDescription"	"Increases damage done per melee hit to near fatal levels and increases the area and range covered by each swing."
+		//Long description for the weapon.
+		"WeaponBackground"	"skills/melee"
+		//Weapon image.
+	}
+
+	"BE Repair Kit"
+	{
+		"WeaponText"		"Repair Kit"
+		//Short name for the weapon.
+		"WeaponDescription"	"Repair Vehicles\nHeal Infantry"
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/imp/engkit"
+		//Weapon image.
+	}
+
+	"BE Binoculars"
+	{
+		"WeaponText"		"Binoculars"
+		//Short name for the weapon.
+		"WeaponDescription"	"Set Artillery Markers"
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/imp/binocs"
+		//Weapon image.
+	}
+
+	"BE Armor"
+	{
+		"WeaponText"		"Armor"
+		//Short name for the weapon.
+		"WeaponDescription"	"Ballistics Protection"
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/imp/armor"
+		//Weapon image.
+	}
+
+	"BE Mine Detector"
+	{
+		"WeaponText"		"Mine Detector"
+		//Short name for the weapon.
+		"WeaponDescription"	"Mine Detection"
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/imp/detector"
+		//Weapon image.
+	}
+
+	"BE RPG"
+	{
+		"WeaponText"		"RPG Launcher"
+		//Short name for the weapon.
+		"WeaponDescription"	"The RPG launcher has three operating modes, grenade launcher, anti-air missile launcher, and mortar launcher.  This gives great versatility to the grenadier unit in taking on numerous threats on the battlefield."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/imp/rpg"
+		//Weapon image.
+	}
+
+	"NF Sticky Grenade"
+	{
+		"WeaponText"		"Sticky Bomb"
+		//Short name for the weapon.
+		"WeaponDescription"	"Improvised grenade that sticks to vehicles.  It is heavier and harder to throw but is powerful enough to damage vehicles."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/grenade"
+		//Weapon image.
+	}
+
+	"BE Sticky Grenade"
+	{
+		"WeaponText"		"Sticky Bomb"
+		//Short name for the weapon.
+		"WeaponDescription"	"Improvised grenade that sticks to vehicles.  It is heavier and harder to throw but is powerful enough to damage vehicles."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/imp/grenade"
+		//Weapon image.
+	}
+
+	"NF Sticky Stun Bomb"
+	{
+		"WeaponText"		"Sticky Stun Bomb"
+		//Short name for the weapon.
+		"WeaponDescription"	"Improvised grenade that sticks to vehicles.  It is heavier and harder to throw, but it disables vehicles for a short amount of time."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/nf/grenade"
+		//Weapon image.
+	}
+
+	"BE Sticky Stun Bomb"
+	{
+		"WeaponText"		"Sticky Stun Bomb"
+		//Short name for the weapon.
+		"WeaponDescription"	"Improvised grenade that sticks to vehicles.  It is heavier and harder to throw, but it disables vehicles for a short amount of time."
+		//Long description for the weapon.
+		"WeaponBackground"	"guns/imp/grenade"
+		//Weapon image.
+	}
+
+}

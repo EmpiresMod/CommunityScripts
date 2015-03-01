@@ -1,0 +1,66 @@
+"Vehicle_ImpJeep"
+{
+	"Default - 3-Phase"
+	{
+		"armor_slot_0"		"0"
+		"armor_front"		"0"
+		"armor_rear"		"0"
+		"armor_left"		"0"
+		"armor_right"		"0"
+		"engine_slot_0"		"2"
+	}
+	"Default - Fission"
+	{
+		"armor_slot_0"		"0"
+		"armor_front"		"0"
+		"armor_rear"		"0"
+		"armor_left"		"0"
+		"armor_right"		"0"
+		"engine_slot_0"		"3"
+	}
+	"Default - Gas Turbine"
+	{
+		"armor_slot_0"		"0"
+		"armor_front"		"0"
+		"armor_rear"		"0"
+		"armor_left"		"0"
+		"armor_right"		"0"
+		"engine_slot_0"		"1"
+	}
+	"Default - Standard"
+	{
+		"armor_slot_0"		"0"
+		"armor_front"		"0"
+		"armor_rear"		"0"
+		"armor_left"		"0"
+		"armor_right"		"0"
+		"engine_slot_0"		"0"
+	}
+	"Default - Adv.Coolant"
+	{
+		"armor_slot_0"		"0"
+		"armor_front"		"0"
+		"armor_rear"		"0"
+		"armor_left"		"0"
+		"armor_right"		"0"
+		"engine_slot_0"		"5"
+	}
+	"Default - Bio"
+	{
+		"armor_slot_0"		"0"
+		"armor_front"		"0"
+		"armor_rear"		"0"
+		"armor_left"		"0"
+		"armor_right"		"0"
+		"engine_slot_0"		"4"
+	}
+	"Default"
+	{
+		"armor_slot_0"		"0"
+		"armor_front"		"0"
+		"armor_rear"		"0"
+		"armor_left"		"0"
+		"armor_right"		"0"
+		"engine_slot_0"		"0"
+	}
+}
