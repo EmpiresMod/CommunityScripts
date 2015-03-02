@@ -1,7 +1,7 @@
 Basic Coding Standard
 ==================
 
-This document compromises of what should be considerfed the standard
+This document comprises of what should be considerfed the standard
 coding elements that are required to ensure a high level of readability
 and technical interoperability.
 
@@ -30,7 +30,7 @@ interpreted as described in [RFC 2119].
 
 This example encompasses some of the rules below as a quick overview:
 
-```VDF
+```
 "InfantryParse"
 {
 	"Scout"
@@ -67,7 +67,7 @@ Trailing whitespace on any line MUST be trimmed/removed.
 
 Comments MUST not be repeated more than necessary. An example of repeating comments is below:
 
-```VDF
+```
 "InfantryParse"
 {
 	"Scout"
