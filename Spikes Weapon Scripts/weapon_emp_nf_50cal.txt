@@ -54,7 +54,7 @@ WeaponData
 
 	//When moving at full speed (sv_maxspeed)
 	"JumpingSpreadModifier"		"0.60"
-	"StandingSpreadModifier"	"0.01"
+	"StandingSpreadModifier"	"0.04"
 	"DuckingSpreadModifier"		"0.003"
 	"ProneSpreadModifier"		"0.002"
 
@@ -77,10 +77,10 @@ WeaponData
 	"ProneSpreadDecrement"		"0.1"
 	//Multiply base weapon spread by this value when in Ironsight view.
 	//Default value is 0.75
-	"IronsightJumpSpread"		"0.01"
-	"IronsightStandSpread"		"0.01"
-	"IronsightDuckSpread"		"0.01"
-	"IronsightProneSpread" 		"0.01"
+	"IronsightJumpSpread"		"0.60"
+	"IronsightStandSpread"		"0.60"
+	"IronsightDuckSpread"		"0.60"
+	"IronsightProneSpread" 		"0.60"
 
 	//Base weapon kick values when in Ironsight view.  
 	//Affects way model behaves from clients POV.  Default value is 0.5
