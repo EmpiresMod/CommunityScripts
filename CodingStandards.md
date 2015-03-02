@@ -33,14 +33,14 @@ This example encompasses some of the rules below as a quick overview:
 ```VDF
 "InfantryParse"
 {
-    "Scout"
-    {
-        "GeneralPhysicsResist"      "0.0"   // General Physics Tree Damage
-        "GeneralChemistryResist "   "0.0"   // General Chemistry Tree Damage
-        "GeneralMechanicalResist"   "0.0"   // General Mechanic Tree Damage
-        "GeneralElectricResist"     "0.0"   // General Electric Tree Damage
-        "GeneralBiologicalResist"   "0.0"   // General Biological Tree Damage
-    }
+	"Scout"
+	{
+		"GeneralPhysicsResist"		"0.0"	// General Physics Tree Damage
+		"GeneralChemistryResist"	"0.0"	// General Chemistry Tree Damage
+		"GeneralMechanicalResist"	"0.0"	// General Mechanic Tree Damage
+		"GeneralElectricResist"		"0.0"	// General Electric Tree Damage
+		"GeneralBiologicalResist"	"0.0"	// General Biological Tree Damage
+	}
 }
 ```
 
@@ -73,7 +73,7 @@ Comments MUST not be repeated more than necessary. An example of repeating comme
 	"Scout"
 	{
 		"GeneralPhysicsResist"		"0.0"	// General Physics Tree Damage
-		"GeneralChemistryResist	"  	"0.0" 	// General Chemistry Tree Damage
+		"GeneralChemistryResist"  	"0.0" 	// General Chemistry Tree Damage
 		"GeneralMechanicalResist" 	"0.0"	// General Mechanic Tree Damage
 		"GeneralElectricResist"  	"0.0"	// General Electric Tree Damage
 		"GeneralBiologicalResist"	"0.0" 	// General Biological Tree Damage
@@ -83,7 +83,7 @@ Comments MUST not be repeated more than necessary. An example of repeating comme
 	{
 
 		"GeneralPhysicsResist"		"0.1"	// General Physics Tree Damage
-		"GeneralChemistryResist	"  	"0.1" 	// General Chemistry Tree Damage
+		"GeneralChemistryResist"  	"0.1" 	// General Chemistry Tree Damage
 		"GeneralMechanicalResist" 	"0.1"	// General Mechanic Tree Damage
 		"GeneralElectricResist"  	"0.1"	// General Electric Tree Damage
 		"GeneralBiologicalResist"	"0.1" 	// General Biological Tree Damage
@@ -93,7 +93,7 @@ Comments MUST not be repeated more than necessary. An example of repeating comme
 	{
 
 		"GeneralPhysicsResist"		"0.0"	// General Physics Tree Damage
-		"GeneralChemistryResist	"  	"0.0" 	// General Chemistry Tree Damage
+		"GeneralChemistryResist"  	"0.0" 	// General Chemistry Tree Damage
 		"GeneralMechanicalResist" 	"0.0"	// General Mechanic Tree Damage
 		"GeneralElectricResist"  	"0.0"	// General Electric Tree Damage
 		"GeneralBiologicalResist"	"0.0" 	// General Biological Tree Damage
