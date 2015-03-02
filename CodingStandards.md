@@ -35,15 +35,15 @@ This example encompasses some of the rules below as a quick overview:
 {
 	"main"
 	{
-		"Name" "Research Index"				// name given to research item
-		"Parent" ""					// name of parent that this branches from
-		"Description" "Research tree begins here."	// description given when hovering over research item
-		"Icon" "comm/hex_tree"				// icon drawn on research tree
-		"Unresearched Icon" "comm/hex_dark"		// icon drawn in the GUI
-		"Type" "0"					// nothing
-		"Cost" "0"					// cost of this research item
-		"Time" "0"					// time to research this item in seconds
-		"Team" ""					// which team can research this
+		"Name"			"Research Index"		// name given to research item
+		"Parent"		""				// name of parent that this branches from
+		"Description"		"Research tree begins here."	// description given when hovering over research item
+		"Icon"			"comm/hex_tree"			// icon drawn on research tree
+		"Unresearched Icon"	"comm/hex_dark"			// icon drawn in the GUI
+		"Type"			"0"				// nothing
+		"Cost"			"0"				// cost of this research item
+		"Time"			"0"				// time to research this item in seconds
+		"Team"			""				// which team can research this
 	}
 }
 ```
