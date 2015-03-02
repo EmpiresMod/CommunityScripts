@@ -17,4 +17,4 @@ repository.
 
 [codingstandards]: CodingStandards.md
 [.editorconfig]: .editorconfig
-[editorconfig]: http://http://editorconfig.org/
+[editorconfig]: http://editorconfig.org/
