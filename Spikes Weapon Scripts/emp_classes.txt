@@ -35,7 +35,7 @@ PlayerClassData
 			// Box left of the rightmost box
 			BOX_2		
 			{
-				"Weapon_Count"		"2"			
+				"Weapon_Count"		"1"			
 				"Weapon_Choice_0"	"GRENADE_NF_STICKYSTUN"
 				"Weapon_Choice_1"	"GRENADE_NF_CONCUSSION"
 			//	"Weapon_Choice_2"	"GRENADE_NF_SMOKE"
@@ -73,7 +73,7 @@ PlayerClassData
 			// Box left of the rightmost box
 			BOX_2	
 			{
-				"Weapon_Count"		"2"			
+				"Weapon_Count"		"1"			
 				"Weapon_Choice_0"	"GRENADE_IMP_STICKYSTUN"
 				"Weapon_Choice_1"	"GRENADE_IMP_CONCUSSION"
 			//	"Weapon_Choice_2"	"GRENADE_IMP_SMOKE"
