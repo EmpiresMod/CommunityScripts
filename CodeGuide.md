@@ -2,7 +2,7 @@ Code Guide
 ==================
 
 In order to help maintain consistency and conform to the standards setout in the [codingstandards]
-document, it is recommended that you install the editorconfig plugin for your favourite text editor.
+document, it is recommended that you install the [editorconfig] plugin for your favourite text editor.
 If your unsure of what this plugin is, here is a quote from their website:
 
 ```

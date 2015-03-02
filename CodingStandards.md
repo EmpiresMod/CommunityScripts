@@ -31,20 +31,16 @@ interpreted as described in [RFC 2119].
 This example encompasses some of the rules below as a quick overview:
 
 ```VDF
-"research_items"
+"InfantryParse"
 {
-	"main"
-	{
-		"Name"			"Research Index"		// name given to research item
-		"Parent"		""				// name of parent that this branches from
-		"Description"		"Research tree begins here."	// description given when hovering over research item
-		"Icon"			"comm/hex_tree"			// icon drawn on research tree
-		"Unresearched Icon"	"comm/hex_dark"			// icon drawn in the GUI
-		"Type"			"0"				// nothing
-		"Cost"			"0"				// cost of this research item
-		"Time"			"0"				// time to research this item in seconds
-		"Team"			""				// which team can research this
-	}
+    "Scout"
+    {
+        "GeneralPhysicsResist"      "0.0"   // General Physics Tree Damage
+        "GeneralChemistryResist "   "0.0"   // General Chemistry Tree Damage
+        "GeneralMechanicalResist"   "0.0"   // General Mechanic Tree Damage
+        "GeneralElectricResist"     "0.0"   // General Electric Tree Damage
+        "GeneralBiologicalResist"   "0.0"   // General Biological Tree Damage
+    }
 }
 ```
 
