@@ -57,7 +57,7 @@ WeaponData
 
 	//When moving at full speed (sv_maxspeed)
 	"JumpingSpreadModifier"		"0.1"
-	"StandingSpreadModifier"	"0.02"
+	"StandingSpreadModifier"	"0.04"
 	"DuckingSpreadModifier"		"0.01"
 	"ProneSpreadModifier"		"0.005"
 
