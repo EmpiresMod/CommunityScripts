@@ -1,7 +1,7 @@
 WeaponData
 {
 	// Weapon characteristics:
-	"Damage"			"20"		// damage per bullet
+	"Damage"			"25"		// damage per bullet
 	"Bullets"			"1"		// bullets per shoot
 	"CycleTime"			"0.075"		// time between shoots
 	"Falloff"			"800"		// distance at which bullet strength has dropped to 85% (damage decreases linearly)
