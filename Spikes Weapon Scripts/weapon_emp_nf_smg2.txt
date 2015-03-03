@@ -3,7 +3,7 @@ WeaponData
 	// Weapon characteristics:
 	"Damage"			"30"		// damage per bullet
 	"Bullets"			"1"		// bullets per shoot
-	"CycleTime"			"0.077"		// time between shoots
+	"CycleTime"			"0.075"		// time between shoots
 	"Falloff"			"1000"		// distance at which bullet strength has dropped to 85% (damage decreases linearly)
 	"Falloff Base"			"0.8"		// falloff base
 	"MinimalDamage"			"15"		// bullet will always deal this amount of damage even after damage decrease
@@ -59,9 +59,9 @@ WeaponData
 
 	//Maximum the spread can become due to spread increment per shot below
 	"JumpingSpreadMax"			"0.70"
-	"StandingSpreadMax"			"0.05"
-	"DuckingSpreadMax"			"0.05"
-	"ProneSpreadMax"			"0.05"
+	"StandingSpreadMax"			"0.04"
+	"DuckingSpreadMax"			"0.035"
+	"ProneSpreadMax"			"0.035"
 
 	//Increment spread by this amount for every shot fired to maximum of moving at full speed spread
 	"JumpingSpreadIncrement"	"0.1"
