@@ -12,10 +12,10 @@ WeaponData
 	"Damage Head Modifier"		"1.6"
 	"Damage Chest Modifier"		"1"
 	"Damage Stomach Modifier"	"1"
-	"Damage Left Arm Modifier"	"1"
-	"Damage Right Arm Modifier"	"1"
-	"Damage Left Leg Modifier"	"1"
-	"Damage Right Leg Modifier"	"1"
+	"Damage Left Arm Modifier"	"0.7"
+	"Damage Right Arm Modifier"	"0.7"
+	"Damage Left Leg Modifier"	"0.7"
+	"Damage Right Leg Modifier"	"0.7"
 	
 	
 	// Weapon data is loaded by both the Game and Client DLLs.
