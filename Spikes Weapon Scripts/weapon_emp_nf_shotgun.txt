@@ -2,7 +2,7 @@ WeaponData
 {
 	// Weapon characteristics:
 	"Damage"			"22"		// damage per bullet
-	"Bullets"			"8"		// bullets per shoot   //was 8 in RC1
+	"Bullets"			"9"		// bullets per shoot   //was 8 in RC1
 	"CycleTime"			"0.65"		// time between shoots
 	"Falloff"			"500"		// distance at which bullet strength has dropped to 85% (damage decreases linearly) //was 400 in RC3
 	"Falloffbase"			"0.9"		// Falloff Base default 0.85
