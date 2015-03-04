@@ -1,0 +1,13 @@
+"ScriptManifest"
+{
+	"chassis"	"scripts/vehicle_chassis.txt"		// chassis manifest file
+	"research"	"scripts/research_items.txt"		// research items
+	"buildings"	"scripts/buildings.txt"			// building scripts
+	"infantry"	"scripts/infantry_resists.txt"		// infantry Resists
+	"engine"	"scripts/vehicle_engines.txt"		// engine items
+	"armor"		"scripts/vehicle_armor.txt"		// armor itmes
+	"weapons"	"scripts/vehicle_weapons.txt"		// vehicle weapons
+	"soundscape"	"scripts/game_sounds_manifest.txt"	// soundscape manifest
+	"rankpoint"	"scripts/rankpoints.txt"		// rankpoints manifest
+	"ranktitle"	"scripts/ranktitles.txt"		// ranktitle manifest
+}

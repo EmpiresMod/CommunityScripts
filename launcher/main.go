@@ -18,7 +18,7 @@ var (
 	update    bool
 	updateURL string
 	path      string
-	improved  bool
+	community bool
 	vanilla   bool
 )
 
@@ -28,11 +28,11 @@ func init() {
 	flag.BoolVar(&update, "u", true, "check for updates")
 	flag.StringVar(&updateURL, "url", defaultURL, "url to fetch updates from")
 	flag.StringVar(&path, "p", "./", "path to empires folder")
-	flag.BoolVar(&improved, "i", false, "launch empires improved")
+	flag.BoolVar(&improved, "i", false, "launch empires with community scripts")
 	flag.BoolVar(&vanilla, "v", true, "launch vanilla empires")
 	flag.Parse()
 
-	if improved {
+	if community {
 
 		vanilla = false
 	}
@@ -40,7 +40,7 @@ func init() {
 
 func main() {
 
-	if improved {
+	if community {
 
 		if update {
 
@@ -57,7 +57,7 @@ func main() {
 
 		if debug {
 
-			log.Print("Launching Empires Improved!")
+			log.Print("Launching Empires with Community Scripts!")
 		}
 
 		m, err := GetManifest(filepath.Clean(path))
