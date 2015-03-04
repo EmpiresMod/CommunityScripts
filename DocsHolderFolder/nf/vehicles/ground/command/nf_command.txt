@@ -68,7 +68,7 @@
 			
 		"wheel"
 		{
-			"radius"	"48"
+			"radius"	"32"
 			"mass"		"150"		// in kg - KrenzO edit: increase this to stop tank from lunging forward on braking
 			"inertia"	"0.5"		// steady the car (fixes the oscillation of the axles about z)
 			"damping"	"0"		// usually 0 - Duke edit: seems to slow the whole thing down and feels like the rubber is incredibly soft
@@ -97,7 +97,7 @@
 			
 		"wheel"
 		{
-			"radius"	"48"
+			"radius"	"32"
 			"mass"		"150"		// in kg
 			"inertia"	"0.5"		// steady the car (fixes the oscillation of the axles about z)
 			"damping"	"0"		// usually 0 - Duke edit: seems to slow the whole thing down and feels like the rubber is incredibly soft
@@ -125,7 +125,7 @@
 			
 		"wheel"
 		{
-			"radius"	"48"
+			"radius"	"32"
 			"mass"		"150"		// in kg
 			"inertia"	"0.5"		// steady the car (fixes the oscillation of the axles about z)
 			"damping"	"0"		// usually 0 - Duke edit: seems to slow the whole thing down and feels like the rubber is incredibly soft
@@ -154,7 +154,7 @@
 		
 		"wheel"
 		{
-			"radius"	"48"
+			"radius"	"32"
 			"mass"		"150"
 			"inertia"	"0.5"		// steady the car (fixes the oscillation of the axles about z)
 			"damping"	"0.2"
