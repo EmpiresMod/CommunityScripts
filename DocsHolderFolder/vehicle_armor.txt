@@ -1,0 +1,463 @@
+Vehicle_armor
+{
+	"plainArmor"
+	{
+		"Name"			"Plain Armor"		//name given when selecting weapons
+		"Description"		"Plain armor offers mild protection from damage."		//description given when selecting weapons
+		"Icon"			"vehicles/gui/armor/armor_small"		//icon drawn in the GUI
+		"HUD Icon"		""
+		"Size"			"1"		//number of slots required when selecting weapons
+		"Type"			"0"		//which vehicle can use this armor
+							// 0=all, 1=ground, 2=aircraft, 3=ship, 4=jeep, 5=light tank/afv, 6=med tank, 7=heavy tank,
+							// 8=artillery tank, 9=apc, 10=all tanks:light, medium, heavy and artillery
+		"Weight"		"15"            //** weight was 5
+		"Cost"			"5"	//cost of an inch of armor in resources, added onto the final vehicle cost
+		"Research"		""
+
+		"Health"			"43.3"	//amount of health per every inch of armor
+		"Regeneration"			"0"	//amount of health this armor regenerates per second
+		"Angle Modifier"		"0.1"	// was 0
+		"Speed To Damage Modifier"	"0.008"	
+		"Damage Modifier"		"1"	//modifier to damage (0.9 reduces damage by 10%; damage*0.9=damage taken)
+		"Damage To Heat Absorbed"	"0.025"	//percentage of damage received which is added as heat (0.2: damage*0.2=heat added
+		"Heat Dissipation"		"4"	
+		"Bioweapon Damage Modifier"	"1.5"	// was 1  //scale damage from biological weapons by this amount (bioweapon damage per interval * modifier = damage taken per interval)
+
+		"Sound Impact"			""
+		"Sound Repair"			""
+	//Resists
+		"GeneralPhysicsResist"		"0.0"		//General Physics Tree Damage 
+		"GeneralChemistryResist	" 	"0.0"  		//General Chemistry Tree Damage
+		"GeneralMechanicalResist" 	"0.0"		//General Mechanic Tree Damage
+		"GeneralElectricResist"  	"0.0"		//General Electric Tree Damage
+		"GeneralBiologicalResist"	"0.0" 		//General Biological Tree Damage
+		"KineticResist" 		"0.0" 		//Railguns, Standard Cannons, Anything that is just force
+		"ExplosiveResist" 		"0.0"		//HE, Nukes, anything that explodes
+		"BioResist" 			"0.0"		//Has the bio effect
+
+		"BulletResist" 			"1"		//Non Armor damaging
+		"APBulletResist"		"0.0" 		//Armor Damaging
+		"BulletExplosiveResist" 	"0.0"   	//Bullets that Explode
+
+		"MissileResist" 		"0.0"		//Generic Missle type of damage
+		"MissileExplosiveResist" 	"0.0" 		//Explosive type.
+		"MissileBioResist" 		"0.0"		//Bio Missiles.  Different then Bio?
+
+		"KineticArtResist" 		"0.0" 		//Kinetic Artillery
+		"ExplosiveArtResist" 		"0.0" 		//Explosive Artillery
+		"BioArtResist" 			"0.0"   	//Bio Artillery
+
+		"AircraftMissileResist" 	"0.0" 		// Aircraft Missiles
+		"AircraftGroundMissleResist" 	"0.0" 		// Aircraft Missiles to hit ground targets
+		"AircraftBulletResist" 		"0.0"   	//Aircraft to Aircraft bullets
+		"AircraftAPBulletResist" 	"0.0"  		//Aircraft Bullets to hit ground targets
+		"AircraftBombResist" 		"0.0"    	//Bombs
+		"AircraftBombBioResist" 	"0.0"  		//Bio Bombs?
+
+		"InfantryGrenadeResist" 	"0.0" 		//Player Thrown Grenades
+		"InfantryMineResist" 		"0.0"		//Player Tossed Mines
+		"InfantryMissileResist" 	"0.0" 		//Gren Missles
+		"InfantryMortarResist" 		"0.0" 		//Gren Mortars
+		"InfantryStickyResist" 		"0.0"		//Sticky Grenades
+		"InfantrySeismicResist" 	"0.95"		//Siesmic Grenades
+		"InfantryBulletResist" 		"1"		//Just In Case
+
+		"ExtraType1Resist" 		"0.95" 		//Building Damage
+		"ExtraType2Resist" 		"0.0" 		//Again
+		"ExtraType3Resist" 		"0.0" 		//and a third
+
+	}
+
+	"Mechanical Eng 1"
+	{
+		"Name"			"Composite"
+		"Description"		"Composite armor consists of layers of steel, ceramic, and plastic honeycomb, and it's designed to offer protection from almost all types of projectiles equally well."
+		"Icon"			"vehicles/gui/armor/armor_small"
+		"HUD Icon"		""
+		"Size"			"1"
+		"Type"			"0"
+		"Weight"		"10"               // was 10   (5 light 10 medium 15 heavy)
+		"Cost"			"25"               // was 40
+		"Research"		"Composite Armor"
+
+		"Health"			"96"    //
+		"Regeneration"			"0"        
+		"Angle Modifier"		"0"     // was 0
+		"Speed To Damage Modifier"	"0.005"    
+		"Damage Modifier"		"0.85"        
+		"Damage To Heat Absorbed"	"0.025"    
+		"Bioweapon Damage Modifier"	"1"        
+
+		"Sound Impact"			""
+		"Sound Repair"			""
+	//Resists
+		"GeneralPhysicsResist"		"0.0"		//General Physics Tree Damage 
+		"GeneralChemistryResist	" 	"0.0"  		//General Chemistry Tree Damage
+		"GeneralMechanicalResist" 	"0.0"		//General Mechanic Tree Damage
+		"GeneralElectricResist"  	"0.0"		//General Electric Tree Damage
+		"GeneralBiologicalResist"	"0.0" 		//General Biological Tree Damage
+		"KineticResist" 		"0.0" 		//Railguns, Standard Cannons, Anything that is just force
+		"ExplosiveResist" 		"0.0"		//HE, Nukes, anything that explodes
+		"BioResist" 			"0.0"		//Has the bio effect
+
+		"BulletResist" 			"1"		//Non Armor damaging
+		"APBulletResist"		"0.0" 		//Armor Damaging
+		"BulletExplosiveResist" 	"0.0"   	//Bullets that Explode
+
+		"MissileResist" 		"0.0"		//Generic Missle type of damage
+		"MissileExplosiveResist" 	"0.0" 		//Explosive type.
+		"MissileBioResist" 		"0.0"		//Bio Missiles.  Different then Bio?
+
+		"KineticArtResist" 		"0.0" 		//Kinetic Artillery
+		"ExplosiveArtResist" 		"0.0" 		//Explosive Artillery
+		"BioArtResist" 			"0.0"   	//Bio Artillery
+
+		"AircraftMissileResist" 	"0.0" 		// Aircraft Missiles
+		"AircraftGroundMissleResist" 	"0.0" 		// Aircraft Missiles to hit ground targets
+		"AircraftBulletResist" 		"0.0"   	//Aircraft to Aircraft bullets
+		"AircraftAPBulletResist" 	"0.0"  		//Aircraft Bullets to hit ground targets
+		"AircraftBombResist" 		"0.0"    	//Bombs
+		"AircraftBombBioResist" 	"0.0"  		//Bio Bombs?
+
+		"InfantryGrenadeResist" 	"0.0" 		//Player Thrown Grenades
+		"InfantryMineResist" 		"0.0"		//Player Tossed Mines
+		"InfantryMissileResist" 	"0.0" 		//Gren Missles
+		"InfantryMortarResist" 		"0.0" 		//Gren Mortars
+		"InfantryStickyResist" 		"0.0"		//Sticky Grenades
+		"InfantrySeismicResist" 	"0.95"		//Siesmic Grenades
+		"InfantryBulletResist" 		"1"		//Just In Case
+
+		"ExtraType1Resist" 		"0.95" 		//Building Damage
+		"ExtraType2Resist" 		"0.0" 		//Again
+		"ExtraType3Resist" 		"0.0" 		//and a third
+
+	}
+
+
+	"Electronic Eng 1"
+	{
+		"Name"			"Reactive"
+		"Description"		"Electrically charged armor is internally aligned with charged capacitors.  When an incoming projectile makes contact, the capacitor discharges its energy into the projectile, disrupting it or possibly even vaporizing it."
+		"Icon"			"vehicles/gui/armor/armor_small"
+		"HUD Icon"		""
+		"Size"			"1"
+		"Type"			"0"
+		"Weight"		"20"                  // was 10
+		"Cost"			"20"                  // 50
+		"Research"		"Reactive Armor"      //
+                                                               
+		"Health"			"84"          // was 40
+		"Regeneration"			"0"           //
+		"Angle Modifier"		"0.1"         //
+		"Speed To Damage Modifier"	"-0.004"      // was "0.001"
+		"Damage Modifier"		"0.9"         // was 0.3 is now 1
+		"Damage To Heat Absorbed"	"0.025"       //
+		"Bioweapon Damage Modifier"	"0.5"         //
+
+		"Sound Impact"			""
+		"Sound Repair"			""
+	//Resists
+		"GeneralPhysicsResist"		"0.0"		//General Physics Tree Damage 
+		"GeneralChemistryResist	" 	"0.0"  		//General Chemistry Tree Damage
+		"GeneralMechanicalResist" 	"0.0"		//General Mechanic Tree Damage
+		"GeneralElectricResist"  	"0.0"		//General Electric Tree Damage
+		"GeneralBiologicalResist"	"0.0" 		//General Biological Tree Damage
+		"KineticResist" 		"0.0" 		//Railguns, Standard Cannons, Anything that is just force
+		"ExplosiveResist" 		"0.0"		//HE, Nukes, anything that explodes
+		"BioResist" 			"0.0"		//Has the bio effect
+
+		"BulletResist" 			"1"		//Non Armor damaging
+		"APBulletResist"		"0.0" 		//Armor Damaging
+		"BulletExplosiveResist" 	"0.0"   	//Bullets that Explode
+
+		"MissileResist" 		"0.0"		//Generic Missle type of damage
+		"MissileExplosiveResist" 	"0.0" 		//Explosive type.
+		"MissileBioResist" 		"0.0"		//Bio Missiles.  Different then Bio?
+
+		"KineticArtResist" 		"0.0" 		//Kinetic Artillery
+		"ExplosiveArtResist" 		"0.0" 		//Explosive Artillery
+		"BioArtResist" 			"0.0"   	//Bio Artillery
+
+		"AircraftMissileResist" 	"0.0" 		// Aircraft Missiles
+		"AircraftGroundMissleResist" 	"0.0" 		// Aircraft Missiles to hit ground targets
+		"AircraftBulletResist" 		"0.0"   	//Aircraft to Aircraft bullets
+		"AircraftAPBulletResist" 	"0.0"  		//Aircraft Bullets to hit ground targets
+		"AircraftBombResist" 		"0.0"    	//Bombs
+		"AircraftBombBioResist" 	"0.0"  		//Bio Bombs?
+
+		"InfantryGrenadeResist" 	"0.0" 		//Player Thrown Grenades
+		"InfantryMineResist" 		"0.0"		//Player Tossed Mines
+		"InfantryMissileResist" 	"0.0" 		//Gren Missles
+		"InfantryMortarResist" 		"0.0" 		//Gren Mortars
+		"InfantryStickyResist" 		"0.0"		//Sticky Grenades
+		"InfantrySeismicResist" 	"0.95"		//Siesmic Grenades
+		"InfantryBulletResist" 		"1"		//Just In Case
+
+		"ExtraType1Resist" 		"0.95" 		//Building Damage
+		"ExtraType2Resist" 		"0.0" 		//Again
+		"ExtraType3Resist" 		"0.0" 		//and a third
+
+	}
+
+
+	"Physics 1"
+	{
+		"Name"			"Reflective"
+		"Description"		"Reflective armor is able to deflect almost all of a projectile's kinetic energy away from the vehicle so long as the projectile does not hit perfectly perpendicular to the armor plating."
+		"Icon"			"vehicles/gui/armor/armor_small"
+		"HUD Icon"		""
+		"Size"			"1"
+		"Type"			"0"
+		"Weight"		"15"                    // was 10
+		"Cost"			"15"                    //
+		"Research"		"Reflective Armor"
+
+		"Health"			"75"            // was 50
+		"Regeneration"			"0"             //
+		"Angle Modifier"		"1"           //  was 0.5
+		"Speed To Damage Modifier"	"-0.001"         //
+		"Damage Modifier"		"1"             //
+		"Damage To Heat Absorbed"	"0.025"         //
+		"Bioweapon Damage Modifier"	"1"           //
+
+		"Sound Impact"			""
+		"Sound Repair"			""
+	//Resists
+		"GeneralPhysicsResist"		"0.0"		//General Physics Tree Damage 
+		"GeneralChemistryResist	" 	"0.0"  		//General Chemistry Tree Damage
+		"GeneralMechanicalResist" 	"0.0"		//General Mechanic Tree Damage
+		"GeneralElectricResist"  	"0.0"		//General Electric Tree Damage
+		"GeneralBiologicalResist"	"0.0" 		//General Biological Tree Damage
+		"KineticResist" 		"0.0" 		//Railguns, Standard Cannons, Anything that is just force
+		"ExplosiveResist" 		"0.0"		//HE, Nukes, anything that explodes
+		"BioResist" 			"0.0"		//Has the bio effect
+
+		"BulletResist" 			"1"		//Non Armor damaging
+		"APBulletResist"		"0.0" 		//Armor Damaging
+		"BulletExplosiveResist" 	"0.0"   	//Bullets that Explode
+
+		"MissileResist" 		"0.0"		//Generic Missle type of damage
+		"MissileExplosiveResist" 	"0.0" 		//Explosive type.
+		"MissileBioResist" 		"0.0"		//Bio Missiles.  Different then Bio?
+
+		"KineticArtResist" 		"0.0" 		//Kinetic Artillery
+		"ExplosiveArtResist" 		"0.0" 		//Explosive Artillery
+		"BioArtResist" 			"0.0"   	//Bio Artillery
+
+		"AircraftMissileResist" 	"0.0" 		// Aircraft Missiles
+		"AircraftGroundMissleResist" 	"0.0" 		// Aircraft Missiles to hit ground targets
+		"AircraftBulletResist" 		"0.0"   	//Aircraft to Aircraft bullets
+		"AircraftAPBulletResist" 	"0.0"  		//Aircraft Bullets to hit ground targets
+		"AircraftBombResist" 		"0.0"    	//Bombs
+		"AircraftBombBioResist" 	"0.0"  		//Bio Bombs?
+
+		"InfantryGrenadeResist" 	"0.0" 		//Player Thrown Grenades
+		"InfantryMineResist" 		"0.0"		//Player Tossed Mines
+		"InfantryMissileResist" 	"0.0" 		//Gren Missles
+		"InfantryMortarResist" 		"0.0" 		//Gren Mortars
+		"InfantryStickyResist" 		"0.0"		//Sticky Grenades
+		"InfantrySeismicResist" 	"0.95"		//Siesmic Grenades
+		"InfantryBulletResist" 		"1"		//Just In Case
+
+		"ExtraType1Resist" 		"0.95" 		//Building Damage
+		"ExtraType2Resist" 		"0.0" 		//Again
+		"ExtraType3Resist" 		"0.0" 		//and a third
+
+	}
+
+	"Biology 1"
+	{
+		"Name"			"Regenerative"
+		"Description"		"Regenerative armor is engineered with living tissue designed to grow calcium carbonate as the protective medium.  As it is newly formed, it is malleable enough to find its way into damaged areas where it solidifies and reinforces/replaces material that had been damaged/destroyed."
+		"Icon"			"vehicles/gui/armor/armor_small"
+		"HUD Icon"		""
+		"Size"			"1"
+		"Type"			"0"
+		"Weight"		"15"                     // was 10   
+		"Cost"			"15"
+		"Research"		"Regenerative Armor"
+
+		"Health"			"93.75"             // was 60
+		"Regeneration"			"0.036"
+		"Angle Modifier"		"0"
+		"Speed To Damage Modifier"	"0.0032"
+		"Damage Modifier"		"1"              // was 0.9 is now 1
+		"Damage To Heat Absorbed"	"0.03"          // was 0.025
+		"Bioweapon Damage Modifier"	"2"            // was 0.1 is now 2.0 would make sense if bio weapons had the easiest time against bio armor
+
+		"Sound Impact"			""
+		"Sound Repair"			""
+	//Resists
+		"GeneralPhysicsResist"		"0.0"		//General Physics Tree Damage 
+		"GeneralChemistryResist	" 	"0.0"  		//General Chemistry Tree Damage
+		"GeneralMechanicalResist" 	"0.0"		//General Mechanic Tree Damage
+		"GeneralElectricResist"  	"0.0"		//General Electric Tree Damage
+		"GeneralBiologicalResist"	"0.0" 		//General Biological Tree Damage
+		"KineticResist" 		"0.0" 		//Railguns, Standard Cannons, Anything that is just force
+		"ExplosiveResist" 		"0.0"		//HE, Nukes, anything that explodes
+		"BioResist" 			"0.0"		//Has the bio effect
+
+		"BulletResist" 			"1"		//Non Armor damaging
+		"APBulletResist"		"0.0" 		//Armor Damaging
+		"BulletExplosiveResist" 	"0.0"   	//Bullets that Explode
+
+		"MissileResist" 		"0.0"		//Generic Missle type of damage
+		"MissileExplosiveResist" 	"0.0" 		//Explosive type.
+		"MissileBioResist" 		"0.0"		//Bio Missiles.  Different then Bio?
+
+		"KineticArtResist" 		"0.0" 		//Kinetic Artillery
+		"ExplosiveArtResist" 		"0.0" 		//Explosive Artillery
+		"BioArtResist" 			"0.0"   	//Bio Artillery
+
+		"AircraftMissileResist" 	"0.0" 		// Aircraft Missiles
+		"AircraftGroundMissleResist" 	"0.0" 		// Aircraft Missiles to hit ground targets
+		"AircraftBulletResist" 		"0.0"   	//Aircraft to Aircraft bullets
+		"AircraftAPBulletResist" 	"0.0"  		//Aircraft Bullets to hit ground targets
+		"AircraftBombResist" 		"0.0"    	//Bombs
+		"AircraftBombBioResist" 	"0.0"  		//Bio Bombs?
+
+		"InfantryGrenadeResist" 	"0.0" 		//Player Thrown Grenades
+		"InfantryMineResist" 		"0.0"		//Player Tossed Mines
+		"InfantryMissileResist" 	"0.0" 		//Gren Missles
+		"InfantryMortarResist" 		"0.0" 		//Gren Mortars
+		"InfantryStickyResist" 		"0.0"		//Sticky Grenades
+		"InfantrySeismicResist" 	"0.95"		//Siesmic Grenades
+		"InfantryBulletResist" 		"1"		//Just In Case
+
+		"ExtraType1Resist" 		"0.95" 		//Building Damage
+		"ExtraType2Resist" 		"0.0" 		//Again
+		"ExtraType3Resist" 		"0.0" 		//and a third
+
+	}
+
+	"Chemistry 1"
+	{
+		"Name"			"Absorbant"
+		"Description"		"Absorbant armor is engineered with strong materials which are able to undergo excessive plastic deformation.  This allows the armor to reduce damage received as a projectile's speed increases."
+		"Icon"			"vehicles/gui/armor/armor_small"
+		"HUD Icon"		""
+		"Size"			"1"
+		"Type"			"0"
+		"Weight"		"12.5"               // was 10
+		"Cost"			"10"
+		"Research"		"Absorbant Armor"
+
+		"Health"			"66.5"
+		"Regeneration"			"0"
+		"Angle Modifier"		"0"        /// was 0.1 
+		"Speed To Damage Modifier"	"-0.0075"   
+		"Damage Modifier"		"1"        // was 0.5 is now 1
+		"Damage To Heat Absorbed"	"0.01"    // was "0.025"
+		"Bioweapon Damage Modifier"	"1"
+
+		"Sound Impact"			""
+		"Sound Repair"			""
+	//Resists
+		"GeneralPhysicsResist"		"0.0"		//General Physics Tree Damage 
+		"GeneralChemistryResist	" 	"0.0"  		//General Chemistry Tree Damage
+		"GeneralMechanicalResist" 	"0.0"		//General Mechanic Tree Damage
+		"GeneralElectricResist"  	"0.0"		//General Electric Tree Damage
+		"GeneralBiologicalResist"	"0.0" 		//General Biological Tree Damage
+		"KineticResist" 		"0.0" 		//Railguns, Standard Cannons, Anything that is just force
+		"ExplosiveResist" 		"0.0"		//HE, Nukes, anything that explodes
+		"BioResist" 			"0.0"		//Has the bio effect
+
+		"BulletResist" 			"1"		//Non Armor damaging
+		"APBulletResist"		"0.0" 		//Armor Damaging
+		"BulletExplosiveResist" 	"0.0"   	//Bullets that Explode
+
+		"MissileResist" 		"0.0"		//Generic Missle type of damage
+		"MissileExplosiveResist" 	"0.0" 		//Explosive type.
+		"MissileBioResist" 		"0.0"		//Bio Missiles.  Different then Bio?
+
+		"KineticArtResist" 		"0.0" 		//Kinetic Artillery
+		"ExplosiveArtResist" 		"0.0" 		//Explosive Artillery
+		"BioArtResist" 			"0.0"   	//Bio Artillery
+
+		"AircraftMissileResist" 	"0.0" 		// Aircraft Missiles
+		"AircraftGroundMissleResist" 	"0.0" 		// Aircraft Missiles to hit ground targets
+		"AircraftBulletResist" 		"0.0"   	//Aircraft to Aircraft bullets
+		"AircraftAPBulletResist" 	"0.0"  		//Aircraft Bullets to hit ground targets
+		"AircraftBombResist" 		"0.0"    	//Bombs
+		"AircraftBombBioResist" 	"0.0"  		//Bio Bombs?
+
+		"InfantryGrenadeResist" 	"0.0" 		//Player Thrown Grenades
+		"InfantryMineResist" 		"0.0"		//Player Tossed Mines
+		"InfantryMissileResist" 	"0.0" 		//Gren Missles
+		"InfantryMortarResist" 		"0.0" 		//Gren Mortars
+		"InfantryStickyResist" 		"0.0"		//Sticky Grenades
+		"InfantrySeismicResist" 	"0.95"		//Siesmic Grenades
+		"InfantryBulletResist" 		"1"		//Just In Case
+
+		"ExtraType1Resist" 		"0.95" 		//Building Damage
+		"ExtraType2Resist" 		"0.0" 		//Again
+		"ExtraType3Resist" 		"0.0" 		//and a third
+
+	}
+
+	"Command Vehicle"
+	{
+		"Name"			"Titanium 6AL-4V"
+		"Description"		"Military Grade Alloy, designed specifically for Command Vehicles"
+		"Icon"			"vehicles/gui/armor/armor_small"
+		"HUD Icon"		""
+		"Size"			"1"
+		"Type"			"11"
+		"Weight"		"10"               // was 10   (5 light 10 medium 15 heavy)
+		"Cost"			"40"               // was 40
+		"Research"		""
+
+		"Health"			"90"      // was 70 after observing reactive with its 0.3 modifier giving it effectivly 120+ HP, an armor should be like this in the game.
+		"Regeneration"			"0"        //
+		"Angle Modifier"		"0.1"      // was 0
+		"Speed To Damage Modifier"	"0.002"    //
+		"Damage Modifier"		"0.6"        //
+		"Damage To Heat Absorbed"	"0.14"    //
+		"Bioweapon Damage Modifier"	"1"        //
+
+		"Sound Impact"			""
+		"Sound Repair"			""
+		//Resists
+		"GeneralPhysicsResist"		"0.0"		//General Physics Tree Damage 
+		"GeneralChemistryResist	" 	"0.0"  		//General Chemistry Tree Damage
+		"GeneralMechanicalResist" 	"0.0"		//General Mechanic Tree Damage
+		"GeneralElectricResist"  	"0.0"		//General Electric Tree Damage
+		"GeneralBiologicalResist"	"0.0" 		//General Biological Tree Damage
+		"KineticResist" 		"0.0" 		//Railguns, Standard Cannons, Anything that is just force
+		"ExplosiveResist" 		"0.0"		//HE, Nukes, anything that explodes
+		"BioResist" 			"0.0"		//Has the bio effect
+
+		"BulletResist" 			"1"		//Non Armor damaging
+		"APBulletResist"		"0.0" 		//Armor Damaging
+		"BulletExplosiveResist" 	"0.0"   	//Bullets that Explode
+
+		"MissileResist" 		"0.0"		//Generic Missle type of damage
+		"MissileExplosiveResist" 	"0.0" 		//Explosive type.
+		"MissileBioResist" 		"0.0"		//Bio Missiles.  Different then Bio?
+
+		"KineticArtResist" 		"0.0" 		//Kinetic Artillery
+		"ExplosiveArtResist" 		"0.0" 		//Explosive Artillery
+		"BioArtResist" 			"0.0"   	//Bio Artillery
+
+		"AircraftMissileResist" 	"0.0" 		// Aircraft Missiles
+		"AircraftGroundMissleResist" 	"0.0" 		// Aircraft Missiles to hit ground targets
+		"AircraftBulletResist" 		"0.0"   	//Aircraft to Aircraft bullets
+		"AircraftAPBulletResist" 	"0.0"  		//Aircraft Bullets to hit ground targets
+		"AircraftBombResist" 		"0.0"    	//Bombs
+		"AircraftBombBioResist" 	"0.0"  		//Bio Bombs?
+
+		"InfantryGrenadeResist" 	"0.0" 		//Player Thrown Grenades
+		"InfantryMineResist" 		"0.0"		//Player Tossed Mines
+		"InfantryMissileResist" 	"0.0" 		//Gren Missles
+		"InfantryMortarResist" 		"0.0" 		//Gren Mortars
+		"InfantryStickyResist" 		"0.0"		//Sticky Grenades
+		"InfantrySeismicResist" 	"0.95"		//Siesmic Grenades
+		"InfantryBulletResist" 		"1"		//Just In Case
+
+		"ExtraType1Resist" 		"0.95" 		//Building Damage
+		"ExtraType2Resist" 		"0.0" 		//Again
+		"ExtraType3Resist" 		"0.0" 		//and a third
+
+	}
+
+}
