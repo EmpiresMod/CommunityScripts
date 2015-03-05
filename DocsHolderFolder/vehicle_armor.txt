@@ -68,11 +68,11 @@ Vehicle_armor
 
 	}
 
-	"Mechanical Eng 1"
+	"Composite"
 	{
 		"Name"			"Composite"
 		"Description"		"Composite armor consists of layers of steel, ceramic, and plastic honeycomb, and it's designed to offer protection from almost all types of projectiles equally well."
-		"Icon"			"vehicles/gui/armor/armor_small"
+		"Icon"			"vehicles/gui/armor/composite_sml"
 		"HUD Icon"		""
 		"Size"			"1"
 		"Type"			"0"
@@ -134,11 +134,11 @@ Vehicle_armor
 	}
 
 
-	"Electronic Eng 1"
+	"Reactive"
 	{
 		"Name"			"Reactive"
 		"Description"		"Electrically charged armor is internally aligned with charged capacitors.  When an incoming projectile makes contact, the capacitor discharges its energy into the projectile, disrupting it or possibly even vaporizing it."
-		"Icon"			"vehicles/gui/armor/armor_small"
+		"Icon"			"vehicles/gui/armor/reactive_sml"
 		"HUD Icon"		""
 		"Size"			"1"
 		"Type"			"0"
@@ -200,11 +200,11 @@ Vehicle_armor
 	}
 
 
-	"Physics 1"
+	"Reflective"
 	{
 		"Name"			"Reflective"
 		"Description"		"Reflective armor is able to deflect almost all of a projectile's kinetic energy away from the vehicle so long as the projectile does not hit perfectly perpendicular to the armor plating."
-		"Icon"			"vehicles/gui/armor/armor_small"
+		"Icon"			"vehicles/gui/armor/reflective_sml"
 		"HUD Icon"		""
 		"Size"			"1"
 		"Type"			"0"
@@ -265,11 +265,11 @@ Vehicle_armor
 
 	}
 
-	"Biology 1"
+	"Regenerative"
 	{
 		"Name"			"Regenerative"
 		"Description"		"Regenerative armor is engineered with living tissue designed to grow calcium carbonate as the protective medium.  As it is newly formed, it is malleable enough to find its way into damaged areas where it solidifies and reinforces/replaces material that had been damaged/destroyed."
-		"Icon"			"vehicles/gui/armor/armor_small"
+		"Icon"			"vehicles/gui/armor/regen_sml"
 		"HUD Icon"		""
 		"Size"			"1"
 		"Type"			"0"
@@ -330,11 +330,11 @@ Vehicle_armor
 
 	}
 
-	"Chemistry 1"
+	"Absorbant"
 	{
 		"Name"			"Absorbant"
 		"Description"		"Absorbant armor is engineered with strong materials which are able to undergo excessive plastic deformation.  This allows the armor to reduce damage received as a projectile's speed increases."
-		"Icon"			"vehicles/gui/armor/armor_small"
+		"Icon"			"vehicles/gui/armor/absorbant_sml"
 		"HUD Icon"		""
 		"Size"			"1"
 		"Type"			"0"
@@ -407,6 +407,7 @@ Vehicle_armor
 		"Cost"			"40"               // was 40
 		"Research"		""
 
+		"Commander"	"1"
 		"Health"			"90"      // was 70 after observing reactive with its 0.3 modifier giving it effectivly 120+ HP, an armor should be like this in the game.
 		"Regeneration"			"0"        //
 		"Angle Modifier"		"0.1"      // was 0

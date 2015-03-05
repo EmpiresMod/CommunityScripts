@@ -9,6 +9,7 @@ Vehicle_NFComm
 		"horn" "Vehicle.horn_deep" //sound to use when blasting the horn
 
 		"Name"			"NF Commander"						//name given when chassis
+		"Spotted Name"		"Command Vehicle"							//name given when spotted by an enemy
 		"Description"		"Commander for the Northern Faction."	//description given in creation GUI
 		"Team"			"NF" 		//team able to purchase, 'IMP', 'NF', or 'ALL'
 		"Commander"			"1"
@@ -61,7 +62,9 @@ Vehicle_NFComm
 		"Health"		"1600"		//amount of vehicle base health
 		"Repair Station Heal"	"75"		//amount of vehicle health restored per second by the repair station
 		"Engineer Heal"		"3"		//amount of vehicle health restored per engineer's repair unit
-
+		"Dust Particle"		"commander_dust"
+		"Dust Particle Interval"	"0.0"
+		
 		"Heat Capacity"		"100"		//amount of maximum heat level
 
 		"Max Front Armor"	"6"		//max inches of armor able to go on front

@@ -5,7 +5,7 @@ Vehicle_Weapons
 		"Name"			"Standard Machine Gun"		//name given when selecting weapons
 		"HUD Name"		"Std MG"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"A small machine gun that fires bullets with common properties."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/mg_small"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/mg_std_sml"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/mg"
 		"Size"			"1"		//number of slots required when selecting weapons
 		"Type"			"0"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -14,7 +14,7 @@ Vehicle_Weapons
 		"Research"		""		//name of research item that must be researched before using
 		"Sound Firing"		"Vehicle_MG.Fire"
 		"Sound Impact"		""
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"Bullet"	//Which damage type this weapon falls under, armor, structures and infantry dictate the resistance against the chosen damage type. 
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles), 2 = explosive (hurts vehicles and has a radius damage around it based on 'explosion radius'"
@@ -26,6 +26,7 @@ Vehicle_Weapons
 		"Cycle Time"		"0.1"		//time between shots
 		"Clip Size"		"50"		//ammo loaded per reloads
 		"Total Ammo Clips"	"3"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"2.0"		//time to load one clip, if total ammo clips is '0', time to reload one unit of ammo (as one unit of ammo is reloaded per time and not a full clip)
 		"Projectile Spread"	"0.012"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
@@ -54,7 +55,7 @@ Vehicle_Weapons
 		
 		//effects
 		"Tracer Type"		"tracer_vehiclemg" //Tracer effect, tracer names are logical, a list: tracer_du, tracer_bio, tracer_he, tracer_rifle, tracer_smg, tracer_vehiclemg, tracer_cg, tracer_plasma
-		
+		"Muzzle Flash"		"tracer_vehiclemg_muzzle"
 		//Falloff
 		"Falloff"			"2500"		
 		"Falloffbase"			"0.8"		
@@ -65,7 +66,7 @@ Vehicle_Weapons
 		"Name"			"Bio Machine Gun"		//name given when selecting weapons
 		"HUD Name"		"Bio MG"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"A small machine gun that fires bullets containing infectious material to do continual damage to a target."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/mg_med"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/mg_bio_med"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/mg"
 		"Size"			"2"		//number of slots required when selecting weapons
 		"Type"			"0"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -74,7 +75,7 @@ Vehicle_Weapons
 		"Research"		"Biological Projectile"		//name of research item that must be researched before using
 		"Sound Firing"		"Vehicle_BioMG.Fire"
 		"Sound Impact"		""
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"APBullet"
 		"Ammo Type"		"1"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles), 2 = explosive (hurts vehicles and has a radius damage around it based on 'explosion radius'"
@@ -86,6 +87,7 @@ Vehicle_Weapons
 		"Cycle Time"		"0.2"		//time between shots
 		"Clip Size"		"50"		//ammo loaded per reloads
 		"Total Ammo Clips"	"4"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"2.0"		//time to load one clip, if total ammo clips is '0', time to reload one unit of ammo (as one unit of ammo is reloaded per time and not a full clip)
 		"Projectile Spread"	"0.03"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
@@ -118,6 +120,7 @@ Vehicle_Weapons
 		
 		//effects
 		"Tracer Type"		"tracer_bio" //Tracer effect, tracer names are logical, a list: tracer_du, tracer_bio, tracer_he, tracer_rifle, tracer_smg, tracer_vehiclemg, tracer_cg, tracer_plasma
+		"Muzzle Flash"		"tracer_bio_muzzle"
 		
 		//Falloff
 		"Falloff"			"2500"		
@@ -129,16 +132,16 @@ Vehicle_Weapons
 		"Name"			".50 Cal Medium MG"		//name given when selecting weapons
 		"HUD Name"		".50 MG"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"A heavier .50 caliber firing medium machine gun."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/mg_med"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/mg_50cal_med"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/mg"
 		"Size"			"2"		//number of slots required when selecting weapons
 		"Type"			"0"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
 		"Cost"			"120"		//cost of this weapon added onto vehicle cost
 		"Team"			"ALL"		//team that can use this "NF" or "IMP"
 		"Research"		"Heavy Caliber Machine Gun"		//name of research item that must be researched before using
-		"Sound Firing"		"Vehicle_MG.Fire"
+		"Sound Firing"		"Vehicle_L50MG.Fire"
 		"Sound Impact"		""
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"Bullet"
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -150,6 +153,7 @@ Vehicle_Weapons
 		"Cycle Time"		"0.06"		//time between shots
 		"Clip Size"		"75"		//ammo loaded per reloads
 		"Total Ammo Clips"	"5"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"5.0"		//time to load one clip, if total ammo clips is '0', time to reload one unit of ammo (as one unit of ammo is reloaded per time and not a full clip)
 		"Projectile Spread"	"0.01"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
@@ -170,7 +174,7 @@ Vehicle_Weapons
 	
 		//effects
 		"Tracer Type"			"tracer_vehiclemg" //Tracer effect, tracer names are logical, a list: tracer_du, tracer_bio, tracer_he, tracer_rifle, tracer_smg, tracer_vehiclemg, tracer_cg, tracer_plasma
-
+		"Muzzle Flash"			"tracer_vehiclemg_muzzle"
 		//Falloff 
 		"Falloff"			"2500"		
 		"Falloffbase"			"0.9"		
@@ -182,16 +186,16 @@ Vehicle_Weapons
 		"Name"			".50 Cal Heavy MG"		//name given when selecting weapons
 		"HUD Name"		".50 HMG"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"A heavier .50 caliber firing heavy machine gun."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/mg_large"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/mg_50cal_hvy"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/mg"
 		"Size"			"3"		//number of slots required when selecting weapons
 		"Type"			"0"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
 		"Cost"			"145"		//cost of this weapon added onto vehicle cost
 		"Team"			"ALL"		//team that can use this "NF" or "IMP"
 		"Research"		"Heavy Caliber Machine Gun"		//name of research item that must be researched before using
-		"Sound Firing"		"Vehicle_MG.Fire"
+		"Sound Firing"		"Vehicle_H50MG.Fire"
 		"Sound Impact"		""
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"Bullet"
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -203,6 +207,7 @@ Vehicle_Weapons
 		"Cycle Time"		"0.06"		//time between shots
 		"Clip Size"		"125"		//ammo loaded per reloads
 		"Total Ammo Clips"	"6"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"6.0"		//time to load one clip, if total ammo clips is '0', time to reload one unit of ammo (as one unit of ammo is reloaded per time and not a full clip)
 		"Projectile Spread"	"0.01"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
@@ -223,6 +228,7 @@ Vehicle_Weapons
 	
 		//effects
 		"Tracer Type"			"tracer_vehiclemg" //Tracer effect, tracer names are logical, a list: tracer_du, tracer_bio, tracer_he, tracer_rifle, tracer_smg, tracer_vehiclemg, tracer_cg, tracer_plasma
+		"Muzzle Flash"			"tracer_vehiclemg_muzzle"
 
 			//Falloff
 		"Falloff"			"2500"		
@@ -235,7 +241,7 @@ Vehicle_Weapons
 		"Name"			"Depleted Uranium MG"		//name given when selecting weapons
 		"HUD Name"		"DU MG"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"This machine gun fires ammo that can damage vehicle armor."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/mg_med"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/mg_du_med"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/mg"
 		"Size"			"2"		//number of slots required when selecting weapons
 		"Type"			"0"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -244,7 +250,7 @@ Vehicle_Weapons
 		"Research"		"Heavy Caliber Machine Gun"		//name of research item that must be researched before using
 		"Sound Firing"		"Vehicle_DUMG.Fire"
 		"Sound Impact"		""
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"APBullet"
 		"Ammo Type"		"1"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -256,6 +262,7 @@ Vehicle_Weapons
 		"Cycle Time"		"0.2"		//time between shots
 		"Clip Size"		"140"		//ammo loaded per reloads
 		"Total Ammo Clips"	"5"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"6.0"		//time to load one clip, if total ammo clips is '0', time to reload one unit of ammo (as one unit of ammo is reloaded per time and not a full clip)
 		"Projectile Spread"	"0.04"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
@@ -276,6 +283,7 @@ Vehicle_Weapons
 	
 		//effects
 		"Tracer Type"			"tracer_du" //Tracer effect, tracer names are logical, a list: tracer_du, tracer_bio, tracer_he, tracer_rifle, tracer_smg, tracer_vehiclemg, tracer_cg, tracer_plasma
+		"Muzzle Flash"			"tracer_du_muzzle"
 
 		//Falloff
 		"Falloff"			"2500"		
@@ -288,7 +296,7 @@ Vehicle_Weapons
 		"Name"			"Depleted Uranium HMG"		//name given when selecting weapons
 		"HUD Name"		"DU HMG"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"This machine gun fires ammo that can damage vehicle armor.  It is more damaging than the standard version."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/mg_large"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/mg_du_hvy"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/mg"
 		"Size"			"3"		//number of slots required when selecting weapons
 		"Type"			"0"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -297,7 +305,7 @@ Vehicle_Weapons
 		"Research"		"Heavy Caliber Machine Gun"		//name of research item that must be researched before using
 		"Sound Firing"		"Vehicle_DUHMG.Fire"
 		"Sound Impact"		""
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"APBullet"
 		"Ammo Type"		"1"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -309,6 +317,7 @@ Vehicle_Weapons
 		"Cycle Time"		"0.18"		//time between shots
 		"Clip Size"		"180"		//ammo loaded per reloads
 		"Total Ammo Clips"	"5"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"8.0"		//time to load one clip, if total ammo clips is '0', time to reload one unit of ammo (as one unit of ammo is reloaded per time and not a full clip)
 		"Projectile Spread"	"0.035"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
@@ -329,6 +338,7 @@ Vehicle_Weapons
 	
 		//effects
 		"Tracer Type"			"tracer_du" //Tracer effect, tracer names are logical, a list: tracer_du, tracer_bio, tracer_he, tracer_rifle, tracer_smg, tracer_vehiclemg, tracer_cg, tracer_plasma
+		"Muzzle Flash"			"tracer_du_muzzle"
 
 			//Falloff
 		"Falloff"			"2500"		
@@ -341,16 +351,16 @@ Vehicle_Weapons
 		"Name"			"Chain Gun"		//name given when selecting weapons
 		"HUD Name"		"CG"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"This machine gun fires ammo at a very fast rate."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/mg_small"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/mg_chain_sml"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/mg"
 		"Size"			"1"		//number of slots required when selecting weapons
 		"Type"			"0"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
 		"Cost"			"95"		//cost of this weapon added onto vehicle cost
 		"Team"			"ALL"		//team that can use this "NF" or "IMP"
 		"Research"		""		//name of research item that must be researched before using
-		"Sound Firing"		"Vehicle_MG.Fire"
+		"Sound Firing"		"Vehicle_CGMG.Fire"
 		"Sound Impact"		""
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"Bullet"
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -362,6 +372,7 @@ Vehicle_Weapons
 		"Cycle Time"		"0.025"		//time between shots
 		"Clip Size"		"200"		//ammo loaded per reloads
 		"Total Ammo Clips"	"4"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"6.0"		//time to load one clip, if total ammo clips is '0', time to reload one unit of ammo (as one unit of ammo is reloaded per time and not a full clip)
 		"Projectile Spread"	"0.03"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
@@ -382,23 +393,28 @@ Vehicle_Weapons
 		
 		//effects
 		"Tracer Type"			"tracer_cg" //Tracer effect, tracer names are logical, a list: tracer_du, tracer_bio, tracer_he, tracer_rifle, tracer_smg, tracer_vehiclemg, tracer_cg, tracer_plasma
+		"Muzzle Flash"			"tracer_cg_muzzle"
 
+			//Falloff
+		"Falloff"			"1500"		
+		"Falloffbase"			"0.7"		
+		"MinimalDamage"			"10"	
 	}
 	"Medium Chain Gun"
 	{
 		"Name"			"Medium Chain Gun"		//name given when selecting weapons
 		"HUD Name"		"Med CG"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"This machine gun fires ammo at a very fast rate.  Its damage is greater than the smaller version."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/mg_med"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/mg_chain_med"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/mg"
 		"Size"			"2"		//number of slots required when selecting weapons
 		"Type"			"0"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
 		"Cost"			"110"		//cost of this weapon added onto vehicle cost
 		"Team"			"ALL"		//team that can use this "NF" or "IMP"
 		"Research"		""		//name of research item that must be researched before using
-		"Sound Firing"		"Vehicle_MG.Fire"
+		"Sound Firing"		"Vehicle_HCGMG.Fire"
 		"Sound Impact"		""
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"Bullet"
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -410,6 +426,7 @@ Vehicle_Weapons
 		"Cycle Time"		"0.04"		//time between shots
 		"Clip Size"		"150"		//ammo loaded per reloads
 		"Total Ammo Clips"	"4"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"8.0"		//time to load one clip, if total ammo clips is '0', time to reload one unit of ammo (as one unit of ammo is reloaded per time and not a full clip)
 		"Projectile Spread"	"0.02"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
@@ -430,14 +447,18 @@ Vehicle_Weapons
 	
 		//effects
 		"Tracer Type"			"tracer_cg" //Tracer effect, tracer names are logical, a list: tracer_du, tracer_bio, tracer_he, tracer_rifle, tracer_smg, tracer_vehiclemg, tracer_cg, tracer_plasma
+		"Muzzle Flash"			"tracer_cg_muzzle"
 
+		"Falloff"			"1500"		
+		"Falloffbase"			"0.7"		
+		"MinimalDamage"			"15"	
 	}
 	"Plasma Machine Gun"
 	{
 		"Name"			"Plasma Machine Gun"		//name given when selecting weapons
 		"HUD Name"		"Plasma MG"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"This machine gun fires superheated ammo that is designed to overheat the target vehicle."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/mg_med"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/mg_plasma_med"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/mg"
 		"Size"			"2"		//number of slots required when selecting weapons
 		"Type"			"0"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -446,7 +467,7 @@ Vehicle_Weapons
 		"Research"		"Plasma Bullet Projectile"		//name of research item that must be researched before using
 		"Sound Firing"		"Vehicle_PlasmaMG.Fire"
 		"Sound Impact"		""
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"GeneralPhysics"
 		"Ammo Type"		"1"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -458,6 +479,7 @@ Vehicle_Weapons
 		"Cycle Time"		"0.24"		//time between shots
 		"Clip Size"		"200"		//ammo loaded per reloads
 		"Total Ammo Clips"	"4"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"8.0"		//time to load one clip, if total ammo clips is '0', time to reload one unit of ammo (as one unit of ammo is reloaded per time and not a full clip)
 		"Projectile Spread"	"0.03"		//only applicable to machine guns at the moment
 		"Heat To Target"	"5"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
@@ -482,14 +504,14 @@ Vehicle_Weapons
 
 		//effects
 		"Tracer Type"			"tracer_plasma" //Tracer effect, tracer names are logical, a list: tracer_du, tracer_bio, tracer_he, tracer_rifle, tracer_smg, tracer_vehiclemg, tracer_cg, tracer_plasma
-
+		"Muzzle Flash"			"tracer_plasma_muzzle"
 	}
 	"HE MG"
 	{
-		"Name"			"High Explosive MG"		//name given when selecting weapons
 		"HUD Name"		"HE MG"			//name displayed in the weapon area of the vehicle HUD
-		"Description"		"This machine gun fires ammo which explodes upon impact.  It is very effective against vehicles."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/mg_med"		//icon drawn in the GUI
+		"Name"			"High Explosive MG"		//name given when selecting weapons
+		"Description"		"This machine gun fires rounds which explode upon impact.  It is very effective against vehicles."		//description given when selecting weapons
+		"Icon"			"vehicles/gui/weapons/mg_he_med"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/mg"
 		"Size"			"2"		//number of slots required when selecting weapons
 		"Type"			"0"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -498,7 +520,7 @@ Vehicle_Weapons
 		"Research"		"Explosive Tipped Bullets"		//name of research item that must be researched before using
 		"Sound Firing"		"Vehicle_HEMG.Fire"
 		"Sound Impact"		""
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"BulletExplosive"
 		"Ammo Type"		"2"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -510,6 +532,7 @@ Vehicle_Weapons
 		"Cycle Time"		"0.5"		//time between shots
 		"Clip Size"		"30"		//ammo loaded per reloads
 		"Total Ammo Clips"	"6"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"16"		//time to load one clip, if total ammo clips is '0', time to reload one unit of ammo (as one unit of ammo is reloaded per time and not a full clip)
 		"Projectile Spread"	"0.015"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0.1"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
@@ -530,14 +553,14 @@ Vehicle_Weapons
 	
 		//effects
 		"Tracer Type"			"tracer_he" //Tracer effect, tracer names are logical, a list: tracer_du, tracer_bio, tracer_he, tracer_rifle, tracer_smg, tracer_vehiclemg, tracer_cg, tracer_plasma
-
+		"Muzzle Flash"			"tracer_he_muzzle"
 	}
 	"Standard Cannon"
 	{
 		"Name"			"Standard Cannon"		//name given when selecting weapons
 		"HUD Name"		"Std CN"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"A small caliber cannon that fires tank shells."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/cn_small"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/cn_std_sml"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/cn"
 		"Size"			"1"		//number of slots required when selecting weapons
 		"Type"			"1"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -558,12 +581,16 @@ Vehicle_Weapons
 		"Cycle Time"		"1.4"		//time between shots (all weapons other than MGs have limits of 0.1 as lowest)
 		"Clip Size"		"30"		//ammo loaded per reloads
 		"Total Ammo Clips"	"0"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"1.0"		//time to load one clip
+		"Reload Amount"		"5" 	//number of projectiles gained per reload "tick" if not using clips
 		"Projectile Spread"	"1"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0.1"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
 		"Inertia"		"2"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"300"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"100"		//force of explosion
+		"Explosion Sprite"	"1"
+		"Muzzle Flash"		"muzzle_std_cn"
 
 
 			//only for missile launchers
@@ -621,7 +648,7 @@ Vehicle_Weapons
 		"Name"			"Ranged Cannon"		//name given when selecting weapons
 		"HUD Name"		"Ranged CN"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"A small caliber cannon that fires tank shells. Its barrel is enhanced for longer ranges."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/cn_med"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/cn_ranged_med"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/cn"
 		"Size"			"2"		//number of slots required when selecting weapons
 		"Type"			"1"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -642,12 +669,16 @@ Vehicle_Weapons
 		"Cycle Time"		"2"		//time between shots (all weapons other than MGs have limits of 0.1 as lowest)
 		"Clip Size"		"40"		//ammo loaded per reloads
 		"Total Ammo Clips"	"0"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"2.0"		//time to load one clip
+		"Reload Amount"		"5" 	//number of projectiles gained per reload "tick" if not using clips
 		"Projectile Spread"	"0"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0.1"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
 		"Inertia"		"1"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"200"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"100"		//force of explosion
+		"Explosion Sprite"	"7"
+		"Muzzle Flash"		"muzzle_lr_cn"
 
 
 			//only for missile launchers
@@ -663,7 +694,7 @@ Vehicle_Weapons
 		"Name"			"High Explosive Cannon"		//name given when selecting weapons
 		"HUD Name"		"HE CN"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"This cannon has its explosive compound upgraded for a stronger explosion upon impact."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/cn_med"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/cn_he_med"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/cn"
 		"Size"			"2"		//number of slots required when selecting weapons
 		"Type"			"1"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -684,12 +715,16 @@ Vehicle_Weapons
 		"Cycle Time"		"2.5"		//time between shots (all weapons other than MGs have limits of 0.1 as lowest)
 		"Clip Size"		"24"		//ammo loaded per reloads
 		"Total Ammo Clips"	"0"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"2.0"		//time to load one clip
+		"Reload Amount"		"5" 	//number of projectiles gained per reload "tick" if not using clips
 		"Projectile Spread"	"1"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0.1"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
 		"Inertia"		"2.5"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"400"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"200"		//force of explosion
+		"Explosion Sprite"	"17"
+		"Muzzle Flash"		"muzzle_he_cn"
 
 
 			//only for missile launchers
@@ -709,7 +744,7 @@ Vehicle_Weapons
 		"Name"			"Plasma Cannon"		//name given when selecting weapons
 		"HUD Name"		"Plasma CN"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"This cannon fires a superheated shell able to transfer a large amount of heat into the target and put it into an overheated shutdown."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/cn_med"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/cn_plasma_hvy"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/cn"
 		"Size"			"2"		//number of slots required when selecting weapons
 		"Type"			"1"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -730,12 +765,16 @@ Vehicle_Weapons
 		"Cycle Time"		"2"		//time between shots (all weapons other than MGs have limits of 0.1 as lowest)
 		"Clip Size"		"30"		//ammo loaded per reloads
 		"Total Ammo Clips"	"0"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"2.0"		//time to load one clip
+		"Reload Amount"		"5" 	//number of projectiles gained per reload "tick" if not using clips
 		"Projectile Spread"	"1.5"		//only applicable to machine guns at the moment
 		"Heat To Target"	"17"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
 		"Inertia"		"1"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"100"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"100"		//force of explosion
+		"Explosion Sprite"	"5"
+		"Muzzle Flash"		"muzzle_plasma_cn"
 
 
 			//only for missile launchers
@@ -755,7 +794,7 @@ Vehicle_Weapons
 		"Name"			"Rail Gun"		//name given when selecting weapons
 		"HUD Name"		"Rail CN"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"This cannon uses magnetic coils to accelerate the shell.  It produces less heat and can fire faster."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/cn_large"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/cn_rail_hvy"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/cn"
 		"Size"			"3"		//number of slots required when selecting weapons
 		"Type"			"1"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -776,12 +815,16 @@ Vehicle_Weapons
 		"Cycle Time"		"0.8"		//time between shots (all weapons other than MGs have limits of 0.1 as lowest)
 		"Clip Size"		"40"		//ammo loaded per reloads
 		"Total Ammo Clips"	"0"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"2.0"		//time to load one clip
+		"Reload Amount"		"5" 	//number of projectiles gained per reload "tick" if not using clips
 		"Projectile Spread"	"0.1"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
 		"Inertia"		"0"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"100"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"50"		//force of explosion
+		"Explosion Sprite"	"6"
+		"Muzzle Flash"		"muzzle_rail_cn"
 
 
 			//only for missile launchers
@@ -799,7 +842,7 @@ Vehicle_Weapons
 		"Name"			"Small Artillery Cannon"		//name given when selecting weapons
 		"HUD Name"		"Small AC"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"An artillery cannon with high damage but low reload times.  It has the shortest range but fastest reload."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/ac_small"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/ac_std_sml"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/ac"
 		"Size"			"1"		//number of slots required when selecting weapons
 		"Type"			"2"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -808,7 +851,7 @@ Vehicle_Weapons
 		"Research"		""		//name of research item that must be researched before using
 		"Sound Firing"		"Vehicle_AC.Fire"
 		"Sound Impact"		"Vehicle_AC.Impact"
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"ExplosiveArt"
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -820,12 +863,15 @@ Vehicle_Weapons
 		"Cycle Time"		"1"		//time between shots
 		"Clip Size"		"10"		//ammo loaded per reloads
 		"Total Ammo Clips"	"6"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"4.0"		//time to load one clip
 		"Projectile Spread"	"0.001"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0.5"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
 		"Inertia"		"1"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"550"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"500"		//force of explosion
+		"Explosion Sprite"	"12"
+		"Muzzle Flash"		"muzzle_default_arty"
 
 
 			//only for missile launchers
@@ -841,7 +887,7 @@ Vehicle_Weapons
 		"Name"			"Medium Artillery Cannon"		//name given when selecting weapons
 		"HUD Name"		"Medium AC"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"An artillery cannon with high damage but low reload times. It has a greater range than the small cannon and two extra ammo magazines."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/ac_med"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/ac_std_med"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/ac"
 		"Size"			"2"		//number of slots required when selecting weapons
 		"Type"			"2"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -850,7 +896,7 @@ Vehicle_Weapons
 		"Research"		""		//name of research item that must be researched before using
 		"Sound Firing"		"Vehicle_AC.Fire"
 		"Sound Impact"		"Vehicle_AC.Impact"
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"ExplosiveArt"
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -862,12 +908,15 @@ Vehicle_Weapons
 		"Cycle Time"		"1.6"		//time between shots
 		"Clip Size"		"10"		//ammo loaded per reloads
 		"Total Ammo Clips"	"8"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"5.0"		//time to load one clip
 		"Projectile Spread"	"0.001"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0.5"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
 		"Inertia"		"1"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"700"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"600"		//force of explosion
+		"Explosion Sprite"	"12"
+		"Muzzle Flash"		"muzzle_default_arty"
 
 
 			//only for missile launchers
@@ -883,7 +932,7 @@ Vehicle_Weapons
 		"Name"			"High Explosive Artillery"		//name given when selecting weapons
 		"HUD Name"		"HE AC"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"An artillery cannon with the greatest damage."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/ac_med"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/ac_he_med"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/ac"
 		"Size"			"2"		//number of slots required when selecting weapons
 		"Type"			"2"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -892,7 +941,7 @@ Vehicle_Weapons
 		"Research"		"Explosive Shells"		//name of research item that must be researched before using
 		"Sound Firing"		"Vehicle_HEAC.Fire"
 		"Sound Impact"		"Vehicle_HEAC.Impact"
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"ExplosiveArt"
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -904,12 +953,15 @@ Vehicle_Weapons
 		"Cycle Time"		"2"		//time between shots
 		"Clip Size"		"10"		//ammo loaded per reloads
 		"Total Ammo Clips"	"8"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"7.0"		//time to load one clip
 		"Projectile Spread"	"0.001"		//only applicable to machine guns at the moment
 		"Heat To Target"	"1"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
 		"Inertia"		"1"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"900"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"700"		//force of explosion
+		"Explosion Sprite"	"13"
+		"Muzzle Flash"		"muzzle_he_arty"
 
 
 			//only for missile launchers
@@ -929,7 +981,7 @@ Vehicle_Weapons
 		"Name"			"Ranged Artillery Cannon"		//name given when selecting weapons
 		"HUD Name"		"Ranged AC"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"An artillery cannon with high damage but low reload times. It has the furthest range of all artillery cannons."	//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/ac_med"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/ac_ranged_med"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/ac"
 		"Size"			"2"		//number of slots required when selecting weapons
 		"Type"			"2"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -938,7 +990,7 @@ Vehicle_Weapons
 		"Research"		"Extended Range Cannon"		//name of research item that must be researched before using
 		"Sound Firing"		"Vehicle_AC.Fire"
 		"Sound Impact"		"Vehicle_AC.Impact"
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"KineticArt"
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -950,12 +1002,15 @@ Vehicle_Weapons
 		"Cycle Time"		"2"		//time between shots
 		"Clip Size"		"10"		//ammo loaded per reloads
 		"Total Ammo Clips"	"8"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"5.0"		//time to load one clip
 		"Projectile Spread"	"0.001"		//only applicable to machine guns at the moment
 		"Heat To Target"	"1"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
 		"Inertia"		"1"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"1000"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"500"		//force of explosion
+		"Explosion Sprite"	"13"
+		"Muzzle Flash"		"muzzle_lr_arty"
 
 
 			//only for missile launchers
@@ -972,7 +1027,7 @@ Vehicle_Weapons
 		"Name"			"Standard ML"		//name given when selecting weapons
 		"HUD Name"		"ML"				//name displayed in the weapon area of the vehicle HUD
 		"Description"		"A dumb fire missile launcher with no homing capabilities."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/ml_small"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/ml_std_sml"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/ml"
 		"Size"			"1"		//number of slots required when selecting weapons
 		"Type"			"3"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -981,7 +1036,7 @@ Vehicle_Weapons
 		"Research"		""		//name of research item that must be researched before using
 		"Sound Firing"		""
 		"Sound Impact"		"Vehicle_ML.Impact"
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"Missile"
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -993,12 +1048,15 @@ Vehicle_Weapons
 		"Cycle Time"		"1.2"		//time between shots
 		"Clip Size"		"4"		//ammo loaded per reloads
 		"Total Ammo Clips"	"5"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"3.0"		//time to load one clip
 		"Projectile Spread"	"1.5"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0.1"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
 		"Inertia"		"1"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"100"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"50"		//force of explosion
+		"Explosion Sprite"	"10"
+		"Muzzle Flash"		"muzzle_default_ml"
 
 
 			//only for missile launchers
@@ -1014,7 +1072,7 @@ Vehicle_Weapons
 		"Name"			"Upgraded ML"		//name given when selecting weapons
 		"HUD Name"		"U/ML"				//name displayed in the weapon area of the vehicle HUD
 		"Description"		"A dumb fire missile launcher with no homing capabilities but greater speed and damage than standard version."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/ml_med"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/ml_upgraded_med"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/ml"
 		"Size"			"2"		//number of slots required when selecting weapons
 		"Type"			"3"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -1023,7 +1081,7 @@ Vehicle_Weapons
 		"Research"		"Upgraded Missile Warhead"		//name of research item that must be researched before using
 		"Sound Firing"		""
 		"Sound Impact"		"Vehicle_ML.Impact"
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"Missile"
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -1035,12 +1093,15 @@ Vehicle_Weapons
 		"Cycle Time"		"1.0"		//time between shots
 		"Clip Size"		"6"		//ammo loaded per reloads
 		"Total Ammo Clips"	"6"		//max ammo clips carried (0 is the same as not using clips)
-		"Reload Time"		"3.8"		//time to load one clip
+		"Unlimited Ammo"	"0"
+		"Reload Time"		"3.0"		//time to load one clip
 		"Projectile Spread"	"0.5"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0.2"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
 		"Inertia"		"1"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"100"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"50"		//force of explosion
+		"Explosion Sprite"	"8"
+		"Muzzle Flash"		"muzzle_default_ml"
 
 
 			//only for missile launchers
@@ -1065,7 +1126,7 @@ Vehicle_Weapons
 		"Name"			"Biological Warhead"		//name given when selecting weapons
 		"HUD Name"		"Bio ML"				//name displayed in the weapon area of the vehicle HUD
 		"Description"		"A dumb fire missile launcher which contains a biological agent in its warhead.  Players and vehicles hit by the explosion will continuously suffer damage which lasts up to a full minute."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/ml_med"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/ml_bio_med"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/ml"
 		"Size"			"2"		//number of slots required when selecting weapons
 		"Type"			"3"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -1074,7 +1135,7 @@ Vehicle_Weapons
 		"Research"		"Biological Warhead"		//name of research item that must be researched before using
 		"Sound Firing"		""
 		"Sound Impact"		"Vehicle_ML.Impact"
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"Missile"
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -1086,12 +1147,15 @@ Vehicle_Weapons
 		"Cycle Time"		"3.0"		//time between shots
 		"Clip Size"		"3"		//ammo loaded per reloads
 		"Total Ammo Clips"	"3"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"6.0"		//time to load one clip
 		"Projectile Spread"	"0.5"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0.1"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
 		"Inertia"		"1"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"300"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"50"		//force of explosion
+		"Explosion Sprite"	"3"
+		"Muzzle Flash"		"muzzle_bio_ml"
 
 			//only for missile launchers
 		"Dumb Missile"		"1"		//'1' if missile flies straight ahead
@@ -1119,7 +1183,7 @@ Vehicle_Weapons
 		"Name"			"HIT Missile"		//name given when selecting weapons
 		"HUD Name"		"HIT"				//name displayed in the weapon area of the vehicle HUD
 		"Description"		"This weapon utilizes a High-Impulse Thermobaric warhead to deliver an intense pressure wave to its target, resulting in a more powerful explosion than is possible via conventional means. It is highly effective against both mobile and stationary targets."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/ml_large"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/ml_nuke_hvy"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/ml"
 		"Size"			"3"		//number of slots required when selecting weapons
 		"Type"			"3"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -1128,7 +1192,7 @@ Vehicle_Weapons
 		"Research"		"HIT Warhead"		//name of research item that must be researched before using
 		"Sound Firing"		""
 		"Sound Impact"		"Vehicle_Nuke.Impact"
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"MissileExplosive"
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -1140,12 +1204,16 @@ Vehicle_Weapons
 		"Cycle Time"		"10.0"		//time between shots
 		"Clip Size"		"6"		//ammo loaded per reloads
 		"Total Ammo Clips"	"1"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"12.0"		//time to load one clip
-		"Projectile Spread"	"1.25"		//only applicable to machine guns at the moment
+		"Reload Amount"		"2"
+		"Projectile Spread"	"0.5"		//only applicable to machine guns at the moment
 		"Heat To Target"	"50"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
 		"Inertia"		"1"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"1550"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"1000"		//force of explosion
+		"Explosion Sprite"	"11"
+		"Muzzle Flash"		"muzzle_nuke_ml"
 
 
 			//only for missile launchers
@@ -1165,7 +1233,7 @@ Vehicle_Weapons
 		"Name"			"Salvo Missile Launcher"		//name given when selecting weapons
 		"HUD Name"		"4x ML"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"A missile launcher with no homing capabilities but it can fire its payload of four missiles in one shot before reloading."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/ml_salvo_med"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/ml_salvo_med_alt"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/ml"
 		"Size"			"2"		//number of slots required when selecting weapons
 		"Type"			"3"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -1174,7 +1242,7 @@ Vehicle_Weapons
 		"Research"		"Upgraded Missile Warhead"		//name of research item that must be researched before using
 		"Sound Firing"		""
 		"Sound Impact"		"Vehicle_ML.Impact"
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"Missile"
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -1186,12 +1254,15 @@ Vehicle_Weapons
 		"Cycle Time"		"-0.14"		//time between shots; a negative number unloads the whole clip in rapid succession with one press of the fire button but still uses the rest of the number to still determine time between actual shot creation
 		"Clip Size"		"4"		//ammo loaded per reloads
 		"Total Ammo Clips"	"8"		//max ammo clips carried (0 is the same as not using clips)
+		"Unlimited Ammo"	"0"
 		"Reload Time"		"3.0"		//time to load one clip
 		"Projectile Spread"	"2"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0.1"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
 		"Inertia"		"1"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"100"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"20"		//force of explosion
+		"Explosion Sprite"	"14"
+		"Muzzle Flash"		"muzzle_salvo_ml"
 
 
 			//only for missile launchers
@@ -1216,7 +1287,7 @@ Vehicle_Weapons
 		"Research"		"Guided Missiles"		//name of research item that must be researched before using
 		"Sound Firing"		""
 		"Sound Impact"		"Vehicle_ML.Impact"
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"Missile"
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -1231,6 +1302,7 @@ Vehicle_Weapons
 		"Reload Time"		"3.0"		//time to load one clip
 		"Projectile Spread"	"1"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0.2"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
+		"Unlimited Ammo"	"0"
 		"Inertia"		"1"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"110"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"40"		//force of explosion
@@ -1277,7 +1349,7 @@ Vehicle_Weapons
 		"Inertia"		"1"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"130"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"60"		//force of explosion
-
+		"Unlimited Ammo"	"0"
 
 			//only for missile launchers
 		"Dumb Missile"		"0"		//'1' if missile flies straight ahead
@@ -1302,7 +1374,7 @@ Vehicle_Weapons
 		"Research"		"Homing Missiles"		//name of research item that must be researched before using
 		"Sound Firing"		""
 		"Sound Impact"		"Vehicle_ML.Impact"
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"Missile"
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -1317,9 +1389,12 @@ Vehicle_Weapons
 		"Reload Time"		"8.0"		//time to load one clip
 		"Projectile Spread"	"1"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0.2"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
+		"Unlimited Ammo"	"0"
 		"Inertia"		"1"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"100"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"40"		//force of explosion
+		"Explosion Sprite"	"18"
+		"Muzzle Flash"		"muzzle_default_ml"
 
 
 			//only for missile launchers
@@ -1365,7 +1440,7 @@ Vehicle_Weapons
 		"Inertia"		"1"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"100"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"60"		//force of explosion
-
+		"Unlimited Ammo"	"0"
 
 			//only for missile launchers
 		"Dumb Missile"		"0"		//'1' if missile flies straight ahead
@@ -1392,7 +1467,7 @@ Vehicle_Weapons
 		"Research"		"Homing Missiles"		//name of research item that must be researched before using
 		"Sound Firing"		""
 		"Sound Impact"		"Vehicle_ML.Impact"
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"Missile"
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -1407,9 +1482,12 @@ Vehicle_Weapons
 		"Reload Time"		"5"		//time to load one clip
 		"Projectile Spread"	"1"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0.2"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
+		"Unlimited Ammo"	"0"
 		"Inertia"		"1"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"80"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"30"		//force of explosion
+		"Explosion Sprite"	"14"
+		"Muzzle Flash"		"muzzle_salvo_ml"
 
 
 			//only for missile launchers
@@ -1430,7 +1508,7 @@ Vehicle_Weapons
 		"Name"			"Grenade Launcher"		//name given when selecting weapons
 		"HUD Name"		"GL"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"A grenade launcher suited for urban combat with its ability of clearing out tight spaces."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/gl_small"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/gl_std_sml"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/gl"
 		"Size"			"1"		//number of slots required when selecting weapons
 		"Type"			"4"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -1439,7 +1517,7 @@ Vehicle_Weapons
 		"Research"		""		//name of research item that must be researched before using
 		"Sound Firing"		"Vehicle_GL.Fire"
 		"Sound Impact"		"Vehicle_GL.Impact"
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"Explosive"
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -1452,11 +1530,14 @@ Vehicle_Weapons
 		"Clip Size"		"8"		//ammo loaded per reloads
 		"Total Ammo Clips"	"2"		//max ammo clips carried (0 is the same as not using clips)
 		"Reload Time"		"10.0"		//time to load one clip
+		"Unlimited Ammo"	"0"
 		"Projectile Spread"	"0.001"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0.4"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
 		"Inertia"		"1"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"250"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"100"		//force of explosion
+		"Explosion Sprite"	"1"
+		"Muzzle Flash"		"muzzle_std_cn"
 
 
 			//only for missile launchers
@@ -1473,7 +1554,7 @@ Vehicle_Weapons
 		"Name"			"Upgraded Grenade Launcher"		//name given when selecting weapons
 		"HUD Name"		"U/GL"			//name displayed in the weapon area of the vehicle HUD
 		"Description"		"A grenade launcher suited for urban combat with its ability of clearing out tight spaces.  It is upgraded for more damage and longer range."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/weapons/gl_med"		//icon drawn in the GUI
+		"Icon"			"vehicles/gui/weapons/gl_upgraded_med"		//icon drawn in the GUI
 		"HUD Icon"		"vehicles/gui/weapons/gl"
 		"Size"			"2"		//number of slots required when selecting weapons
 		"Type"			"4"		//0=machine gun, 1=tank cannon, 2=artillery cannon, 3=missile launcher, 4=grenade launcher, 5=aircraft bomb bay
@@ -1482,7 +1563,7 @@ Vehicle_Weapons
 		"Research"		"Upgraded Grenades"		//name of research item that must be researched before using
 		"Sound Firing"		"Vehicle_GL.Fire"
 		"Sound Impact"		"Vehicle_GL.Impact"
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"Explosive"
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -1495,11 +1576,14 @@ Vehicle_Weapons
 		"Clip Size"		"12"		//ammo loaded per reloads
 		"Total Ammo Clips"	"3"		//max ammo clips carried (0 is the same as not using clips)
 		"Reload Time"		"12.0"		//time to load one clip
+		"Unlimited Ammo"	"0"
 		"Projectile Spread"	"0.001"		//only applicable to machine guns at the moment
 		"Heat To Target"	"0.3"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
 		"Inertia"		"1"		//actually reverse to inertia, only applicable to cannons, artillery cannons, and grenades; affects how the speed of the vehicle affects the momentum of the projectile (higher inertia = vehicle speed will affect the trajectory of the projectile possibly causing it to veer off from a straight line or shoot farther or shorter)
 		"Explosion Radius"	"400"		//radius of damage sphere to hurt surrounding entities
 		"Explosion Force"	"150"		//force of explosion
+		"Explosion Sprite"	"4"
+		"Muzzle Flash"		"muzzle_std_cn"
 
 
 			//only for missile launchers
@@ -1526,7 +1610,7 @@ Vehicle_Weapons
 		"Research"		""		//name of research item that must be researched before using
 		"Sound Firing"		""
 		"Sound Impact"		"Vehicle_CN.Impact"
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"ExtraType1"
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
@@ -1615,7 +1699,7 @@ Vehicle_Weapons
 		"Research"		""		//name of research item that must be researched before using
 		"Sound Firing"		""
 		"Sound Impact"		"Vehicle_CN.Impact"
-		"Sound Reloading"	""
+		"Sound Reloading"	"Vehicle_Weapon.Reload"
 
 		"Damage Type"		"ExtraType1"
 		"Ammo Type"		"0"		//for mguns only, 0 = nonarmor penetrating (no effect on armored vehicles), 1 = armor penetrating (hurts armored vehicles)
