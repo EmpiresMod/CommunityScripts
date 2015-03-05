@@ -2,7 +2,7 @@
 
 SHELL=/bin/sh
 bin=bin
-name=EmpiresLauncher
+name=launcher
 
 all: build
 

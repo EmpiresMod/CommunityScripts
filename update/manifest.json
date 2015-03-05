@@ -1,9 +1,9 @@
 {
 	"Files": [
 		{
-			"Path": "EmpiresLauncher.exe",
+			"Path": "launcher.exe",
 			"HashSum": "834b4beeb1496367719ed2ef3e01a5780a6f54a781bb8b7097c3c5cd31d02c8f",
-			"URL": "EmpiresLauncher.exe",
+			"URL": "launcher.exe",
 			"Backup": true
 		},
 		{

@@ -7,9 +7,11 @@ Getting Started
 
 - Make sure you have a [GitHub account](https://github.com/signup/free)
 
-- Make sure you have [git](http://git-scm.com/downloads)/[svn](https://help.github.com/articles/support-for-subversion-clients) installed.
+- Make sure you have [git](http://git-scm.com/downloads) or [svn](https://help.github.com/articles/support-for-subversion-clients) installed.
 
-- Read the documentation apropiate for your source control client for making new commits to the repository.
+- Read the documentation appropriate for your source control client for making new commits to the repository.
+
+- Read the [style guide](STYLEGUIDE.md).
 
 EditrConfig Plugin
 -----------
