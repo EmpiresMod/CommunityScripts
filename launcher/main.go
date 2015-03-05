@@ -28,7 +28,7 @@ func init() {
 	flag.BoolVar(&update, "u", true, "check for updates")
 	flag.StringVar(&updateURL, "url", defaultURL, "url to fetch updates from")
 	flag.StringVar(&path, "p", "./", "path to empires folder")
-	flag.BoolVar(&improved, "i", false, "launch empires with community scripts")
+	flag.BoolVar(&community, "c", false, "launch empires with community scripts")
 	flag.BoolVar(&vanilla, "v", true, "launch vanilla empires")
 	flag.Parse()
 
