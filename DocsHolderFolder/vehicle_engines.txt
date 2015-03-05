@@ -1,4 +1,4 @@
-// Vehicle Engines Last Change: May 4 2009
+// Vehicle Engines 
 Vehicle_Engines
 {
 	///////////////
@@ -8,7 +8,7 @@ Vehicle_Engines
 	"Standard"
 	{
 		"Name"				"Standard Engine"		
-		"Description"			"This is the standard engine with basic properties."		
+		"Description"			"This engine is the only jeep engine. It uses hybrid electric-turbine technology."		
 		"Icon"				"vehicles/gui/engine/engine_small"		
 		"Size"				"1"
 		"Type"				"4"	//which vehicle can use this engine
@@ -28,10 +28,10 @@ Vehicle_Engines
 		"Horsepower Health Modifier"	"0.6"	//amount of max throttle reduction as health is destroyed
 		"Horsepower Armor Modifier"	"0.05"	//amount of max throttle reduction as armor is destroyed
 		"Heat Output At Max"		"2"	//how much heat is output when the vehicle is at full throttle
-		"Heat Output At Idle"		"1"	//how much heat is output when a driver is in the vehicle and throttle is zero
+		"Heat Output At Idle"		"1"	//how much heat is output when a player is in the driver seat
 		"Stall On Armor Damage"		"100"	//stall the engine when this amount of damage to armor is received
 		"Stall On Health Damage"	"60"	//stall the engine when this amount of damage to hull health is received
-		"Stall On Heat"			"0.8"	//the percentage of heat to begin stalling the engine
+		"Stall On Heat"			"0.8"	//the percentage of heat to begin stalling the engine and also the throttle modifier such that ((heat%-stall%)/(1-stall%))^2 equals throttle before the stall% is met.
 		"Heat Capacity"			"100.0"
 		"Heat Stall Penalty"		"0.0" 	//how much max throttle is limited to when overheating is occurring
 		"Heat Dissipation"		"8"	//amount of heat removed per second
@@ -40,7 +40,7 @@ Vehicle_Engines
 	"Mechanical Eng 1"
 	{
 		"Name"				"Gas Turbine"		
-		"Description"			"This engine excels in raw horsepower."		
+		"Description"			"This engine excels in raw horsepower, gaining more as the vehicle becomes more damaged. It is much lighter and cheaper than other engines."	
 		"Icon"				"vehicles/gui/engine/gas_sml"		
 		"Size"				"1"
 		"Type"				"4"
@@ -66,8 +66,6 @@ Vehicle_Engines
 		"Heat Stall Penalty"		"0.0"
 		"Heat Dissipation"		"8"
 	}
-
-
 	"Electronics Eng 1"
 	{
 		"Name"				"3 Phase Electric"		
@@ -100,8 +98,8 @@ Vehicle_Engines
 
 	"Physics 1"
 	{
-		"Name"				"Fission Reactor"		
-		"Description"			"This engine has good horsepower and acceleration but has a high heat output."		
+		"Name"				"Fission Reactor"
+		"Description"			"This engine only cools heat whilst moving. It is fast, agile with a high amount of horsepower. It is suited to high speed vehicle combat."		
 		"Icon"				"vehicles/gui/engine/fission_sml"		
 		"Size"				"1"
 		"Type"				"4"
@@ -161,7 +159,7 @@ Vehicle_Engines
 	"Chemistry 1"
 	{
 		"Name"				"Advanced Coolant Based"		
-		"Description"			"This standard engine uses an advanced heat transfer medium for excellent heat dissipation properties."		
+		"Description"			"This engine only cools whilst stationary. It is suited to static/stationary vehicle combat."		
 		"Icon"				"vehicles/gui/engine/coolant_sml"		
 		"Size"				"1"
 		"Type"				"4"
@@ -196,7 +194,7 @@ Vehicle_Engines
 	"Standard"
 	{
 		"Name"				"Standard Engine"		
-		"Description"			"This is the standard engine with basic properties."		
+		"Description"			"This is the standard engine with inferior properties."		
 		"Icon"				"vehicles/gui/engine/engine_small"		
 		"Size"				"1"
 		"Type"				"9"
@@ -215,8 +213,8 @@ Vehicle_Engines
 		"Horsepower Armor Modifier"	"0.05"	//amount of max throttle reduction as armor is destroyed
 		"Heat Output At Max"		"2"	//how much heat is output when the vehicle is at full throttle
 		"Heat Output At Idle"		"1"	//how much heat is output when a driver is in the vehicle and throttle is zero
-		"Stall On Armor Damage"		"100"	//stall the engine when this percentage of damage to total armor per inch is received
-		"Stall On Health Damage"	"60"	//stall the engine when this percentage of damage to total health is received to the vehicle hull
+		"Stall On Armor Damage"		"100"	//stall the engine when this amount of damage to armor is received
+		"Stall On Health Damage"	"60"	//stall the engine when this amount of damage to hull health is received
 		"Stall On Heat"			"0.8"	//the percentage of heat to begin stalling the engine
 		"Heat Capacity"			"100.0"
 		"Heat Stall Penalty"		"0.0" 	//how much max throttle is limited to when overheating is occurring
@@ -226,7 +224,7 @@ Vehicle_Engines
 	"Mechanical Eng 1"
 	{
 		"Name"				"Gas Turbine"		
-		"Description"			"This engine excels in raw horsepower."		
+		"Description"			"This engine excels in raw horsepower, gaining more as the vehicle becomes more damaged. It is much lighter and cheaper than other engines."
 		"Icon"				"vehicles/gui/engine/gas_sml"		
 		"Size"				"1"
 		"Type"				"9"
@@ -287,7 +285,7 @@ Vehicle_Engines
 	"Physics 1"
 	{
 		"Name"				"Fission Reactor"		
-		"Description"			"This engine has good horsepower and acceleration but has a high heat output."		
+		"Description"			"This engine only cools heat whilst moving. It is fast, agile with a high amount of horsepower. It is suited to high speed vehicle combat."		
 		"Icon"				"vehicles/gui/engine/fission_sml"		
 		"Size"				"1"
 		"Type"				"9"
@@ -347,7 +345,7 @@ Vehicle_Engines
 	"Chemistry 1"
 	{
 		"Name"				"Advanced Coolant Based"		
-		"Description"			"This standard engine uses an advanced heat transfer medium for excellent heat dissipation properties."		
+		"Description"			"This engine only cools whilst stationary. It is suited to static/stationary vehicle combat."		
 		"Icon"				"vehicles/gui/engine/coolant_sml"		
 		"Size"				"1"
 		"Type"				"9"
@@ -389,7 +387,7 @@ Vehicle_Engines
 	"Standard"
 	{
 		"Name"				"Standard Engine"		
-		"Description"			"This is the standard engine with basic properties."		
+		"Description"			"This is the standard engine with inferior properties."
 		"Icon"				"vehicles/gui/engine/engine_med"		
 		"Size"				"2"
 		"Type"				"5"
@@ -408,8 +406,8 @@ Vehicle_Engines
 		"Horsepower Armor Modifier"	"0.05"	//amount of max throttle reduction as armor is destroyed
 		"Heat Output At Max"		"2"	//how much heat is output when the vehicle is at full throttle
 		"Heat Output At Idle"		"1"	//how much heat is output when a driver is in the vehicle and throttle is zero
-		"Stall On Armor Damage"		"100"	//stall the engine when this percentage of damage to total armor per inch is received
-		"Stall On Health Damage"	"60"	//stall the engine when this percentage of damage to total health is received to the vehicle hull
+		"Stall On Armor Damage"		"100"	//stall the engine when this amount of damage to armor is received
+		"Stall On Health Damage"	"60"	//stall the engine when this amount of damage to hull health is received
 		"Stall On Heat"			"0.8"	//the percentage of heat to begin stalling the engine
 		"Heat Capacity"			"100.0"
 		"Heat Stall Penalty"		"0.0" 	//how much max throttle is limited to when overheating is occurring
@@ -419,7 +417,7 @@ Vehicle_Engines
 	"Mechanical Eng 1"
 	{
 		"Name"				"Gas Turbine"		
-		"Description"			"This engine excels in raw horsepower."		
+		"Description"			"This engine excels in raw horsepower, gaining more as the vehicle becomes more damaged. It is much lighter and cheaper than other engines."	
 		"Icon"				"vehicles/gui/engine/gas_med"		
 		"Size"				"2"
 		"Type"				"5"
@@ -431,7 +429,7 @@ Vehicle_Engines
 		"Max Speed"			"40"
 		"Max Reverse Speed"		"25"
 		"Shift Up RPM"			"815"
-		"Shift Down RPM"			"470"
+		"Shift Down RPM"		"470"
 		"Horsepower"			"2640"
 		"Horsepower Weight Penalty"	"0.1"
 		"Horsepower Health Modifier"	"0.5"
@@ -481,7 +479,7 @@ Vehicle_Engines
 	"Physics 1"
 	{
 		"Name"				"Fission Reactor"		
-		"Description"			"This engine has good horsepower and acceleration but has a high heat output."		
+		"Description"			"This engine only cools heat whilst moving. It is fast, agile with a high amount of horsepower. It is suited to high speed vehicle combat."		
 		"Icon"				"vehicles/gui/engine/fission_med"		
 		"Size"				"2"
 		"Type"				"5"
@@ -493,7 +491,7 @@ Vehicle_Engines
 		"Max Speed"			"45"
 		"Max Reverse Speed"		"30"
 		"Shift Up RPM"			"775"
-		"Shift Down RPM"			"370"
+		"Shift Down RPM"		"370"
 		"Horsepower"			"2575"
 		"Horsepower Weight Penalty"	"0.1"
 		"Horsepower Health Modifier"	"0.5"
@@ -523,7 +521,7 @@ Vehicle_Engines
 		"Max Speed"			"37"
 		"Max Reverse Speed"		"25"
 		"Shift Up RPM"			"645"
-		"Shift Down RPM"			"350"
+		"Shift Down RPM"		"350"
 		"Horsepower"			"2610"
 		"Horsepower Weight Penalty"	"0.1"
 		"Horsepower Health Modifier"	"0.2"
@@ -541,7 +539,7 @@ Vehicle_Engines
 	"Chemistry 1"
 	{
 		"Name"				"Advanced Coolant Based"		
-		"Description"			"This standard engine uses an advanced heat transfer medium for excellent heat dissipation properties."		
+		"Description"			"This engine only cools whilst stationary. It is suited to static/stationary vehicle combat."		
 		"Icon"				"vehicles/gui/engine/coolant_med"		
 		"Size"				"2"
 		"Type"				"5"
@@ -553,7 +551,7 @@ Vehicle_Engines
 		"Max Speed"			"35"
 		"Max Reverse Speed"		"22"
 		"Shift Up RPM"			"600"
-		"Shift Down RPM"			"540"
+		"Shift Down RPM"		"540"
 		"Horsepower"			"2590"
 		"Horsepower Weight Penalty"	"0.1"
 		"Horsepower Health Modifier"	"0.4"
@@ -577,7 +575,7 @@ Vehicle_Engines
 	"Standard"
 	{
 		"Name"				"Standard Engine"		
-		"Description"			"This is the standard engine with basic properties."		
+		"Description"			"This is the standard engine with inferior properties."
 		"Icon"				"vehicles/gui/engine/engine_med"		
 		"Size"				"2"
 		"Type"				"6"
@@ -589,15 +587,15 @@ Vehicle_Engines
 		"Max Speed"			"30"
 		"Max Reverse Speed"		"20"
 		"Shift Up RPM"			"600"
-		"Shift Down RPM"			"540"
+		"Shift Down RPM"		"540"
 		"Horsepower"			"2350"
 		"Horsepower Weight Penalty"	"0.1"	//amount of max throttle reduction as vehicle weight exceeds Max Weight
 		"Horsepower Health Modifier"	"0.6"	//amount of max throttle reduction as health is destroyed
 		"Horsepower Armor Modifier"	"0.05"	//amount of max throttle reduction as armor is destroyed
 		"Heat Output At Max"		"2"	//how much heat is output when the vehicle is at full throttle
 		"Heat Output At Idle"		"1"	//how much heat is output when a driver is in the vehicle and throttle is zero
-		"Stall On Armor Damage"		"100"	//stall the engine when this percentage of damage to total armor per inch is received
-		"Stall On Health Damage"	"60"	//stall the engine when this percentage of damage to total health is received to the vehicle hull
+		"Stall On Armor Damage"		"100"	//stall the engine when this amount of damage to armor is received
+		"Stall On Health Damage"	"60"	//stall the engine when this amount of damage to hull health is received
 		"Stall On Heat"			"0.8"	//the percentage of heat to begin stalling the engine
 		"Heat Capacity"			"100.0"
 		"Heat Stall Penalty"		"0.0" 	//how much max throttle is limited to when overheating is occurring
@@ -607,7 +605,7 @@ Vehicle_Engines
 	"Mechanical Eng 1"
 	{
 		"Name"				"Gas Turbine"		
-		"Description"			"This engine excels in raw horsepower."		
+		"Description"			"This engine excels in raw horsepower, gaining more as the vehicle becomes more damaged. It is much lighter and cheaper than other engines."		
 		"Icon"				"vehicles/gui/engine/gas_med"		
 		"Size"				"2"
 		"Type"				"6"
@@ -619,7 +617,7 @@ Vehicle_Engines
 		"Max Speed"			"40"
 		"Max Reverse Speed"		"35"
 		"Shift Up RPM"			"815"
-		"Shift Down RPM"			"470"
+		"Shift Down RPM"		"470"
 		"Horsepower"			"2640"
 		"Horsepower Weight Penalty"	"0.1"
 		"Horsepower Health Modifier"	"0.5"
@@ -629,6 +627,7 @@ Vehicle_Engines
 		"Stall On Armor Damage"		"100"
 		"Stall On Health Damage"	"60"
 		"Stall On Heat"			"0.8"
+		"Heat Capacity"			"100.0"
 		"Heat Stall Penalty"		"0.0"
 		"Heat Dissipation"		"8"
 	}
@@ -667,7 +666,7 @@ Vehicle_Engines
 	"Physics 1"
 	{
 		"Name"				"Fission Reactor"		
-		"Description"			"This engine has good horsepower and acceleration but has a high heat output."		
+		"Description"			"This engine only cools heat whilst moving. It is fast, agile with a high amount of horsepower. It is suited to high speed vehicle combat."		
 		"Icon"				"vehicles/gui/engine/fission_med"		
 		"Size"				"2"
 		"Type"				"6"
@@ -679,7 +678,7 @@ Vehicle_Engines
 		"Max Speed"			"44"
 		"Max Reverse Speed"		"30"
 		"Shift Up RPM"			"775"
-		"Shift Down RPM"			"370"
+		"Shift Down RPM"		"370"
 		"Horsepower"			"2575"
 		"Horsepower Weight Penalty"	"0.1"
 		"Horsepower Health Modifier"	"0.5"
@@ -709,7 +708,7 @@ Vehicle_Engines
 		"Max Speed"			"36"
 		"Max Reverse Speed"		"20"
 		"Shift Up RPM"			"645"
-		"Shift Down RPM"			"350"
+		"Shift Down RPM"		"350"
 		"Horsepower"			"2610"
 		"Horsepower Weight Penalty"	"0.1"
 		"Horsepower Health Modifier"	"0.2"
@@ -727,7 +726,7 @@ Vehicle_Engines
 	"Chemistry 1"
 	{
 		"Name"				"Advanced Coolant Based"		
-		"Description"			"This standard engine uses an advanced heat transfer medium for excellent heat dissipation properties."		
+		"Description"			"This engine only cools whilst stationary. It is suited to static/stationary vehicle combat."		
 		"Icon"				"vehicles/gui/engine/coolant_med"		
 		"Size"				"2"
 		"Type"				"6"
@@ -739,7 +738,7 @@ Vehicle_Engines
 		"Max Speed"			"34"
 		"Max Reverse Speed"		"22"
 		"Shift Up RPM"			"600"
-		"Shift Down RPM"			"540"
+		"Shift Down RPM"		"540"
 		"Horsepower"			"2590"
 		"Horsepower Weight Penalty"	"0.1"
 		"Horsepower Health Modifier"	"0.4"
@@ -763,7 +762,7 @@ Vehicle_Engines
 	"Standard"
 	{
 		"Name"				"Standard Engine"		
-		"Description"			"This is the standard engine with basic properties."		
+		"Description"			"This is the standard engine with inferior properties."		
 		"Icon"				"vehicles/gui/engine/engine_med"		
 		"Size"				"2"
 		"Type"				"7"
@@ -775,15 +774,15 @@ Vehicle_Engines
 		"Max Speed"			"30"
 		"Max Reverse Speed"		"20"
 		"Shift Up RPM"			"600"
-		"Shift Down RPM"			"540"
+		"Shift Down RPM"		"540"
 		"Horsepower"			"2350"
 		"Horsepower Weight Penalty"	"0.1"	//amount of max throttle reduction as vehicle weight exceeds Max Weight
 		"Horsepower Health Modifier"	"0.6"	//amount of max throttle reduction as health is destroyed
 		"Horsepower Armor Modifier"	"0.05"	//amount of max throttle reduction as armor is destroyed
 		"Heat Output At Max"		"2"	//how much heat is output when the vehicle is at full throttle
 		"Heat Output At Idle"		"1"	//how much heat is output when a driver is in the vehicle and throttle is zero
-		"Stall On Armor Damage"		"100"	//stall the engine when this percentage of damage to total armor per inch is received
-		"Stall On Health Damage"	"60"	//stall the engine when this percentage of damage to total health is received to the vehicle hull
+		"Stall On Armor Damage"		"100"	//stall the engine when this amount of damage to armor is received
+		"Stall On Health Damage"	"60"	//stall the engine when this amount of damage to hull health is received
 		"Stall On Heat"			"0.8"	//the percentage of heat to begin stalling the engine
 		"Heat Capacity"			"100.0"
 		"Heat Stall Penalty"		"0.0" 	//how much max throttle is limited to when overheating is occurring
@@ -793,7 +792,7 @@ Vehicle_Engines
 	"Mechanical Eng 1"
 	{
 		"Name"				"Gas Turbine"		
-		"Description"			"This engine excels in raw horsepower."		
+		"Description"			"This engine excels in raw horsepower, gaining more as the vehicle becomes more damaged. It is much lighter and cheaper than other engines."		
 		"Icon"				"vehicles/gui/engine/gas_med"		
 		"Size"				"2"
 		"Type"				"7"
@@ -805,7 +804,7 @@ Vehicle_Engines
 		"Max Speed"			"32"
 		"Max Reverse Speed"		"25"
 		"Shift Up RPM"			"815"
-		"Shift Down RPM"			"470"
+		"Shift Down RPM"		"470"
 		"Horsepower"			"2640"
 		"Horsepower Weight Penalty"	"0.1"
 		"Horsepower Health Modifier"	"0.5"
@@ -815,6 +814,7 @@ Vehicle_Engines
 		"Stall On Armor Damage"		"100"
 		"Stall On Health Damage"	"60"
 		"Stall On Heat"			"0.8"
+		"Heat Capacity"			"100.0"
 		"Heat Stall Penalty"		"0.0"
 		"Heat Dissipation"		"8"
 	}
@@ -833,9 +833,9 @@ Vehicle_Engines
 
 		"Max Weight"			"5000"
 		"Max Speed"			"40"
-		"Max Reverse Speed"		"25"       //lowered from 25, 3phase already has highest maxspeed and awesome cooling, fission is best here
+		"Max Reverse Speed"		"25"
 		"Shift Up RPM"			"615"
-		"Shift Down RPM"			"415"
+		"Shift Down RPM"		"415"
 		"Horsepower"			"2650"
 		"Horsepower Weight Penalty"	"0.1"
 		"Horsepower Health Modifier"	"0.5"
@@ -853,7 +853,7 @@ Vehicle_Engines
 	"Physics 1"
 	{
 		"Name"				"Fission Reactor"		
-		"Description"			"This engine has good horsepower and acceleration but has a high heat output."		
+		"Description"			"This engine only cools heat whilst moving. It is fast, agile with a high amount of horsepower. It is suited to high speed vehicle combat."		
 		"Icon"				"vehicles/gui/engine/fission_med"		
 		"Size"				"2"
 		"Type"				"7"
@@ -865,7 +865,7 @@ Vehicle_Engines
 		"Max Speed"			"38"
 		"Max Reverse Speed"		"30"
 		"Shift Up RPM"			"775"
-		"Shift Down RPM"			"370"
+		"Shift Down RPM"		"370"
 		"Horsepower"			"2575"
 		"Horsepower Weight Penalty"	"0.1"
 		"Horsepower Health Modifier"	"0.5"
@@ -895,7 +895,7 @@ Vehicle_Engines
 		"Max Speed"			"34"
 		"Max Reverse Speed"		"20"
 		"Shift Up RPM"			"645"
-		"Shift Down RPM"			"350"
+		"Shift Down RPM"		"350"
 		"Horsepower"			"2610"
 		"Horsepower Weight Penalty"	"0.1"
 		"Horsepower Health Modifier"	"0.2"
@@ -913,7 +913,7 @@ Vehicle_Engines
 	"Chemistry 1"
 	{
 		"Name"				"Advanced Coolant Based"		
-		"Description"			"This standard engine uses an advanced heat transfer medium for excellent heat dissipation properties."		
+		"Description"			"This engine only cools whilst stationary. It is suited to static/stationary vehicle combat."		
 		"Icon"				"vehicles/gui/engine/coolant_med"		
 		"Size"				"2"
 		"Type"				"7"
@@ -948,7 +948,7 @@ Vehicle_Engines
 	"Standard"
 	{
 		"Name"				"Standard Engine"		
-		"Description"			"This is the standard engine with basic properties."		
+		"Description"			"This is the standard engine with inferior properties."
 		"Icon"				"vehicles/gui/engine/engine_med"		
 		"Size"				"2"
 		"Type"				"8"
@@ -960,16 +960,16 @@ Vehicle_Engines
 		"Max Speed"			"30"
 		"Max Reverse Speed"		"15"
 		"Shift Up RPM"			"600"
-		"Shift Down RPM"			"540"
+		"Shift Down RPM"		"540"
 		"Horsepower"			"2350"
-		"Horsepower Weight Penalty"	"0.1"	//amount of max throttle reduction as vehicle weight exceeds Max Weight
-		"Horsepower Health Modifier"	"0.6"	//amount of max throttle reduction as health is destroyed
-		"Horsepower Armor Modifier"	"0.05"	//amount of max throttle reduction as armor is destroyed
-		"Heat Output At Max"		"2"	//how much heat is output when the vehicle is at full throttle
-		"Heat Output At Idle"		"1"	//how much heat is output when a driver is in the vehicle and throttle is zero
-		"Stall On Armor Damage"		"100"	//stall the engine when this percentage of damage to total armor per inch is received
-		"Stall On Health Damage"	"60"	//stall the engine when this percentage of damage to total health is received to the vehicle hull
-		"Stall On Heat"			"0.8"	//the percentage of heat to begin stalling the engine
+		"Horsepower Weight Penalty"	"0.1"
+		"Horsepower Health Modifier"	"0.6"
+		"Horsepower Armor Modifier"	"0.05"
+		"Heat Output At Max"		"2"
+		"Heat Output At Idle"		"1"
+		"Stall On Armor Damage"		"100"
+		"Stall On Health Damage"	"60"
+		"Stall On Heat"			"0.8"
 		"Heat Capacity"			"100.0"
 		"Heat Stall Penalty"		"0.0"
 		"Heat Dissipation"		"4"
@@ -978,7 +978,7 @@ Vehicle_Engines
 	"Mechanical Eng 1"
 	{
 		"Name"				"Gas Turbine"		
-		"Description"			"This engine excels in raw horsepower."		
+		"Description"			"This engine excels in raw horsepower, gaining more as the vehicle becomes more damaged. It is much lighter and cheaper than other engines."		
 		"Icon"				"vehicles/gui/engine/gas_med"		
 		"Size"				"2"
 		"Type"				"8"
@@ -1021,7 +1021,7 @@ Vehicle_Engines
 		"Max Speed"			"40"
 		"Max Reverse Speed"		"25"
 		"Shift Up RPM"			"615"
-		"Shift Down RPM"			"415"
+		"Shift Down RPM"		"415"
 		"Horsepower"			"2650"
 		"Horsepower Weight Penalty"	"0.1"
 		"Horsepower Health Modifier"	"0.5"
@@ -1039,7 +1039,7 @@ Vehicle_Engines
 	"Physics 1"
 	{
 		"Name"				"Fission Reactor"		
-		"Description"			"This engine has good horsepower and acceleration but has a high heat output."		
+		"Description"			"This engine only cools heat whilst moving. It is fast, agile with a high amount of horsepower. It is suited to high speed vehicle combat."		
 		"Icon"				"vehicles/gui/engine/fission_med"		
 		"Size"				"2"
 		"Type"				"8"
@@ -1051,7 +1051,7 @@ Vehicle_Engines
 		"Max Speed"			"38"
 		"Max Reverse Speed"		"25"
 		"Shift Up RPM"			"775"
-		"Shift Down RPM"			"370"
+		"Shift Down RPM"		"370"
 		"Horsepower"			"2575"
 		"Horsepower Weight Penalty"	"0.1"
 		"Horsepower Health Modifier"	"0.5"
@@ -1081,7 +1081,7 @@ Vehicle_Engines
 		"Max Speed"			"34"
 		"Max Reverse Speed"		"20"
 		"Shift Up RPM"			"645"
-		"Shift Down RPM"			"350"
+		"Shift Down RPM"		"350"
 		"Horsepower"			"2610"
 		"Horsepower Weight Penalty"	"0.1"
 		"Horsepower Health Modifier"	"0.2"
@@ -1099,7 +1099,7 @@ Vehicle_Engines
 	"Chemistry 1"
 	{
 		"Name"				"Advanced Coolant Based"		
-		"Description"			"This standard engine uses an advanced heat transfer medium for excellent heat dissipation properties."		
+		"Description"			"This engine only cools whilst stationary. It is suited to static/stationary vehicle combat."		
 		"Icon"				"vehicles/gui/engine/coolant_med"		
 		"Size"				"2"
 		"Type"				"8"
@@ -1111,7 +1111,7 @@ Vehicle_Engines
 		"Max Speed"			"32"
 		"Max Reverse Speed"		"15"
 		"Shift Up RPM"			"600"
-		"Shift Down RPM"			"540"
+		"Shift Down RPM"		"540"
 		"Horsepower"			"2590"
 		"Horsepower Weight Penalty"	"0.1"
 		"Horsepower Health Modifier"	"0.4"
@@ -1125,6 +1125,207 @@ Vehicle_Engines
 		"Heat Stall Penalty"		"0.0"
 		"Heat Dissipation"		"10"
 	}
+
+	///////////////////
+	// Compact Engine
+	///////////////////
+
+//	"Compact"		//APC
+//	{
+//		"Name"				"Compact"
+//		"Description"			"This engine is very compact due to advanced electronics utilization."		
+//		"Icon"				"vehicles/gui/engine/compact_sml"		
+//		"Size"				"1"
+//		"Type"				"9"	//which vehicle can use this engine
+//							// 0=all, 1=ground, 2=aircraft, 3=ship, 4=jeep, 5=light tank/afv, 6=med tank, 7=heavy tank,
+//							// 8=artillery tank, 9=apc, 10=all tanks:light, medium, heavy and artillery
+//		"Cost"				"5"
+//		"Weight"			"5"
+//		"Research"			"Compact Engine"
+
+//		"Max Weight"			"5000"
+//		"Max Speed"			"37"
+//		"Max Reverse Speed"		"25"
+//		"Shift Up RPM"			"1600"
+//		"Shift Down RPM"		"800"
+//		"Horsepower"			"910"
+//		"Horsepower Weight Penalty"	"0.0"	//amount of max throttle reduction as vehicle weight exceeds Max Weight
+//		"Horsepower Health Modifier"	"0.0"	//amount of max throttle reduction as health is destroyed
+//		"Horsepower Armor Modifier"	"0.0"	//amount of max throttle reduction as armor is destroyed
+//		"Heat Output At Max"		"2"	//how much heat is output when the vehicle is at full throttle
+//		"Heat Output At Idle"		"1"	//how much heat is output when a player is in the driver seat
+//		"Stall On Armor Damage"		"100"	//stall the engine when this amount of damage to armor is received
+//		"Stall On Health Damage"	"60"	//stall the engine when this amount of damage to hull health is received
+//		"Stall On Heat"			"0.8"	//the percentage of heat to begin stalling the engine and also the throttle modifier such that ((heat%-stall%)/(1-stall%))^2 equals throttle before the stall% is met.
+//		"Heat Capacity"			"100.0"
+//		"Heat Stall Penalty"		"0.0" 	//how much max throttle is limited to when overheating is occurring
+//		"Heat Dissipation"		"6"	//amount of heat removed per second
+//	}
+
+//	"Compact"		//LT
+//	{
+//		"Name"				"Compact"
+//		"Description"			"This engine is very compact due to advanced electronics utilization."		
+//		"Icon"				"vehicles/gui/engine/compact_sml"		
+//		"Size"				"2"
+//		"Type"				"5"	//which vehicle can use this engine
+//							// 0=all, 1=ground, 2=aircraft, 3=ship, 4=jeep, 5=light tank/afv, 6=med tank, 7=heavy tank,
+//							// 8=artillery tank, 9=apc, 10=all tanks:light, medium, heavy and artillery
+//		"Cost"				"5"
+//		"Weight"			"5"
+//		"Research"			"Compact Engine"
+
+//		"Max Weight"			"5000"
+//		"Max Speed"			"37"
+//		"Max Reverse Speed"		"25"
+//		"Shift Up RPM"			"1600"
+//		"Shift Down RPM"		"800"
+//		"Horsepower"			"2300"
+//		"Horsepower Weight Penalty"	"0.0"	//amount of max throttle reduction as vehicle weight exceeds Max Weight
+//		"Horsepower Health Modifier"	"0.0"	//amount of max throttle reduction as health is destroyed
+//		"Horsepower Armor Modifier"	"0.0"	//amount of max throttle reduction as armor is destroyed
+//		"Heat Output At Max"		"2"	//how much heat is output when the vehicle is at full throttle
+//		"Heat Output At Idle"		"1"	//how much heat is output when a player is in the driver seat
+//		"Stall On Armor Damage"		"100"	//stall the engine when this amount of damage to armor is received
+//		"Stall On Health Damage"	"60"	//stall the engine when this amount of damage to hull health is received
+//		"Stall On Heat"			"0.8"	//the percentage of heat to begin stalling the engine and also the throttle modifier such that ((heat%-stall%)/(1-stall%))^2 equals throttle before the stall% is met.
+//		"Heat Capacity"			"100.0"
+//		"Heat Stall Penalty"		"0.0" 	//how much max throttle is limited to when overheating is occurring
+//		"Heat Dissipation"		"6"	//amount of heat removed per second
+//	}
+
+//	"Compact"		//Med
+//	{
+//		"Name"				"Compact"
+//		"Description"			"This engine is very compact due to advanced electronics utilization."		
+//		"Icon"				"vehicles/gui/engine/compact_sml"		
+//		"Size"				"2"
+//		"Type"				"6"	//which vehicle can use this engine
+//							// 0=all, 1=ground, 2=aircraft, 3=ship, 4=jeep, 5=light tank/afv, 6=med tank, 7=heavy tank,
+//							// 8=artillery tank, 9=apc, 10=all tanks:light, medium, heavy and artillery
+//		"Cost"				"5"
+//		"Weight"			"5"
+//		"Research"			"Compact Engine"
+
+//		"Max Weight"			"5000"
+//		"Max Speed"			"36"
+//		"Max Reverse Speed"		"25"
+//		"Shift Up RPM"			"1600"
+//		"Shift Down RPM"		"800"
+//		"Horsepower"			"2300"
+//		"Horsepower Weight Penalty"	"0.0"	//amount of max throttle reduction as vehicle weight exceeds Max Weight
+//		"Horsepower Health Modifier"	"0.0"	//amount of max throttle reduction as health is destroyed
+//		"Horsepower Armor Modifier"	"0.0"	//amount of max throttle reduction as armor is destroyed
+//		"Heat Output At Max"		"2"	//how much heat is output when the vehicle is at full throttle
+//		"Heat Output At Idle"		"1"	//how much heat is output when a player is in the driver seat
+//		"Stall On Armor Damage"		"100"	//stall the engine when this amount of damage to armor is received
+//		"Stall On Health Damage"	"60"	//stall the engine when this amount of damage to hull health is received
+//		"Stall On Heat"			"0.8"	//the percentage of heat to begin stalling the engine and also the throttle modifier such that ((heat%-stall%)/(1-stall%))^2 equals throttle before the stall% is met.
+//		"Heat Capacity"			"100.0"
+//		"Heat Stall Penalty"		"0.0" 	//how much max throttle is limited to when overheating is occurring
+//		"Heat Dissipation"		"6"	//amount of heat removed per second
+//	}
+
+//	"Compact"		//Heavy
+//	{
+//		"Name"				"Compact"
+//		"Description"			"This engine is very compact due to advanced electronics utilization."		
+//		"Icon"				"vehicles/gui/engine/compact_sml"		
+//		"Size"				"2"
+//		"Type"				"7"	//which vehicle can use this engine
+//							// 0=all, 1=ground, 2=aircraft, 3=ship, 4=jeep, 5=light tank/afv, 6=med tank, 7=heavy tank,
+//							// 8=artillery tank, 9=apc, 10=all tanks:light, medium, heavy and artillery
+//		"Cost"				"5"
+//		"Weight"			"5"
+//		"Research"			"Compact Engine"
+
+//		"Max Weight"			"5000"
+//		"Max Speed"			"24"
+//		"Max Reverse Speed"		"24"
+//		"Shift Up RPM"			"1600"
+//		"Shift Down RPM"		"800"
+//		"Horsepower"			"2300"
+//		"Horsepower Weight Penalty"	"0.0"	//amount of max throttle reduction as vehicle weight exceeds Max Weight
+//		"Horsepower Health Modifier"	"0.0"	//amount of max throttle reduction as health is destroyed
+//		"Horsepower Armor Modifier"	"0.0"	//amount of max throttle reduction as armor is destroyed
+//		"Heat Output At Max"		"2"	//how much heat is output when the vehicle is at full throttle
+//		"Heat Output At Idle"		"1"	//how much heat is output when a player is in the driver seat
+//		"Stall On Armor Damage"		"100"	//stall the engine when this amount of damage to armor is received
+//		"Stall On Health Damage"	"60"	//stall the engine when this amount of damage to hull health is received
+//		"Stall On Heat"			"0.8"	//the percentage of heat to begin stalling the engine and also the throttle modifier such that ((heat%-stall%)/(1-stall%))^2 equals throttle before the stall% is met.
+//		"Heat Capacity"			"100.0"
+//		"Heat Stall Penalty"		"0.0" 	//how much max throttle is limited to when overheating is occurring
+//		"Heat Dissipation"		"8"	//amount of heat removed per second
+//	}
+
+//	"Compact"		//Arty
+//	{
+//		"Name"				"Compact"
+//		"Description"			"This engine is very compact due to advanced electronics utilization."		
+//		"Icon"				"vehicles/gui/engine/compact_sml"		
+//		"Size"				"2"
+//		"Type"				"8"	//which vehicle can use this engine
+//							// 0=all, 1=ground, 2=aircraft, 3=ship, 4=jeep, 5=light tank/afv, 6=med tank, 7=heavy tank,
+//							// 8=artillery tank, 9=apc, 10=all tanks:light, medium, heavy and artillery
+//		"Cost"				"5"
+//		"Weight"			"5"
+//		"Research"			"Compact Engine"
+
+//		"Max Weight"			"5000"
+//		"Max Speed"			"31"
+//		"Max Reverse Speed"		"20"
+//		"Shift Up RPM"			"1600"
+//		"Shift Down RPM"		"800"
+//		"Horsepower"			"2300"
+//		"Horsepower Weight Penalty"	"0.0"	//amount of max throttle reduction as vehicle weight exceeds Max Weight
+//		"Horsepower Health Modifier"	"0.0"	//amount of max throttle reduction as health is destroyed
+//		"Horsepower Armor Modifier"	"0.0"	//amount of max throttle reduction as armor is destroyed
+//		"Heat Output At Max"		"2"	//how much heat is output when the vehicle is at full throttle
+//		"Heat Output At Idle"		"1"	//how much heat is output when a player is in the driver seat
+//		"Stall On Armor Damage"		"100"	//stall the engine when this amount of damage to armor is received
+//		"Stall On Health Damage"	"60"	//stall the engine when this amount of damage to hull health is received
+//		"Stall On Heat"			"0.8"	//the percentage of heat to begin stalling the engine and also the throttle modifier such that ((heat%-stall%)/(1-stall%))^2 equals throttle before the stall% is met.
+//		"Heat Capacity"			"100.0"
+//		"Heat Stall Penalty"		"0.0" 	//how much max throttle is limited to when overheating is occurring
+//		"Heat Dissipation"		"6"	//amount of heat removed per second
+//	}
+
+	///////////////////
+	// AIRCRAFT ENGINES
+	///////////////////
+
+	"Standard"
+	{
+		"Name"				"Standard Engine"		
+		"Description"			"This is the standard engine with basic properties."		
+		"Icon"				"vehicles/gui/engine/engine_small"		
+		"Size"				"1"
+		"Type"				"2"	//which vehicle can use this engine
+							// 0=all, 1=ground, 2=aircraft, 3=ship, 4=jeep, 5=light tank/afv, 6=med tank, 7=heavy tank,
+							// 8=artillery tank, 9=apc, 10=all tanks:light, medium, heavy and artillery
+		"Cost"				"10"
+		"Weight"			"10"
+		"Research"			""
+
+		"Max Weight"			"2000"
+		"Max Speed"			"100"
+		"Max Reverse Speed"		"25"
+		"Shift Up RPM"			"1600"
+		"Shift Down RPM"		"800"
+		"Horsepower"			"450"
+		"Horsepower Weight Penalty"	"0.1"	//amount of max throttle reduction as vehicle weight exceeds Max Weight
+		"Horsepower Health Modifier"	"0.6"	//amount of max throttle reduction as health is destroyed
+		"Horsepower Armor Modifier"	"0.05"	//amount of max throttle reduction as armor is destroyed
+		"Heat Output At Max"		"2"	//how much heat is output when the vehicle is at full throttle
+		"Heat Output At Idle"		"1"	//how much heat is output when a driver is in the vehicle and throttle is zero
+		"Stall On Armor Damage"		"100"	//stall the engine when this amount of damage to armor is received
+		"Stall On Health Damage"	"60"	//stall the engine when this amount of damage to hull health is received
+		"Stall On Heat"			"0.8"	//the percentage of heat to begin stalling the engine
+		"Heat Capacity"			"100.0"
+		"Heat Stall Penalty"		"0.0" 	//how much max throttle is limited to when overheating is occurring
+		"Heat Dissipation"		"6"	//amount of heat removed per second
+	}
+
 "BE Commander"
 	{
 		"Commander"			"1"
@@ -1192,4 +1393,5 @@ Vehicle_Engines
 		"Heat Stall Penalty"		"0.0" 	//how much max throttle is limited to when overheating is occurring
 		"Heat Dissipation"		"5"	//amount of heat removed per second
 	}
+
 }

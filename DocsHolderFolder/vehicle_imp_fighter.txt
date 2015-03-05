@@ -2,10 +2,10 @@
 {
 	"properties"
 	{
-		"Vehicle Script"		"scripts/Imperial/Vehicles/Air/Fighter/imp_fighter.txt"
-		"Model"		"models/Imperial/Vehicles/Air/Fighter/imp_afv.mdl"
-		"Turret Model"		"models/Imperial/Vehicles/Air/Fighter/turret.mdl"
-		"Cannon Model"		"models/Imperial/Vehicles/Air/Fighter/fighter_cannon.mdl"
+		"Vehicle Script"		"scripts/Imperial/Vehicles/ground/afv/imp_afv.txt"
+		"Model"		"models/Imperial/Vehicles/ground/afv/imp_afv.mdl"
+		"Turret Model"		"models/Imperial/Vehicles/ground/afv/turret.mdl"
+		"Cannon Model"		"models/Imperial/Vehicles/ground/afv/cannon.mdl"
 		"name"		"Imperial F-28C"
 		"Description"		"The Imperial F-28C is the second revision of the successful F-28 fighter jet.  It is designed for speed and agility."
 		"team"		"IMP"
@@ -31,8 +31,13 @@
 		"Seats"		"4"
 		"Seat_1_Visible"		"0"
 		"Seat_1_PersonalWeapons"		"0"
+		"Seat_1_Ducking"		"0"
+		"Seat_1_Cannon"			"0"
+		"Seat_1_Turret"			"0"
 		"Seat_2_Visible"		"1"
 		"Seat_2_PersonalWeapons"		"1"
+		"Seat_2_Ducking"		"0"
+		"Seat_2_Turret"			"0"
 		"Seat_3_Visible"		"0"
 		"Seat_3_PersonalWeapons"		"0"
 		"Seat_4_Visible"		"0"
@@ -50,11 +55,14 @@
 		"Engineer Repair"		"0.100000"
 		"Type of Vehicle"		"2"
 
+		"Max Machine Guns"		"1"
+		"Max Missile Launchers"		"2"
 		//Physics Impact Damage Modifiers: FORCE = MASS * ACCELERATION, when a vehicle impacts an object, the force is determined for the vehicle using its mass and acceleration
 			//when colliding with an object, an inverse force is exerted on this vehicle (every action has an equal and opposite reaction); damage is determined by: damage = force/(modifier*our_mass)
 		"Physics Impact Modifier"	"0.01"
 
 		//____AIRCRAFT ONLY PARAMETERS____
+		// no additional spaces between "x y" not "x  y", also no tabs
 
 		//AoA vs cL
 		//"AoA_0"	"0 0.033"
@@ -70,7 +78,7 @@
 
 		//Wing AoA vs cL
 		"AoA_0"	"0 0"
-		"AoA_1"	"12.6	0.764"
+		"AoA_1"	"12.6 0.764"
 		"AoA_2"	"25.4 1.448"
 		"AoA_3"	"30.4 1.615"
 		"AoA_4"	"38.2 1.722"
