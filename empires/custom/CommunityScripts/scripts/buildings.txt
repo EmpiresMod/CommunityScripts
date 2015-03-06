@@ -1,5 +1,15 @@
 "BuildingParse"
 {
+	"ImpAirFactory"
+	{
+		"name"				"ImpAirFactory"
+	}
+
+	"NFAirFactory"
+	{
+		"name"				"NFAirFactory"
+	}
+
 	"ImpArmory"
 	{
 		"name" 				"ImpArmory"								// Name of the Building
@@ -1373,146 +1383,6 @@
 		"MaxColBoundZ"			"0"
 	}
 
-	"ImpVehicleFactory"
-	{
-		"name"				"ImpVehicleFactory"
-		"spotted name"			"Vehicle Factory"
-
-		"model"				"models/imperial/Buildings/vehiclefactory/imp_vehiclefactory.mdl"
-		"model2"			"models/imperial/Buildings/vehiclefactory/imp_vehiclefactory_2.mdl"
-		"model4"			"models/imperial/Buildings/vehiclefactory/imp_vehiclefactory_4.mdl"
-		"model8"			"models/imperial/Buildings/vehiclefactory/imp_vehiclefactory_8.mdl"
-		"model16"			"models/imperial/Buildings/vehiclefactory/imp_vehiclefactory_16.mdl"
-		"model32"			"models/imperial/Buildings/vehiclefactory/imp_vehiclefactory_32.mdl"
-		"cost"				"400"
-		"max health"			"250"
-		"starting health"		"50"
-		"damaged model"			"models/imperial/Buildings/vehiclefactory/imp_vehiclefactory.mdl"
-		"damaged threshold"		"125"
-		"destroyed model"		"models/imperial/Buildings/vehiclefactory/imp_vehiclefactory.mdl"
-		"vehicle physbox"		"models/imperial/Buildings/VehicleFactory/imp_vf_vehiclephysbox.mdl"
-
-		"recycle time"			"20"
-		"carcass removal time"		"30"
-		"touchmessageid"		"22"
-
-		"hint"				"This is the Brenodi Empire Vehicle Factory. Press %emp_show_vehicle_customization% while inside to start building and customizing your vehicle. Alternatively you can press %+use% on the control panel within the vehicle factory."
-
-		"GeneralPhysicsResist"		"0.85"
-		"GeneralChemistryResist"	"0.85"
-		"GeneralMechanicalResist"	"0.85"
-		"GeneralElectricResist"		"0.85"
-		"GeneralBiologicalResist"	"0.85"
-
-		"KineticResist"			"0.85"
-		"ExplosiveResist"		"0.90"
-		"BioResist"			"0.85"
-
-		"BulletResist"			"1"
-		"APBulletResist"		"0.875"
-		"BulletExplosiveResist"		"0.80"
-
-		"MissileResist"			"0.85"
-		"MissileExplosiveResist"	"0.85"
-		"MissileBioResist"		"0.85"
-
-		"KineticArtResist" 		"0.85"
-		"ExplosiveArtResist" 		"0.85"
-		"BioArtResist"			"0.85"
-
-		"InfantryGrenadeResist"		"0.9"
-		"InfantryMineResist"		"0.9"
-		"InfantryMissileResist"		"0.95"
-		"InfantryMortarResist"		"0.8"
-		"InfantryStickyResist"		"0.85"
-		"InfantrySeismicResist"		"0"
-		"InfantryBulletResist"		"1"
-		"InfantryUtilityResist"		"1"
-		"InfantryMeleeResist"		"1"
-
-		"ExtraType1Resist"		"0.5"
-		"ExtraType2Resist"		"0.75"
-		"ExtraType3Resist"		"0.75"
-
-		"MinColBoundX"			"-650"
-		"MinColBoundY"			"-650"
-		"MinColBoundZ"			"0"
-
-		"MaxColBoundX"			"650"
-		"MaxColBoundY"			"650"
-		"MaxColBoundZ"			"300"
-	}
-
-	"NFVehicleFactory"
-	{
-		"name"				"NFVehicleFactory"
-		"spotted name"			"Vehicle Factory"
-
-		"model"				"models/NF/Buildings/vehiclefactory/nf_vehiclefactory.mdl"
-		"model2"			"models/NF/Buildings/vehiclefactory/nf_vehiclefactory_2.mdl"
-		"model4"			"models/NF/Buildings/vehiclefactory/nf_vehiclefactory_4.mdl"
-		"model8"			"models/NF/Buildings/vehiclefactory/nf_vehiclefactory_8.mdl"
-		"model16"			"models/NF/Buildings/vehiclefactory/nf_vehiclefactory_16.mdl"
-		"model32"			"models/NF/Buildings/vehiclefactory/nf_vehiclefactory_32.mdl"
-		"cost"				"400"
-		"max health"			"250"
-		"starting health"		"50"
-		"damaged model"			"models/NF/Buildings/vehiclefactory/nf_vehiclefactory.mdl"
-		"damaged threshold"		"125"
-		"destroyed model"		"models/NF/Buildings/vehiclefactory/nf_vehiclefactory.mdl"
-		"vehicle physbox"		"models/NF/Buildings/VehicleFactory/nf_vehiclefactory_vehiclephysbox.mdl"
-
-		"recycle time"			"20"
-		"carcass removal time"		"30"
-		"touchmessageid"		"23"
-
-		"hint"				"This is the Northern Faction Vehicle Factory. Press %emp_show_vehicle_customization% while inside to start building and customizing your vehicle. Alternatively you can press %+use% on the control panel within the vehicle factory."
-
-		"GeneralPhysicsResist"		"0.85"
-		"GeneralChemistryResist"	"0.85"
-		"GeneralMechanicalResist"	"0.85"
-		"GeneralElectricResist"		"0.85"
-		"GeneralBiologicalResist"	"0.85"
-
-		"KineticResist"			"0.85"
-		"ExplosiveResist"		"0.90"
-		"BioResist"			"0.85"
-
-		"BulletResist"			"1"
-		"APBulletResist"		"0.875"
-		"BulletExplosiveResist"		"0.80"
-
-		"MissileResist"			"0.85"
-		"MissileExplosiveResist"	"0.85"
-		"MissileBioResist"		"0.85"
-
-		"KineticArtResist"		"0.85"
-		"ExplosiveArtResist"		"0.85"
-		"BioArtResist"			"0.85"
-
-		"InfantryGrenadeResist"		"0.9"
-		"InfantryMineResist"		"0.9"
-		"InfantryMissileResist"		"0.95"
-		"InfantryMortarResist"		"0.8"
-		"InfantryStickyResist"		"0.85"
-		"InfantrySeismicResist"		"0"
-		"InfantryBulletResist"		"1"
-		"InfantryUtilityResist"		"1"
-		"InfantryMeleeResist"		"1"
-
-		"ExtraType1Resist"		"0.5"
-		"ExtraType2Resist"		"0.75"
-		"ExtraType3Resist"		"0.75"
-
-		"MinColBoundX"			"-700"
-		"MinColBoundY"			"-700"
-		"MinColBoundZ"			"0"
-
-		"MaxColBoundX"			"700"
-		"MaxColBoundY"			"700"
-		"MaxColBoundZ"			"500"
-	}
-
 	"ImpWall"
 	{
 		"name"				"ImpWall"
@@ -1655,5 +1525,145 @@
 		"MaxColBoundX"			"40"
 		"MaxColBoundY"			"257"
 		"MaxColBoundZ"			"207"
+	}
+
+	"ImpVehicleFactory"
+	{
+		"name"				"ImpVehicleFactory"
+		"spotted name"			"Vehicle Factory"
+
+		"model"				"models/imperial/Buildings/vehiclefactory/imp_vehiclefactory.mdl"
+		"model2"			"models/imperial/Buildings/vehiclefactory/imp_vehiclefactory_2.mdl"
+		"model4"			"models/imperial/Buildings/vehiclefactory/imp_vehiclefactory_4.mdl"
+		"model8"			"models/imperial/Buildings/vehiclefactory/imp_vehiclefactory_8.mdl"
+		"model16"			"models/imperial/Buildings/vehiclefactory/imp_vehiclefactory_16.mdl"
+		"model32"			"models/imperial/Buildings/vehiclefactory/imp_vehiclefactory_32.mdl"
+		"cost"				"400"
+		"max health"			"250"
+		"starting health"		"50"
+		"damaged model"			"models/imperial/Buildings/vehiclefactory/imp_vehiclefactory.mdl"
+		"damaged threshold"		"125"
+		"destroyed model"		"models/imperial/Buildings/vehiclefactory/imp_vehiclefactory.mdl"
+		"vehicle physbox"		"models/imperial/Buildings/VehicleFactory/imp_vf_vehiclephysbox.mdl"
+
+		"recycle time"			"20"
+		"carcass removal time"		"30"
+		"touchmessageid"		"22"
+
+		"hint"				"This is the Brenodi Empire Vehicle Factory. Press %emp_show_vehicle_customization% while inside to start building and customizing your vehicle. Alternatively you can press %+use% on the control panel within the vehicle factory."
+
+		"GeneralPhysicsResist"		"0.85"
+		"GeneralChemistryResist"	"0.85"
+		"GeneralMechanicalResist"	"0.85"
+		"GeneralElectricResist"		"0.85"
+		"GeneralBiologicalResist"	"0.85"
+
+		"KineticResist"			"0.85"
+		"ExplosiveResist"		"0.90"
+		"BioResist"			"0.85"
+
+		"BulletResist"			"1"
+		"APBulletResist"		"0.875"
+		"BulletExplosiveResist"		"0.80"
+
+		"MissileResist"			"0.85"
+		"MissileExplosiveResist"	"0.85"
+		"MissileBioResist"		"0.85"
+
+		"KineticArtResist" 		"0.85"
+		"ExplosiveArtResist" 		"0.85"
+		"BioArtResist"			"0.85"
+
+		"InfantryGrenadeResist"		"0.9"
+		"InfantryMineResist"		"0.9"
+		"InfantryMissileResist"		"0.95"
+		"InfantryMortarResist"		"0.8"
+		"InfantryStickyResist"		"0.85"
+		"InfantrySeismicResist"		"0"
+		"InfantryBulletResist"		"1"
+		"InfantryUtilityResist"		"1"
+		"InfantryMeleeResist"		"1"
+
+		"ExtraType1Resist"		"0.5"
+		"ExtraType2Resist"		"0.75"
+		"ExtraType3Resist"		"0.75"
+
+		"MinColBoundX"			"-650"
+		"MinColBoundY"			"-650"
+		"MinColBoundZ"			"0"
+
+		"MaxColBoundX"			"650"
+		"MaxColBoundY"			"650"
+		"MaxColBoundZ"			"300"
+	}
+
+	"NFVehicleFactory"
+	{
+		"name"				"NFVehicleFactory"
+		"spotted name"			"Vehicle Factory"
+
+		"model"				"models/NF/Buildings/vehiclefactory/nf_vehiclefactory.mdl"
+		"model2"			"models/NF/Buildings/vehiclefactory/nf_vehiclefactory_2.mdl"
+		"model4"			"models/NF/Buildings/vehiclefactory/nf_vehiclefactory_4.mdl"
+		"model8"			"models/NF/Buildings/vehiclefactory/nf_vehiclefactory_8.mdl"
+		"model16"			"models/NF/Buildings/vehiclefactory/nf_vehiclefactory_16.mdl"
+		"model32"			"models/NF/Buildings/vehiclefactory/nf_vehiclefactory_32.mdl"
+		"cost"				"400"
+		"max health"			"250"
+		"starting health"		"50"
+		"damaged model"			"models/NF/Buildings/vehiclefactory/nf_vehiclefactory.mdl"
+		"damaged threshold"		"125"
+		"destroyed model"		"models/NF/Buildings/vehiclefactory/nf_vehiclefactory.mdl"
+		"vehicle physbox"		"models/NF/Buildings/VehicleFactory/nf_vehiclefactory_vehiclephysbox.mdl"
+
+		"recycle time"			"20"
+		"carcass removal time"		"30"
+		"touchmessageid"		"23"
+
+		"hint"				"This is the Northern Faction Vehicle Factory. Press %emp_show_vehicle_customization% while inside to start building and customizing your vehicle. Alternatively you can press %+use% on the control panel within the vehicle factory."
+
+		"GeneralPhysicsResist"		"0.85"
+		"GeneralChemistryResist"	"0.85"
+		"GeneralMechanicalResist"	"0.85"
+		"GeneralElectricResist"		"0.85"
+		"GeneralBiologicalResist"	"0.85"
+
+		"KineticResist"			"0.85"
+		"ExplosiveResist"		"0.90"
+		"BioResist"			"0.85"
+
+		"BulletResist"			"1"
+		"APBulletResist"		"0.875"
+		"BulletExplosiveResist"		"0.80"
+
+		"MissileResist"			"0.85"
+		"MissileExplosiveResist"	"0.85"
+		"MissileBioResist"		"0.85"
+
+		"KineticArtResist"		"0.85"
+		"ExplosiveArtResist"		"0.85"
+		"BioArtResist"			"0.85"
+
+		"InfantryGrenadeResist"		"0.9"
+		"InfantryMineResist"		"0.9"
+		"InfantryMissileResist"		"0.95"
+		"InfantryMortarResist"		"0.8"
+		"InfantryStickyResist"		"0.85"
+		"InfantrySeismicResist"		"0"
+		"InfantryBulletResist"		"1"
+		"InfantryUtilityResist"		"1"
+		"InfantryMeleeResist"		"1"
+
+		"ExtraType1Resist"		"0.5"
+		"ExtraType2Resist"		"0.75"
+		"ExtraType3Resist"		"0.75"
+
+		"MinColBoundX"			"-700"
+		"MinColBoundY"			"-700"
+		"MinColBoundZ"			"0"
+
+		"MaxColBoundX"			"700"
+		"MaxColBoundY"			"700"
+		"MaxColBoundZ"			"500"
 	}
 }
