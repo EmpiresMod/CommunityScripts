@@ -119,6 +119,8 @@ func main() {
 			log.Fatal(err)
 		}
 
+		return
+
 	} else if Vanilla {
 
 		if err := LaunchVanilla(); err != nil {
@@ -126,41 +128,43 @@ func main() {
 			log.Fatal(err)
 		}
 
-	} else {
-
-		go ui.Do(func() {
-
-			btnVanilla := ui.NewButton("Launch Empires Vanilla")
-			btnCommunity := ui.NewButton("Launch Empires CommunityScripts")
-			window := ui.NewWindow("Empires Launcher", 400, 50, ui.NewVerticalStack(
-				btnVanilla,
-				btnCommunity))
-
-			btnVanilla.OnClicked(func() {
-
-				if err := LaunchVanilla(); err != nil {
-
-					log.Fatal(err)
-				}
-			})
-			btnCommunity.OnClicked(func() {
-
-				if err := LaunchCommunity(); err != nil {
-
-					log.Fatal(err)
-				}
-			})
-			window.OnClosing(func() bool {
-
-				ui.Stop()
-				return true
-			})
-			window.Show()
-		})
-
-		if err := ui.Go(); err != nil {
-
-			log.Fatal(err)
-		}
+		return
 	}
+
+	go ui.Do(func() {
+
+		btnVanilla := ui.NewButton("Launch Empires Vanilla")
+		btnCommunity := ui.NewButton("Launch Empires Community Scripts")
+
+		window := ui.NewWindow("Empires Launcher", 400, 50, ui.NewVerticalStack(
+			btnVanilla,
+			btnCommunity))
+
+		btnVanilla.OnClicked(func() {
+
+			if err := LaunchVanilla(); err != nil {
+
+				log.Fatal(err)
+			}
+		})
+		btnCommunity.OnClicked(func() {
+
+			if err := LaunchCommunity(); err != nil {
+
+				log.Fatal(err)
+			}
+		})
+		window.OnClosing(func() bool {
+
+			ui.Stop()
+			return true
+		})
+		window.Show()
+	})
+
+	if err := ui.Go(); err != nil {
+
+		log.Fatal(err)
+	}
+
 }
