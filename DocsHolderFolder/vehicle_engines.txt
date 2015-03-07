@@ -5,7 +5,7 @@ Vehicle_Engines
 	//JEEP ENGINES
 	///////////////
 
-	"Standard"
+	"Standard" //0
 	{
 		"Name"				"Standard Engine"		
 		"Description"			"This engine is the only jeep engine. It uses hybrid electric-turbine technology."		
@@ -37,7 +37,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"8"	//amount of heat removed per second
 	}
 
-	"Mechanical Eng 1"
+	"Mechanical Eng 1" //1
 	{
 		"Name"				"Gas Turbine"		
 		"Description"			"This engine excels in raw horsepower, gaining more as the vehicle becomes more damaged. It is much lighter and cheaper than other engines."	
@@ -66,7 +66,7 @@ Vehicle_Engines
 		"Heat Stall Penalty"		"0.0"
 		"Heat Dissipation"		"8"
 	}
-	"Electronics Eng 1"
+	"Electronics Eng 1" //2
 	{
 		"Name"				"3 Phase Electric"		
 		"Description"			"This electric engine has a high top speed but stalls with damage and too much heat."		
@@ -96,7 +96,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"8"
 	}
 
-	"Physics 1"
+	"Physics 1" //3
 	{
 		"Name"				"Fission Reactor"
 		"Description"			"This engine only cools heat whilst moving. It is fast, agile with a high amount of horsepower. It is suited to high speed vehicle combat."		
@@ -126,7 +126,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"8"
 	}
 
-	"Biology 1"
+	"Biology 1" //4
 	{
 		"Name"				"Bio Diesel"		
 		"Description"			"This bio diesel combustion engine is reliable and able to operate in the harshest conditions.  This allows it to continue to operate even while taking excessive damage or being in an overheated state."		
@@ -156,7 +156,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"6"
 	}
 
-	"Chemistry 1"
+	"Chemistry 1" //5
 	{
 		"Name"				"Advanced Coolant Based"		
 		"Description"			"This engine only cools whilst stationary. It is suited to static/stationary vehicle combat."		
@@ -191,7 +191,7 @@ Vehicle_Engines
 	//APC ENGINES
 	///////////////
 
-	"Standard"
+	"Standard" //6
 	{
 		"Name"				"Standard Engine"		
 		"Description"			"This is the standard engine with inferior properties."		
@@ -221,7 +221,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"4"	//amount of heat removed per second
 	}
 
-	"Mechanical Eng 1"
+	"Mechanical Eng 1" //7
 	{
 		"Name"				"Gas Turbine"		
 		"Description"			"This engine excels in raw horsepower, gaining more as the vehicle becomes more damaged. It is much lighter and cheaper than other engines."
@@ -252,7 +252,7 @@ Vehicle_Engines
 	}
 
 
-	"Electronics Eng 1"
+	"Electronics Eng 1" //8
 	{
 		"Name"				"3 Phase Electric"		
 		"Description"			"This electric engine has a high top speed but stalls with damage and too much heat."		
@@ -282,7 +282,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"8"
 	}
 
-	"Physics 1"
+	"Physics 1" //9
 	{
 		"Name"				"Fission Reactor"		
 		"Description"			"This engine only cools heat whilst moving. It is fast, agile with a high amount of horsepower. It is suited to high speed vehicle combat."		
@@ -312,7 +312,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"8"
 	}
 
-	"Biology 1"
+	"Biology 1" //10
 	{
 		"Name"				"Bio Diesel"		
 		"Description"			"This bio diesel combustion engine is reliable and able to operate in the harshest conditions.  This allows it to continue to operate even while taking excessive damage or being in an overheated state."		
@@ -342,7 +342,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"6"
 	}
 
-	"Chemistry 1"
+	"Chemistry 1" //11
 	{
 		"Name"				"Advanced Coolant Based"		
 		"Description"			"This engine only cools whilst stationary. It is suited to static/stationary vehicle combat."		
@@ -384,7 +384,7 @@ Vehicle_Engines
 
 
 
-	"Standard"
+	"Standard" //12
 	{
 		"Name"				"Standard Engine"		
 		"Description"			"This is the standard engine with inferior properties."
@@ -414,7 +414,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"6"	//amount of heat removed per second
 	}
 
-	"Mechanical Eng 1"
+	"Mechanical Eng 1" //13
 	{
 		"Name"				"Gas Turbine"		
 		"Description"			"This engine excels in raw horsepower, gaining more as the vehicle becomes more damaged. It is much lighter and cheaper than other engines."	
@@ -445,7 +445,7 @@ Vehicle_Engines
 	}
 
 
-	"Electronics Eng 1"
+	"Electronics Eng 1" //14
 	{
 		"Name"				"3 Phase Electric"		
 		"Description"			"This electric engine has a high top speed but stalls with damage and too much heat."		
@@ -476,7 +476,7 @@ Vehicle_Engines
 	}
 
 
-	"Physics 1"
+	"Physics 1" //15
 	{
 		"Name"				"Fission Reactor"		
 		"Description"			"This engine only cools heat whilst moving. It is fast, agile with a high amount of horsepower. It is suited to high speed vehicle combat."		
@@ -506,7 +506,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"8"
 	}
 
-	"Biology 1"
+	"Biology 1" //16
 	{
 		"Name"				"Bio Diesel"		
 		"Description"			"This bio diesel combustion engine is reliable and able to operate in the harshest conditions.  This allows it to continue to operate even while taking excessive damage or being in an overheated state."		
@@ -536,7 +536,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"6"
 	}
 
-	"Chemistry 1"
+	"Chemistry 1" //17
 	{
 		"Name"				"Advanced Coolant Based"		
 		"Description"			"This engine only cools whilst stationary. It is suited to static/stationary vehicle combat."		
@@ -572,7 +572,7 @@ Vehicle_Engines
 
 
 
-	"Standard"
+	"Standard" //18
 	{
 		"Name"				"Standard Engine"		
 		"Description"			"This is the standard engine with inferior properties."
@@ -602,7 +602,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"4"	//amount of heat removed per second
 	}
 
-	"Mechanical Eng 1"
+	"Mechanical Eng 1" //19
 	{
 		"Name"				"Gas Turbine"		
 		"Description"			"This engine excels in raw horsepower, gaining more as the vehicle becomes more damaged. It is much lighter and cheaper than other engines."		
@@ -633,7 +633,7 @@ Vehicle_Engines
 	}
 
 
-	"Electronics Eng 1"
+	"Electronics Eng 1" //20
 	{
 		"Name"				"3 Phase Electric"		
 		"Description"			"This electric engine has a high top speed but stalls with damage and too much heat."		
@@ -663,7 +663,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"8"
 	}
 
-	"Physics 1"
+	"Physics 1" //21
 	{
 		"Name"				"Fission Reactor"		
 		"Description"			"This engine only cools heat whilst moving. It is fast, agile with a high amount of horsepower. It is suited to high speed vehicle combat."		
@@ -693,7 +693,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"8"
 	}
 
-	"Biology 1"
+	"Biology 1" //22
 	{
 		"Name"				"Bio Diesel"		
 		"Description"			"This bio diesel combustion engine is reliable and able to operate in the harshest conditions.  This allows it to continue to operate even while taking excessive damage or being in an overheated state."		
@@ -723,7 +723,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"6"
 	}
 
-	"Chemistry 1"
+	"Chemistry 1" //23
 	{
 		"Name"				"Advanced Coolant Based"		
 		"Description"			"This engine only cools whilst stationary. It is suited to static/stationary vehicle combat."		
@@ -759,7 +759,7 @@ Vehicle_Engines
 
 
 
-	"Standard"
+	"Standard" //24
 	{
 		"Name"				"Standard Engine"		
 		"Description"			"This is the standard engine with inferior properties."		
@@ -789,7 +789,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"4"	//amount of heat removed per second
 	}
 
-	"Mechanical Eng 1"
+	"Mechanical Eng 1" //25
 	{
 		"Name"				"Gas Turbine"		
 		"Description"			"This engine excels in raw horsepower, gaining more as the vehicle becomes more damaged. It is much lighter and cheaper than other engines."		
@@ -820,7 +820,7 @@ Vehicle_Engines
 	}
 
 
-	"Electronics Eng 1"
+	"Electronics Eng 1" //26
 	{
 		"Name"				"3 Phase Electric"		
 		"Description"			"This electric engine has a high top speed but stalls with damage and too much heat."		
@@ -850,7 +850,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"8"
 	}
 
-	"Physics 1"
+	"Physics 1" //27
 	{
 		"Name"				"Fission Reactor"		
 		"Description"			"This engine only cools heat whilst moving. It is fast, agile with a high amount of horsepower. It is suited to high speed vehicle combat."		
@@ -880,7 +880,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"8"
 	}
 
-	"Biology 1"
+	"Biology 1" //28
 	{
 		"Name"				"Bio Diesel"		
 		"Description"			"This bio diesel combustion engine is reliable and able to operate in the harshest conditions.  This allows it to continue to operate even while taking excessive damage or being in an overheated state."		
@@ -910,7 +910,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"6"
 	}
 
-	"Chemistry 1"
+	"Chemistry 1" //29
 	{
 		"Name"				"Advanced Coolant Based"		
 		"Description"			"This engine only cools whilst stationary. It is suited to static/stationary vehicle combat."		
@@ -945,7 +945,7 @@ Vehicle_Engines
 
 
 
-	"Standard"
+	"Standard" //30
 	{
 		"Name"				"Standard Engine"		
 		"Description"			"This is the standard engine with inferior properties."
@@ -975,7 +975,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"4"
 	}
 
-	"Mechanical Eng 1"
+	"Mechanical Eng 1" //31
 	{
 		"Name"				"Gas Turbine"		
 		"Description"			"This engine excels in raw horsepower, gaining more as the vehicle becomes more damaged. It is much lighter and cheaper than other engines."		
@@ -1006,7 +1006,7 @@ Vehicle_Engines
 	}
 
 
-	"Electronics Eng 1"
+	"Electronics Eng 1" //32
 	{
 		"Name"				"3 Phase Electric"		
 		"Description"			"This electric engine has a high top speed but stalls with damage and too much heat."		
@@ -1036,7 +1036,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"8"
 	}
 
-	"Physics 1"
+	"Physics 1" //33
 	{
 		"Name"				"Fission Reactor"		
 		"Description"			"This engine only cools heat whilst moving. It is fast, agile with a high amount of horsepower. It is suited to high speed vehicle combat."		
@@ -1066,7 +1066,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"8"
 	}
 
-	"Biology 1"
+	"Biology 1" //34
 	{
 		"Name"				"Bio Diesel"		
 		"Description"			"This bio diesel combustion engine is reliable and able to operate in the harshest conditions.  This allows it to continue to operate even while taking excessive damage or being in an overheated state."		
@@ -1096,7 +1096,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"6"
 	}
 
-	"Chemistry 1"
+	"Chemistry 1" //35
 	{
 		"Name"				"Advanced Coolant Based"		
 		"Description"			"This engine only cools whilst stationary. It is suited to static/stationary vehicle combat."		
@@ -1294,7 +1294,7 @@ Vehicle_Engines
 	// AIRCRAFT ENGINES
 	///////////////////
 
-	"Standard"
+	"Standard" //36
 	{
 		"Name"				"Standard Engine"		
 		"Description"			"This is the standard engine with basic properties."		
@@ -1326,7 +1326,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"6"	//amount of heat removed per second
 	}
 
-"BE Commander"
+"BE Commander" //37
 	{
 		"Commander"			"1"
 		"Team"				"IMP"
@@ -1360,7 +1360,7 @@ Vehicle_Engines
 		"Heat Dissipation"		"5"	//amount of heat removed per second
 	}
 
-"NF Commander"
+"NF Commander" //38
 	{
 		"Commander"			"1"
 		"Team"				"NF"
