@@ -1,7 +1,7 @@
 Vehicle_armor
 {
 	// GENERIC ARMORS
-	"Plain Armor"
+	"Plain Armor" //0
 	{
 		"Name"			"Plain Armor"		//name given when selecting weapons
 		"Description"		"Plain armor offers inferior protection from damage."		//description given when selecting weapons
@@ -35,7 +35,7 @@ Vehicle_armor
 		"InfantryMeleeResist"		"1.0"					//Infantry melee
 	}
 
-	"Composite"
+	"Composite" //1
 	{
 		"Name"			"Composite"
 		"Description"		"A composite of all other armors, offering reflective, regenerative and cooling capabilities of the other armours, whilst being light."
@@ -67,7 +67,7 @@ Vehicle_armor
 	}
 
 
-	"Reactive"
+	"Reactive" //2
 	{
 		"Name"			"Reactive"
 		"Description"		"Electrically charged armor is internally aligned with charged capacitors. It is the heaviest armour, but the strongest in terms of the raw damage it can take."
@@ -101,7 +101,7 @@ Vehicle_armor
 	}
 
 
-	"Reflective"
+	"Reflective" //3
 	{
 		"Name"			"Reflective"
 		"Description"		"Reflective armor is able to deflect almost all of a projectile's kinetic energy away from the vehicle so long as the projectile does not hit perfectly perpendicular to the armor plating."
@@ -132,7 +132,7 @@ Vehicle_armor
 		"InfantryMeleeResist"		"1.0"					//Infantry melee
 	}
 
-	"Regenerative"
+	"Regenerative" //4
 	{
 		"Name"			"Regenerative"
 		"Description"		"Regenerative armor is engineered with living tissue designed to grow calcium carbonate as the protective medium.  As it is newly formed, it is malleable enough to find its way into damaged areas where it solidifies and reinforces/replaces material that had been damaged/destroyed."
@@ -164,7 +164,7 @@ Vehicle_armor
 		"InfantryMeleeResist"		"1.0"					//Infantry melee
 	}
 
-	"Absorbant"
+	"Absorbant" //5
 	{
 		"Name"			"Absorbant"
 		"Description"		"Asborbant armor transfers the energy from taking damage into cooling the engine. It reduces the amount of damage it takes the faster the projectile that impacts it is going."
@@ -208,7 +208,7 @@ Vehicle_armor
 
 	// Commander armor
 	
-	"Command Vehicle"
+	"Command Vehicle" //6
 	{
 		"Name"			"Command Vehicle Armor"
 		"Description"		"Military Grade Alloy, designed specifically for Command Vehicles"
@@ -241,7 +241,7 @@ Vehicle_armor
 	}
 
 	// Aircraft armors
-	"plainArmor"
+	"plainArmor" //7
 	{
 		"Name"			"Plain Armor"		//name given when selecting weapons
 		"Description"		"Plain armor offers mild protection from damage."		//description given when selecting weapons
