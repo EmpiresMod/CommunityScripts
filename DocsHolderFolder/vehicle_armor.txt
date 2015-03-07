@@ -19,7 +19,7 @@ Vehicle_armor
 		"Regeneration"			"0"	//amount of health this armor regenerates per second
 		"Angle Modifier"		"0.1"	// was 0
 		"Speed To Damage Modifier"	"0.008"	
-		"Damage Modifier"		"1"	//modifier to damage (0.9 reduces damage by 10%; damage*0.9=damage taken)
+		"Damage Modifier"		".1"	//modifier to damage (0.9 reduces damage by 10%; damage*0.9=damage taken)
 		"Damage To Heat Absorbed"	"0.025"	//percentage of damage received which is added as heat (0.2: damage*0.2=heat added
 		"Heat Dissipation"		"4"	
 		"Bioweapon Damage Modifier"	"1.5"	// was 1  //scale damage from biological weapons by this amount (bioweapon damage per interval * modifier = damage taken per interval)
@@ -51,7 +51,7 @@ Vehicle_armor
 		"Regeneration"			"0"
 		"Angle Modifier"		"0"     // was 0
 		"Speed To Damage Modifier"	"0.005"
-		"Damage Modifier"		"0.85"        
+		"Damage Modifier"		"0.085"        
 		"Damage To Heat Absorbed"	"0.025"    
 		"Bioweapon Damage Modifier"	"1"        
 
@@ -83,7 +83,7 @@ Vehicle_armor
 		"Regeneration"			"0"           //
 		"Angle Modifier"		"0.1"         //
 		"Speed To Damage Modifier"	"-0.004"      // was "0.001"
-		"Damage Modifier"		"0.9"         // was 0.3 is now 1
+		"Damage Modifier"		"0.09"         // was 0.3 is now 1
 		"Damage To Heat Absorbed"	"0.025"       //
 		"Bioweapon Damage Modifier"	"0.5"         //
 
@@ -117,7 +117,7 @@ Vehicle_armor
 		"Regeneration"			"0"             //
 		"Angle Modifier"		"1.0"           //  was 0.5
 		"Speed To Damage Modifier"	"-0.001"         //
-		"Damage Modifier"		"1"             //
+		"Damage Modifier"		".1"             //
 		"Damage To Heat Absorbed"	"0.025"         //
 		"Bioweapon Damage Modifier"	"1"           //
 
@@ -148,7 +148,7 @@ Vehicle_armor
 		"Regeneration"			"0.036"
 		"Angle Modifier"		"0.0"
 		"Speed To Damage Modifier"	"0.0032"
-		"Damage Modifier"		"1"              // was 0.9 is now 1
+		"Damage Modifier"		".1"              // was 0.9 is now 1
 		"Damage To Heat Absorbed"	"0.03"          // was 0.025
 		"Bioweapon Damage Modifier"	"2"            // was 0.1 is now 2.0 would make sense if bio weapons had the easiest time against bio armor
 
@@ -180,7 +180,7 @@ Vehicle_armor
 		"Regeneration"			"0"
 		"Angle Modifier"		"0.0"        /// was 0.1 
 		"Speed To Damage Modifier"	"-0.0075"
-		"Damage Modifier"		"1"        // was 0.5 is now 1
+		"Damage Modifier"		".1"        // was 0.5 is now 1
 		"Damage To Heat Absorbed"	"0.01"    // was "0.025"
 		"Bioweapon Damage Modifier"	"1"
 
@@ -225,7 +225,7 @@ Vehicle_armor
 		"Regeneration"			"0"        //
 		"Angle Modifier"		"0.1"      // was 0
 		"Speed To Damage Modifier"	"0.002"    //
-		"Damage Modifier"		"0.6"        //
+		"Damage Modifier"		"0.06"        //
 		"Damage To Heat Absorbed"	"0.14"    //
 		"Bioweapon Damage Modifier"	"1"        //
 
