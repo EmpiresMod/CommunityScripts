@@ -52,7 +52,7 @@ func (m *Manifest) Apply() (err error) {
 
 			if !FileExists(p) {
 
-				if debug {
+				if Debug {
 
 					log.Printf("Making new directory: %s", p)
 				}
@@ -68,7 +68,7 @@ func (m *Manifest) Apply() (err error) {
 
 		if !FileExists(p) {
 
-			if debug {
+			if Debug {
 
 				log.Printf("File does not exist: %s", p)
 			}
@@ -105,7 +105,7 @@ func (m *Manifest) Apply() (err error) {
 		}
 		if h != v.HashSum {
 
-			if debug {
+			if Debug {
 
 				log.Printf("File is an older version: %s", p)
 			}
@@ -177,10 +177,7 @@ func (m *Manifest) UnApply() (err error) {
 	return
 }
 
-func UpdateManifest(basepath, baseurl string) (err error) {
-
-	p := fmt.Sprintf("%s/%s", basepath, "manifest.json")
-	u := fmt.Sprintf("%s/%s", baseurl, "manifest.json")
+func UpdateManifest(p, u string) (err error) {
 
 	if !FileExists(p) {
 
@@ -226,9 +223,9 @@ func UpdateManifest(basepath, baseurl string) (err error) {
 	return
 }
 
-func GetManifest(basepath string) (m *Manifest, err error) {
+func GetManifest(p string) (m *Manifest, err error) {
 
-	b, err := ioutil.ReadFile(fmt.Sprintf("%s/%s", basepath, "manifest.json"))
+	b, err := ioutil.ReadFile(p)
 	if err != nil {
 
 		return

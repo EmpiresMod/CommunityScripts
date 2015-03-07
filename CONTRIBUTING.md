@@ -16,7 +16,7 @@ Getting Started
 EditrConfig Plugin
 -----------
 
-In order to help maintain consistency and conform to the standards set out in the [codingstandards](CodingStandards.md)
+In order to help maintain consistency and conform to the standards set out in the [style guide](STYLEGUIDE.md)
 document, it is recommended that you install the [editorconfig](http://editorconfig.org) plugin for your favourite text editor.
 If your unsure of what this plugin is, here is a quote from their website:
 

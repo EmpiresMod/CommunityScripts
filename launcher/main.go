@@ -2,104 +2,163 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"log"
 	"os/exec"
-	"path/filepath"
+
+	"github.com/andlabs/ui"
 )
 
-// Some constants
-const (
-	defaultURL = "https://github.com/EmpiresMod/CommunityScripts/tree/master/update"
-)
+// URL which updates will be downloaded from
+const defaultURL = "http://apollo.firebit.co.uk/~dc0/update"
 
 // Some vars
 var (
-	debug     bool
-	update    bool
-	updateURL string
-	path      string
-	community bool
-	vanilla   bool
+	Debug     bool
+	Update    bool
+	UpdateURL string
+	DirPath   string
+	Community bool
+	Vanilla   bool
 )
+
+func LaunchCommunity() (err error) {
+
+	if Debug {
+
+		log.Print("Launching Empires with Community Scripts!")
+	}
+
+	m, err := GetManifest(fmt.Sprintf("%s/%s", DirPath, "manifest.json"))
+	if err != nil {
+
+		return
+	}
+	m.BasePath = DirPath
+	m.BaseURL = UpdateURL
+
+	if err = m.Apply(); err != nil {
+
+		return
+	}
+
+	if err = exec.Command("cmd", "/c", "START", "steam://rungameid/17740").Start(); err != nil {
+
+		return
+	}
+
+	return
+}
+
+func LaunchVanilla() (err error) {
+
+	if Debug {
+
+		log.Print("Launching Empires Vanilla!")
+	}
+
+	m, err := GetManifest(fmt.Sprintf("%s/%s", DirPath, "manifest.json"))
+	if err != nil {
+
+		return
+	}
+	m.BasePath = DirPath
+	m.BaseURL = UpdateURL
+
+	if err = m.UnApply(); err != nil {
+
+		return
+	}
+
+	if err = exec.Command("cmd", "/c", "START", "steam://rungameid/17740").Start(); err != nil {
+
+		return
+	}
+
+	return
+}
 
 func init() {
 
-	flag.BoolVar(&debug, "d", false, "debugging/verbose information")
-	flag.BoolVar(&update, "u", true, "check for updates")
-	flag.StringVar(&updateURL, "url", defaultURL, "url to fetch updates from")
-	flag.StringVar(&path, "p", "./", "path to empires folder")
-	flag.BoolVar(&community, "c", false, "launch empires with community scripts")
-	flag.BoolVar(&vanilla, "v", true, "launch vanilla empires")
+	flag.BoolVar(&Debug, "d", false, "debugging/verbose information")
+	flag.BoolVar(&Update, "u", true, "check for updates")
+	flag.StringVar(&UpdateURL, "url", defaultURL, "url to fetch updates from")
+	flag.StringVar(&DirPath, "p", "./", "path to empires folder")
+	flag.BoolVar(&Community, "c", false, "launch empires with community scripts")
+	flag.BoolVar(&Vanilla, "v", false, "launch vanilla empires")
 	flag.Parse()
 
-	if community {
+	if Community {
 
-		vanilla = false
+		Vanilla = false
 	}
 }
 
 func main() {
 
-	if community {
+	if Update {
 
-		if update {
+		if Debug {
 
-			if debug {
-
-				log.Print("Checking for updates to manifest!")
-			}
-
-			if err := UpdateManifest(filepath.Clean(path), updateURL); err != nil {
-
-				log.Fatal(err)
-			}
+			log.Print("Checking for updates to manifest!")
 		}
 
-		if debug {
-
-			log.Print("Launching Empires with Community Scripts!")
-		}
-
-		m, err := GetManifest(filepath.Clean(path))
+		err := UpdateManifest(
+			fmt.Sprintf("%s/%s", DirPath, "manifest.json"),
+			fmt.Sprintf("%s/%s", UpdateURL, "manifest.json"))
 		if err != nil {
 
-			log.Fatal(err)
-		}
-		m.BasePath = filepath.Clean(path)
-		m.BaseURL = updateURL
-
-		if err = m.Apply(); err != nil {
-
-			log.Fatal(err)
-		}
-
-		if err := exec.Command("cmd", "/c", "START", "steam://rungameid/17740").Start(); err != nil {
-
-			log.Fatal(err)
+			return
 		}
 	}
 
-	if vanilla {
+	if Community {
 
-		if debug {
-
-			log.Print("Launching Empires Vanilla!")
-		}
-
-		m, err := GetManifest(filepath.Clean(path))
-		if err != nil {
-
-			log.Fatal(err)
-		}
-		m.BasePath = filepath.Clean(path)
-		m.BaseURL = updateURL
-
-		if err = m.UnApply(); err != nil {
+		if err := LaunchCommunity(); err != nil {
 
 			log.Fatal(err)
 		}
 
-		if err := exec.Command("cmd", "/c", "START", "steam://rungameid/17740").Start(); err != nil {
+	} else if Vanilla {
+
+		if err := LaunchVanilla(); err != nil {
+
+			log.Fatal(err)
+		}
+
+	} else {
+
+		go ui.Do(func() {
+
+			btnVanilla := ui.NewButton("Launch Empires Vanilla")
+			btnCommunity := ui.NewButton("Launch Empires CommunityScripts")
+			window := ui.NewWindow("Empires Launcher", 400, 50, ui.NewVerticalStack(
+				btnVanilla,
+				btnCommunity))
+
+			btnVanilla.OnClicked(func() {
+
+				if err := LaunchVanilla(); err != nil {
+
+					log.Fatal(err)
+				}
+			})
+			btnCommunity.OnClicked(func() {
+
+				if err := LaunchCommunity(); err != nil {
+
+					log.Fatal(err)
+				}
+			})
+			window.OnClosing(func() bool {
+
+				ui.Stop()
+				return true
+			})
+			window.Show()
+		})
+
+		if err := ui.Go(); err != nil {
 
 			log.Fatal(err)
 		}

@@ -1,0 +1,27 @@
+{
+	"Files": [
+		{
+			"Path": "launcher.exe",
+			"HashSum": "834b4beeb1496367719ed2ef3e01a5780a6f54a781bb8b7097c3c5cd31d02c8f",
+			"URL": "launcher.exe",
+			"Backup": true
+		},
+		{
+			"Path": "empires/gameinfo.txt",
+			"HashSum": "e0add0b86ffd552cee509284f74d8fe3ea3b4aaf14e71101e7c0eaf7a943b9e1",
+			"URL": "gameinfo.txt",
+			"Backup": true
+		},
+		{
+			"Path": "empires/custom/",
+			"Dir": true
+		},
+		{
+			"Path": "empires/custom/CommunityScripts.vpk",
+			"HashSum": "d1e9309ded56871f559bf9bfae0e634a12a82f78d7929f9c6f057f6934f6cd76",
+			"URL": "CommunityScripts.vpk",
+			"CanDisable": true,
+			"Backup": true
+		}
+	]
+}

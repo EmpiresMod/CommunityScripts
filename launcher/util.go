@@ -8,7 +8,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"os"
-	"path/filepath"
+	"path"
 )
 
 func FileExists(f string) bool {
@@ -76,7 +76,7 @@ func GetRemoteFileSize(u string) (int64, error) {
 
 func GetFileSize(p string) (int64, error) {
 
-	f, err := os.Stat(filepath.Clean(p))
+	f, err := os.Stat(path.Clean(p))
 	if err != nil {
 
 		return 0, err
