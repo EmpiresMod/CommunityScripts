@@ -1,8 +1,5 @@
-# Changelog
-==================
-
-## [Current]
------------
+[Current]
+-------------
 
 All changes to infantry scripts start from 2.51.
 
