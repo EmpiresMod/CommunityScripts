@@ -10,7 +10,7 @@ build:
 	go build -v -o bin/$(name)
 
 windows:
-	GOOS=windows go build -v -o bin/$(name).exe
+	GOOS=windows go build -v -ldflags="-H windowsgui" -o="bin/$(name).exe"
 
 clean:
 	go clean -x

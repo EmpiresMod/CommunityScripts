@@ -17,9 +17,9 @@
 			"Dir": true
 		},
 		{
-			"Path": "empires/custom/CommunityScripts.vpk",
+			"Path": "empires/custom/communityscripts.vpk",
 			"HashSum": "d1e9309ded56871f559bf9bfae0e634a12a82f78d7929f9c6f057f6934f6cd76",
-			"URL": "CommunityScripts.vpk",
+			"URL": "communityscripts.vpk",
 			"CanDisable": true,
 			"Backup": true
 		}
