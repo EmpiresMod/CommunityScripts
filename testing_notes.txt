@@ -1,0 +1,9 @@
+During some testing, I have discovered that while the vpk technique will definitely
+work, certain files will need to remain external to make the game functional.
+the presets for vehicle configuration, only seem to work outside since write access
+to the files internally to the vpk isn't possible.
+
+Currently, with them internal, any configuration you do to a vehicle at time of building
+it defaults back to the configuration saved into the preset. This should be only a minor
+issue as we can just keep those files out in the custom folder in folder/file format.
+
