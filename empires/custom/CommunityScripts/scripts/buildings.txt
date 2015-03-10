@@ -257,7 +257,7 @@
 		"GeneralBiologicalResist"	"0.85"
 
 		"KineticResist"			"0.85"
-		"ExplosiveResist"		"0.90"
+		"ExplosiveResist"		"0.85"
 		"BioResist"			"0.85"
 
 		"BulletResist"			"1"
@@ -327,7 +327,7 @@
 		"GeneralBiologicalResist"	"0.85"
 
 		"KineticResist"			"0.85"
-		"ExplosiveResist"		"0.80"
+		"ExplosiveResist"		"0.85"
 		"BioResist"			"0.85"
 
 		"BulletResist"			"1"
@@ -397,7 +397,7 @@
 		"GeneralBiologicalResist"	"0.85"
 
 		"KineticResist"			"0.85"
-		"ExplosiveResist"		"0.90"
+		"ExplosiveResist"		"0.85"
 		"BioResist"			"0.85"
 
 		"BulletResist"			"1"
@@ -607,7 +607,7 @@
 		"GeneralBiologicalResist"	"0.85"
 
 		"KineticResist"			"0.85"
-		"ExplosiveResist"		"0.90"
+		"ExplosiveResist"		"0.85"
 		"BioResist"			"0.85"
 
 		"BulletResist"			"1"
@@ -677,7 +677,7 @@
 		"GeneralBiologicalResist"	"0.85"
 
 		"KineticResist"			"0.85"
-		"ExplosiveResist"		"0.90"
+		"ExplosiveResist"		"0.85"
 		"BioResist"			"0.85"
 
 		"BulletResist"			"1"
@@ -1559,11 +1559,11 @@
 		"GeneralBiologicalResist"	"0.85"
 
 		"KineticResist"			"0.85"
-		"ExplosiveResist"		"0.90"
+		"ExplosiveResist"		"0.85"
 		"BioResist"			"0.85"
 
 		"BulletResist"			"1"
-		"APBulletResist"		"0.875"
+		"APBulletResist"		"0.85"
 		"BulletExplosiveResist"		"0.80"
 
 		"MissileResist"			"0.85"
@@ -1629,11 +1629,11 @@
 		"GeneralBiologicalResist"	"0.85"
 
 		"KineticResist"			"0.85"
-		"ExplosiveResist"		"0.90"
+		"ExplosiveResist"		"0.85"
 		"BioResist"			"0.85"
 
 		"BulletResist"			"1"
-		"APBulletResist"		"0.875"
+		"APBulletResist"		"0.85"
 		"BulletExplosiveResist"		"0.80"
 
 		"MissileResist"			"0.85"

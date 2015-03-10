@@ -21,7 +21,7 @@
 			// folder.
 			//
 			// Note that this folder is scanned only when the game is booted.
-			game+mod	|gameinfo_path|custom/*
+			game+mod+mod_write			|gameinfo_path|custom/*
 
 			game+mod+mod_write+default_write_path	|gameinfo_path|.
 			gamebin					|gameinfo_path|bin
