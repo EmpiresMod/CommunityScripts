@@ -7,3 +7,6 @@ Currently, with them internal, any configuration you do to a vehicle at time of 
 it defaults back to the configuration saved into the preset. This should be only a minor
 issue as we can just keep those files out in the custom folder in folder/file format.
 
+On further testing, also found that in addition to seperating out the presets, the gameinfo
+line that searches for the custom folder needs write capability to that area to actually 
+save the preset. ie: game+mod+mod_write
