@@ -28,7 +28,7 @@ WeaponData
 	"clip_size"			"20"
 	"clip2_size"			"-1"
 	
-	"primary_ammo"			"AMMO_SMG"
+	"primary_ammo"			"AMMO_50CAL"
 	"secondary_ammo"		"AMMO_MELEE"
 
 	"weight"			"25"
