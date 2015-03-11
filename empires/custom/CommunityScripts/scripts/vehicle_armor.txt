@@ -93,8 +93,8 @@ Vehicle_armor
 		"InfantryBulletResist" 		"1"		//Just In Case
 		"ExtraType1Resist" 		"0.95" 		//Building Damage
 		"InfantryMeleeResist"		"1.0"					//Infantry melee
-		"InfantryMissileResist" 	"0.2" 	//Gren Missles
-		"MissileResist"			"0.5"	//Tank Missles
+		"InfantryMissileResist" 	"0.2" 	//Gren Missiles
+		"MissileResist"			"0.5"	//Tank Missiles
 	}
 
 
@@ -173,7 +173,7 @@ Vehicle_armor
 		"Health"			"65"
 		"Regeneration"			"0"
 		"Angle Modifier"		"0.0"        /// was 0.1 
-		"Speed To Damage Modifier"	"-0.000206"   
+		"Speed To Damage Modifier"	"-0.000206"  // Calculation for SpdToDmg RevisedDamage =  Damage * (1 + ( SpdToDmg * ProjectileSpeed))
 		"Damage Modifier"		"1"        // was 0.5 is now 1
 		"Damage To Heat Absorbed"	"-0.1"    // was "0.025"
 		"Bioweapon Damage Modifier"	"1"
@@ -186,7 +186,7 @@ Vehicle_armor
 		"InfantryBulletResist" 		"1"		//Just In Case
 		"ExtraType1Resist" 		"0.95" 		//Building Damage
 		"InfantryMeleeResist"		"1.0"					//Infantry melee
-		"InfantryMissileResist" 	"0.0" 	//Gren Missles
+		"InfantryMissileResist" 	"0.0" 	//Gren Missiles
 		"InfantryMortarResist" 		"0.0" 	//Gren Mortars
 		}
 
