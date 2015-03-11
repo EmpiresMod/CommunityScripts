@@ -37,7 +37,7 @@ Vehicle_armor
 	"Composite"
 	{
 		"Name"			"Composite"
-		"Description"		"A composite of all other armours, offering reflective, regenerative and coolling capabilities of the other armours, whilst being light and strong. It is the most expensive of all armours."
+		"Description"		"A composite of all other armors, offering reflective, regenerative and cooling capabilities of the other armours, whilst being light and strong. It is the most expensive of all armours."
 		"Icon"			"vehicles/gui/armor/composite_sml"
 		"HUD Icon"		""
 		"Size"			"1"
@@ -94,7 +94,7 @@ Vehicle_armor
 		"ExtraType1Resist" 		"0.95" 		//Building Damage
 		"InfantryMeleeResist"		"1.0"					//Infantry melee
 		"InfantryMissileResist" 	"0.2" 	//Gren Missles
-		"MissileResist"			"0.5"
+		"MissileResist"			"0.5"	//Tank Missles
 	}
 
 
