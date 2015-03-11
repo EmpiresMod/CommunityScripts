@@ -372,7 +372,7 @@ WeaponDescriptionData
 		//Number which references the weapon in the code.
 		"WeaponText"		"Ranged SMG"
 		//Short name for the weapon.
-		"WeaponDescription"	"The Brenodi Mini Carbine is effective at all ranges, it's ergonomic design makes it's recoil easy to handle and allows for accurate fire even at long range targets."
+		"WeaponDescription"	"The Brenodi Ranged smg is effective at all ranges, it's ergonomic design makes it's recoil easy to handle and allows for accurate fire even at long range targets."
 		//Long description for the weapon.
 		"WeaponBackground"	"guns/imp/smg1"
 		//Weapon image.
