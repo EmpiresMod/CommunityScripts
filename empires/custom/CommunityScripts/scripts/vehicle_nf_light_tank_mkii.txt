@@ -73,6 +73,8 @@ Vehicle_NF_Light_Tank
 		"Repair Station Repair"	"1"		//percent of one inch of armor repaired per second by the repair station (0.5 = a half inch of armor is repaired per second)
 		"Engineer Repair"	"0.1"		//percent of one inch of armor repaired per engineer's repair unit (0.1 = a tenth inch of armor is repaired per engineer repair unit)
 
+		"Research"		"Upgraded Chassis"		//research item name that must be researched before this chassis can be built
+
 		"Neutral Turn Factor"	"0"		//multiplier to determine how fast the vehicle can turn in place when no forward motion is present
 
 		"Max Tank Cannons"	"1"
