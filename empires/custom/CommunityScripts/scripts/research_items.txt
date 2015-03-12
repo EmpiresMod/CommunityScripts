@@ -342,19 +342,6 @@
 		"Team"			""
 	}
 
-		"Advanced Personnel Deployment"
-		{
-			"Name"			"Advanced Personnel Deployment"
-			"Parent"		"Mechanical Engineering"
-			"Description"		"Develops a chassis improvement that allows for mobile deployment of reinforcements. Grants APC the ability to spawn in."
-			"Icon"			"comm/hex_cube"
-			"Unresearched Icon"	"comm/hex_cube_empty"
-			"Type"			"0"
-			"Cost"			"400"
-			"Time"			"60"
-			"Team"			""
-		}
-
 		"Upgraded Chassis"
 		{
 			"Name"			"Upgraded Chassis"
