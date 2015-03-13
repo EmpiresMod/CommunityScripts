@@ -396,7 +396,7 @@ Vehicle_Weapons
 		"Turning Ability"		"0.2"		//determines how effective the missile can turn to home in on its target or guide itself to the crosshair for a guided missile; 1.0 means the missile can turn instantly towards its target, 0.0 and the missile doesn't turn at all
 		
 		//effects
-		"Tracer Type"			"tracer_cg" //Tracer effect, tracer names are logical, a list: tracer_du, tracer_bio, tracer_he, tracer_rifle, tracer_smg, tracer_vehiclemg, tracer_cg, tracer_plasma
+		"Tracer Type"			"tracer_vehiclemg" //Tracer effect, tracer names are logical, a list: tracer_du, tracer_bio, tracer_he, tracer_rifle, tracer_smg, tracer_vehiclemg, tracer_cg, tracer_plasma
 		"Muzzle Flash"			"tracer_cg_muzzle"
 
 			//Falloff
@@ -451,7 +451,7 @@ Vehicle_Weapons
 		"Turning Ability"		"0.2"		//determines how effective the missile can turn to home in on its target or guide itself to the crosshair for a guided missile; 1.0 means the missile can turn instantly towards its target, 0.0 and the missile doesn't turn at all
 	
 		//effects
-		"Tracer Type"			"tracer_cg" //Tracer effect, tracer names are logical, a list: tracer_du, tracer_bio, tracer_he, tracer_rifle, tracer_smg, tracer_vehiclemg, tracer_cg, tracer_plasma
+		"Tracer Type"			"tracer_vehiclemg" //Tracer effect, tracer names are logical, a list: tracer_du, tracer_bio, tracer_he, tracer_rifle, tracer_smg, tracer_vehiclemg, tracer_cg, tracer_plasma
 		"Muzzle Flash"			"tracer_cg_muzzle"
 
 		"Falloff"			"1500"		
