@@ -1,3 +1,9 @@
+Changelog
+-------------
+
+Testing server is restarted daily to ensure updated scripts are loaded. Updates to the repo are checked hourly and if there are new changes they are uploaded to the testing server.
+Don't give out the testing server password to people who are not in the group. Doing this can get you kicked.
+
 [Current]
 -------------
 
