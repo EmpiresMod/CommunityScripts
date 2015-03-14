@@ -111,10 +111,10 @@ Vehicle_Weapons
 		//for biological weapons: when a player or vehicle is hit, the damage (Damage) is inflicted every specified amount of seconds (Interval) over a total amount of time period (Time)
 		//all weapons can use these, explosions will infect all players and vehicles the explosion touches, not just the direct hit target
 		"Player Bio Damage"	"4"	//damage inflicted to players every interval
-		"Player Bio Time"	"20"	//total time to inflict damage to players
+		"Player Bio Time"	"10"	//total time to inflict damage to players
 		"Player Bio Interval"	"1"	//time inbetween each infliction of damage to players
 		"Vehicle Bio Damage"	"4"	//damage inflicted to vehicles every interval
-		"Vehicle Bio Time"	"20"	//total time to inflict damage to vehicles
+		"Vehicle Bio Time"	"10"	//total time to inflict damage to vehicles
 		"Vehicle Bio Interval"	"1"	//time inbetween each infliction of damage to vehicles
 
 		//explosion effects
@@ -1129,10 +1129,10 @@ Vehicle_Weapons
 		//for biological weapons: when a player or vehicle is hit, the damage (Damage) is inflicted every specified amount of seconds (Interval) over a total amount of time period (Time)
 		//all weapons can use these, explosions will infect all players and vehicles the explosion touches, not just the direct hit target
 		"Player Bio Damage"	"10"	//damage inflicted to players every interval
-		"Player Bio Time"	"60"	//total time to inflict damage to players
+		"Player Bio Time"	"30"	//total time to inflict damage to players
 		"Player Bio Interval"	"2"	//time inbetween each infliction of damage to players
 		"Vehicle Bio Damage"	"10"	//damage inflicted to vehicles every interval
-		"Vehicle Bio Time"	"60"	//total time to inflict damage to vehicles
+		"Vehicle Bio Time"	"30"	//total time to inflict damage to vehicles
 		"Vehicle Bio Interval"	"2"	//time inbetween each infliction of damage to vehicles
 
 		//explosion effects
