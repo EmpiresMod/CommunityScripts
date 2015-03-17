@@ -61,9 +61,9 @@ WeaponData
 
 	//Maximum the spread can become due to spread increment per shot below
 	"JumpingSpreadMax"	"0.7"
-	"StandingSpreadMax"	"0.05"
-	"DuckingSpreadMax"	"0.05"
-	"ProneSpreadMax"	"0.05"
+	"StandingSpreadMax"	"0.03"
+	"DuckingSpreadMax"	"0.03"
+	"ProneSpreadMax"	"0.03"
 
 	//Increment spread by this amount for every shot fired to maximum of moving at full speed spread
 	"JumpingSpreadIncrement"	"0.01"
