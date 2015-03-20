@@ -48,7 +48,7 @@ WeaponData
 //Weapon Spread
 	//When at rest
 	"JumpingSpread"				"0.3000"
-	"StandingSpread"			"0.0050"
+	"StandingSpread"			"0.04"
 	"DuckingSpread"				"0.0015"
 	"ProneSpread"				"0.0010"
 
