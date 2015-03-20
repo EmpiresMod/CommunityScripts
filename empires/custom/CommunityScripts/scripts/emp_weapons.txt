@@ -119,9 +119,10 @@ WeaponDescriptionData
 		"WeaponName"		"PRIMARY_NF_50CAL"
 		"WeaponCode"		"8"
 		//Number which references the weapon in the code.
-		"WeaponText"		"Heavy Rifle"
+		"WeaponText"		"Tri Round Rifle"
 		//Short name for the weapon.
-		"WeaponDescription"	"The NF Automatic Rifle is most effective and long range combat but has a slow rate of fire"
+		"WeaponDescription"	"The Tri round automatic rifle is the first rifle in the Northern Faction military to fire the special NF tri round, a round which maximizes the chance of hitting the target by firing 3 projectiles in a tight grouping that is perfect for long range.
+"
                 //Long description for the weapon.
 		"WeaponBackground"	"guns/nf/50cal"
 		//Weapon image.
@@ -402,7 +403,7 @@ WeaponDescriptionData
 		//Number which references the weapon in the code.
 		"WeaponText"		"Assault Rifle"
 		//Short name for the weapon.
-		"WeaponDescription"	"The Brenodi Assault Rifle features a high rate of fire good accuracy and is good at all ranges"
+		"WeaponDescription"	"The Brenodi Assault Rifle features a high rate of fire good accuracy and is good perfect for long ranges"
 		//Long description for the weapon.
 		"WeaponBackground"	"guns/imp/rifle1"
 		//Weapon image.
@@ -415,7 +416,7 @@ WeaponDescriptionData
 		"WeaponName"		"PRIMARY_IMP_RIFLE"
 		"WeaponCode"		"28"
 		//Number which references the weapon in the code.
-		"WeaponText"		"Heavy Rifle"
+		"WeaponText"		"Heavy rifle"
 		//Short name for the weapon.
 		"WeaponDescription"	"The Brenodi Heavy Rifle is an excellent general purpose weapon with an extended clip allowing it to be more useful in close quarters."
 		//Long description for the weapon.
