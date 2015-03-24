@@ -1,260 +1,325 @@
-Vehicle_armor
+Vehicle_Armor
 {
-	// GENERIC ARMORS
-	"Plain Armor"
+
+	"Plain Armor"	//0
 	{
-		"Name"			"Plain Armor"		//name given when selecting weapons
-		"Description"		"Plain armor offers mild protection from damage."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/armor/armor_small"		//icon drawn in the GUI
-		"HUD Icon"		""
-		"Size"			"1"		//number of slots required when selecting weapons
-		"Type"			"0"		//which vehicle can use this armor
-							// 0=all, 1=ground, 2=aircraft, 3=ship, 4=jeep, 5=light tank/afv, 6=med tank, 7=heavy tank,
-							// 8=artillery tank, 9=apc, 10=all tanks:light, medium, heavy and artillery
-		"Weight"		"15"            //** weight was 5
-		"Cost"			"5"	//cost of an inch of armor in resources, added onto the final vehicle cost
-		"Research"		""
-
-		"Health"			"40"	//amount of health per every inch of armor
-		"Regeneration"			"0"	//amount of health this armor regenerates per second
-		"Angle Modifier"		"0.0"	// was 0
-		"Speed To Damage Modifier"	"0"	
-		"Damage Modifier"		"1"	//modifier to damage (0.9 reduces damage by 10%; damage*0.9=damage taken)
-		"Damage To Heat Absorbed"	"0.025"	//percentage of damage received which is added as heat (0.2: damage*0.2=heat added
-		"Heat Dissipation"		"4"	
-		"Bioweapon Damage Modifier"	"1.5"	// was 1  //scale damage from biological weapons by this amount (bioweapon damage per interval * modifier = damage taken per interval)
-
-		"Sound Impact"			""
-		"Sound Repair"			""
-
-		"BulletResist" 			"1"		//Non Armor damaging
-		"InfantrySeismicResist" 	"0.95"		//Siesmic Grenades
-		"InfantryBulletResist" 		"1"		//Just In Case
-		"ExtraType1Resist" 		"0.95" 		//Building Damage
-		"InfantryMeleeResist"		"1.0"					//Infantry melee
+		"Name"				"Plain Armor"	//name given when selecting weapons
+		"Description"			"Plain armor offers mild protection from damage."	//description given when selecting weapons
+		"Icon"				"vehicles/gui/armor/armor_small"	//Path to the icon file used in the gui (uses an inferred path of the empires/materials/vgui/ folder)
+		"Hud Icon"			""	//not used
+		"Size"				"1"	//Slot size, default is always 1
+		"Type"				"0"	//Type of Vehicle that can use this armor: 0=all, 1=ground, 2=aircraft, 3=ship, 4=jeep, 5=light tank/afv, 6=med tank, 7=heavy tank, 8=artillery tank, 9=apc, 10=all tanks:light, medium, heavy and artillery, 11=Command Vehicle
+		"Weight"			"15"	//The Weight of the Armor
+		"Cost"				"5"	//The Cost of the Armor, per plate.
+		"Research"			""	//The Research Tree that will unlock this armor.
+		"Health"			"40"	//The Health of 1 plate of armor.
+		"Type"				"0"	//amount of health this armor regenerates per second. If set to same as bio damage, will nullify bio.
+		"Angle Modifier"		"0"	//Determines how much angle of impact affects overall damage. 0 for none, 1 for totally based.
+		"Speed To Damage Modifier"	"0"	//How Speed of weapon affects damage to armor.
+		"Damage Modifier"		"1"	//Overall modifier of weapon damage. Can be used to affect damage no matter the source.
+		"Damage To Heat Absorbed"	"0.025"	//percentage of damage received which is added as heat (0.2: damage*0.2=heat added)
+		"Bioweapon Damage Modifier"	"1.5"	//scale damage from biological weapons by this amount (bioweapon damage per interval * modifier = damage taken per interval)
+		"Sound Impact"			""	//Sound file used for Impact.(not used)
+		"Sound Repair"			""	//Sound file used for Repair.(not used)
+		"GeneralPhysicsResist"		"0"	//Plasma Cannon and Plasma mg
+		"KineticResist"			"0"	//Railguns, Standard Cannon, Ranged Cannon
+		"ExplosiveResist"		"0"	//HE Cannon, Grenade Launcher, Upgraded Grenade Launcher
+		"BulletResist"			"1"	//Standard, 50 cal, Chain mgs. aka Non Armor damaging
+		"APBulletResist"		"0"	//Du and bio mgs. aka Armor Damaging
+		"BulletExplosiveResist"		"0"	//HE mgs. aka Bullets that Explode
+		"MissileResist"			"0"	//Single, Upgraded, Homing, Guided, SalvoHoming, SalvoGuided Missile launchers. aka Generic Missle type of damage
+		"MissileExplosiveResist"	"0"	//Nukes
+		"KineticArtResist"		"0"	//Ranged arty. aka Kinetic Artillery
+		"ExplosiveArtResist"		"0"	//Small, Med, HE arty. aka Explosive Artillery
+		"InfantrySeismicResist"		"0.95"	//Siesmic Grenades
+		"InfantryBulletResist"		"1"	//Infantry guns
+		"ExtraType1Resist"		"0.95"	//Building Collisions
+		"InfantryMeleeResist"		"1"	//Infantry melee
+		"InfantryMineResist"		"0"	//Player Tossed Mines
+		"InfantryMissileResist"		"0"	//Grenadier Missiles
+		"InfantryMortarResist"		"0"	//Grenadier Mortars
+		"InfantryStickyResist"		"0"	//Riflemen Sticky Grenades
 	}
 
-	"Composite"
+	"Composite"	//1
 	{
-		"Name"			"Composite"
-		"Description"		"A composite of all other armors, offering reflective, regenerative and cooling capabilities of the other armours, whilst being light and strong. It is the most expensive of all armours."
-		"Icon"			"vehicles/gui/armor/composite_sml"
-		"HUD Icon"		""
-		"Size"			"1"
-		"Type"			"0"
-		"Weight"		"10"               // was 10   (5 light 10 medium 15 heavy)
-		"Cost"			"25"               // was 40
-		"Research"		"Composite Armor"
-
-		"Health"			"75"    //
-		"Regeneration"			"0.02"        
-		"Angle Modifier"		"0.5"     // was 0
-		"Speed To Damage Modifier"	"0"    
-		"Damage Modifier"		"1"        
-		"Damage To Heat Absorbed"	"-0.025"    
-		"Bioweapon Damage Modifier"	"1"        
-
-		"Sound Impact"			""
-		"Sound Repair"			""
-
-		"BulletResist" 			"1"		//Non Armor damaging
-		"InfantrySeismicResist" 	"0.95"		//Siesmic Grenades
-		"InfantryBulletResist" 		"1"		//Just In Case
-		"ExtraType1Resist" 		"0.95" 		//Building Damage
-		"InfantryMeleeResist"		"1.0"					//Infantry melee
+		"Name"				"Composite"	//name given when selecting weapons
+		"Description"			"A composite of all other armors, offering reflective, regenerative and cooling capabilities of the other armours, whilst being light and strong. It is the most expensive of all armours."	//description given when selecting weapons
+		"Icon"				"vehicles/gui/armor/composite_sml"	//Path to the icon file used in the gui (uses an inferred path of the empires/materials/vgui/ folder)
+		"Hud Icon"			""	//not used
+		"Size"				"1"	//Slot size, default is always 1
+		"Type"				"0"	//Type of Vehicle that can use this armor: 0=all, 1=ground, 2=aircraft, 3=ship, 4=jeep, 5=light tank/afv, 6=med tank, 7=heavy tank, 8=artillery tank, 9=apc, 10=all tanks:light, medium, heavy and artillery, 11=Command Vehicle
+		"Weight"			"10"	//The Weight of the Armor
+		"Cost"				"25"	//The Cost of the Armor, per plate.
+		"Research"			"Composite Armor"	//The Research Tree that will unlock this armor.
+		"Health"			"75"	//The Health of 1 plate of armor.
+		"Type"				"0"	//amount of health this armor regenerates per second. If set to same as bio damage, will nullify bio.
+		"Angle Modifier"		"0.5"	//Determines how much angle of impact affects overall damage. 0 for none, 1 for totally based.
+		"Speed To Damage Modifier"	"0"	//How Speed of weapon affects damage to armor.
+		"Damage Modifier"		"1"	//Overall modifier of weapon damage. Can be used to affect damage no matter the source.
+		"Damage To Heat Absorbed"	"-0.025"	//percentage of damage received which is added as heat (0.2: damage*0.2=heat added)
+		"Bioweapon Damage Modifier"	"1"	//scale damage from biological weapons by this amount (bioweapon damage per interval * modifier = damage taken per interval)
+		"Sound Impact"			""	//Sound file used for Impact.(not used)
+		"Sound Repair"			""	//Sound file used for Repair.(not used)
+		"GeneralPhysicsResist"		"0.2"	//Plasma Cannon and Plasma mg
+		"KineticResist"			"0.2"	//Railguns, Standard Cannon, Ranged Cannon
+		"ExplosiveResist"		"0.2"	//HE Cannon, Grenade Launcher, Upgraded Grenade Launcher
+		"BulletResist"			"1"	//Standard, 50 cal, Chain mgs. aka Non Armor damaging
+		"APBulletResist"		"0.2"	//Du and bio mgs. aka Armor Damaging
+		"BulletExplosiveResist"		"0.2"	//HE mgs. aka Bullets that Explode
+		"MissileResist"			"0.2"	//Single, Upgraded, Homing, Guided, SalvoHoming, SalvoGuided Missile launchers. aka Generic Missle type of damage
+		"MissileExplosiveResist"	"0.2"	//Nukes
+		"KineticArtResist"		"0.2"	//Ranged arty. aka Kinetic Artillery
+		"ExplosiveArtResist"		"0.2"	//Small, Med, HE arty. aka Explosive Artillery
+		"InfantrySeismicResist"		"0.95"	//Siesmic Grenades
+		"InfantryBulletResist"		"1"	//Infantry guns
+		"ExtraType1Resist"		"0.95"	//Building Collisions
+		"InfantryMeleeResist"		"1"	//Infantry melee
+		"InfantryMineResist"		"0.2"	//Player Tossed Mines
+		"InfantryMissileResist"		"0.2"	//Grenadier Missiles
+		"InfantryMortarResist"		"0.2"	//Grenadier Mortars
+		"InfantryStickyResist"		"0.2"	//Riflemen Sticky Grenades
 	}
 
-
-	"Reactive"
+	"Reactive"	//2
 	{
-		"Name"			"Reactive"
-		"Description"		"Electrically charged armor is internally aligned with charged capacitors. It is the heaviest armour, but the strongest in terms of the raw damage it can take."
-		"Icon"			"vehicles/gui/armor/reactive_sml"
-		"HUD Icon"		""
-		"Size"			"1"
-		"Type"			"0"
-		"Weight"		"20"                  // was 10
-		"Cost"			"20"                  // 50
-		"Research"		"Reactive Armor"      //
-                                                               
-		"Health"			"120"          // was 40
-		"Regeneration"			"0"           //
-		"Angle Modifier"		"0.0"         //
-		"Speed To Damage Modifier"	"0"      // was "0.001"
-		"Damage Modifier"		"1"         // was 0.3 is now 1
-		"Damage To Heat Absorbed"	"0.040"       //
-		"Bioweapon Damage Modifier"	"1.25"         //
-
-		"Sound Impact"			""
-		"Sound Repair"			""
-
-		"BulletResist" 			"1"		//Non Armor damaging
-		"InfantrySeismicResist" 	"0.95"		//Siesmic Grenades
-		"InfantryBulletResist" 		"1"		//Just In Case
-		"ExtraType1Resist" 		"0.95" 		//Building Damage
-		"InfantryMeleeResist"		"1.0"					//Infantry melee
-		"InfantryMissileResist" 	"0.2" 	//Gren Missiles
-		"MissileResist"			"0.5"	//Tank Missiles
+		"Name"				"Reactive"	//name given when selecting weapons
+		"Description"			"Electrically charged armor is internally aligned with charged capacitors. It is the heaviest armour, but the strongest in terms of the raw damage it can take."	//description given when selecting weapons
+		"Icon"				"vehicles/gui/armor/reactive_sml"	//Path to the icon file used in the gui (uses an inferred path of the empires/materials/vgui/ folder)
+		"Hud Icon"			""	//not used
+		"Size"				"1"	//Slot size, default is always 1
+		"Type"				"0"	//Type of Vehicle that can use this armor: 0=all, 1=ground, 2=aircraft, 3=ship, 4=jeep, 5=light tank/afv, 6=med tank, 7=heavy tank, 8=artillery tank, 9=apc, 10=all tanks:light, medium, heavy and artillery, 11=Command Vehicle
+		"Weight"			"20"	//The Weight of the Armor
+		"Cost"				"20"	//The Cost of the Armor, per plate.
+		"Research"			"Reactive Armor"	//The Research Tree that will unlock this armor.
+		"Health"			"120"	//The Health of 1 plate of armor.
+		"Type"				"0"	//amount of health this armor regenerates per second. If set to same as bio damage, will nullify bio.
+		"Angle Modifier"		"0"	//Determines how much angle of impact affects overall damage. 0 for none, 1 for totally based.
+		"Speed To Damage Modifier"	"0"	//How Speed of weapon affects damage to armor.
+		"Damage Modifier"		"1"	//Overall modifier of weapon damage. Can be used to affect damage no matter the source.
+		"Damage To Heat Absorbed"	"0.04"	//percentage of damage received which is added as heat (0.2: damage*0.2=heat added)
+		"Bioweapon Damage Modifier"	"1.25"	//scale damage from biological weapons by this amount (bioweapon damage per interval * modifier = damage taken per interval)
+		"Sound Impact"			""	//Sound file used for Impact.(not used)
+		"Sound Repair"			""	//Sound file used for Repair.(not used)
+		"GeneralPhysicsResist"		"0"	//Plasma Cannon and Plasma mg
+		"KineticResist"			"0"	//Railguns, Standard Cannon, Ranged Cannon
+		"ExplosiveResist"		"0"	//HE Cannon, Grenade Launcher, Upgraded Grenade Launcher
+		"BulletResist"			"1"	//Standard, 50 cal, Chain mgs. aka Non Armor damaging
+		"APBulletResist"		"0.1"	//Du and bio mgs. aka Armor Damaging
+		"BulletExplosiveResist"		"0.1"	//HE mgs. aka Bullets that Explode
+		"MissileResist"			"0.5"	//Single, Upgraded, Homing, Guided, SalvoHoming, SalvoGuided Missile launchers. aka Generic Missle type of damage
+		"MissileExplosiveResist"	"0.4"	//Nukes
+		"KineticArtResist"		"0"	//Ranged arty. aka Kinetic Artillery
+		"ExplosiveArtResist"		"0"	//Small, Med, HE arty. aka Explosive Artillery
+		"InfantrySeismicResist"		"0.95"	//Siesmic Grenades
+		"InfantryBulletResist"		"1"	//Infantry guns
+		"ExtraType1Resist"		"0.95"	//Building Collisions
+		"InfantryMeleeResist"		"1"	//Infantry melee
+		"InfantryMineResist"		"0.1"	//Player Tossed Mines
+		"InfantryMissileResist"		"0.3"	//Grenadier Missiles
+		"InfantryMortarResist"		"0.3"	//Grenadier Mortars
+		"InfantryStickyResist"		"0.3"	//Riflemen Sticky Grenades
 	}
 
-
-	"Reflective"
+	"Reflective"	//3
 	{
-		"Name"			"Reflective"
-		"Description"		"Reflective armor is able to deflect almost all of a projectile's kinetic energy away from the vehicle so long as the projectile does not hit perfectly perpendicular to the armor plating."
-		"Icon"			"vehicles/gui/armor/reflective_sml"
-		"HUD Icon"		""
-		"Size"			"1"
-		"Type"			"0"
-		"Weight"		"15"                    // was 10
-		"Cost"			"15"                    //
-		"Research"		"Reflective Armor"
-
-		"Health"			"70"            // was 50
-		"Regeneration"			"0"             //
-		"Angle Modifier"		"1.0"           //  was 0.5
-		"Speed To Damage Modifier"	"0"         //
-		"Damage Modifier"		"1"             //
-		"Damage To Heat Absorbed"	"0.025"         //
-		"Bioweapon Damage Modifier"	"1"           //
-
-		"Sound Impact"			""
-		"Sound Repair"			""
-
-		"BulletResist" 			"1"		//Non Armor damaging
-		"InfantrySeismicResist" 	"0.95"		//Siesmic Grenades
-		"InfantryBulletResist" 		"1"		//Just In Case
-		"ExtraType1Resist" 		"0.95" 		//Building Damage
-		"InfantryMeleeResist"		"1.0"					//Infantry melee
+		"Name"				"Reflective"	//name given when selecting weapons
+		"Description"			"Reflective armor is able to deflect almost all of a projectile's kinetic energy away from the vehicle so long as the projectile does not hit perfectly perpendicular to the armor plating."	//description given when selecting weapons
+		"Icon"				"vehicles/gui/armor/reflective_sml"	//Path to the icon file used in the gui (uses an inferred path of the empires/materials/vgui/ folder)
+		"Hud Icon"			""	//not used
+		"Size"				"1"	//Slot size, default is always 1
+		"Type"				"0"	//Type of Vehicle that can use this armor: 0=all, 1=ground, 2=aircraft, 3=ship, 4=jeep, 5=light tank/afv, 6=med tank, 7=heavy tank, 8=artillery tank, 9=apc, 10=all tanks:light, medium, heavy and artillery, 11=Command Vehicle
+		"Weight"			"15"	//The Weight of the Armor
+		"Cost"				"15"	//The Cost of the Armor, per plate.
+		"Research"			"Reflective Armor"	//The Research Tree that will unlock this armor.
+		"Health"			"70"	//The Health of 1 plate of armor.
+		"Type"				"0"	//amount of health this armor regenerates per second. If set to same as bio damage, will nullify bio.
+		"Angle Modifier"		"1"	//Determines how much angle of impact affects overall damage. 0 for none, 1 for totally based.
+		"Speed To Damage Modifier"	"0"	//How Speed of weapon affects damage to armor.
+		"Damage Modifier"		"1"	//Overall modifier of weapon damage. Can be used to affect damage no matter the source.
+		"Damage To Heat Absorbed"	"0.025"	//percentage of damage received which is added as heat (0.2: damage*0.2=heat added)
+		"Bioweapon Damage Modifier"	"1"	//scale damage from biological weapons by this amount (bioweapon damage per interval * modifier = damage taken per interval)
+		"Sound Impact"			""	//Sound file used for Impact.(not used)
+		"Sound Repair"			""	//Sound file used for Repair.(not used)
+		"GeneralPhysicsResist"		"0.05"	//Plasma Cannon and Plasma mg
+		"KineticResist"			"0.05"	//Railguns, Standard Cannon, Ranged Cannon
+		"ExplosiveResist"		"0.05"	//HE Cannon, Grenade Launcher, Upgraded Grenade Launcher
+		"BulletResist"			"1"	//Standard, 50 cal, Chain mgs. aka Non Armor damaging
+		"APBulletResist"		"0.05"	//Du and bio mgs. aka Armor Damaging
+		"BulletExplosiveResist"		"0.05"	//HE mgs. aka Bullets that Explode
+		"MissileResist"			"0.05"	//Single, Upgraded, Homing, Guided, SalvoHoming, SalvoGuided Missile launchers. aka Generic Missle type of damage
+		"MissileExplosiveResist"	"0.05"	//Nukes
+		"KineticArtResist"		"0.05"	//Ranged arty. aka Kinetic Artillery
+		"ExplosiveArtResist"		"0.05"	//Small, Med, HE arty. aka Explosive Artillery
+		"InfantrySeismicResist"		"0.95"	//Siesmic Grenades
+		"InfantryBulletResist"		"1"	//Infantry guns
+		"ExtraType1Resist"		"0.95"	//Building Collisions
+		"InfantryMeleeResist"		"1"	//Infantry melee
+		"InfantryMineResist"		"0.05"	//Player Tossed Mines
+		"InfantryMissileResist"		"0.05"	//Grenadier Missiles
+		"InfantryMortarResist"		"0.05"	//Grenadier Mortars
+		"InfantryStickyResist"		"0.05"	//Riflemen Sticky Grenades
 	}
 
-	"Regenerative"
+	"Regenerative"	//4
 	{
-		"Name"			"Regenerative"
-		"Description"		"Regenerative armor is engineered with living tissue designed to grow calcium carbonate as the protective medium.  As it is newly formed, it is malleable enough to find its way into damaged areas where it solidifies and reinforces/replaces material that had been damaged/destroyed."
-		"Icon"			"vehicles/gui/armor/regen_sml"
-		"HUD Icon"		""
-		"Size"			"1"
-		"Type"			"0"
-		"Weight"		"15"                     // was 10   
-		"Cost"			"15"
-		"Research"		"Regenerative Armor"
-
-		"Health"			"55"             // was 60
-		"Regeneration"			"0.08"
-		"Angle Modifier"		"0.0"
-		"Speed To Damage Modifier"	"0"
-		"Damage Modifier"		"1"              // was 0.9 is now 1
-		"Damage To Heat Absorbed"	"0.025"          // was 0.025
-		"Bioweapon Damage Modifier"	"0.75"            // was 0.1 is now 2.0 would make sense if bio weapons had the easiest time against bio armor
-
-		"Sound Impact"			""
-		"Sound Repair"			""
-
-		"BulletResist" 			"1"		//Non Armor damaging
-		"InfantrySeismicResist" 	"0.95"		//Siesmic Grenades
-		"InfantryBulletResist" 		"1"		//Just In Case
-		"ExtraType1Resist" 		"0.95" 		//Building Damage
-		"InfantryMeleeResist"		"1.0"					//Infantry melee
+		"Name"				"Regenerative"	//name given when selecting weapons
+		"Description"			"Regenerative armor is engineered with living tissue designed to grow calcium carbonate as the protective medium.  As it is newly formed, it is malleable enough to find its way into damaged areas where it solidifies and reinforces/replaces material."	//description given when selecting weapons
+		"Icon"				"vehicles/gui/armor/regen_sml"	//Path to the icon file used in the gui (uses an inferred path of the empires/materials/vgui/ folder)
+		"Hud Icon"			""	//not used
+		"Size"				"1"	//Slot size, default is always 1
+		"Type"				"0"	//Type of Vehicle that can use this armor: 0=all, 1=ground, 2=aircraft, 3=ship, 4=jeep, 5=light tank/afv, 6=med tank, 7=heavy tank, 8=artillery tank, 9=apc, 10=all tanks:light, medium, heavy and artillery, 11=Command Vehicle
+		"Weight"			"15"	//The Weight of the Armor
+		"Cost"				"15"	//The Cost of the Armor, per plate.
+		"Research"			"Regenerative Armor"	//The Research Tree that will unlock this armor.
+		"Health"			"55"	//The Health of 1 plate of armor.
+		"Type"				"0.75"	//amount of health this armor regenerates per second. If set to same as bio damage, will nullify bio.
+		"Angle Modifier"		"0"	//Determines how much angle of impact affects overall damage. 0 for none, 1 for totally based.
+		"Speed To Damage Modifier"	"0"	//How Speed of weapon affects damage to armor.
+		"Damage Modifier"		"1"	//Overall modifier of weapon damage. Can be used to affect damage no matter the source.
+		"Damage To Heat Absorbed"	"0.025"	//percentage of damage received which is added as heat (0.2: damage*0.2=heat added)
+		"Bioweapon Damage Modifier"	"0.75"	//scale damage from biological weapons by this amount (bioweapon damage per interval * modifier = damage taken per interval)
+		"Sound Impact"			""	//Sound file used for Impact.(not used)
+		"Sound Repair"			""	//Sound file used for Repair.(not used)
+		"GeneralPhysicsResist"		"0.05"	//Plasma Cannon and Plasma mg
+		"KineticResist"			"0.1"	//Railguns, Standard Cannon, Ranged Cannon
+		"ExplosiveResist"		"-0.2"	//HE Cannon, Grenade Launcher, Upgraded Grenade Launcher
+		"BulletResist"			"1"	//Standard, 50 cal, Chain mgs. aka Non Armor damaging
+		"APBulletResist"		"0.1"	//Du and bio mgs. aka Armor Damaging
+		"BulletExplosiveResist"		"-0.2"	//HE mgs. aka Bullets that Explode
+		"MissileResist"			"0.1"	//Single, Upgraded, Homing, Guided, SalvoHoming, SalvoGuided Missile launchers. aka Generic Missle type of damage
+		"MissileExplosiveResist"	"-0.2"	//Nukes
+		"KineticArtResist"		"0.1"	//Ranged arty. aka Kinetic Artillery
+		"ExplosiveArtResist"		"-0.2"	//Small, Med, HE arty. aka Explosive Artillery
+		"InfantrySeismicResist"		"0.95"	//Siesmic Grenades
+		"InfantryBulletResist"		"1"	//Infantry guns
+		"ExtraType1Resist"		"0.95"	//Building Collisions
+		"InfantryMeleeResist"		"1"	//Infantry melee
+		"InfantryMineResist"		"0.05"	//Player Tossed Mines
+		"InfantryMissileResist"		"0.05"	//Grenadier Missiles
+		"InfantryMortarResist"		"0.05"	//Grenadier Mortars
+		"InfantryStickyResist"		"0.05"	//Riflemen Sticky Grenades
 	}
 
-	"Absorbant"
+	"Absorbant"	//5
 	{
-		"Name"			"Absorbant"
-		"Description"		"Asborbant armour transfers the energy from taking damage into cooling the engine. It reduces the amount of damage it takes the faster the projectile that impacts it is going."
-		"Icon"			"vehicles/gui/armor/absorbant_sml"
-		"HUD Icon"		""
-		"Size"			"1"
-		"Type"			"0"
-		"Weight"		"12"               // was 10
-		"Cost"			"5"
-		"Research"		"Absorbant Armor"
-
-		"Health"			"65"
-		"Regeneration"			"0"
-		"Angle Modifier"		"0.0"        /// was 0.1 
-		"Speed To Damage Modifier"	"-0.000206"  // Calculation for SpdToDmg RevisedDamage =  Damage * (1 + ( SpdToDmg * ProjectileSpeed))
-		"Damage Modifier"		"1"        // was 0.5 is now 1
-		"Damage To Heat Absorbed"	"-0.1"    // was "0.025"
-		"Bioweapon Damage Modifier"	"1"
-
-		"Sound Impact"			""
-		"Sound Repair"			""
-
-		"BulletResist" 			"1"		//Non Armor damaging
-		"InfantrySeismicResist" 	"0.95"		//Siesmic Grenades
-		"InfantryBulletResist" 		"1"		//Just In Case
-		"ExtraType1Resist" 		"0.95" 		//Building Damage
-		"InfantryMeleeResist"		"1.0"					//Infantry melee
-		"InfantryMissileResist" 	"0.0" 	//Gren Missiles
-		"InfantryMortarResist" 		"0.0" 	//Gren Mortars
-		}
-
-	// Commander armor
-	
-	"Command Vehicle"
-	{
-		"Name"			"Titanium 6AL-4V"
-		"Description"		"Military Grade Alloy, designed specifically for Command Vehicles"
-		"Icon"			"vehicles/gui/armor/armor_small"
-		"HUD Icon"		""
-		"Size"			"1"
-		"Type"			"11"
-		"Weight"		"10"               // was 10   (5 light 10 medium 15 heavy)
-		"Cost"			"40"               // was 40
-		"Research"		""
-
-		"Commander"	"1"
-		"Health"			"250"      // was 70 after observing reactive with its 0.3 modifier giving it effectivly 120+ HP, an armor should be like this in the game.
-		"Regeneration"			"0"        //
-		"Angle Modifier"		"0.0"      // was 0
-		"Speed To Damage Modifier"	"0"    //
-		"Damage Modifier"		"1"        //
-		"Damage To Heat Absorbed"	"0.025"    //
-		"Bioweapon Damage Modifier"	"1"        //
-
-		"Sound Impact"			""
-		"Sound Repair"			""
-
-		//Resists
-		"BulletResist" 			"1"		//Non Armor damaging
-		"InfantrySeismicResist" 	"0.95"		//Siesmic Grenades
-		"InfantryBulletResist" 		"1"		//Just In Case
-		"ExtraType1Resist" 		"0.95" 		//Building Damage
-		"InfantryMeleeResist"		"1.0"					//Infantry melee
+		"Name"				"Absorbant"	//name given when selecting weapons
+		"Description"			"Asborbant armour transfers the energy from taking damage into cooling the engine. It reduces the amount of damage it takes the faster the projectile that impacts it is going."	//description given when selecting weapons
+		"Icon"				"vehicles/gui/armor/absorbant_sml"	//Path to the icon file used in the gui (uses an inferred path of the empires/materials/vgui/ folder)
+		"Hud Icon"			""	//not used
+		"Size"				"1"	//Slot size, default is always 1
+		"Type"				"0"	//Type of Vehicle that can use this armor: 0=all, 1=ground, 2=aircraft, 3=ship, 4=jeep, 5=light tank/afv, 6=med tank, 7=heavy tank, 8=artillery tank, 9=apc, 10=all tanks:light, medium, heavy and artillery, 11=Command Vehicle
+		"Weight"			"12"	//The Weight of the Armor
+		"Cost"				"5"	//The Cost of the Armor, per plate.
+		"Research"			"Absorbant Armor"	//The Research Tree that will unlock this armor.
+		"Health"			"65"	//The Health of 1 plate of armor.
+		"Type"				"0"	//amount of health this armor regenerates per second. If set to same as bio damage, will nullify bio.
+		"Angle Modifier"		"0"	//Determines how much angle of impact affects overall damage. 0 for none, 1 for totally based.
+		"Speed To Damage Modifier"	"0"	//How Speed of weapon affects damage to armor.
+		"Damage Modifier"		"1"	//Overall modifier of weapon damage. Can be used to affect damage no matter the source.
+		"Damage To Heat Absorbed"	"-0.1"	//percentage of damage received which is added as heat (0.2: damage*0.2=heat added)
+		"Bioweapon Damage Modifier"	"1"	//scale damage from biological weapons by this amount (bioweapon damage per interval * modifier = damage taken per interval)
+		"Sound Impact"			""	//Sound file used for Impact.(not used)
+		"Sound Repair"			""	//Sound file used for Repair.(not used)
+		"GeneralPhysicsResist"		"0.5"	//Plasma Cannon and Plasma mg
+		"KineticResist"			"0.75"	//Railguns, Standard Cannon, Ranged Cannon
+		"ExplosiveResist"		"0.1"	//HE Cannon, Grenade Launcher, Upgraded Grenade Launcher
+		"BulletResist"			"1"	//Standard, 50 cal, Chain mgs. aka Non Armor damaging
+		"APBulletResist"		"0.5"	//Du and bio mgs. aka Armor Damaging
+		"BulletExplosiveResist"		"0.125"	//HE mgs. aka Bullets that Explode
+		"MissileResist"			"-0.2"	//Single, Upgraded, Homing, Guided, SalvoHoming, SalvoGuided Missile launchers. aka Generic Missle type of damage
+		"MissileExplosiveResist"	"-0.2"	//Nukes
+		"KineticArtResist"		"0.75"	//Ranged arty. aka Kinetic Artillery
+		"ExplosiveArtResist"		"0.5"	//Small, Med, HE arty. aka Explosive Artillery
+		"InfantrySeismicResist"		"0.95"	//Siesmic Grenades
+		"InfantryBulletResist"		"1"	//Infantry guns
+		"ExtraType1Resist"		"0.95"	//Building Collisions
+		"InfantryMeleeResist"		"1"	//Infantry melee
+		"InfantryMineResist"		"0"	//Player Tossed Mines
+		"InfantryMissileResist"		"0.2"	//Grenadier Missiles
+		"InfantryMortarResist"		"0.2"	//Grenadier Mortars
+		"InfantryStickyResist"		"0.2"	//Riflemen Sticky Grenades
 	}
 
-	// Aircraft armors
-	"plainArmor"
+	"Command Vehicle"	//6
 	{
-		"Name"			"Plain Armor"		//name given when selecting weapons
-		"Description"		"Plain armor offers mild protection from damage."		//description given when selecting weapons
-		"Icon"			"vehicles/gui/armor/armor_small"		//icon drawn in the GUI
-		"HUD Icon"		""
-		"Size"			"1"		//number of slots required when selecting weapons
-		"Type"			"2"		//which vehicle can use this armor
-							// 0=all, 1=ground, 2=aircraft, 3=ship, 4=jeep, 5=light tank/afv, 6=med tank, 7=heavy tank,
-							// 8=artillery tank, 9=apc, 10=all tanks:light, medium, heavy and artillery
-		"Weight"		"15"            //** weight was 5
-		"Cost"			"5"	//cost of an inch of armor in resources, added onto the final vehicle cost
-		"Research"		""
-
-		"Health"			"43.3"	//amount of health per every inch of armor
-		"Regeneration"			"0"	//amount of health this armor regenerates per second
-		"Angle Modifier"		"0.0"	// was 0
-		"Speed To Damage Modifier"	"0.008"	
-		"Damage Modifier"		"1"	//modifier to damage (0.9 reduces damage by 10%; damage*0.9=damage taken)
-		"Damage To Heat Absorbed"	"0.025"	//percentage of damage received which is added as heat (0.2: damage*0.2=heat added
-		"Heat Dissipation"		"4"	
-		"Bioweapon Damage Modifier"	"1.5"	// was 1  //scale damage from biological weapons by this amount (bioweapon damage per interval * modifier = damage taken per interval)
-
-		"Sound Impact"			""
-		"Sound Repair"			""
-
-		"BulletResist" 			"1"		//Non Armor damaging
-		"InfantrySeismicResist" 	"0.95"		//Siesmic Grenades
-		"InfantryBulletResist" 		"1"		//Just In Case
-		"ExtraType1Resist" 		"0.95" 		//Building Damage
-		"InfantryMeleeResist"		"1.0"					//Infantry melee
+		"Commander"			"1"
+		"Name"				"Titanium 6AL-4V"	//name given when selecting weapons
+		"Description"			"Military Grade Alloy, designed specifically for Command Vehicles"	//description given when selecting weapons
+		"Icon"				"vehicles/gui/armor/armor_small"	//Path to the icon file used in the gui (uses an inferred path of the empires/materials/vgui/ folder)
+		"Hud Icon"			""	//not used
+		"Size"				"1"	//Slot size, default is always 1
+		"Type"				"11"	//Type of Vehicle that can use this armor: 0=all, 1=ground, 2=aircraft, 3=ship, 4=jeep, 5=light tank/afv, 6=med tank, 7=heavy tank, 8=artillery tank, 9=apc, 10=all tanks:light, medium, heavy and artillery, 11=Command Vehicle
+		"Weight"			"10"	//The Weight of the Armor
+		"Cost"				"40"	//The Cost of the Armor, per plate.
+		"Research"			""	//The Research Tree that will unlock this armor.
+		"Health"			"250"	//The Health of 1 plate of armor.
+		"Type"				"0"	//amount of health this armor regenerates per second. If set to same as bio damage, will nullify bio.
+		"Angle Modifier"		"0"	//Determines how much angle of impact affects overall damage. 0 for none, 1 for totally based.
+		"Speed To Damage Modifier"	"0"	//How Speed of weapon affects damage to armor.
+		"Damage Modifier"		"1"	//Overall modifier of weapon damage. Can be used to affect damage no matter the source.
+		"Damage To Heat Absorbed"	"0.025"	//percentage of damage received which is added as heat (0.2: damage*0.2=heat added)
+		"Bioweapon Damage Modifier"	"1"	//scale damage from biological weapons by this amount (bioweapon damage per interval * modifier = damage taken per interval)
+		"Sound Impact"			""	//Sound file used for Impact.(not used)
+		"Sound Repair"			""	//Sound file used for Repair.(not used)
+		"GeneralPhysicsResist"		"0"	//Plasma Cannon and Plasma mg
+		"KineticResist"			"0"	//Railguns, Standard Cannon, Ranged Cannon
+		"ExplosiveResist"		"0"	//HE Cannon, Grenade Launcher, Upgraded Grenade Launcher
+		"BulletResist"			"1"	//Standard, 50 cal, Chain mgs. aka Non Armor damaging
+		"APBulletResist"		"0"	//Du and bio mgs. aka Armor Damaging
+		"BulletExplosiveResist"		"0"	//HE mgs. aka Bullets that Explode
+		"MissileResist"			"0"	//Single, Upgraded, Homing, Guided, SalvoHoming, SalvoGuided Missile launchers. aka Generic Missle type of damage
+		"MissileExplosiveResist"	"0"	//Nukes
+		"KineticArtResist"		"0"	//Ranged arty. aka Kinetic Artillery
+		"ExplosiveArtResist"		"0"	//Small, Med, HE arty. aka Explosive Artillery
+		"InfantrySeismicResist"		"0.95"	//Siesmic Grenades
+		"InfantryBulletResist"		"1"	//Infantry guns
+		"ExtraType1Resist"		"0.95"	//Building Collisions
+		"InfantryMeleeResist"		"1"	//Infantry melee
+		"InfantryMineResist"		"0"	//Player Tossed Mines
+		"InfantryMissileResist"		"0"	//Grenadier Missiles
+		"InfantryMortarResist"		"0"	//Grenadier Mortars
+		"InfantryStickyResist"		"0"	//Riflemen Sticky Grenades
 	}
+
+	"plainarmor"	//7
+	{
+		"Name"				"Plain Armor"	//name given when selecting weapons
+		"Description"			"Plain armor offers mild protection from damage."	//description given when selecting weapons
+		"Icon"				"vehicles/gui/armor/armor_small"	//Path to the icon file used in the gui (uses an inferred path of the empires/materials/vgui/ folder)
+		"Hud Icon"			""	//not used
+		"Size"				"1"	//Slot size, default is always 1
+		"Type"				"2"	//Type of Vehicle that can use this armor: 0=all, 1=ground, 2=aircraft, 3=ship, 4=jeep, 5=light tank/afv, 6=med tank, 7=heavy tank, 8=artillery tank, 9=apc, 10=all tanks:light, medium, heavy and artillery, 11=Command Vehicle
+		"Weight"			"15"	//The Weight of the Armor
+		"Cost"				"5"	//The Cost of the Armor, per plate.
+		"Research"			""	//The Research Tree that will unlock this armor.
+		"Health"			"43"	//The Health of 1 plate of armor.
+		"Type"				"0"	//amount of health this armor regenerates per second. If set to same as bio damage, will nullify bio.
+		"Angle Modifier"		"0"	//Determines how much angle of impact affects overall damage. 0 for none, 1 for totally based.
+		"Speed To Damage Modifier"	"0.008"	//How Speed of weapon affects damage to armor.
+		"Damage Modifier"		"1"	//Overall modifier of weapon damage. Can be used to affect damage no matter the source.
+		"Damage To Heat Absorbed"	"0.025"	//percentage of damage received which is added as heat (0.2: damage*0.2=heat added)
+		"Bioweapon Damage Modifier"	"1.5"	//scale damage from biological weapons by this amount (bioweapon damage per interval * modifier = damage taken per interval)
+		"Sound Impact"			""	//Sound file used for Impact.(not used)
+		"Sound Repair"			""	//Sound file used for Repair.(not used)
+		"GeneralPhysicsResist"		"0"	//Plasma Cannon and Plasma mg
+		"KineticResist"			"0"	//Railguns, Standard Cannon, Ranged Cannon
+		"ExplosiveResist"		"0"	//HE Cannon, Grenade Launcher, Upgraded Grenade Launcher
+		"BulletResist"			"1"	//Standard, 50 cal, Chain mgs. aka Non Armor damaging
+		"APBulletResist"		"0"	//Du and bio mgs. aka Armor Damaging
+		"BulletExplosiveResist"		"0"	//HE mgs. aka Bullets that Explode
+		"MissileResist"			"0"	//Single, Upgraded, Homing, Guided, SalvoHoming, SalvoGuided Missile launchers. aka Generic Missle type of damage
+		"MissileExplosiveResist"	"0"	//Nukes
+		"KineticArtResist"		"0"	//Ranged arty. aka Kinetic Artillery
+		"ExplosiveArtResist"		"0"	//Small, Med, HE arty. aka Explosive Artillery
+		"InfantrySeismicResist"		"0.95"	//Siesmic Grenades
+		"InfantryBulletResist"		"1"	//Infantry guns
+		"ExtraType1Resist"		"0.95"	//Building Collisions
+		"InfantryMeleeResist"		"1"	//Infantry melee
+		"InfantryMineResist"		"0"	//Player Tossed Mines
+		"InfantryMissileResist"		"0"	//Grenadier Missiles
+		"InfantryMortarResist"		"0"	//Grenadier Mortars
+		"InfantryStickyResist"		"0"	//Riflemen Sticky Grenades
+	}
+
 }
