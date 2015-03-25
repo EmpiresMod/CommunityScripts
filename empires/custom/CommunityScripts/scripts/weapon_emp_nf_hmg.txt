@@ -45,9 +45,9 @@ WeaponData
 	//Accuracy Upgrade Modifier. Default is 0.75. The lower the better.
 	"AccuracyUpgradeModifier"	"0.90"
 //Stamina Penalty
-	"StaminaPenalty_Standing"	"1.5"
-	"StaminaPenalty_Crouching"	"1.5"
-	"StaminaPenalty_Prone"		"1.0"
+	"StaminaPenalty_Standing"	"2.5"
+	"StaminaPenalty_Crouching"	"2.0"
+	"StaminaPenalty_Prone"		"2.0"
 //Weapon Spread
 	//When at rest
 	"JumpingSpread"			"0.05"
@@ -64,8 +64,8 @@ WeaponData
 	//Maximum the spread can become due to spread increment per shot below
 	"JumpingSpreadMax"	"0.7"
 	"StandingSpreadMax"	"0.5"
-	"DuckingSpreadMax"	"0.4"
-	"ProneSpreadMax"	"0.3"
+	"DuckingSpreadMax"	"0.03"
+	"ProneSpreadMax"	"0.03"
 
 	//Increment spread by this amount for every shot fired to maximum of moving at full speed spread
 	"JumpingSpreadIncrement"	"0.01"
