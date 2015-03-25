@@ -1165,7 +1165,7 @@ Vehicle_Weapons
 		"Clip Size"		"6"		//ammo loaded per reloads
 		"Total Ammo Clips"	"1"		//max ammo clips carried (0 is the same as not using clips)
 		"Unlimited Ammo"	"0"
-		"Reload Time"		"12.0"		//time to load one clip
+		"Reload Time"		"0"		//time to load one clip
 		"Reload Amount"		"2"
 		"Projectile Spread"	"1.25"		//only applicable to machine guns at the moment
 		"Heat To Target"	"50"		//heat added to target on hit (a small amount of heat is also added to the target based on damage, this is defined within the armor script)
