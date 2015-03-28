@@ -1,21 +1,21 @@
 "Resource/HudLayout.res"
 {
-	HudHealth
+	"HudHealth"
 	{
 		"fieldName"		"HudHealth"
-		"xpos"	"16"
-		"ypos"	"432"
-		"wide"	"100"
-		"tall"  "36"
-		"visible" "1"
-		"enabled" "1"
+		"xpos"			"16"
+		"ypos"			"432"
+		"wide"			"100"
+		"tall"			"36"
+		"visible"		"1"
+		"enabled"		"1"
 
 		"PaintBackgroundType"	"2"
-		
-		"text_xpos" "8"
-		"text_ypos" "20"
-		"digit_xpos" "50"
-		"digit_ypos" "2"
+
+		"text_xpos"		"8"
+		"text_ypos"		"20"
+		"digit_xpos"		"50"
+		"digit_ypos"		"2"
 	}
 
 	TargetID
@@ -35,7 +35,7 @@
 		"wide"	 "640"
 		"tall"	 "480"
 	}
-	
+
 	HudVoiceSelfStatus
 	{
 		"fieldName" "HudVoiceSelfStatus"
@@ -70,7 +70,7 @@
 
 		"text_xpos"	"26"
 	}
-	
+
 	HudSuit
 	{
 		"fieldName"		"HudSuit"
@@ -83,7 +83,7 @@
 
 		"PaintBackgroundType"	"2"
 
-		
+
 		"text_xpos" "8"
 		"text_ypos" "20"
 		"digit_xpos" "50"
@@ -125,7 +125,7 @@
 		"digit_xpos" "10"
 		"digit_ypos" "2"
 	}
-	
+
 	HudSuitPower
 	{
 		"fieldName" "HudSuitPower"
@@ -135,7 +135,7 @@
 		"ypos"	"396"
 		"wide"	"102"
 		"tall"	"26"
-		
+
 		"AuxPowerLowColor" "255 0 0 220"
 		"AuxPowerHighColor" "255 220 0 220"
 		"AuxPowerDisabledAlpha" "70"
@@ -155,7 +155,7 @@
 
 		"PaintBackgroundType"	"2"
 	}
-	
+
 	HudFlashlight
 	{
 		"fieldName" "HudFlashlight"
@@ -165,14 +165,14 @@
 		"ypos"	"370"
 		"wide"	"102"
 		"tall"	"20"
-		
+
 		"text_xpos" "8"
 		"text_ypos" "6"
 		"TextColor"	"255 170 0 220"
 
 		"PaintBackgroundType"	"2"
 	}
-	
+
 	HudDamageIndicator
 	{
 		"fieldName" "HudDamageIndicator"
@@ -180,7 +180,7 @@
 		"enabled" "1"
 		"DmgColorLeft" "255 0 0 0"
 		"DmgColorRight" "255 0 0 0"
-		
+
 		"dmg_xpos" "30"
 		"dmg_ypos" "100"
 		"dmg_wide" "36"
@@ -217,7 +217,7 @@
 		"SelectionGrowTime"	"0.4"
 		"IconXPos" "8"
 		"IconYPos" "0"
-		"TextYPos" "68"	
+		"TextYPos" "68"
 		"TextColor" "SelectionTextFg"
 		"MaxSlots"	"5"
 		"PlaySelectSounds"	"0"
@@ -487,7 +487,7 @@
 		"TextColor"	"255 255 255 192"
 		"PaintBackgroundType"	"0"
 	}
-	
+
 	"HudProtip"
 	{
 		"fieldName" "HudProtip"
@@ -518,7 +518,7 @@
 		"NoResearchColor" "255 0 0 255"
 		"ResearchActiveColor" "255 255 255 255"
 	}
-    
+
     HudCommentary
 	{
 		"fieldName" "HudCommentary"
@@ -528,9 +528,9 @@
 		"tall"  "40"
 		"visible" "1"
 		"enabled" "1"
-		
+
 		"PaintBackgroundType"	"2"
-		
+
 		"bar_xpos"		"50"
 		"bar_ypos"		"20"
 		"bar_height"	"8"
@@ -539,10 +539,10 @@
 		"speaker_ypos"	"8"
 		"count_xpos_from_right"	"10"	// Counts from the right side
 		"count_ypos"	"8"
-		
+
 		"icon_texture"	"vgui/hud/icon_commentary"
 		"icon_xpos"		"0"
-		"icon_ypos"		"0"		
+		"icon_ypos"		"0"
 		"icon_width"	"40"
 		"icon_height"	"40"
 	}

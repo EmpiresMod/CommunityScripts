@@ -15,7 +15,7 @@ PlayerClassData
 		{
 
 			// Leftmost box
-			BOX_0		
+			BOX_0
 			{
 				"Weapon_Count"		"2"			// Amount of weapons that are selectable via the box.
 				"Weapon_Choice_0"	"SIDEARM_NF_9MM"	// Name of the weapon as defined in the emp_weapons.txt
@@ -23,28 +23,28 @@ PlayerClassData
 			}
 
 			// Box right of leftmost box
-			BOX_1		
+			BOX_1
 			{
 				"Weapon_Count"		"4" //5 is too many!
 				"Weapon_Choice_0"	"PRIMARY_NF_SMG2"
-				"Weapon_Choice_1"	"PRIMARY_NF_RANGEDRIFLE"		
+				"Weapon_Choice_1"	"PRIMARY_NF_RANGEDRIFLE"
 				"Weapon_Choice_2"	"PRIMARY_NF_SHOTGUN"
 				"Weapon_Choice_3"	"PRIMARY_NF_SMG3"
 			}
 
 			// Box left of the rightmost box
-			BOX_2		
+			BOX_2
 			{
-				"Weapon_Count"		"1"			
+				"Weapon_Count"		"1"
 				"Weapon_Choice_0"	"GRENADE_NF_STICKYSTUN"
 				"Weapon_Choice_1"	"GRENADE_NF_CONCUSSION"
 			//	"Weapon_Choice_2"	"GRENADE_NF_SMOKE"
 			}
 
 			// Rightmost box
-			BOX_3		
+			BOX_3
 			{
-				"Weapon_Count"		"1"			
+				"Weapon_Count"		"1"
 				"Weapon_Choice_0"	"EQUIP_NF_BINOCS"
 			}
 		}
@@ -52,7 +52,7 @@ PlayerClassData
 		IMP_Weapons
 		{
 			// Leftmost box
-			BOX_0		
+			BOX_0
 			{
 				"Weapon_Count"		"3"			// Amount of weapons that are selectable via the box.
 				"Weapon_Choice_0"	"SIDEARM_IMP_9MM"	// Name of the weapon as defined in the emp_weapons.txt
@@ -64,16 +64,16 @@ PlayerClassData
 			BOX_1
 			{
 				"Weapon_Count"		"3"
-			//	"Weapon_Choice_0"	"PRIMARY_IMP_SMG1"		
-				"Weapon_Choice_0"	"PRIMARY_IMP_RANGEDRIFLE"		
+			//	"Weapon_Choice_0"	"PRIMARY_IMP_SMG1"
+				"Weapon_Choice_0"	"PRIMARY_IMP_RANGEDRIFLE"
 				"Weapon_Choice_1"	"PRIMARY_IMP_SHOTGUN"
 				"Weapon_Choice_2"	"PRIMARY_IMP_SMG2"
 			}
 
 			// Box left of the rightmost box
-			BOX_2	
+			BOX_2
 			{
-				"Weapon_Count"		"1"			
+				"Weapon_Count"		"1"
 				"Weapon_Choice_0"	"GRENADE_IMP_STICKYSTUN"
 				"Weapon_Choice_1"	"GRENADE_IMP_CONCUSSION"
 			//	"Weapon_Choice_2"	"GRENADE_IMP_SMOKE"
@@ -82,7 +82,7 @@ PlayerClassData
 			// Rightmost box
 			BOX_3
 			{
-				"Weapon_Count"		"1"			
+				"Weapon_Count"		"1"
 				"Weapon_Choice_0"	"EQUIP_IMP_BINOCS"
 			}
 		}
@@ -109,7 +109,7 @@ PlayerClassData
 			// You define these here. Goes from left to right.
 			// Note: You do not have to fill in each weapon choice for each box. It will then default to "-1" (not shown)
 
-		
+
 			BOX_0		// Leftmost box
 			{
 				"Weapon_Count"		"2"			// Amount of weapons that are selectable via the box.
@@ -118,10 +118,10 @@ PlayerClassData
 			//	"Weapon_Choice_2"	"GRENADE_NF_EXPLOSIVE"
 			}
 
-	
+
 			BOX_1		// Box right of leftmost box
 			{
-				"Weapon_Count"		"3"	
+				"Weapon_Count"		"3"
 				"Weapon_Choice_0"	"PRIMARY_NF_RIFLE"
 				"Weapon_Choice_1"	"PRIMARY_NF_50CAL"
 				"Weapon_Choice_2"	"PRIMARY_NF_HMG"
@@ -129,14 +129,14 @@ PlayerClassData
 
 			BOX_2		// Box left of the rightmost box
 			{
-				"Weapon_Count"		"2"			
+				"Weapon_Count"		"2"
 				"Weapon_Choice_0"	"GRENADE_NF_STICKY"
 				"Weapon_Choice_1"	"GRENADE_NF_SMOKE"
 			}
 
 			BOX_3		// Rightmost box
 			{
-				"Weapon_Count"		"1"			
+				"Weapon_Count"		"1"
 				"Weapon_Choice_0"	"EQUIP_NF_ARMOR"
 			}
 		}
@@ -150,10 +150,10 @@ PlayerClassData
 				"Weapon_Choice_1"	"SIDEARM_IMP_MACHINEPISTOL"
 			}
 
-	
+
 			BOX_1		// Box right of leftmost box
 			{
-				"Weapon_Count"		"3"	
+				"Weapon_Count"		"3"
 				"Weapon_Choice_0"	"PRIMARY_IMP_RIFLE"
 				"Weapon_Choice_1"	"PRIMARY_IMP_CARBINE"
 				"Weapon_Choice_2"	"PRIMARY_IMP_HMG"
@@ -161,14 +161,14 @@ PlayerClassData
 
 			BOX_2		// Box left of the rightmost box
 			{
-				"Weapon_Count"		"2"			
+				"Weapon_Count"		"2"
 				"Weapon_Choice_0"	"GRENADE_IMP_STICKY"
 				"Weapon_Choice_1"	"GRENADE_IMP_SMOKE"
 			}
 
 			BOX_3		// Rightmost box
 			{
-				"Weapon_Count"		"1"			
+				"Weapon_Count"		"1"
 				"Weapon_Choice_0"	"EQUIP_IMP_ARMOR"
 			}
 		}
@@ -192,7 +192,7 @@ PlayerClassData
 			// You define these here. Goes from left to right.
 			// Note: You do not have to fill in each weapon choice for each box. It will then default to "-1" (not shown)
 
-		
+
 			BOX_0		// Leftmost box
 			{
 				"Weapon_Count"		"2"			// Amount of weapons that are selectable via the box.
@@ -200,22 +200,22 @@ PlayerClassData
 				"Weapon_Choice_1"	"SIDEARM_NF_BUCKSHOT"
 			}
 
-	
+
 			BOX_1		// Box right of leftmost box
 			{
-				"Weapon_Count"		"1"	
+				"Weapon_Count"		"1"
 				"Weapon_Choice_0"	"PRIMARY_NF_RPG"
 			}
 
 			BOX_2		// Box left of the rightmost box
 			{
-				"Weapon_Count"		"1"			
+				"Weapon_Count"		"1"
 				"Weapon_Choice_0"	"EQUIP_NF_MINE"
 			}
 
 			BOX_3		// Rightmost box
 			{
-				"Weapon_Count"		"1"			
+				"Weapon_Count"		"1"
 				"Weapon_Choice_0"	"EQUIP_NF_DETECTOR"
 			}
 		}
@@ -230,22 +230,22 @@ PlayerClassData
 				"Weapon_Choice_2"	"SIDEARM_IMP_PISTOL2"
 			}
 
-	
+
 			BOX_1		// Box right of leftmost box
 			{
-				"Weapon_Count"		"1"	
+				"Weapon_Count"		"1"
 				"Weapon_Choice_0"	"PRIMARY_IMP_RPG"
 			}
 
 			BOX_2		// Box left of the rightmost box
 			{
-				"Weapon_Count"		"1"			
+				"Weapon_Count"		"1"
 				"Weapon_Choice_0"	"EQUIP_IMP_MINE"
 			}
 
 			BOX_3		// Rightmost box
 			{
-				"Weapon_Count"		"1"			
+				"Weapon_Count"		"1"
 				"Weapon_Choice_0"	"EQUIP_IMP_DETECTOR"
 			}
 		}
@@ -271,7 +271,7 @@ PlayerClassData
 			// You define these here. Goes from left to right.
 			// Note: You do not have to fill in each weapon choice for each box. It will then default to "-1" (not shown)
 
-		
+
 			BOX_0		// Leftmost box
 			{
 				"Weapon_Count"		"2"			// Amount of weapons that are selectable via the box.
@@ -279,10 +279,10 @@ PlayerClassData
 				"Weapon_Choice_1"	"SIDEARM_NF_BUCKSHOT"
 			}
 
-	
+
 			BOX_1		// Box right of leftmost box
 			{
-				"Weapon_Count"		"4"	
+				"Weapon_Count"		"4"
 				"Weapon_Choice_0"	"PRIMARY_NF_SMG1"
 				"Weapon_Choice_1"	"PRIMARY_NF_SMG2"
 				"Weapon_Choice_2"	"PRIMARY_NF_SMG3"
@@ -291,14 +291,14 @@ PlayerClassData
 
 			BOX_2		// Box left of the rightmost box
 			{
-				"Weapon_Count"		"1"			
+				"Weapon_Count"		"1"
 				"Weapon_Choice_0"	"GRENADE_NF_SEISMIC"
 				"Weapon_Choice_1"	"GRENADE_NF_CONCUSSION"
 			}
 
 			BOX_3		// Rightmost box
 			{
-				"Weapon_Count"		"1"			
+				"Weapon_Count"		"1"
 				"Weapon_Choice_0"	"EQUIP_NF_ENGYTOOL"
 			}
 		}
@@ -313,10 +313,10 @@ PlayerClassData
 				"Weapon_Choice_2"	"SIDEARM_IMP_PISTOL2"
 			}
 
-	
+
 			BOX_1		// Box right of leftmost box
 			{
-				"Weapon_Count"		"3"	
+				"Weapon_Count"		"3"
 				"Weapon_Choice_0"	"PRIMARY_IMP_SMG1"
 				"Weapon_Choice_1"	"PRIMARY_IMP_SMG2"
 				"Weapon_Choice_2"	"PRIMARY_IMP_SHOTGUN"
@@ -324,14 +324,14 @@ PlayerClassData
 
 			BOX_2		// Box left of the rightmost box
 			{
-				"Weapon_Count"		"1"			
+				"Weapon_Count"		"1"
 				"Weapon_Choice_0"	"GRENADE_IMP_SEISMIC"
 				"Weapon_Choice_1"	"GRENADE_IMP_CONCUSSION"
 			}
 
 			BOX_3		// Rightmost box
 			{
-				"Weapon_Count"		"1"			
+				"Weapon_Count"		"1"
 				"Weapon_Choice_0"	"EQUIP_IMP_ENGYTOOL"
 			}
 		}

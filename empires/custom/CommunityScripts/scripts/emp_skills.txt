@@ -1,7 +1,7 @@
-SkillDescriptionData
+"SkillDescriptionData"
 {
 
-	"SkillCount_General"	"7"
+	"SkillCount_General"		"7"
 
 	"Skill Wait Respawn"
 	{
@@ -11,7 +11,6 @@ SkillDescriptionData
 		"SkillDescription"	"Update on respawn"	// Long description for the weapon.
 		"SkillBackground"	"skills/wait_respawn"	// Skill image.
 	}
-
 
 	"Skill Unselected"
 	{
