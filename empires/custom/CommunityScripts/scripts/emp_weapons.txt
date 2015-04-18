@@ -74,9 +74,9 @@ WeaponDescriptionData
 		"WeaponName"		"PRIMARY_NF_SMG3"
 		"WeaponCode"		"5"
 		//Number which references the weapon in the code.
-		"WeaponText"		"Heavy SMG"
+		"WeaponText"		"Burst SMG"
 		//Short name for the weapon.
-		"WeaponDescription"	"The Northern Faction's heavy smg is the hardest hitting smg in the northern faction arsenal but has a slow rate of fire and small clip"
+		"WeaponDescription"	"The Northern Faction Busrt smg fires 3 rounds at once with a very high rate of fire making it very good and close range"
 		//Long description for the weapon.
 		"WeaponBackground"	"guns/nf/smg3"
 		//Weapon image.
