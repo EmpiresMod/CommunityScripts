@@ -119,10 +119,9 @@ WeaponDescriptionData
 		"WeaponName"		"PRIMARY_NF_50CAL"
 		"WeaponCode"		"8"
 		//Number which references the weapon in the code.
-		"WeaponText"		"Tri Round Rifle"
+		"WeaponText"		"50cal rifle"
 		//Short name for the weapon.
-		"WeaponDescription"	"The Tri round automatic rifle is the first rifle in the Northern Faction military to fire the special NF tri round, a round which maximizes the chance of hitting the target by firing 3 projectiles in a tight grouping that is perfect for long range.
-"
+		"WeaponDescription"	"The northern faction 50cal rifle is the hardest hitting rifle in the northern faction military and perfect for long ranges due to its pin point accuracy"
                 //Long description for the weapon.
 		"WeaponBackground"	"guns/nf/50cal"
 		//Weapon image.
