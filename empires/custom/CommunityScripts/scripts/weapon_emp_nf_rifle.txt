@@ -28,7 +28,7 @@ WeaponData
 	"bucket"			"1"
 	"bucket_position"		"0"
 
-	"clip_size"			"20"
+	"clip_size"			"25"
 	"clip2_size"			"-1"
 	
 	"primary_ammo"			"AMMO_RIFLE"
