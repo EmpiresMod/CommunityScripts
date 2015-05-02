@@ -46,9 +46,9 @@ WeaponData
 	//Accuracy Upgrade Modifier. Default is 0.75. The lower the better.
 	"AccuracyUpgradeModifier"	"0.90"
 //Stamina Penalty
-	"StaminaPenalty_Standing"	"2.5"
-	"StaminaPenalty_Crouching"	"2.0"
-	"StaminaPenalty_Prone"		"2.0"
+	"StaminaPenalty_Standing"	"3.0"
+	"StaminaPenalty_Crouching"	"2.5"
+	"StaminaPenalty_Prone"		"2.5"
 //Weapon Spread
 	//When at rest
 	"JumpingSpread"			"0.05"

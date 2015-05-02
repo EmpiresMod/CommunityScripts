@@ -27,7 +27,7 @@ PlayerClassData
 			{
 				"Weapon_Count"		"4" //5 is too many!
 				"Weapon_Choice_0"	"PRIMARY_NF_SMG2"
-				"Weapon_Choice_1"	"PRIMARY_NF_RANGEDRIFLE"
+				"Weapon_Choice_1"	"PRIMARY_NF_HMG"
 				"Weapon_Choice_2"	"PRIMARY_NF_SHOTGUN"
 				"Weapon_Choice_3"	"PRIMARY_NF_SMG3"
 			}
@@ -65,7 +65,7 @@ PlayerClassData
 			{
 				"Weapon_Count"		"3"
 			//	"Weapon_Choice_0"	"PRIMARY_IMP_SMG1"
-				"Weapon_Choice_0"	"PRIMARY_IMP_RANGEDRIFLE"
+				"Weapon_Choice_0"	"PRIMARY_IMP_HMG"
 				"Weapon_Choice_1"	"PRIMARY_IMP_SHOTGUN"
 				"Weapon_Choice_2"	"PRIMARY_IMP_SMG2"
 			}
@@ -124,7 +124,7 @@ PlayerClassData
 				"Weapon_Count"		"3"
 				"Weapon_Choice_0"	"PRIMARY_NF_RIFLE"
 				"Weapon_Choice_1"	"PRIMARY_NF_50CAL"
-				"Weapon_Choice_2"	"PRIMARY_NF_HMG"
+				"Weapon_Choice_2"	"PRIMARY_NF_RANGEDRIFLE"
 			}
 
 			BOX_2		// Box left of the rightmost box
@@ -156,7 +156,7 @@ PlayerClassData
 				"Weapon_Count"		"3"
 				"Weapon_Choice_0"	"PRIMARY_IMP_RIFLE"
 				"Weapon_Choice_1"	"PRIMARY_IMP_CARBINE"
-				"Weapon_Choice_2"	"PRIMARY_IMP_HMG"
+				"Weapon_Choice_2"	"PRIMARY_IMP_RANGEDRIFLE"
 			}
 
 			BOX_2		// Box left of the rightmost box
