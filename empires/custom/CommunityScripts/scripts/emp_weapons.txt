@@ -1,4 +1,4 @@
-WeaponDescriptionData 
+WeaponDescriptionData
 {
 
 // WeaponCode rules:
@@ -8,9 +8,9 @@ WeaponDescriptionData
 // Not respecting these rules will probably yield some weird shit, as you'll be asking the server to give you a non-existent weapon/skill.
 
 	//Name of the weapon which can be used for reference in the class scripts.
-	SIDEARM_NF_9MM 
+	SIDEARM_NF_9MM
 	{
-		"WeaponName"		"SIDEARM_NF_9MM" 
+		"WeaponName"		"SIDEARM_NF_9MM"
 		"WeaponCode"		"1"
 		//Number which references the weapon in the code.
 		"WeaponText"		"9mm Pistol"
@@ -22,7 +22,7 @@ WeaponDescriptionData
 		"WeaponScript"		"emp_nf_pistol"
 		//Weapon script.
 	}
-	
+
 	"SIDEARM_NF_BUCKSHOT"
 	{
 		"WeaponName"		"SIDEARM_NF_BUCKSHOT"
@@ -364,7 +364,7 @@ WeaponDescriptionData
 		"WeaponScript"		"emp_imp_pistol2"
 		//Weapon script.
 	}
-	
+
 	"PRIMARY_IMP_SMG1"
 	{
 		"WeaponName"		"PRIMARY_IMP_SMG1"
@@ -394,7 +394,7 @@ WeaponDescriptionData
 		"WeaponScript"		"emp_imp_smg2"
 		//Weapon script.
 	}
-	
+
 	"PRIMARY_IMP_CARBINE"
 	{
 		"WeaponName"		"PRIMARY_IMP_CARBINE"
@@ -632,9 +632,9 @@ WeaponDescriptionData
 		//Weapon image.
 	}
 
-	"PRIMARY_NF_SHOTGUN" 
+	"PRIMARY_NF_SHOTGUN"
 	{
-		"WeaponName"		"PRIMARY_NF_SHOTGUN" 
+		"WeaponName"		"PRIMARY_NF_SHOTGUN"
 		"WeaponCode"		"43"
 		//Number which references the weapon in the code.
 		"WeaponText"		"Combat Shotgun"
@@ -647,9 +647,9 @@ WeaponDescriptionData
 		//Weapon script.
 	}
 
-	"PRIMARY_IMP_SHOTGUN" 
+	"PRIMARY_IMP_SHOTGUN"
 	{
-		"WeaponName"		"PRIMARY_IMP_SHOTGUN" 
+		"WeaponName"		"PRIMARY_IMP_SHOTGUN"
 		"WeaponCode"		"44"
 		//Number which references the weapon in the code.
 		"WeaponText"		"Combat Shotgun"
